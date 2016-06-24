@@ -928,6 +928,8 @@ html.menu-open .menu-plate {
     -ms-flex-pack: justify;
     justify-content: space-between;
     height: 75px;
+    overflow-y: scroll;
+    font-size: 12px;
 }
 .popular-list .title {
     font-weight: 500;
@@ -1231,4 +1233,7 @@ img.headeravatar {
 }
 img.discordview {
     height: 240px;
+}
+.popular-list .desc::-webkit-scrollbar {
+    width: 0px;
 }
