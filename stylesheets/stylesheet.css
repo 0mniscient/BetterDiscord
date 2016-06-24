@@ -1131,7 +1131,7 @@ section.testimonials {
 .page-home .popular-episodes .section-head span:after {
     content: "";
     display: block;
-    background: rgba(249, 236, 49, 0.3);
+    background: rgba(45, 181, 169, 0.44);
     height: 30px;
     width: 50px;
     z-index: -1;
