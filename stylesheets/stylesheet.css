@@ -580,14 +580,14 @@ input.needsfilled {
     border-color: #FF851B !important;
     color: #FF851B !important;
 }
-.flex-video {
+.flex-image {
     height: 0;
     margin-bottom: 0.88889rem;
     overflow: hidden;
     padding-bottom: 56%;
     position: relative;
 }
-.flex-video iframe, .flex-video object, .flex-video embed, .flex-video video {
+.flex-image iframe, .flex-image object, .flex-image embed, .flex-image video {
     height: 100%;
     position: absolute;
     top: 0;
@@ -1069,7 +1069,7 @@ section.testimonials {
     .page-home .home-hero .flex-about-content .section-title-rule.bottom {
         display: none;
     }
-    .page-home .home-hero .flex-video-right {
+    .page-home .home-hero .flex-image-right {
         width: 100%;
     }
 }
@@ -1193,7 +1193,7 @@ section.testimonials {
         max-width: 850px;
     }
 }
-.page-jquerycourse .jquery-promo-video .flex-video {
+.page-jquerycourse .jquery-promo-video .flex-image {
     box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.2);
 }
 .page-gifs .top-rect {
@@ -1228,4 +1228,7 @@ img.headeravatar {
     height: 50px;
     border-radius: 50%;
     margin-top: 10px;
+}
+img.discordview {
+    height: 240px;
 }
