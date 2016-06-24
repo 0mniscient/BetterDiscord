@@ -8,3 +8,28 @@
     background-color: #F9EC31;
     overflow: hidden;
 }
+.top-rect:after {
+    content: "";
+    display: block;
+    background: white;
+    height: 400px;
+    width: 8000px;
+    position: absolute;
+    z-index: 1;
+    bottom: -50%;
+    left: 50%;
+    margin-left: -4000px;
+    -webkit-transform: rotate(-6deg);
+    transform: rotate(-6deg);
+}
+body {
+    background-color: white;
+    font-size: 14px;
+    line-height: 1.6;
+    font-family: "Roboto", sans-serif;
+    color: rgba(0, 0, 0, 0.7);
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: 100%;
+}
