@@ -638,3 +638,24 @@ html.menu-open .menu-overlay {
 html.menu-open .menu-plate {
   -webkit-transform: translate3d(400px, 0px, 0px);
           transform: translate3d(400px, 0px, 0px); }
+img.github {
+    height: 23px;
+    width: 23px;
+    border-radius: 20px;
+    vertical-align: top;
+    margin-right: 20px;
+}
+img.betterdiscord {
+    height: 23px;
+    width: 23px;
+    border-radius: 20px;
+    vertical-align: top;
+    margin-right: 20px;
+}
+img.discord {
+    height: 28px;
+    width: 28px;
+    border-radius: 20px;
+    vertical-align: top;
+    margin-right: 14px;
+}
