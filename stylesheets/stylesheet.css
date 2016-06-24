@@ -555,3 +555,14 @@ img.discordview {
 .popular-list .desc::-webkit-scrollbar {
     width: 0px;
 }
+/* Scrollbar */ 
+
+::-webkit-scrollbar{width: 11px;}
+
+::-webkit-scrollbar-thumb{background-color:rgb(45, 181, 169); border-radius: 0;}
+::-webkit-scrollbar-thumb:hover{background-color:rgb(45, 181, 169);}
+
+::-webkit-scrollbar-track{background-color:rgb(237, 237, 237);}
+
+
+/* End Scrollbar */
