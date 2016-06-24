@@ -494,6 +494,49 @@ html.menu-open .menu-plate {
         display: block;
     }
 }
+.page-home .home-hero {
+  padding: 20px 20px 40px; }
+  .page-home .home-hero .mission {
+    font-size: 21px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    max-width: 300px; }
+  .page-home .home-hero .section-title-rule {
+    border-top-color: rgba(0, 0, 0, 0.15);
+    margin: 0px 0px 30px;
+    display: none; }
+    .page-home .home-hero .section-title-rule.bottom {
+      display: block;
+      margin: 10px 0px 30px; }
+.page-home .top-rect {
+  padding-top: 500px; }
+@media (min-width: 830px) {
+  .page-home .home-hero .mission {
+    font-size: 28px;
+    line-height: 1.38; }
+  .page-home .home-hero .section-title-rule {
+    display: block; }
+  .page-home .home-hero .flex-container {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    max-width: 830px;
+    margin: 0 auto; }
+  .page-home .home-hero .flex-about-content {
+    max-width: 300px;
+    margin-right: 30px;
+    -webkit-flex-shrink: 0;
+        -ms-flex-negative: 0;
+            flex-shrink: 0; }
+    .page-home .home-hero .flex-about-content .section-head {
+      text-align: left; }
+    .page-home .home-hero .flex-about-content .section-title-rule {
+      display: block; }
+      .page-home .home-hero .flex-about-content .section-title-rule.bottom {
+        display: none; }
+  .page-home .home-hero .flex-video-right {
+    width: 100%; } }
 .theme-unit {
     cursor: pointer;
 }
