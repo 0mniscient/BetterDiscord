@@ -570,7 +570,7 @@ body {
   top: 0;
   left: 0;
   z-index: -1;
-  background-color: #F9EC31;
+  background-color: #2db5a9;
   overflow: hidden; }
   .top-rect:after {
     content: "";
