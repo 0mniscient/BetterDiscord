@@ -514,6 +514,7 @@ html.menu-open .menu-plate {
 @media (min-width: 830px) {
   .page-home .home-hero .mission {
     font-size: 28px;
+    color: #fff;
     line-height: 1.38; }
   .page-home .home-hero .section-title-rule {
     display: block; }
