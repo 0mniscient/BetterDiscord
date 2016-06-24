@@ -566,3 +566,75 @@ img.discordview {
 
 
 /* End Scrollbar */
+.menu-overlay {
+  position: fixed;
+  background-color: transparent;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+  -webkit-transition: all 350ms ease-in-out;
+  transition: all 350ms ease-in-out; }
+
+.menu-plate {
+  position: absolute;
+  top: 0px;
+  left: -400px;
+  width: 300px;
+  height: 100%;
+  background: white;
+  box-shadow: 3px 0px 30px rgba(0, 0, 0, 0.4);
+  -webkit-transition: all 350ms ease-in-out;
+  transition: all 350ms ease-in-out; }
+  .menu-plate .jquery-icon-svg path {
+    fill: rgba(0, 0, 0, 0.54); }
+
+.menu-close {
+  position: absolute;
+  top: 28px;
+  left: 30px;
+  cursor: pointer; }
+
+.menu {
+  margin: 0;
+  list-style: none;
+  margin-top: 88px;
+  padding-left: 30px; }
+  .menu li {
+    margin-bottom: 30px; }
+  .menu svg {
+    vertical-align: top;
+    margin-right: 20px;
+    fill: rgba(0, 0, 0, 0.54);
+    width: 24px;
+    height: 24px; }
+  .menu a {
+    border-bottom: none;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 16px;
+    display: inline-block;
+    height: 24px;
+    line-height: 24px; }
+  .menu .double-line {
+    display: inline-block;
+    line-height: 1.4; }
+    .menu .double-line span {
+      display: block;
+      font-size: 12px;
+      color: rgba(0, 0, 0, 0.3); }
+
+html.menu-open body {
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0; }
+html.menu-open .menu-overlay {
+  background-color: rgba(0, 0, 0, 0.7);
+  pointer-events: auto; }
+html.menu-open .menu-plate {
+  -webkit-transform: translate3d(400px, 0px, 0px);
+          transform: translate3d(400px, 0px, 0px); }
