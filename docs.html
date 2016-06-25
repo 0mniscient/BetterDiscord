@@ -1,12 +1,506 @@
+
+<!DOCTYPE html>
 <head>
     <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="">
 <meta name="keywords" content=" ">
-<title>Omnis documentation  | BetterDiscord documentation and tutorials</title>
+<title>Red documentation  | Red-DiscordBot documentation and tutorials</title>
+<link rel="stylesheet" href="https://twentysix26.github.io/Red-Docs/css/syntax.css">
 
 
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+<link rel="stylesheet" href="https://twentysix26.github.io/Red-Docs/css/modern-business.css">
+<link rel="stylesheet" href="https://twentysix26.github.io/Red-Docs/css/lavish-bootstrap.css">
+<link rel="stylesheet" href="https://twentysix26.github.io/Red-Docs/css/customstyles.css">
+<link rel="stylesheet" href="https://twentysix26.github.io/Red-Docs/css/theme-blue.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="https://twentysix26.github.io/Red-Docs/js/jquery.navgoco.min.js"></script>
+
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/2.0.0/anchor.min.js"></script>
+<script src="https://twentysix26.github.io/Red-Docs/js/toc.js"></script>
+<script src="https://twentysix26.github.io/Red-Docs/js/customscripts.js"></script>
+
+<link rel="shortcut icon" href="https://twentysix26.github.io/Red-Docs/images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+<link rel="alternate" type="application/rss+xml" title="" href="https://twentysix26.github.io/Red-Docs/feed.xml">
+
+
+
+
+ 
+    <script>
+        $(document).ready(function() {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true,
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    
+</head>
 <body>
-<h>Hello<h>
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="fa fa-home fa-lg navbar-brand" href="https://twentysix26.github.io/Red-Docs/">&nbsp;<span class="projectTitle"> Red-Docs</span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- entries without drop-downs appear here -->
+                
+                
+                
+                <li><a href="https://twentysix26.github.io/Red-Docs/news/">News</a></li>
+                
+                
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Helpful Resources<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        
+                        
+                        <li><a href="https://github.com/Twentysix26/Red-DiscordBot" target="_blank">Github Repo</a></li>
+                        
+                        
+                        
+                        <li><a href="https://discord.gg/0k4npTwMvTpv9wrh" target="_blank">Support Server</a></li>
+                        
+                        
+                        
+                        <li><a href="https://discordpy.readthedocs.org/en/async/" target="_blank">discord.py documentation</a></li>
+                        
+                        
+                        
+                        <li><a href="https://discordapp.com/developers/docs/intro" target="_blank">Discord Developer API documentation</a></li>
+                        
+                        
+                    </ul>
+                </li>
+                
+                
+                
+                <!--comment out this block if you want to hide search-->
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <input type="text" id="search-input" placeholder="search...">
+                        <ul id="results-container"></ul>
+                    </div>
+                    <script src="https://twentysix26.github.io/Red-Docs/js/jekyll-search.js" type="text/javascript"></script>
+                    <script type="text/javascript">
+                            SimpleJekyllSearch.init({
+                                searchInput: document.getElementById('search-input'),
+                                resultsContainer: document.getElementById('results-container'),
+                                dataSource: 'https://twentysix26.github.io/Red-Docs/search.json',
+                                searchResultTemplate: '<li><a href="{url}" title="Red documentation">{title}</a></li>',
+                    noResultsText: 'No results found.',
+                            limit: 10,
+                            fuzzy: true,
+                    })
+                    </script>
+                    <!--end search-->
+                </li>
+            </ul>
+        </div>
+        </div>
+        <!-- /.container -->
+</nav>
+<!-- Page Content -->
+<div class="container">
+    <div class="col-lg-12">&nbsp;</div>
+    <!-- Content Row -->
+    <div class="row">
+        <!-- Sidebar Column -->
+        <div class="col-md-3">
+
+          
+
+
+
+
+
+
+
+
+<ul id="mysidebar" class="nav">
+    <li class="sidebarTitle"> </li>
+    
+    
+    
+    <li>
+        <a href="#">Overview</a>
+        <ul>
+            
+            
+            
+            <li class="active"><a href="https://twentysix26.github.io/Red-Docs/">About</a></li>
+            
+            
+            
+            
+        </ul>
+        
+        
+    
+    <li>
+        <a href="#">Installation</a>
+        <ul>
+            
+            
+            
+            <li><a href="https://twentysix26.github.io/Red-Docs/red_win_requirements/">Windows requirements</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="https://twentysix26.github.io/Red-Docs/red_install_win/">Installing on Windows</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="https://twentysix26.github.io/Red-Docs/red_install_linux/">Installing on Ubuntu/Debian</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="https://twentysix26.github.io/Red-Docs/red_install_fedora/">Installing on Fedora</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="https://twentysix26.github.io/Red-Docs/red_install_mac/">Installing on Mac</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="https://twentysix26.github.io/Red-Docs/red_install_raspbian/">Installing on Raspbian</a></li>
+            
+            
+            
+            
+        </ul>
+        
+        
+    
+    <li>
+        <a href="#">How to use</a>
+        <ul>
+            
+            
+            
+            <li><a href="https://twentysix26.github.io/Red-Docs/red_general_tips/">General tips</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="https://twentysix26.github.io/Red-Docs/red_commands/">Red's commands</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="https://twentysix26.github.io/Red-Docs/red_audio/">Audio module</a></li>
+            
+            
+            
+            
+        </ul>
+        
+        
+    
+    <li>
+        <a href="#">Troubleshooting</a>
+        <ul>
+            
+            
+            
+            <li><a href="https://twentysix26.github.io/Red-Docs/red_guide_troubleshooting/">General problems</a></li>
+            
+            
+            
+            
+        </ul>
+        
+        
+    
+    <li>
+        <a href="#">Guides</a>
+        <ul>
+            
+            
+            
+            <li><a href="https://twentysix26.github.io/Red-Docs/red_guide_aliases/">Aliases</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="https://twentysix26.github.io/Red-Docs/red_guide_linux_upstart/">Autorestarting on Linux</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="https://twentysix26.github.io/Red-Docs/red_guide_bot_accounts/">Bot Accounts</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="https://twentysix26.github.io/Red-Docs/red_guide_command_args/">Format Strings</a></li>
+            
+            
+            
+            
+        </ul>
+        
+        
+    
+    <li>
+        <a href="#">Custom cogs</a>
+        <ul>
+            
+            
+            
+            <li><a href="https://twentysix26.github.io/Red-Docs/red_guide_make_cog/">Make your own cog</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="https://twentysix26.github.io/Red-Docs/red_cog_how_to_publish/">Publish your cog</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="https://twentysix26.github.io/Red-Docs/red_cog_info_json/">Info.json documentation</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="https://twentysix26.github.io/Red-Docs/red_cog_dota/">Dota 2</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="https://twentysix26.github.io/Red-Docs/red_cog_approved_repos/">Approved repositories</a></li>
+            
+            
+            
+            
+        </ul>
+        
+        
+        
+        <!-- if you aren't using the accordion, uncomment this block:
+           <p class="external">
+               <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
+           </p>
+           -->
+    </li>
+</ul>
+</div>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+    <!-- Content Column -->
+    <div class="col-md-9">
+        <div class="post-header">
+   <h1 class="post-title-main">Red documentation</h1>
+</div>
+
+<div class="post-content">
+
+   
+
+    
+    
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+
+$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 10);
+  return false
+})
+  
+});
+</script>
+
+<div id="toc"></div>
+
+    
+
+    
+
+  <p>Red is in continuous development and new features get added all the time. Stay tuned by <a href="https://discord.gg/0k4npTwMvTpv9wrh">joining the official server</a>!
+<a href="https://discord.gg/0k4npTwMvTpv9wrh"><img src="https://discordapp.com/api/servers/133049272517001216/widget.png?style=banner5" /></a></p>
+
+<h2 id="installation">Installation</h2>
+
+<h3 id="windows">Windows</h3>
+
+<ul>
+  <li>
+    <p><a href="https://twentysix26.github.io/Red-Docs/red_win_requirements/">Windows Requirements</a> (<strong>do this first!</strong>)</p>
+  </li>
+  <li>
+    <p><a href="https://twentysix26.github.io/Red-Docs/red_install_win/">Installing Red</a></p>
+  </li>
+</ul>
+
+<h3 id="linux">Linux</h3>
+
+<ul>
+  <li>
+    <p><a href="https://twentysix26.github.io/Red-Docs/red_install_linux/">How to install on Linux, general steps</a></p>
+  </li>
+  <li>
+    <p><a href="https://twentysix26.github.io/Red-Docs/red_guide_linux_upstart/">Autorestarting (upstart)</a></p>
+  </li>
+</ul>
+
+<h3 id="mac">Mac</h3>
+
+<ul>
+  <li><a href="https://twentysix26.github.io/Red-Docs/red_install_mac/">How to install on Mac</a></li>
+</ul>
+
+<h2 id="how-to-use">How to use</h2>
+
+<ul>
+  <li>
+    <p><a href="https://twentysix26.github.io/Red-Docs/red_general_tips">Some general tips</a></p>
+  </li>
+  <li>
+    <p><a href="https://twentysix26.github.io/Red-Docs/red_commands/">Command list</a></p>
+  </li>
+  <li>
+    <p><a href="https://twentysix26.github.io/Red-Docs/red_audio">Audio module</a></p>
+  </li>
+</ul>
+
+<h2 id="common-issues">Common issues</h2>
+<p>For installation and general issues:</p>
+
+<ul>
+  <li><a href="https://twentysix26.github.io/Red-Docs/red_guide_troubleshooting/">Troubleshooting</a></li>
+</ul>
+
+<h2 id="cogs">Cogs</h2>
+
+<ul>
+  <li><a href="https://twentysix26.github.io/Red-Docs/red_cog_how_to_publish/">Publishing cogs</a></li>
+</ul>
+
+
+<div class="tags">
+    
+</div>
+
+    
+
+</div>
+
+<hr class="shaded"/>
+
+<footer>
+            <div class="row">
+                <div class="col-lg-12 footer">
+               &copy;2016 Red-DiscordBot. All rights reserved. <br />
+ Site last generated: Jun 22, 2016 <br />
+                </div>
+            </div>
+</footer>
+    </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+    </div>
 </body>
+
+</html>
