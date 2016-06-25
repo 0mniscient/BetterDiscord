@@ -1027,3 +1027,9 @@ code + a > code {
 table th code {
     color: white;
 }
+::-webkit-scrollbar{width: 11px;}
+
+::-webkit-scrollbar-thumb{background-color:rgb(39, 145, 137); border-radius: 0;}
+::-webkit-scrollbar-thumb:hover{background-color:rgb(39, 145, 137);}
+
+::-webkit-scrollbar-track{background-color:rgb(237, 237, 237);}
