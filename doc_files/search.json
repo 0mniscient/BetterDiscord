@@ -6,262 +6,26 @@
 
 
 {
-"title": "Red documentation",
+"title": "Omni documentation",
 "tags": "",
 "keywords": "",
-"url": "/Red-Docs/",
+"url": "/docs.html",
 "summary": ""
 },
 
 
 
 {
-"title": "About the theme author",
+"title": "About the Websites Author",
 "tags": "getting_started",
 "keywords": "documentation theme, jekyll, technical writers, help authoring tools, hat replacements",
-"url": "/Red-Docs/mydoc_about/",
-"summary": "I have used this theme for projects that I've worked on as a professional technical writer."
+"url": "/about.html",
+"summary": "I am a website designer very basic nothing professional."
 },
 
 
 
-{
-"title": "News",
-"tags": "",
-"keywords": "news, blog, updates, release notes, announcements",
-"url": "/Red-Docs/news/",
-"summary": ""
-},
 
-
-
-{
-"title": "News",
-"tags": "",
-"keywords": "news, blog, updates, release notes, announcements",
-"url": "/Red-Docs/news_archive/",
-"summary": ""
-},
-
-
-
-{
-"title": "Audio module",
-"tags": "",
-"keywords": "",
-"url": "/Red-Docs/red_audio/",
-"summary": ""
-},
-
-
-
-{
-"title": "Approved repositories",
-"tags": "",
-"keywords": "",
-"url": "/Red-Docs/red_cog_approved_repos/",
-"summary": ""
-},
-
-
-
-{
-"title": "Dota",
-"tags": "",
-"keywords": "",
-"url": "/Red-Docs/red_cog_dota/",
-"summary": ""
-},
-
-
-
-{
-"title": "Publish your cog repo",
-"tags": "",
-"keywords": "",
-"url": "/Red-Docs/red_cog_how_to_publish/",
-"summary": ""
-},
-
-
-
-{
-"title": "Info.json format",
-"tags": "",
-"keywords": "",
-"url": "/Red-Docs/red_cog_info_json/",
-"summary": ""
-},
-
-
-
-{
-"title": "Timezone",
-"tags": "",
-"keywords": "",
-"url": "/Red-Docs/red_cog_timezone/",
-"summary": ""
-},
-
-
-
-{
-"title": "Red&#39;s commands",
-"tags": "",
-"keywords": "",
-"url": "/Red-Docs/red_commands/",
-"summary": ""
-},
-
-
-
-{
-"title": "General tips",
-"tags": "",
-"keywords": "",
-"url": "/Red-Docs/red_general_tips/",
-"summary": ""
-},
-
-
-
-{
-"title": "Aliases",
-"tags": "",
-"keywords": "",
-"url": "/Red-Docs/red_guide_aliases/",
-"summary": ""
-},
-
-
-
-{
-"title": "Bot accounts",
-"tags": "",
-"keywords": "",
-"url": "/Red-Docs/red_guide_bot_accounts/",
-"summary": ""
-},
-
-
-
-{
-"title": "Format Strings",
-"tags": "",
-"keywords": "",
-"url": "/Red-Docs/red_guide_command_args/",
-"summary": ""
-},
-
-
-
-{
-"title": "Autorestarting on Linux",
-"tags": "",
-"keywords": "",
-"url": "/Red-Docs/red_guide_linux_upstart/",
-"summary": ""
-},
-
-
-
-{
-"title": "Make your own cog",
-"tags": "",
-"keywords": "",
-"url": "/Red-Docs/red_guide_make_cog/",
-"summary": ""
-},
-
-
-
-{
-"title": "Subcommands",
-"tags": "",
-"keywords": "",
-"url": "/Red-Docs/red_guide_subcommands/",
-"summary": ""
-},
-
-
-
-{
-"title": "General problems",
-"tags": "",
-"keywords": "",
-"url": "/Red-Docs/red_guide_troubleshooting/",
-"summary": ""
-},
-
-
-
-{
-"title": "Install on Fedora",
-"tags": "",
-"keywords": "",
-"url": "/Red-Docs/red_install_fedora/",
-"summary": ""
-},
-
-
-
-{
-"title": "Installing on Ubuntu/Debian",
-"tags": "",
-"keywords": "",
-"url": "/Red-Docs/red_install_linux/",
-"summary": ""
-},
-
-
-
-{
-"title": "Installing on Mac OS X",
-"tags": "",
-"keywords": "",
-"url": "/Red-Docs/red_install_mac/",
-"summary": ""
-},
-
-
-
-{
-"title": "Pre-requirements",
-"tags": "",
-"keywords": "",
-"url": "/Red-Docs/red_install_prerequirements",
-"summary": ""
-},
-
-
-
-{
-"title": "Installing on Raspbian",
-"tags": "",
-"keywords": "",
-"url": "/Red-Docs/red_install_raspbian/",
-"summary": ""
-},
-
-
-
-{
-"title": "Installing on Windows",
-"tags": "",
-"keywords": "",
-"url": "/Red-Docs/red_install_win/",
-"summary": ""
-},
-
-
-
-{
-"title": "Windows requirements",
-"tags": "",
-"keywords": "",
-"url": "/Red-Docs/red_win_requirements/",
-"summary": ""
-},
 
 
 
