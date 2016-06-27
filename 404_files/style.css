@@ -37,7 +37,8 @@ p{
 }
 
 img{
-    background-size: auto;
+    height: 400px;
+    width: 493px;
 }
 
 .error{
@@ -149,8 +150,8 @@ img{
     Man
 --------------------*/
 .man{
-    margin-top: -38px;
-    margin-left: -162px;
+    margin-top: 44px;
+    margin-left: -27px;
 }
 
 /* ------------------
