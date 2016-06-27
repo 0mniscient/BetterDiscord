@@ -1033,3 +1033,7 @@ table th code {
 ::-webkit-scrollbar-thumb:hover{background-color:rgb(39, 145, 137);}
 
 ::-webkit-scrollbar-track{background-color:rgb(237, 237, 237);}
+.unavailable {
+    font-size: 30px;
+    color: #4c4c4c;
+}
