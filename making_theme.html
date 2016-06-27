@@ -23,6 +23,11 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
 <script src="doc_files/jquery.navgoco.min.js"></script>
 <script src="js/top.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenLite.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/easing/EasePack.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/plugins/CSSPlugin.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/plugins/AttrPlugin.min.js"></script>
+<script src="js/elastic-progress.min.js"></script>
 
 
 <script src="syntax.js"></script>
@@ -352,16 +357,39 @@ $('#toc').on('click', 'a', function() {
     <li><p>Ask the theme author for permission to use it as a base.</p></li>
     <li><p><b>Credit</b> the author no matter what use this template for crediting inside the CSS.</p>
     <div class="highlighter-rouge"><pre class="highlight"><code>------------------------------<br>
+    This theme was based off another theme.
     Original Author: Author<br>
     Original Theme: Theme url<br>
-    ------------------------------</code></pre></div></li>
+------------------------------</code></pre></div></li>
     </ul>
   </li>
 </ul>
 
 <h2 id="Template">Template</h2>
 
-<p>mhm.</p>
+<p>For making a transparent theme use this template to use as a base no credit is needed for it and is a great place to start.</p>
+<ul>
+  <li>
+    <p>Template was made by Hammock.<br />
+<img src="https://imgur.com/UcEPr6n.png" alt="Template download" /></p>
+  </li>
+  <li>
+    
+    <div class="Download" role="button" aria-label="Download file"></div>
+<script>var progress=new ElasticProgress('.Download', {
+  colorFg:"#FF0000",
+  buttonSize:80,
+  arrowDirection:"down",
+  //...
+})
+onClick:function(){
+    progress.open();
+  }
+});
+function theFunctionYouAreUsingToCheckProgress(){
+  // ...
+  progress.setValue(value);
+}</script>
 
 <h2 id="Tutorial">Tutorial</h2>
 
