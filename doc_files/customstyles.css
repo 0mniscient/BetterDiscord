@@ -1037,3 +1037,9 @@ table th code {
     font-size: 30px;
     color: #4c4c4c;
 }
+.navbar-inverse .navbar-toggle {
+    border-color: #2db5a9 !important;
+}
+.navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle:focus {
+    background-color: #279189 !important;
+}
