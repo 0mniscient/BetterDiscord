@@ -355,25 +355,25 @@ $('#toc').on('click', 'a', function() {
   </li>
 
 <div class="highlighter-rouge"><pre class="highlight"><code>
-<b><font color="#494949">//Join a server with invite code</font></b><br>
+<b><font color="#494949">// Join a server with invite code</font></b><br>
 BdApi.joinServer("code");<br>
-<b><font color="#494949">//Inject css to `head` element with identifier, don't forget to remove it on stop</font></b><br>
+<b><font color="#494949">// Inject css to `head` element with identifier, don't forget to remove it on stop</font></b><br>
 BdApi.injectCSS("id", "css");<br>
-<b><font color="#494949">//Clear your css</font></b><br>
+<b><font color="#494949">// Clear your css</font></b><br>
 BdApi.clearCSS("id");<br>
-<b><font color="#494949">//Interact with other plugins</font></b><br>
+<b><font color="#494949">// Interact with other plugins</font></b><br>
 BdApi.getPlugin("name");<br>
-<b><font color="#494949">//Currently pointless since the ipc doesn't have any backend returns</font><br>
+<b><font color="#494949">// Currently pointless since the ipc doesn't have any backend returns</font><br>
 BdApi.getIpc();<br>
-<b><font color="#494949">//Get the BetterDiscord core module</font></b><br>
+<b><font color="#494949">// Get the BetterDiscord core module</font></b><br>
 BdApi.getCore();<br>
-<b><font color="#494949">//Attempts to return username by userid</font></b><br>
+<b><font color="#494949">// Attempts to return username by userid</font></b><br>
 BdApi.getUserIdByName("name");<br>
-<b><font color="#494949">//Attempts to return userid by username</font></b><br>
+<b><font color="#494949">// Attempts to return userid by username</font></b><br>
 BdApi.getUserNameById("id");<br>
-<b><font color="#494949">//BdApi.setPlaying("game"); Disabled for now</font></b><br>
-<b><font color="#494949">//BdApi.setStatus("status"); Disabled for now</font></b><br>
-<b><font color="#494949">//Displays a simple alert box, will be moved to BdApi.alert("title", "content") soon</font></b><br>
+<b><font color="#494949">// BdApi.setPlaying("game"); Disabled for now</font></b><br>
+<b><font color="#494949">// BdApi.setStatus("status"); Disabled for now</font></b><br>
+<b><font color="#494949">// Displays a simple alert box, will be moved to BdApi.alert("title", "content") soon</font></b><br>
 Core.prototype.alert("title", "text")</code></pre></div>
 
 <div class="tags">
