@@ -1043,3 +1043,6 @@ table th code {
 .navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle:focus {
     background-color: #279189 !important;
 }
+.tocexpanded ul {
+    max-width: 525px !important;
+}
