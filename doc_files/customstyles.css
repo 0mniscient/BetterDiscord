@@ -1046,3 +1046,6 @@ table th code {
 .tocexpanded ul {
     max-width: 525px !important;
 }
+.nav > li > a:hover, .nav > li > a:focus {
+    background-color: #b4b4b4;
+}
