@@ -384,6 +384,12 @@ $('#toc').on('click', 'a', function() {
 
 <p>Time to learn how to make a theme.</p>
 <ul>
+    <li>
+    <p>First thing first you will need to have <b>some</b> knowledge of CSS without it you will not be able to make a theme.</p>
+  </li>
+    <li>
+    <p>Head on over to <code>%appdata%\betterdiscord\themes\</code></p>
+  </li>
   <li>
     <p>Make a file called <code>ScarryNight.theme.css</code></p>
   </li>
@@ -391,6 +397,63 @@ $('#toc').on('click', 'a', function() {
     <p>Open the file we just made with a text editor (not notepad) and insert this on the first line <div class="highlighter-rouge"><pre class="highlight"><code>//META{"name":"Scarry_Night","description":"My first theme.","author":"Omniscient","version":"1.00"}*//</code></pre></div> tip: Spaces in the title should use _ instead of an actual space to fix any future problems.
 </p>
   </li>
+  <li>
+    <p>When you go to <code>themes</code> in the BetterDiscord settings you should see this.<br />
+<img src="http://i.imgur.com/XDcIv6s.png" alt="ScarryNight in BetterDiscord settings" /></p>
+  </li>
+  <li>
+    <p>You will notice enabling it will do nothing that's because we haven't added any CSS in the file yet lets insert some basic CSS paste this in the file under the META tag.
+    <div class="highlighter-rouge"><pre class="highlight"><code>/* Background image */
+
+.app, .callout-backdrop {
+    background: url(https://imgur.com/TAhoyVZ.png) !important;
+    background-size: cover !important;
+}
+
+/* transparent areas */
+
+.chat, .typing, .content, .guild-channels, .private-channels, .guild-header, .divider-red span, .messages-wrapper, #voice-connection {
+    background: transparent !important;
+}
+
+/* Server list area */
+
+.guilds-wrapper {
+    background: rgba(0, 0, 0, 0.6) !important;
+}
+
+/* Channels list area */
+
+.channels-wrap {
+    background: rgba(0, 0, 0, 0.7) !important;
+}
+
+/* Chat area */
+
+.content .flex-spacer {
+    background: rgba(0, 0, 0, 0.8) !important;
+}
+
+/* User list area */
+
+.channel-members {
+    background: rgba(0, 0, 0, 0.9) !important;
+}
+
+/* Title Wrap */
+
+.chat .title-wrap {
+    background-color: rgba(0, 0, 0, 0.85) !important;
+    border-bottom: 1px solid transparent !important;
+}</code></pre></div></p>
+  </li>
+   <li>
+    <p>Now save the file and restart Discord (CTRL+R) and finally you will see Discord transparent to a certain extent.</p>
+  </li>
+  <li>
+    <p>To customize Discord to your own liking do CTRL+SHIFT+I in Discord and you will see the inspect element tool that will be your bestfriend as it helps you what has what classes.</p>
+  </li>
+  
 </ul>
 
 </div>
