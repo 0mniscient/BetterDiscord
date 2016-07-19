@@ -53,8 +53,7 @@
     <div class="container topnavlinks">
         <div class=navbar-header>
             <button class=navbar-toggle data-target=#bs-example-navbar-collapse-1 data-toggle=collapse type=button><span class=sr-only>Toggle navigation</span> <span class=icon-bar></span> <span class=icon-bar></span> <span class=icon-bar></span></button> <a href=/BetterDiscord/ class="fa fa-home fa-lg navbar-brand"><span class=projectTitle> Omni Docs</span></a></div>
-        <div
-            class="collapse navbar-collapse" id=bs-example-navbar-collapse-1>
+        <div class="collapse navbar-collapse" id=bs-example-navbar-collapse-1>
             <ul class="nav navbar-nav navbar-right">
                 <!-- entries without drop-downs appear here -->
                 <li><a href=#>News</a></li>
@@ -88,7 +87,7 @@
                         </script>
                         <!--end search-->
             </ul>
-    </div>
+        </div>
     </div>
     <!-- /.container -->
 </nav>
@@ -112,28 +111,28 @@
                             <li><a href=#>How to use</a>
                                 <ul>
 
-                                        <li class=active><a href=#>PluginAPI</a></ul>
+                                    <li class=active><a href=#>PluginAPI</a></ul>
                                 <li><a href=#>Troubleshooting</a>
                                     <ul>
-                                      <li><a href=/BetterDiscord/theme_troubleshoot.html>Themes</a>
-                                          <li><a href=/BetterDiscord/plugin_troubleshoot.html>Plugins</a>
-                                              <li><a href=/BetterDiscord/betterdiscord_troubleshoot.html>BetterDiscord</a></ul>
+                                        <li><a href=/BetterDiscord/theme_troubleshoot.html>Themes</a>
+                                            <li><a href=/BetterDiscord/plugin_troubleshoot.html>Plugins</a>
+                                                <li><a href=/BetterDiscord/betterdiscord_troubleshoot.html>BetterDiscord</a></ul>
                                     <li><a href=#>Guides</a>
                                         <ul>
                                             <li><a href=/BetterDiscord/install_theme.html>Installing Themes</a>
                                                 <li><a href=/BetterDiscord/install_plugin.html>Installing Plugins</a>
                                                     <li><a href=/BetterDiscord/making_theme.html>Making A Theme</a>
                                                         <li><a href=/BetterDiscord/making_plugin.html>Making A Plugin</a></ul>
-                                                          <li><a href=#>Downloads</a>
-                                                            <ul>
-                                                              <li><a href=/BetterDiscord/themes.html>Themes</a>
-                                                                  <li><a href=/BetterDiscord/plugins.html>Plugins</a>
-                                        <!-- if you aren't using the accordion, uncomment this block:
+                                        <li><a href=#>Downloads</a>
+                                            <ul>
+                                                <li><a href=/BetterDiscord/themes.html>Themes</a>
+                                                    <li><a href=/BetterDiscord/plugins.html>Plugins</a>
+                                                        <!-- if you aren't using the accordion, uncomment this block:
            <p class="external">
                <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
            </p>
            -->
-            </ul>
+                                            </ul>
         </div>
         <!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
         <script>
@@ -165,28 +164,58 @@
                     <ul>
                         <li>
                             <p>This is currently the API it might not be much but it's progressing.</li>
-                        <div class=highlighter-rouge><pre class=highlight><code>
-<b><font color=#494949>// Join a server with invite code</font></b><br>
-BdApi.joinServer("code");<br>
-<b><font color=#494949>// Inject css to `head` element with identifier, don't forget to remove it on stop</font></b><br>
-BdApi.injectCSS("id", "css");<br>
-<b><font color=#494949>// Clear your css</font></b><br>
-BdApi.clearCSS("id");<br>
-<b><font color=#494949>// Interact with other plugins</font></b><br>
-BdApi.getPlugin("name");<br>
-<b><font color=#494949>// Currently pointless since the ipc doesn't have any backend returns</font><br>
-BdApi.getIpc();<br>
-<b><font color=#494949>// Get the BetterDiscord core module</font></b><br>
-BdApi.getCore();<br>
-<b><font color=#494949>// Attempts to return username by userid</font></b><br>
-BdApi.getUserIdByName("name");<br>
-<b><font color=#494949>// Attempts to return userid by username</font></b><br>
-BdApi.getUserNameById("id");<br>
-<b><font color=#494949>// BdApi.setPlaying("game"); Disabled for now</font></b><br>
-<b><font color=#494949>// BdApi.setStatus("status"); Disabled for now</font></b><br>
-<b><font color=#494949>// Displays a simple alert box, will be moved to BdApi.alert("title", "content") soon</font></b><br>
-Core.prototype.alert("title", "text")</code></pre></div>
-                        <div class=tags><b>Tags: </b><a href=/install_plugin.html class="btn btn-default cursorNorm navbar-btn" role=button>install_plugin</a> <a href=/plugins.html class="btn btn-default cursorNorm navbar-btn" role=button>Plugins</a> <a href=/making_plugin.html class="btn btn-default cursorNorm navbar-btn" role=button>making_plugins</a></div>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>API Calls</th>
+                                    <th>Description</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>BdApi.joinServer("code");</td>
+                                    <td>Join a server with invite code.</td>
+                                </tr>
+                                <tr>
+                                    <td>BdApi.injectCSS("id", "css");</td>
+                                    <td>Clear your css.</td>
+                                </tr>
+                                <tr>
+                                    <td>BdApi.getPlugin("name");</td>
+                                    <td>Interact with other plugins</td>
+                                </tr>
+                                <tr>
+                                    <td>BdApi.getIpc();</td>
+                                    <td>Currently pointless since the ipc doesn't have any backend returns</td>
+                                </tr>
+                                <tr>
+                                    <td>BdApi.getCore();</td>
+                                    <td>Get the BetterDiscord core module</td>
+                                </tr>
+                                <tr>
+                                    <td>BdApi.getUserIdByName("name");</td>
+                                    <td>Attempts to return username by userid</td>
+                                </tr>
+                                <tr>
+                                    <td>BdApi.getUserNameById("id");</td>
+                                    <td>Attempts to return userid by username</td>
+                                </tr>
+                                <tr>
+                                    <td>BdApi.setPlaying("game");</td>
+                                    <td>Disabled for now</td>
+                                </tr>
+                                <tr>
+                                    <td>BdApi.setStatus("status");</td>
+                                    <td>Disabled for now</td>
+                                </tr>
+                                <tr>
+                                    <td>Core.prototype.alert("title", "text")</td>
+                                    <td>Displays a simple alert box, will be moved to BdApi.alert("title", "content") soon</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class=tags><b>Tags: </b><a href=/install_plugin.html class="btn btn-default cursorNorm navbar-btn" role=button>install_plugin</a> <a href=/plugins.html class="btn btn-default cursorNorm navbar-btn" role=button>Plugins</a> <a href=/making_plugin.html
+                                class="btn btn-default cursorNorm navbar-btn" role=button>making_plugins</a></div>
             </div>
             <hr class=shaded>
             <footer>
@@ -205,12 +234,18 @@ Core.prototype.alert("title", "text")</code></pre></div>
 <script src=https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js></script>
 <script src=https://cdnjs.cloudflare.com/ajax/libs/anchor-js/2.0.0/anchor.min.js></script>
 <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    (function(i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function() {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
 
-  ga('create', 'UA-65593962-3', 'auto');
-  ga('send', 'pageview');
-
+    ga('create', 'UA-65593962-3', 'auto');
+    ga('send', 'pageview');
 </script>
