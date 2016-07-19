@@ -4,7 +4,7 @@
 <meta content="width=device-width,initial-scale=1" name=viewport>
 <meta content="Answers to the questions you have for BetterDiscord and solutions to the problems you have. We will help to make your Discord Better again!" name=description>
 <meta content="Omni Omniscient Jiiks Hammock Maple Bluescream BetterDiscord Discord Themes Plugins Theme Plugin Installation How-To" name="keywords">
-<title>Frequently Asked Questions about BetterDiscord</title>
+<title>BetterDiscord Troubleshooting</title>
 <link href=doc_files/font-awesome.min.css rel=stylesheet>
 <!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
 <link href=doc_files/modern-business.css rel=stylesheet>
@@ -113,7 +113,9 @@
                                     <li><a href=/BetterDiscord/plugin_api.html>PluginAPI</a></ul>
                                 <li><a href=#>Troubleshooting</a>
                                     <ul>
-                                        <li class=active><a href=#>FAQ</a></ul>
+                                        <li><a href=/BetterDiscord/theme_troubleshoot.html>Themes</a>
+                                            <li><a href=/BetterDiscord/plugin_troubleshoot.html>Plugins</a>
+                                                <li class=active><a href=#>BetterDiscord</a></ul>
                                     <li><a href=#>Guides</a>
                                         <ul>
                                             <li><a href=/BetterDiscord/install_theme.html>Installing Themes</a>
@@ -138,7 +140,7 @@
         <!-- Content Column -->
         <div class=col-md-9>
             <div class=post-header>
-                <h1 class=post-title-main>Frequently asked questions</h1></div>
+                <h1 class=post-title-main>BetterDiscord Troubleshooting</h1></div>
             <div class=post-content>
                 <!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
                 <script>
@@ -157,7 +159,7 @@
                 </script>
                 <div class=tocexpanded id=toc></div>
                 <h2 id=FAQ>FAQ</h2>
-                <p>Answers to general questions people asked frequently.
+                <p>Answers to frequently asked questions.
                     <h2 id=No_Settings>Can't Access Settings</h2>
                     <p>How to access Discords settings manually because of a theme/plugin problem.
                         <ul>
@@ -167,71 +169,6 @@
                                         <p>Step 2: Disable/Remove the recently added Plugin/Theme/CSS
                                             <li>
                                                 <p>Step 3: Do CTRL+R on your keyboard</ul>
-                        <h2 id=Ghost_Theme>Removed a theme but still shows up</h2>
-                        <p>This is what we call a Ghost Theme it's a small bug in BetterDiscord.</p><b>WARNING:</b> This will erase all of your themes!
-                        <ul>
-                            <li>
-                                <p>Step 1: Restart your Discord by doing CTRL+R just to start clean.
-                                    <li>
-                                        <p>Step 2: Do CTRL+SHIFT+I on your keyboard
-                                            <li>
-                                                <p>Step 3: Click the "Console" tab
-                                                    <li>
-                                                        <p>Step 4: Enter <code>bdthemes = {};</code></ul>
-                        <h2 id=Bad_CSS>How to remove bad CSS from the CSS tab manually?</h2>
-                        <p>Now you might have inserted CSS and can't remove it no more because of it here is how to remove it.
-                            <ul>
-                                <li>
-                                    <p>Step 1: Do CTRL+SHIFT+I on your keyboard
-                                        <li>
-                                            <p>Step 2: Click the "Console" tab
-                                                <li>
-                                                    <p>Step 3: Enter <code>$('#customcss').empty()</code>
-                                                        <li>
-                                                            <p>Step 4: Now go back to the Custom CSS tab remove the CSS and uncheck "Live Update" and "Autosave"
-                                                                <li>
-                                                                    <p>Step 5: Restart Discord by doing CTRL+R</ul>
-                            <h2 id=No_Themes>No themes showing up in BetterDiscord?</h2>
-                            <p>Please follow these steps to get your themes showing up again!
-                                <ul>
-                                    <li>
-                                        <p>Step 1: Make sure you saved the theme to
-                                            <div class=highlighter-rouge><pre class=highlight><code>Windows: %appdata%\betterdiscord\themes\
-Mac: ~/Library/Preferences/BetterDiscord/themes</code></pre></div>
-                                            <li>
-                                                <p>Step 2: Make sure the themes file extension is <code>.theme.css</code>
-                                                    <li>
-                                                        <p>Step 3: Make sure the themes <b>1st</b> line of CSS contains the <a href=#meta_tag>META</a> tag
-                                                            <li>
-                                                                <p>Step 4: Head back to Discord and CTRL+R on your keyboard
-                                                                    <li>
-                                                                        <p>Step 5: If step 4 didn't work please reinstall BetterDiscord</ul>
-                                <h2 id=No_Plugins>No plugins showing up in BetterDiscord?</h2>
-                                <p>Please follow these steps to get your Plugins showing up again!
-                                    <ul>
-                                        <li>
-                                            <p>Step 1: Make sure you saved the plugin to
-                                                <div class=highlighter-rouge><pre class=highlight><code>Windows: %appdata%\betterdiscord\plugins\
-Mac: ~/Library/Preferences/BetterDiscord/plugins</code></pre></div>
-                                                <li>
-                                                    <p>Step 2: Make sure the plugins file extension is <code>.plugin.js</code>
-                                                        <li>
-                                                            <p>Step 3: Make sure the themes <b>1st</b> line of Javascript contains the <a href=#meta_tag>META</a> tag
-                                                                <li>
-                                                                    <p>Step 4: Head back to Discord and CTRL+R on your keyboard
-                                                                        <li>
-                                                                            <p>Step 5: If step 4 didn't work please reinstall BetterDiscord</ul>
-                                    <h2 id=Change_Background>How to change the background image of a transparent theme?</h2>
-                                    <p>Here are the steps to get your theme's background changed to your liking!
-                                        <ul>
-                                            <li>
-                                                <p>Step 1: Open the theme file with a text editor (Not Notepad)
-                                                    <li>
-                                                        <p>Step 2: Search for <code>.app</code> and <code>.callout-backdrop</code> in the CSS. In some cases they might be in the same line of CSS
-                                                            <li>
-                                                                <p>Step 3: Replace the link(s) with your image link. Please note that the link needs to be <code>HTTPS://</code> and end with a file extension such as png,jpg,gif etc.
-                                                                    <li>
-                                                                        <p>Step 4: Now finally restart Discord (CTRL+R) and you will see your background!</ul>
                                         <h2 id=Emotes_Update>When will BetterDiscord emotes be updated?</h2>
                                         <p>BTTV emotes are updated weekly by EhsanKia from the BetterDiscord server
                                             <ul>
@@ -244,25 +181,6 @@ Mac: ~/Library/Preferences/BetterDiscord/plugins</code></pre></div>
                                                         <p>3 letter emotes are blacklisted. LUL converts to LUUL
                                                             <li>
                                                                 <p>Common words such as STOP! are blacklisted</ul>
-                                                <h2 id=Hosting>Where do I host my theme/plugin?!</h2>
-                                                <p>Many people ask where is the best place to host your theme/plugin to make it easy for users to download and update.
-                                                    <ul>
-                                                        <li>
-                                                            <p>Github - Most recommended site to host your themes/plugins
-                                                                <li>
-                                                                    <p>Google Drive - Ok site to host themes/plugins
-                                                                        <li>
-                                                                            <p>PasteBin/Ghostbin - Not recommended site to host themes/plugins</ul>
-                                                    <h2 id=meta_tag>What's a Meta Tag?</h2>
-                                                    <p>A Meta tag is the first line of CSS/Javascript that is required for every Theme/Plugin to have so BetterDiscord can load the file.
-                                                        <ul>
-                                                            <li>
-                                                                <p>Example of a Theme's Meta Tag
-                                                                    <div class=highlighter-rouge><pre class=highlight><code>//META{"name":"First_Theme","description":"My First Theme.","author":"Omniscient","version":"1.00"}*//</code></pre></div>
-                                                                    <li>
-                                                                        <p>Example of a Plugin's Meta Tag
-                                                                            <div class=highlighter-rouge><pre class=highlight><code>//META{"name":"First_Plugin"}*//</code></pre></div>
-                                                        </ul>
             </div>
             <hr class=shaded>
             <footer>
