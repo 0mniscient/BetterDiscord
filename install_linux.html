@@ -161,12 +161,17 @@
                 <div id=toc></div>
                 <blockquote>
                     <p><b>Disclaimer:</b> You will have to re-install BetterDiscord everytime there is a big Discord update. How do you know if it's a big update? On the start of Discord it will start downloading the update unlike a mini update.</blockquote>
-                      <div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note: </b>Options are disabled for testing purposes.</div>
+                <div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note: </b>Options are disabled for testing purposes.</div>
+                <h2 id=requirements>Requirements</h2>
+                <ul>
+                    <li>
+                        <p><a href=https://nodejs.org/en/download/ target_blank>Node.js</a></ul>
                 <h2 id=installation>Installation</h2>
                 <p>First you have to download the files now you have two options</p>
                 <ul>
                     <li>
-                        <p><b>Option 1:</b> Clone the makers <a href=https://github.com/Jiiks/BetterDiscordApp target=_blank>Github Repo</a>.
+                        <p><b>Option 1:</b> Clone/Download Zip the makers entire <a href=https://github.com/Jiiks/BetterDiscordApp target=_blank>Github Repo</a>.
+                          <p><img alt="Clone/Download ZIP" src=https://i.imgur.com/BvEMwzy.png></p>
                             <li>
                                 <p><b>Option 2:</b> Download the files from the makers <a href=https://github.com/Jiiks/BetterDiscordApp/tree/master/Installers/Electron target=_blank>Github</a>.</ul>
                 <p>Now for the complicated part</p>
@@ -175,46 +180,48 @@
                         <p>Launch terminal on Linux and run <code>npm-install</code>
                             <li>
                                 <p>Download and install the latest Elctron from the <a href=http://electron.atom.io/releases/ target=_blank>Electron Website</a>.</ul>
-                                      <p>After you have finished the installation change the <code>utils</code> import in the <code>BetterDiscord.js</code> files.</p>
-                                      <ul>
-                                          <li>
-                                              <p>Change <div class="highlighter-rouge"><pre class="highlight"><code><font color=#859900>var</font> _utils = <font color=#268bd2>require</font>(<font color=#2aa198>"./Utils"</font>);
-to
+                <p>After you have finished the installation change the <code>utils</code> import in the <code>BetterDiscord.js</code> files.</p>
+                <ul>
+                    <li>
+                        <p>
+                            <div class="highlighter-rouge"><pre class="highlight"><code>Instead of
+<font color=#859900>var</font> _utils = <font color=#268bd2>require</font>(<font color=#2aa198>"./utils"</font>);
+it would be
 <font color=#859900>var</font> _utils = <font color=#268bd2>require</font>(<font color=#2aa198>"./Utils"</font>);</code></div></pre></ul>.
                 <h2 id=updates>Updates</h2>
-                <p>Every time there is an update for BetterDiscord you will have to download the new version and do this process again I know it's a pain I'm sorry :(
+                <p>It is a self updating launcher no reinstalling!
                     <div class=tags><b>Tags: </b><a href=/install_mac.html class="btn btn-default cursorNorm navbar-btn" role=button>install_mac</a> <a href=/install_win.html class="btn btn-default cursorNorm navbar-btn" role=button>install_win</a> <a href=/install_mac.html
                             class="btn btn-default cursorNorm navbar-btn" role=button>install_mac</a></div>
-            </div>
-            <hr class=shaded>
-            <footer>
-                <div class=row>
-                    <div class="col-lg-12 footer">©2016 Omni Docs. All rights reserved.
-                        <br>
                     </div>
-                </div>
-            </footer>
+                    <hr class=shaded>
+                    <footer>
+                        <div class=row>
+                            <div class="col-lg-12 footer">©2016 Omni Docs. All rights reserved.
+                                <br>
+                            </div>
+                        </div>
+                    </footer>
+            </div>
+            <!-- /.row -->
         </div>
-        <!-- /.row -->
-    </div>
-    <!-- /.container -->
-</div><a href=javascript:void(0); id=scroll style=display:none title="Scroll to Top">Top<span></span></a>
-<script src=js/top.js></script>
-<script src=https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js></script>
-<script src=https://cdnjs.cloudflare.com/ajax/libs/anchor-js/2.0.0/anchor.min.js></script>
-<script>
-    (function(i, s, o, g, r, a, m) {
-        i['GoogleAnalyticsObject'] = r;
-        i[r] = i[r] || function() {
-            (i[r].q = i[r].q || []).push(arguments)
-        }, i[r].l = 1 * new Date();
-        a = s.createElement(o),
-            m = s.getElementsByTagName(o)[0];
-        a.async = 1;
-        a.src = g;
-        m.parentNode.insertBefore(a, m)
-    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+        <!-- /.container -->
+    </div><a href=javascript:void(0); id=scroll style=display:none title="Scroll to Top">Top<span></span></a>
+    <script src=js/top.js></script>
+    <script src=https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js></script>
+    <script src=https://cdnjs.cloudflare.com/ajax/libs/anchor-js/2.0.0/anchor.min.js></script>
+    <script>
+        (function(i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function() {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
 
-    ga('create', 'UA-65593962-3', 'auto');
-    ga('send', 'pageview');
-</script>
+        ga('create', 'UA-65593962-3', 'auto');
+        ga('send', 'pageview');
+    </script>
