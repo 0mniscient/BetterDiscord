@@ -217,7 +217,7 @@
 
 /* transparent areas */
 
-.chat, .typing, .content, .guild-channels, .private-channels, .guild-header, .divider-red span, .messages-wrapper, #voice-connection {
+.chat, .account, .typing, .content, .guild-channels, .private-channels, .guild-header, .divider-red span, .messages-wrapper, #voice-connection {
     background: transparent !important;
 }
 
@@ -231,6 +231,26 @@
 
 .channels-wrap {
     background: rgba(0, 0, 0, 0.7) !important;
+}
+.guild-channels .channel-text.selected {
+    background: linear-gradient(90deg,rgba(0,0,0,0.55) 85%,rgba(0, 0, 0, 0));
+}
+.guild-channels .channel-text:hover {
+    background: linear-gradient(90deg,rgba(0,0,0,0.65) 85%,rgba(0, 0, 0, 0));
+}
+/* Header and Header Drop Down */
+
+.guild-header header {
+    background-color: rgba(0, 0, 0, 0.55);
+}
+.guild-header header:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+.guild-header ul {
+    top: 13px;
+}
+.guild-header.guild-header-open ul {
+    top: 57px;
 }
 
 /* Chat area */
