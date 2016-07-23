@@ -53,8 +53,7 @@
     <div class="container topnavlinks">
         <div class=navbar-header>
             <button class=navbar-toggle data-target=#bs-example-navbar-collapse-1 data-toggle=collapse type=button><span class=sr-only>Toggle navigation</span> <span class=icon-bar></span> <span class=icon-bar></span> <span class=icon-bar></span></button> <a href=/BetterDiscord/ class="fa fa-home fa-lg navbar-brand"><span class=projectTitle> Omni Docs</span></a></div>
-        <div
-            class="collapse navbar-collapse" id=bs-example-navbar-collapse-1>
+        <div class="collapse navbar-collapse" id=bs-example-navbar-collapse-1>
             <ul class="nav navbar-nav navbar-right">
                 <!-- entries without drop-downs appear here -->
                 <li><a href=/BetterDiscord/news>News</a></li>
@@ -88,7 +87,7 @@
                         </script>
                         <!--end search-->
             </ul>
-    </div>
+        </div>
     </div>
     <!-- /.container -->
 </nav>
@@ -112,28 +111,28 @@
                             <li><a href=#>How to use</a>
                                 <ul>
 
-                                        <li><a href=/BetterDiscord/plugin_api.html>PluginAPI</a></ul>
+                                    <li><a href=/BetterDiscord/plugin_api.html>PluginAPI</a></ul>
                                 <li><a href=#>Troubleshooting</a>
                                     <ul>
-                                      <li><a href=/BetterDiscord/theme_troubleshoot.html>Themes</a>
-                                          <li><a href=/BetterDiscord/plugin_troubleshoot.html>Plugins</a>
-                                              <li><a href=/BetterDiscord/betterdiscord_troubleshoot.html>BetterDiscord</a></ul>
+                                        <li><a href=/BetterDiscord/theme_troubleshoot.html>Themes</a>
+                                            <li><a href=/BetterDiscord/plugin_troubleshoot.html>Plugins</a>
+                                                <li><a href=/BetterDiscord/betterdiscord_troubleshoot.html>BetterDiscord</a></ul>
                                     <li><a href=#>Guides</a>
                                         <ul>
                                             <li><a href=/BetterDiscord/install_theme.html>Installing Themes</a>
                                                 <li><a href=/BetterDiscord/install_plugin.html>Installing Plugins</a>
                                                     <li><a href=/BetterDiscord/making_theme.html>Making A Theme</a>
                                                         <li><a href=/BetterDiscord/making_plugin.html>Making A Plugin</a></ul>
-                                                          <li><a href=#>Downloads</a>
-                                                              <ul>
-                                                                  <li><a href=/BetterDiscord/themes.html>Themes</a>
-                                                                      <li><a href=/BetterDiscord/plugins.html>Plugins</a>
-                                        <!-- if you aren't using the accordion, uncomment this block:
+                                        <li><a href=#>Downloads</a>
+                                            <ul>
+                                                <li><a href=/BetterDiscord/themes.html>Themes</a>
+                                                    <li><a href=/BetterDiscord/plugins.html>Plugins</a>
+                                                        <!-- if you aren't using the accordion, uncomment this block:
            <p class="external">
                <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
            </p>
            -->
-            </ul>
+                                            </ul>
         </div>
         <!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
         <script>
@@ -160,10 +159,10 @@
                     })
                 </script>
                 <div id=toc></div>
-                    <div class="alert alert-warning"
-                        role=alert><i class="fa fa-warning"></i> <b>Important: </b>These docs are undergoing contruction!</div>
-                    <h2 id=betterdiscord>BetterDiscord?</h2>
-                    <p>BetterDiscord is in continuous development and new features get added daily! it is a HUGE enhancement to <a href=https://discordapp.com/>Discord</a>. With custom Plugins and Themes you can have a Discordapp that is on steroids! Stay tuned on updates by <a href=https://discordapp.com/invite/0Tmfo5ZbORCRqbAd>joining the official server</a>!
+                <div class="alert alert-warning" role=alert><i class="fa fa-warning"></i> <b>Important: </b>These docs are undergoing contruction!</div>
+                <h2 id=betterdiscord>BetterDiscord?</h2>
+                <p>BetterDiscord is in continuous development and new features get added daily! it is a HUGE enhancement to <a href=https://discordapp.com/>Discord</a>. With custom Plugins and Themes you can have a Discordapp that is on steroids! Stay tuned
+                    on updates by <a href=https://discordapp.com/invite/0Tmfo5ZbORCRqbAd>joining the official server</a>!
                     <h2 id=installation>Installation</h2>
                     <h3 id=windows>Windows</h3>
                     <ul>
@@ -176,35 +175,58 @@
                     <h3 id=mac>Linux</h3>
                     <ul>
                         <li><a href=/BetterDiscord/install_linux.html>How to install on Linux</a></ul>
+                    <h2 id=uninstall>Uninstall</h2>
+                    <h3 id=windows>Windows</h3>
+                    <ul>
+                        <li>
+                            <p>Remove the following
+                                <div class="highlighter-rouge"><pre class="highlight"><code>%appdata%\BetterDiscord
+%localappdata%\Discord\app-x.x.xxx\resources\node_modules\BetterDiscord
+%localappdata%\Discord\app-x.x.xxx\resources\app</div></pre></code>
+                    </ul>
+                    <h3 id=mac>Mac</h3>
+                    <ul>
+                        <li>
+                            <p>Remove the following
+                                <div class="highlighter-rouge"><pre class="highlight"><code>~/Library/Preferences/BetterDiscord
+~/Library/Application Support/Discord/app-x.x.xxx/resources/node_modules/BetterDiscord
+~/Library/Application Support/Discord/app-x.x.xxx/resources/app</div></pre></code>
+                    </ul>
                     <h2 id=common-issues>Common issues</h2>
                     <p>For installation and general issues:
                         <ul>
                             <li><a href=/BetterDiscord/faq.html>FAQ</a></ul>
                         <div class=tags></div>
+                        </div>
+                        <hr class=shaded>
+                        <footer>
+                            <div class=row>
+                                <div class="col-lg-12 footer">©2016 Omni Docs. All rights reserved.
+                                    <br>
+                                </div>
+                            </div>
+                        </footer>
+                        </div>
+                        <!-- /.row -->
             </div>
-            <hr class=shaded>
-            <footer>
-                <div class=row>
-                    <div class="col-lg-12 footer">©2016 Omni Docs. All rights reserved.
-                        <br>
-                    </div>
-                </div>
-            </footer>
-        </div>
-        <!-- /.row -->
-    </div>
-    <!-- /.container -->
-</div><a href=javascript:void(0); id=scroll style=display:none title="Scroll to Top">Top<span></span></a>
-<script src=js/top.js></script>
-<script src=https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js></script>
-<script src=https://cdnjs.cloudflare.com/ajax/libs/anchor-js/2.0.0/anchor.min.js></script>
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+            <!-- /.container -->
+        </div><a href=javascript:void(0); id=scroll style=display:none title="Scroll to Top">Top<span></span></a>
+        <script src=js/top.js></script>
+        <script src=https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js></script>
+        <script src=https://cdnjs.cloudflare.com/ajax/libs/anchor-js/2.0.0/anchor.min.js></script>
+        <script>
+            (function(i, s, o, g, r, a, m) {
+                i['GoogleAnalyticsObject'] = r;
+                i[r] = i[r] || function() {
+                    (i[r].q = i[r].q || []).push(arguments)
+                }, i[r].l = 1 * new Date();
+                a = s.createElement(o),
+                    m = s.getElementsByTagName(o)[0];
+                a.async = 1;
+                a.src = g;
+                m.parentNode.insertBefore(a, m)
+            })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
 
-  ga('create', 'UA-65593962-3', 'auto');
-  ga('send', 'pageview');
-
-</script>
+            ga('create', 'UA-65593962-3', 'auto');
+            ga('send', 'pageview');
+        </script>
