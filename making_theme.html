@@ -112,7 +112,7 @@
                                 <ul>
 
                                     <li><a href=/BetterDiscord/plugin_api.html>PluginAPI</a>
-                                    <li><a href=/BetterDiscord/emotes.html>Emotes</a></ul>
+                                        <li><a href=/BetterDiscord/emotes.html>Emotes</a></ul>
                                 <li><a href=#>Troubleshooting</a>
                                     <ul>
                                         <li><a href=/BetterDiscord/theme_troubleshoot.html>Themes</a>
@@ -194,8 +194,13 @@
                             <ul>
                                 <li>
                                     <p>First thing first you will need to have <b>some</b> knowledge of CSS without it you will not be able to make a theme.
+                                        <ul>
+                                            <li><a href=http://www.w3schools.com/css/>W3Schools</a>
+                                            </li>
+                                            <li><a href=https://www.codecademy.com/learn/web>Codecademy</a></li>
+                                        </ul>
                                         <li>
-                                            <p>Head on over to
+                                            <p>Now heead on over to the Themes directory
                                                 <div class=highlighter-rouge><pre class=highlight><code>Windows: %appdata%\betterdiscord\themes\
     Mac: ~/Library/Preferences/BetterDiscord/themes</code></pre></div>
                                                 <li>
@@ -275,11 +280,19 @@
 }</code></pre></div>
                                                                                 <li>
                                                                                     <p>Now save the file and restart Discord (CTRL+R) and finally you will see Discord transparent to a certain extent.
-                                                                                        <li>
-                                                                                            <p>To customize Discord to your own liking do CTRL+SHIFT+I in Discord and you will see the inspect element tool pop up now that will be your bestfriend as it helps you see what
-                                                                                                has what classes. Classes? It's a CSS thing.
+                                                                                        </ul>
+                                                                                          <h2 id=Tips>Tips</h2>
+                                                                                          <ul>
+                                                                                          <li>
+                                                                                            <p>Use the inspect element tool inside Discord by doing CTRL+SHIFT+I now you will be able to see what elements have what classes. Classes? It's a CSS thing.
                                                                                                 <li>
-                                                                                                    <p>If you are familiar with CSS you will know using <code>!important</code> is a bad habit so please don't use it unless it is needed.</ul>
+                                                                                                    <p>Discord has its own "Light" and "Dark" themes and you can edit them individually.
+                                                                                                      <li>How? Anything without <code>.theme-dark</code> in front of the class means you are changing the "Light" theme and anything with the <code>.theme-dark</code> in front of a class means you are changing the "Dark" theme.
+                                                                                                    <ul>
+                                                                                                    <li>Light Theme --> <code>.chat</code>
+                                                                                                    <li>Dark Theme --> <code>.theme-dark .chat</code></ul></ul>
+                                                                                                      <li>Want your theme to work for both themes? Make sure all your classes don't have <code>.theme-dark</code> and just <code>!important</code> everything!</ul>
+                                                                                                        <div class="alert alert-danger" role="alert"><i class="fa fa-exclamation-circle"></i> <b>Warning: </b>Using !important may or may not cause future problems with your theme be careful using them!</div>
                             <div class=tags><b>Tags: </b><a href=/install_theme.html class="btn btn-default cursorNorm navbar-btn" role=button>install_theme</a> <a href=/theme.html class="btn btn-default cursorNorm navbar-btn" role=button>Themes</a> <a href=/making_theme.html
                                     class="btn btn-default cursorNorm navbar-btn" role=button>making_theme</a></div>
             </div>
