@@ -2,9 +2,9 @@
 <meta charset=utf-8>
 <meta content="IE=edge" http-equiv=X-UA-Compatible>
 <meta content="width=device-width,initial-scale=1" name=viewport>
-<meta content="How to use BetterDiscords plugin API to make plugin for our community." name=description>
+<meta content="Documentation for BetterDiscord, a 3rd party software for Discordapp to optimize Discord with Plugins and Themes and Twitch Emotes with it's built-in JavaScript loader." name="description">
 <meta content="Omni Omniscient Jiiks Hammock Maple Bluescream BetterDiscord Discord Themes Plugins Theme Plugin Installation How-To" name="keywords">
-<title>BetterDiscord Plugin API</title>
+<title>BetterDiscord Documentation and Tutorials</title>
 <link href=doc_files/font-awesome.min.css rel=stylesheet>
 <!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
 <link href=doc_files/modern-business.css rel=stylesheet>
@@ -64,7 +64,7 @@
                         <li><a href=https://github.com/0mniscient/Discord-Themes target=_blank>Github Repo</a>
                             <li><a href=https://discordapp.com/invite/0Tmfo5ZbORCRqbAd target=_blank>Support Server</a>
                                 <li><a href=https://discordapp.com/ target=_blank>DiscordApp</a>
-                                    <li><a href=/BetterDiscord/contact.html>Contact</a></ul>
+                                    <li><a href=/contact.html>Contact</a></ul>
                     </li>
                     <!--comment out this block if you want to hide search-->
                     <li>
@@ -102,7 +102,7 @@
                 <li class=sidebarTitle>
                     <li><a href=#>Overview</a>
                         <ul>
-                            <li><a href=/BetterDiscord/index.html>About</a></ul>
+                            <li><a href=#>About</a></ul>
                         <li><a href=#>Installation</a>
                             <ul>
                                 <li><a href=/BetterDiscord/install_win.html>Installing on Windows</a>
@@ -111,8 +111,8 @@
                             <li><a href=#>How to use</a>
                                 <ul>
 
-                                    <li class=active><a href=#>PluginAPI</a>
-                                    <li><a href=/BetterDiscord/emotes.html>Emotes</a></ul>
+                                    <li><a href=/BetterDiscord/plugin_api.html>PluginAPI</a>
+                                    <li class=active><a href=#>Emotes</a></ul>
                                 <li><a href=#>Troubleshooting</a>
                                     <ul>
                                         <li><a href=/BetterDiscord/theme_troubleshoot.html>Themes</a>
@@ -142,7 +142,7 @@
         <!-- Content Column -->
         <div class=col-md-9>
             <div class=post-header>
-                <h1 class=post-title-main>PluginAPI</h1></div>
+                <h1 class=post-title-main>Emotes</h1></div>
             <div class=post-content>
                 <!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
                 <script>
@@ -159,64 +159,162 @@
                         })
                     })
                 </script>
+                <style>
+                    .emotespin {
+                        -webkit-animation: spin 1s linear infinite;
+                    }
+
+                    .emotespin2 {
+                        -webkit-animation: spin 0.5s linear infinite;
+                    }
+
+                    .emotespin3 {
+                        -webkit-animation: spin 0.2s linear infinite;
+                    }
+
+                    @keyframes spin {
+                        100% {
+                            -webkit-transform: rotate(360deg);
+                            transform: rotate(360deg);
+                        }
+                    }
+
+                    .emoteshake {
+                        animation: 1s emote-shake infinite linear
+                    }
+
+                    .emoteshake2 {
+                        animation: emote-shake2 .3s linear infinite
+                    }
+
+                    .emoteshake3 {
+                        animation: emote-shake3 .1s linear infinite
+                    }
+
+                    @keyframes emote-shake {
+                        10%,
+                        90% {
+                            transform: translate3d(-1px, 0, 0)
+                        }
+                        20%,
+                        80% {
+                            transform: translate3d(2px, 0, 0)
+                        }
+                        30%,
+                        50%,
+                        70% {
+                            transform: translate3d(-4px, 0, 0)
+                        }
+                        40%,
+                        60% {
+                            transform: translate3d(4px, 0, 0)
+                        }
+                    }
+
+                    @keyframes emote-shake2 {
+                        25% {
+                            transform: translate(-1px, -1px)
+                        }
+                        50% {
+                            transform: translate(-1px, 1px)
+                        }
+                        75% {
+                            transform: translate(1px, -1px)
+                        }
+                    }
+
+                    @keyframes emote-shake3 {
+                        25% {
+                            transform: translate(-1px, -1px)
+                        }
+                        50% {
+                            transform: translate(-1px, 1px)
+                        }
+                        75% {
+                            transform: translate(1px, -1px)
+                        }
+                    }
+
+                    .emoteflip,
+                    .emotespinflip {
+                        transform: scaleX(-1);
+                    }
+
+                    .emotepulse {
+                        animation: 1s emote-pulse infinite linear;
+                    }
+
+                    @keyframes emote-pulse {
+                        0%,
+                        100% {
+                            -webkit-transform: scale(1, 1);
+                        }
+                        50% {
+                            -webkit-transform: scale(1.2, 1.2);
+                        }
+                    }
+
+                    .emotetr {
+                        transform: translateX(-3px)
+                    }
+
+                    .emotebl {
+                        transform: translateY(-15px)
+                    }
+
+                    .emotebr {
+                        transform: translateY(-15px)
+                    }
+                </style>
                 <div id=toc></div>
-                <h2 id=PluginAPI>PluginAPI</h2>
-                <p>To make a plugin for BetterDiscord you need should learn the API first!
-                    <ul>
-                        <li>
-                            <p>This is currently the API it might not be much but it's progressing.</li>
-                        <table>
-                            <thead>
-                                <tr>
-                                    <th>API Calls</th>
-                                    <th>Description</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>BdApi.joinServer("code");</td>
-                                    <td>Join a server with invite code.</td>
-                                </tr>
-                                <tr>
-                                    <td>BdApi.injectCSS("id", "css");</td>
-                                    <td>Clear your css.</td>
-                                </tr>
-                                <tr>
-                                    <td>BdApi.getPlugin("name");</td>
-                                    <td>Interact with other plugins</td>
-                                </tr>
-                                <tr>
-                                    <td>BdApi.getIpc();</td>
-                                    <td>Currently pointless since the ipc doesn't have any backend returns</td>
-                                </tr>
-                                <tr>
-                                    <td>BdApi.getCore();</td>
-                                    <td>Get the BetterDiscord core module</td>
-                                </tr>
-                                <tr>
-                                    <td>BdApi.getUserIdByName("name");</td>
-                                    <td>Attempts to return username by userid</td>
-                                </tr>
-                                <tr>
-                                    <td>BdApi.getUserNameById("id");</td>
-                                    <td>Attempts to return userid by username</td>
-                                </tr>
-                                <tr>
-                                    <td>BdApi.setPlaying("game");</td>
-                                    <td>Disabled for now</td>
-                                </tr>
-                                <tr>
-                                    <td>BdApi.setStatus("status");</td>
-                                    <td>Disabled for now</td>
-                                </tr>
-                                <tr>
-                                    <td>Core.prototype.alert("title", "text")</td>
-                                    <td>Displays a simple alert box, will be moved to BdApi.alert("title", "content") soon</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                        <div class=tags><b>Tags: </b><a href=/install_plugin.html class="btn btn-default cursorNorm navbar-btn" role=button>install_plugin</a> <a href=/plugins.html class="btn btn-default cursorNorm navbar-btn" role=button>Plugins</a> <a href=/making_plugin.html
-                                class="btn btn-default cursorNorm navbar-btn" role=button>making_plugins</a></div>
+                <h2 id=favorite>Favorite Emotes</h2>
+                <p>Have some favorite emotes that you want easy access to ? Well BetterDiscord has that! now it's easy to see all your favorite emotes.
+                  <ul><li>Hover over an emote and click the star</li>
+                    <img src=https://i.imgur.com/wKEvAhv.gif></img>
+                    <li>Now you will have a list of your favorite emotes!</li>
+                    <img src=https://i.imgur.com/03nhWjv.gif></img>
+                <h2 id=modifiers>Modifiers</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Preview</th>
+                            <th>Modifiers</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><img src=https://static-cdn.jtvnw.net/emoticons/v1/25/1.0 data-toggle="tooltip" title="" data-original-title="Kappa" class="emotespin"></img><img src=https://static-cdn.jtvnw.net/emoticons/v1/25/1.0 data-toggle="tooltip" title=""
+                                    data-original-title="Kappa" class="emotespin2"></img><img src=https://static-cdn.jtvnw.net/emoticons/v1/25/1.0 data-toggle="tooltip" title="" data-original-title="Kappa" class="emotespin3"></img>
+                            </td>
+                            <td><code style="background-color:#f0f0f0!important;">Kappa:spin</code> <code style="background-color:#f0f0f0!important;">Kappa:spin2</code> <code style="background-color:#f0f0f0!important;">Kappa:spin3</code>
+                                <br><code style="background-color:#f0f0f0!important;">Kappa:1spin</code> <code style="background-color:#f0f0f0!important;">Kappa:2spin</code> <code style="background-color:#f0f0f0!important;">Kappa:3spin</code></td>
+                        </tr>
+                        <tr>
+                            <td><img src=https://cdn.frankerfacez.com/emoticon/104910/1 data-toggle="tooltip" title="" data-original-title="Omni" class="emoteshake"></img><img src=https://cdn.frankerfacez.com/emoticon/104910/1 data-toggle="tooltip" title=""
+                                    data-original-title="Omni" class="emoteshake2"></img><img src=https://cdn.frankerfacez.com/emoticon/104910/1 data-toggle="tooltip" title="" data-original-title="Omni" class="emoteshake3"></img>
+                            </td>
+                            <td><code style="background-color:#f0f0f0!important;">Omni:shake</code> <code style="background-color:#f0f0f0!important;">Omni:shake2</code> <code style="background-color:#f0f0f0!important;">Omni:shake3</code></td>
+                        </tr>
+                        <tr>
+                            <td><img src=https://cdn.betterttv.net/emote/56cb56f5500cb4cf51e25b90/1x data-toggle="tooltip" title="" data-original-title="nymnCorn"></img>==><img src=https://cdn.betterttv.net/emote/56cb56f5500cb4cf51e25b90/1x data-toggle="tooltip"
+                                    title="" data-original-title=" nymnCorn" class="emoteflip"></img>
+                            </td>
+                            <td><code style="background-color:#f0f0f0!important;"> nymnCorn:flip</code></td>
+                        </tr>
+                        <tr>
+                            <td><img src=https://cdn.frankerfacez.com/emoticon/71699/1 data-toggle="tooltip" title="" data-original-title="Jumpman" class="emotepulse"></img>
+                            </td>
+                            <td><code style="background-color:#f0f0f0!important;">Jumpman:pulse</code></td>
+                        </tr>
+                        <tr>
+                            <td><img src=https://cdn.betterttv.net/emote/558b3755b86d24a72a221e50/1x data-toggle="tooltip" title="" data-original-title="VDoit1"><img src=https://cdn.betterttv.net/emote/558b0c1eb86d24a72a221e1a/1x data-toggle="tooltip" title=""data-original-title="VDoit2"><br>
+                                <img src=https://cdn.betterttv.net/emote/558b0c39b86d24a72a221e1c/1x data-toggle="tooltip" title="" data-original-title="VDoit3" class="emotebl"><img src=https://cdn.betterttv.net/emote/558b0c6fb86d24a72a221e1f/1x data-toggle="tooltip" title="" data-original-title="VDoit4" class="emotebr"></td>
+                            <td><code style="background-color:#f0f0f0!important;">Vdoit1</code> (Normal)<code style="background-color:#f0f0f0!important;">VDoit2:tr</code> (Top Right)<br>
+                            <code style="background-color:#f0f0f0!important;">VDoit3:bl</code> (Bottom Left)<code style="background-color:#f0f0f0!important;">VDoit4:br</code> (Bottom Right)</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class=tags></div>
             </div>
             <hr class=shaded>
             <footer>
