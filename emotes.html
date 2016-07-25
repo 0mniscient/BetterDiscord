@@ -112,7 +112,7 @@
                                 <ul>
 
                                     <li><a href=/BetterDiscord/plugin_api.html>PluginAPI</a>
-                                    <li class=active><a href=#>Emotes</a></ul>
+                                        <li class=active><a href=#>Emotes</a></ul>
                                 <li><a href=#>Troubleshooting</a>
                                     <ul>
                                         <li><a href=/BetterDiscord/theme_troubleshoot.html>Themes</a>
@@ -172,6 +172,13 @@
                         -webkit-animation: spin 0.2s linear infinite;
                     }
 
+                    @-webkit-keyframes spin {
+                        100% {
+                            -webkit-transform: rotate(360deg);
+                            transform: rotate(360deg);
+                        }
+                    }
+
                     @keyframes spin {
                         100% {
                             -webkit-transform: rotate(360deg);
@@ -180,68 +187,147 @@
                     }
 
                     .emoteshake {
+                        -webkit-animation: 1s emote-shake infinite linear;
                         animation: 1s emote-shake infinite linear
                     }
 
                     .emoteshake2 {
+                        -webkit-animation: emote-shake2 .3s linear infinite;
                         animation: emote-shake2 .3s linear infinite
                     }
 
                     .emoteshake3 {
+                        -webkit-animation: emote-shake3 .1s linear infinite;
                         animation: emote-shake3 .1s linear infinite
                     }
 
-                    @keyframes emote-shake {
+                    @-webkit-keyframes emote-shake {
                         10%,
                         90% {
+                            -webkit-transform: translate3d(-1px, 0, 0);
                             transform: translate3d(-1px, 0, 0)
                         }
                         20%,
                         80% {
+                            -webkit-transform: translate3d(2px, 0, 0);
                             transform: translate3d(2px, 0, 0)
                         }
                         30%,
                         50%,
                         70% {
+                            -webkit-transform: translate3d(-4px, 0, 0);
                             transform: translate3d(-4px, 0, 0)
                         }
                         40%,
                         60% {
+                            -webkit-transform: translate3d(4px, 0, 0);
                             transform: translate3d(4px, 0, 0)
+                        }
+                    }
+
+                    @keyframes emote-shake {
+                        10%,
+                        90% {
+                            -webkit-transform: translate3d(-1px, 0, 0);
+                            transform: translate3d(-1px, 0, 0)
+                        }
+                        20%,
+                        80% {
+                            -webkit-transform: translate3d(2px, 0, 0);
+                            transform: translate3d(2px, 0, 0)
+                        }
+                        30%,
+                        50%,
+                        70% {
+                            -webkit-transform: translate3d(-4px, 0, 0);
+                            transform: translate3d(-4px, 0, 0)
+                        }
+                        40%,
+                        60% {
+                            -webkit-transform: translate3d(4px, 0, 0);
+                            transform: translate3d(4px, 0, 0)
+                        }
+                    }
+
+                    @-webkit-keyframes emote-shake2 {
+                        25% {
+                            -webkit-transform: translate(-1px, -1px);
+                            transform: translate(-1px, -1px)
+                        }
+                        50% {
+                            -webkit-transform: translate(-1px, 1px);
+                            transform: translate(-1px, 1px)
+                        }
+                        75% {
+                            -webkit-transform: translate(1px, -1px);
+                            transform: translate(1px, -1px)
                         }
                     }
 
                     @keyframes emote-shake2 {
                         25% {
+                            -webkit-transform: translate(-1px, -1px);
                             transform: translate(-1px, -1px)
                         }
                         50% {
+                            -webkit-transform: translate(-1px, 1px);
                             transform: translate(-1px, 1px)
                         }
                         75% {
+                            -webkit-transform: translate(1px, -1px);
+                            transform: translate(1px, -1px)
+                        }
+                    }
+
+                    @-webkit-keyframes emote-shake3 {
+                        25% {
+                            -webkit-transform: translate(-1px, -1px);
+                            transform: translate(-1px, -1px)
+                        }
+                        50% {
+                            -webkit-transform: translate(-1px, 1px);
+                            transform: translate(-1px, 1px)
+                        }
+                        75% {
+                            -webkit-transform: translate(1px, -1px);
                             transform: translate(1px, -1px)
                         }
                     }
 
                     @keyframes emote-shake3 {
                         25% {
+                            -webkit-transform: translate(-1px, -1px);
                             transform: translate(-1px, -1px)
                         }
                         50% {
+                            -webkit-transform: translate(-1px, 1px);
                             transform: translate(-1px, 1px)
                         }
                         75% {
+                            -webkit-transform: translate(1px, -1px);
                             transform: translate(1px, -1px)
                         }
                     }
 
                     .emoteflip,
                     .emotespinflip {
+                        -webkit-transform: scaleX(-1);
                         transform: scaleX(-1);
                     }
 
                     .emotepulse {
+                        -webkit-animation: 1s emote-pulse infinite linear;
                         animation: 1s emote-pulse infinite linear;
+                    }
+
+                    @-webkit-keyframes emote-pulse {
+                        0%,
+                        100% {
+                            -webkit-transform: scale(1, 1);
+                        }
+                        50% {
+                            -webkit-transform: scale(1.2, 1.2);
+                        }
                     }
 
                     @keyframes emote-pulse {
@@ -255,70 +341,80 @@
                     }
 
                     .emotetr {
+                        -webkit-transform: translateX(-3px);
                         transform: translateX(-3px)
                     }
 
                     .emotebl {
+                        -webkit-transform: translateY(-15px);
                         transform: translateY(-15px)
                     }
 
                     .emotebr {
+                        -webkit-transform: translateY(-15px);
                         transform: translateY(-15px)
                     }
                 </style>
                 <div id=toc></div>
                 <h2 id=favorite>Favorite Emotes</h2>
                 <p>Have some favorite emotes that you want easy access to ? Well BetterDiscord has that! now it's easy to see all your favorite emotes.
-                  <ul><li>Hover over an emote and click the star</li>
-                    <img src=https://i.imgur.com/wKEvAhv.gif></img>
-                    <li>Now you will have a list of your favorite emotes!</li>
-                    <img src=https://i.imgur.com/03nhWjv.gif></img></ul>
-                <h2 id=modifiers>Modifiers</h2>
-                <p>What are modifiers? Basically they are emote extensions to make them do interesting things as seen below.</p>
-                  <ul>
-                    <li>
-                      Please keep in mind spamming emotes with modifiers will badly <b>lag</b> your Discord client!</li></ul>
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Preview</th>
-                            <th>Modifiers</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td><img src=https://static-cdn.jtvnw.net/emoticons/v1/25/1.0 data-toggle="tooltip" title="" data-original-title="Kappa" class="emotespin"></img><img src=https://static-cdn.jtvnw.net/emoticons/v1/25/1.0 data-toggle="tooltip" title=""
-                                    data-original-title="Kappa" class="emotespin2"></img><img src=https://static-cdn.jtvnw.net/emoticons/v1/25/1.0 data-toggle="tooltip" title="" data-original-title="Kappa" class="emotespin3"></img>
-                            </td>
-                            <td><code style="background-color:#f0f0f0!important;">Kappa:spin</code> <code style="background-color:#f0f0f0!important;">Kappa:spin2</code> <code style="background-color:#f0f0f0!important;">Kappa:spin3</code>
-                                <br><code style="background-color:#f0f0f0!important;">Kappa:1spin</code> <code style="background-color:#f0f0f0!important;">Kappa:2spin</code> <code style="background-color:#f0f0f0!important;">Kappa:3spin</code></td>
-                        </tr>
-                        <tr>
-                            <td><img src=https://cdn.frankerfacez.com/emoticon/104910/1 data-toggle="tooltip" title="" data-original-title="Omni" class="emoteshake"></img><img src=https://cdn.frankerfacez.com/emoticon/104910/1 data-toggle="tooltip" title=""
-                                    data-original-title="Omni" class="emoteshake2"></img><img src=https://cdn.frankerfacez.com/emoticon/104910/1 data-toggle="tooltip" title="" data-original-title="Omni" class="emoteshake3"></img>
-                            </td>
-                            <td><code style="background-color:#f0f0f0!important;">Omni:shake</code> <code style="background-color:#f0f0f0!important;">Omni:shake2</code> <code style="background-color:#f0f0f0!important;">Omni:shake3</code></td>
-                        </tr>
-                        <tr>
-                            <td><img src=https://cdn.betterttv.net/emote/56cb56f5500cb4cf51e25b90/1x data-toggle="tooltip" title="" data-original-title="nymnCorn"></img>==><img src=https://cdn.betterttv.net/emote/56cb56f5500cb4cf51e25b90/1x data-toggle="tooltip"
-                                    title="" data-original-title=" nymnCorn" class="emoteflip"></img>
-                            </td>
-                            <td><code style="background-color:#f0f0f0!important;"> nymnCorn:flip</code></td>
-                        </tr>
-                        <tr>
-                            <td><img src=https://cdn.frankerfacez.com/emoticon/71699/1 data-toggle="tooltip" title="" data-original-title="Jumpman" class="emotepulse"></img>
-                            </td>
-                            <td><code style="background-color:#f0f0f0!important;">Jumpman:pulse</code></td>
-                        </tr>
-                        <tr>
-                            <td><img src=https://cdn.betterttv.net/emote/558b3755b86d24a72a221e50/1x data-toggle="tooltip" title="" data-original-title="VDoit1"><img src=https://cdn.betterttv.net/emote/558b0c1eb86d24a72a221e1a/1x data-toggle="tooltip" title=""data-original-title="VDoit2"><br>
-                                <img src=https://cdn.betterttv.net/emote/558b0c39b86d24a72a221e1c/1x data-toggle="tooltip" title="" data-original-title="VDoit3" class="emotebl"><img src=https://cdn.betterttv.net/emote/558b0c6fb86d24a72a221e1f/1x data-toggle="tooltip" title="" data-original-title="VDoit4" class="emotebr"></td>
-                            <td><code style="background-color:#f0f0f0!important;">Vdoit1</code> (Normal)<code style="background-color:#f0f0f0!important;">VDoit2:tr</code> (Top Right)<br>
-                            <code style="background-color:#f0f0f0!important;">VDoit3:bl</code> (Bottom Left)<code style="background-color:#f0f0f0!important;">VDoit4:br</code> (Bottom Right)</td>
-                        </tr>
-                    </tbody>
-                </table>
-                <div class=tags></div>
+                    <ul>
+                        <li>Hover over an emote and click the star</li>
+                        <img src=https://i.imgur.com/wKEvAhv.gif></img>
+                        <li>Now you will have a list of your favorite emotes!</li>
+                        <img src=https://i.imgur.com/03nhWjv.gif></img>
+                    </ul>
+                    <h2 id=modifiers>Modifiers</h2>
+                    <p>What are modifiers? Basically they are emote extensions to make them do interesting things as seen below.</p>
+                    <ul>
+                        <li>
+                            Please keep in mind spamming emotes with modifiers will badly <b>lag</b> your Discord client!</li>
+                    </ul>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Preview</th>
+                                <th>Modifiers</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><img src=https://static-cdn.jtvnw.net/emoticons/v1/25/1.0 data-toggle="tooltip" title="" data-original-title="Kappa" class="emotespin"></img><img src=https://static-cdn.jtvnw.net/emoticons/v1/25/1.0 data-toggle="tooltip"
+                                        title="" data-original-title="Kappa" class="emotespin2"></img><img src=https://static-cdn.jtvnw.net/emoticons/v1/25/1.0 data-toggle="tooltip" title="" data-original-title="Kappa" class="emotespin3"></img>
+                                </td>
+                                <td><code style="background-color:#f0f0f0!important;">Kappa:spin</code> <code style="background-color:#f0f0f0!important;">Kappa:spin2</code> <code style="background-color:#f0f0f0!important;">Kappa:spin3</code>
+                                    <br><code style="background-color:#f0f0f0!important;">Kappa:1spin</code> <code style="background-color:#f0f0f0!important;">Kappa:2spin</code> <code style="background-color:#f0f0f0!important;">Kappa:3spin</code></td>
+                            </tr>
+                            <tr>
+                                <td><img src=https://cdn.frankerfacez.com/emoticon/104910/1 data-toggle="tooltip" title="" data-original-title="Omni" class="emoteshake"></img><img src=https://cdn.frankerfacez.com/emoticon/104910/1 data-toggle="tooltip" title=""
+                                        data-original-title="Omni" class="emoteshake2"></img><img src=https://cdn.frankerfacez.com/emoticon/104910/1 data-toggle="tooltip" title="" data-original-title="Omni" class="emoteshake3"></img>
+                                </td>
+                                <td><code style="background-color:#f0f0f0!important;">Omni:shake</code> <code style="background-color:#f0f0f0!important;">Omni:shake2</code> <code style="background-color:#f0f0f0!important;">Omni:shake3</code></td>
+                            </tr>
+                            <tr>
+                                <td><img src=https://cdn.betterttv.net/emote/56cb56f5500cb4cf51e25b90/1x data-toggle="tooltip" title="" data-original-title="nymnCorn"></img>==><img src=https://cdn.betterttv.net/emote/56cb56f5500cb4cf51e25b90/1x data-toggle="tooltip"
+                                        title="" data-original-title=" nymnCorn" class="emoteflip"></img>
+                                </td>
+                                <td><code style="background-color:#f0f0f0!important;"> nymnCorn:flip</code></td>
+                            </tr>
+                            <tr>
+                                <td><img src=https://cdn.frankerfacez.com/emoticon/71699/1 data-toggle="tooltip" title="" data-original-title="Jumpman" class="emotepulse"></img>
+                                </td>
+                                <td><code style="background-color:#f0f0f0!important;">Jumpman:pulse</code></td>
+                            </tr>
+                            <tr>
+                                <td><img src=https://cdn.betterttv.net/emote/558b3755b86d24a72a221e50/1x data-toggle="tooltip" title="" data-original-title="VDoit1"><img src=https://cdn.betterttv.net/emote/558b0c1eb86d24a72a221e1a/1x data-toggle="tooltip"
+                                        title="" data-original-title="VDoit2">
+                                    <br>
+                                    <img src=https://cdn.betterttv.net/emote/558b0c39b86d24a72a221e1c/1x data-toggle="tooltip" title="" data-original-title="VDoit3" class="emotebl"><img src=https://cdn.betterttv.net/emote/558b0c6fb86d24a72a221e1f/1x data-toggle="tooltip"
+                                        title="" data-original-title="VDoit4" class="emotebr"></td>
+                                <td><code style="background-color:#f0f0f0!important;">Vdoit1</code> (Normal)<code style="background-color:#f0f0f0!important;">VDoit2:tr</code> (Top Right)
+                                    <br>
+                                    <code style="background-color:#f0f0f0!important;">VDoit3:bl</code> (Bottom Left)<code style="background-color:#f0f0f0!important;">VDoit4:br</code> (Bottom Right)</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class=tags></div>
             </div>
             <hr class=shaded>
             <footer>
