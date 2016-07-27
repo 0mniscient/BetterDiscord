@@ -1,0 +1,17 @@
+https://0mniscient.github.io/BetterDiscord/index.html
+https://0mniscient.github.io/BetterDiscord/
+https://0mniscient.github.io/BetterDiscord/contact.html
+https://0mniscient.github.io/BetterDiscord/install_win.html
+https://0mniscient.github.io/BetterDiscord/install_mac.html
+https://0mniscient.github.io/BetterDiscord/install_linux.html
+https://0mniscient.github.io/BetterDiscord/plugin_api.html
+https://0mniscient.github.io/BetterDiscord/emotes.html
+https://0mniscient.github.io/BetterDiscord/theme_troubleshoot.html
+https://0mniscient.github.io/BetterDiscord/plugin_troubleshoot.html
+https://0mniscient.github.io/BetterDiscord/betterdiscord_troubleshoot.html
+https://0mniscient.github.io/BetterDiscord/install_theme.html
+https://0mniscient.github.io/BetterDiscord/install_plugin.html
+https://0mniscient.github.io/BetterDiscord/making_theme.html
+https://0mniscient.github.io/BetterDiscord/making_plugin.html
+https://0mniscient.github.io/BetterDiscord/themes.html
+https://0mniscient.github.io/BetterDiscord/plugins.html

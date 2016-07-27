@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:ror="http://rorweb.com/0.1/" >
+<channel>
+  <title>ROR Sitemap for https://0mniscient.github.io/BetterDiscord/index.html</title>
+  <link>https://0mniscient.github.io/BetterDiscord/index.html</link>
+
+<item>
+     <link>https://0mniscient.github.io/BetterDiscord/index.html</link>
+     <title>BetterDiscord Documentation and Tutorials</title>
+     <description>BetterDiscord Documentation and Tutorials</description>
+     <ror:updatePeriod>hourly</ror:updatePeriod>
+     <ror:sortOrder>0</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://0mniscient.github.io/BetterDiscord/</link>
+     <title>BetterDiscord Documentation and Tutorials</title>
+     <description>BetterDiscord Documentation and Tutorials</description>
+     <ror:updatePeriod>hourly</ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://0mniscient.github.io/BetterDiscord/contact.html</link>
+     <title>Contact Us</title>
+     <description>Contact Us</description>
+     <ror:updatePeriod>hourly</ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://0mniscient.github.io/BetterDiscord/install_win.html</link>
+     <title>Installing BetterDiscord on Windows</title>
+     <description>Installing BetterDiscord on Windows</description>
+     <ror:updatePeriod>hourly</ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://0mniscient.github.io/BetterDiscord/install_mac.html</link>
+     <title>Installing BetterDiscord on Mac</title>
+     <description>Installing BetterDiscord on Mac</description>
+     <ror:updatePeriod>hourly</ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://0mniscient.github.io/BetterDiscord/install_linux.html</link>
+     <title>Installing BetterDiscord on Linux</title>
+     <description>Installing BetterDiscord on Linux</description>
+     <ror:updatePeriod>hourly</ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://0mniscient.github.io/BetterDiscord/plugin_api.html</link>
+     <title>BetterDiscord Plugin API</title>
+     <description>BetterDiscord Plugin API</description>
+     <ror:updatePeriod>hourly</ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://0mniscient.github.io/BetterDiscord/emotes.html</link>
+     <title>BetterDiscord Emotes</title>
+     <description>BetterDiscord Emotes</description>
+     <ror:updatePeriod>hourly</ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://0mniscient.github.io/BetterDiscord/theme_troubleshoot.html</link>
+     <title>Theme Troubleshooting</title>
+     <description>Theme Troubleshooting</description>
+     <ror:updatePeriod>hourly</ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://0mniscient.github.io/BetterDiscord/plugin_troubleshoot.html</link>
+     <title>Plugin Troubleshooting</title>
+     <description>Plugin Troubleshooting</description>
+     <ror:updatePeriod>hourly</ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://0mniscient.github.io/BetterDiscord/betterdiscord_troubleshoot.html</link>
+     <title>BetterDiscord Troubleshooting</title>
+     <description>BetterDiscord Troubleshooting</description>
+     <ror:updatePeriod>hourly</ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://0mniscient.github.io/BetterDiscord/install_theme.html</link>
+     <title>How to install Themes</title>
+     <description>How to install Themes</description>
+     <ror:updatePeriod>hourly</ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://0mniscient.github.io/BetterDiscord/install_plugin.html</link>
+     <title>How to install Plugins</title>
+     <description>How to install Plugins</description>
+     <ror:updatePeriod>hourly</ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://0mniscient.github.io/BetterDiscord/making_theme.html</link>
+     <title>How to make a Theme</title>
+     <description>How to make a Theme</description>
+     <ror:updatePeriod>hourly</ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://0mniscient.github.io/BetterDiscord/making_plugin.html</link>
+     <title>How to make a Plugin</title>
+     <description>How to make a Plugin</description>
+     <ror:updatePeriod>hourly</ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://0mniscient.github.io/BetterDiscord/themes.html</link>
+     <title>BetterDiscord Themes Download</title>
+     <description>BetterDiscord Themes Download</description>
+     <ror:updatePeriod>hourly</ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://0mniscient.github.io/BetterDiscord/plugins.html</link>
+     <title>BetterDiscord Plugins Download</title>
+     <description>BetterDiscord Plugins Download</description>
+     <ror:updatePeriod>hourly</ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+</channel>
+</rss>
+  
