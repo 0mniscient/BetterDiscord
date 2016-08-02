@@ -1,257 +1,236 @@
 <!DOCTYPE html>
+<html xmlns="https://www.w3.org/1999/xhtml" xmlns:fb="http://ogp.me/ns/fb#">
+<title>BetterDiscord Plugin API</title>
 <meta charset=utf-8>
 <meta content="IE=edge" http-equiv=X-UA-Compatible>
 <meta content="width=device-width,initial-scale=1" name=viewport>
 <meta content="How to use BetterDiscords plugin API to make plugin for our community." name=description>
 <meta content="Omni Omniscient Jiiks Hammock Maple Bluescream BetterDiscord Discord Themes Plugins Theme Plugin Installation How-To" name="keywords">
+<!-- CSS -->
+<link rel="stylesheet" href="/BetterDiscord/Stylesheets/Style.css">
+<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.css">
+<!-- Open Graph -->
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://0mniscient.github.io/BetterDiscord/" />
 <meta property="og:site_name" content="Omni" />
 <meta property="og:title" content="BetterDiscord Docs" />
 <meta property="og:image" content="https://i.imgur.com/3sc5OG3.png" />
-<title>BetterDiscord Plugin API</title>
-<link href=doc_files/font-awesome.min.css rel=stylesheet>
-<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
-<link href=doc_files/modern-business.css rel=stylesheet>
-<link href=doc_files/lavish-bootstrap.css rel=stylesheet>
-<link href=doc_files/customstyles.css rel=stylesheet>
-<link href=doc_files/theme-blue.css rel=stylesheet>
-<link href=stylesheets/top.css rel=stylesheet media=screen>
-<script src=https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js></script>
-<script src=doc_files/toc.js></script>
-<script src=doc_files/customscripts.js></script>
-<script src=doc_files/jquery.navgoco.min.js></script>
+<!-- Icon -->
 <link href=https://imgur.com/GZVRLfz.png rel="shortcut icon">
-<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-<!--[if lt IE 9]>">">https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"> ">">https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"><![endif]-->
-<script>
-    $(document).ready(function() {
-        $("#mysidebar").navgoco({
-            caretHtml: "",
-            accordion: !0,
-            openClass: "active",
-            save: !1,
-            cookie: {
-                name: "navgoco",
-                expires: !1,
-                path: "/"
-            },
-            slide: {
-                duration: 400,
-                easing: "swing"
-            }
-        }), $("#collapseAll").click(function(e) {
-            e.preventDefault(), $("#mysidebar").navgoco("toggle", !1)
-        }), $("#expandAll").click(function(e) {
-            e.preventDefault(), $("#mysidebar").navgoco("toggle", !0)
-        })
-    })
-</script>
-<script>
-    $(function() {
-        $('[data-toggle="tooltip"]').tooltip()
-    })
-</script>
-<!-- Navigation -->
-<nav class="navbar navbar-fixed-top navbar-inverse">
-    <div class="container topnavlinks">
-        <div class=navbar-header>
-            <button class=navbar-toggle data-target=#bs-example-navbar-collapse-1 data-toggle=collapse type=button><span class=sr-only>Toggle navigation</span> <span class=icon-bar></span> <span class=icon-bar></span> <span class=icon-bar></span></button> <a href=/BetterDiscord/ class="fa fa-home fa-lg navbar-brand"><span class=projectTitle> Omni Docs</span></a></div>
-        <div class="collapse navbar-collapse" id=bs-example-navbar-collapse-1>
-            <ul class="nav navbar-nav navbar-right">
-                <!-- entries without drop-downs appear here -->
-                <li><a href=/BetterDiscord/news>News</a></li>
-                <!-- entries with drop-downs appear here -->
-                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
-                <li class=dropdown><a href=# class=dropdown-toggle data-toggle=dropdown>Helpful Resources<b class=caret></b></a>
-                    <ul class=dropdown-menu>
-                        <li><a href=https://github.com/0mniscient/Discord-Themes target=_blank>Github Repo</a>
-                            <li><a href=https://discordapp.com/invite/0Tmfo5ZbORCRqbAd target=_blank>Support Server</a>
-                                <li><a href=https://discordapp.com/ target=_blank>DiscordApp</a>
-                                    <li><a href=/BetterDiscord/contact.html>Contact</a></ul>
-                    </li>
-                    <!--comment out this block if you want to hide search-->
-                    <li>
-                        <!--start search-->
-                        <div id=search-demo-container>
-                            <input id=search-input placeholder=search...>
-                            <ul id=results-container></ul>
-                        </div>
-                        <script src=doc_files/jekyll-search.js></script>
-                        <script>
-                            SimpleJekyllSearch.init({
-                                searchInput: document.getElementById("search-input"),
-                                resultsContainer: document.getElementById("results-container"),
-                                dataSource: "doc_files/search.json",
-                                searchResultTemplate: '<li><a href="{url}" title="Omni documentation">{title}</a></li>',
-                                noResultsText: "No results found.",
-                                limit: 10,
-                                fuzzy: !0
-                            })
-                        </script>
-                        <!--end search-->
-            </ul>
-        </div>
-    </div>
-    <!-- /.container -->
-</nav>
-<!-- Page Content -->
-<div class=container>
-    <div class=col-lg-12></div>
-    <!-- Content Row -->
-    <div class=row>
-        <!-- Sidebar Column -->
-        <div class=col-md-3>
-            <ul class=nav id=mysidebar>
-                <li class=sidebarTitle>
-                    <li><a href=#>Overview</a>
-                        <ul>
-                            <li><a href=/BetterDiscord/index.html>About</a></ul>
-                        <li><a href=#>Installation</a>
-                            <ul>
-                                <li><a href=/BetterDiscord/install_win.html>Installing on Windows</a>
-                                    <li><a href=/BetterDiscord/install_mac.html>Installing on Mac</a>
-                                        <li><a href=/BetterDiscord/install_linux.html>Installing on Linux</a></ul>
-                            <li><a href=#>How to use</a>
-                                <ul>
 
-                                    <li class=active><a href=#>PluginAPI</a>
-                                    <li><a href=/BetterDiscord/emotes.html>Emotes</a></ul>
-                                <li><a href=#>Troubleshooting</a>
-                                    <ul>
-                                        <li><a href=/BetterDiscord/theme_troubleshoot.html>Themes</a>
-                                            <li><a href=/BetterDiscord/plugin_troubleshoot.html>Plugins</a>
-                                                <li><a href=/BetterDiscord/betterdiscord_troubleshoot.html>BetterDiscord</a></ul>
-                                    <li><a href=#>Guides</a>
-                                        <ul>
-                                            <li><a href=/BetterDiscord/install_theme.html>Installing Themes</a>
-                                                <li><a href=/BetterDiscord/install_plugin.html>Installing Plugins</a>
-                                                    <li><a href=/BetterDiscord/making_theme.html>Making A Theme</a>
-                                                        <li><a href=/BetterDiscord/making_plugin.html>Making A Plugin</a></ul>
-                                        <li><a href=#>Downloads</a>
-                                            <ul>
-                                                <li><a href=/BetterDiscord/themes.html>Themes</a>
-                                                    <li><a href=/BetterDiscord/plugins.html>Plugins</a>
-                                                        <!-- if you aren't using the accordion, uncomment this block:
-           <p class="external">
-               <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
-           </p>
-           -->
-                                            </ul>
-        </div>
-        <!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
-        <script>
-            $("li.active").parents("li").toggleClass("active")
-        </script>
-        <!-- Content Column -->
-        <div class=col-md-9>
-            <div class=post-header>
-                <h1 class=post-title-main>PluginAPI</h1></div>
-            <div class=post-content>
-                <!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
-                <script>
-                    $(document).ready(function() {
-                        $("#toc").toc({
-                            minimumHeaders: 0,
-                            listType: "ul",
-                            showSpeed: 0,
-                            headers: "h2,h3,h4"
-                        }), $("#toc").on("click", "a", function() {
-                            var t = $(this.getAttribute("href")),
-                                e = t.offset().top;
-                            return $(window).scrollTop(e - 10), !1
-                        })
-                    })
-                </script>
-                <div id=toc></div>
-                <h2 id=PluginAPI>PluginAPI</h2>
-                <p>To make a plugin for BetterDiscord you need should learn the API first!
-                    <ul>
-                        <li>
-                            <p>This is currently the API it might not be much but it's progressing.</li>
-                        <table>
-                            <thead>
-                                <tr>
-                                    <th>API Calls</th>
-                                    <th>Description</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>BdApi.joinServer("code");</td>
-                                    <td>Join a server with invite code.</td>
-                                </tr>
-                                <tr>
-                                    <td>BdApi.injectCSS("id", "css");</td>
-                                    <td>Clear your css.</td>
-                                </tr>
-                                <tr>
-                                    <td>BdApi.getPlugin("name");</td>
-                                    <td>Interact with other plugins</td>
-                                </tr>
-                                <tr>
-                                    <td>BdApi.getIpc();</td>
-                                    <td>Currently pointless since the ipc doesn't have any backend returns</td>
-                                </tr>
-                                <tr>
-                                    <td>BdApi.getCore();</td>
-                                    <td>Get the BetterDiscord core module</td>
-                                </tr>
-                                <tr>
-                                    <td>BdApi.getUserIdByName("name");</td>
-                                    <td>Attempts to return username by userid</td>
-                                </tr>
-                                <tr>
-                                    <td>BdApi.getUserNameById("id");</td>
-                                    <td>Attempts to return userid by username</td>
-                                </tr>
-                                <tr>
-                                    <td>BdApi.setPlaying("game");</td>
-                                    <td>Disabled for now</td>
-                                </tr>
-                                <tr>
-                                    <td>BdApi.setStatus("status");</td>
-                                    <td>Disabled for now</td>
-                                </tr>
-                                <tr>
-                                    <td>Core.prototype.alert("title", "text")</td>
-                                    <td>Displays a simple alert box, will be moved to BdApi.alert("title", "content") soon</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                        <div class=tags><b>Tags: </b><a href=/install_plugin.html class="btn btn-default cursorNorm navbar-btn" role=button>install_plugin</a> <a href=/plugins.html class="btn btn-default cursorNorm navbar-btn" role=button>Plugins</a> <a href=/making_plugin.html
-                                class="btn btn-default cursorNorm navbar-btn" role=button>making_plugins</a></div>
+</head>
+
+<body>
+    <div id="container">
+        <header id="header" class="wrapper">
+            <div id="header-inner" class="inner">
+                <h1 id="logo-wrap">
+      <a href="/" id="logo">BetterDiscord</a>
+    </h1>
+                <nav id="main-nav">
+                    <a href="https://0mniscient.github.io/BetterDiscord/news/" class="main-nav-link">News</a>
+                    <a href="https://0mniscient.github.io/BetterDiscord/plugin_api.html" class="main-nav-link">API</a>
+                    <a href="https://0mniscient.github.io/BetterDiscord/themes.html" class="main-nav-link">Themes</a>
+                    <a href="https://0mniscient.github.io/BetterDiscord/plugins.html" class="main-nav-link">Plugins</a>
+                    <a href="https://github.com/0mniscient/" class="main-nav-link"><i class="fa fa-github-alt"></i></a>
+                </nav>
+                <div id="lang-select-wrap">
+                    <label id="lang-select-label"><i class="fa fa-globe"></i><span>English</span></label>
+                    <select id="lang-select" data-canonical="docs/index.html">
+
+                        <option value="en" selected>English</option>
+
+                    </select>
+                </div>
+                <a id="mobile-nav-toggle">
+                    <span class="mobile-nav-toggle-bar"></span>
+                    <span class="mobile-nav-toggle-bar"></span>
+                    <span class="mobile-nav-toggle-bar"></span>
+                </a>
             </div>
-            <hr class=shaded>
-            <footer>
-                <div class=row>
-                    <div class="col-lg-12 footer">©2016 Omni Docs. All rights reserved.
-                        <br>
+        </header>
+
+        <div id="content-wrap">
+            <div id="content" class="wrapper">
+                <div id="content-inner">
+                    <article class="article-container" itemscope itemtype="http://schema.org/Article">
+                        <div class="article-inner">
+                            <div class="article">
+                                <div class="inner">
+                                    <header class="article-header">
+                                        <h1 class="article-title" itemprop="name">BetterDiscord Plugin API</h1>
+                                        <a href="https://github.com/0mniscient/BetterDiscord/edit/gh-pages/plugin_api.html" class="article-edit-link" title="Improve this doc"><i class="fa fa-pencil"></i></a>
+                                    </header>
+                                    <div class="article-content" itemprop="articleBody">
+                                        <p>This is BetterDiscords Plugin API this is a great help for plugin developers. If you encounter a problem and can’t find the solution here, please submit a <a href="https://github.com/Jiiks/BetterDiscordApp/issues/new" target=_blank>GitHub issue</a> and we will try to solve it.</p>
+                                        <h2 id="pluginapi" class="article-heading"><a href="#pluginapi" class="headerlink" title="BetterDiscord Plugin API"></a>Plugin API<a class="article-anchor" href="#pluginapi" aria-hidden="true"></a></h2>
+                                        <p>This is currently the API it might not be much but it's progressing.<p>
+                                        <table>
+                                            <thead>
+                                                <tr>
+                                                    <th>API Calls</th>
+                                                    <th>Description</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>BdApi.joinServer("code");</td>
+                                                    <td>Join a server with invite code.</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>BdApi.injectCSS("id", "css");</td>
+                                                    <td>Clear your css.</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>BdApi.getPlugin("name");</td>
+                                                    <td>Interact with other plugins</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>BdApi.getIpc();</td>
+                                                    <td>Currently pointless since the ipc doesn't have any backend returns</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>BdApi.getCore();</td>
+                                                    <td>Get the BetterDiscord core module</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>BdApi.getUserIdByName("name");</td>
+                                                    <td>Attempts to return username by userid</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>BdApi.getUserNameById("id");</td>
+                                                    <td>Attempts to return userid by username</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>BdApi.setPlaying("game");</td>
+                                                    <td>Disabled for now</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>BdApi.setStatus("status");</td>
+                                                    <td>Disabled for now</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Core.prototype.alert("title", "text")</td>
+                                                    <td>Displays a simple alert box, will be moved to BdApi.alert("title", "content") soon</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+
+                                        </div>
+                                        <footer class="article-footer">
+                                            <a href="/BetterDiscord/emotes.html" class="article-footer-next" title="Installation"><span>Next</span><i class="fa fa-chevron-right"></i></a>
+                                        </footer>
+
+                                        </div>
+                                    </div>
+                                    <aside id="article-toc" role="navigation">
+                                        <div id="article-toc-inner">
+                                            <strong class="sidebar-title">Contents</strong>
+                                            <ol class="toc">
+                                                <li class="toc-item toc-level-2"><a class="toc-link" href="#pluginapi"><span class="toc-text">Plugin API</span></a>
+                                            </ol>
+                                            <a href="#" id="article-toc-top">Back to Top</a>
+                                        </div>
+                                    </aside>
+                                </div>
+                    </article>
+                    <aside id="sidebar" role="navigation">
+                        <div class="inner">
+                            <strong class="sidebar-title">Getting Started</strong>
+                            <a href="/BetterDiscord/" class="sidebar-link">Overview</a>
+                            <strong class="sidebar-title">Installation</strong>
+                            <a href="/BetterDiscord/install_win.html" class="sidebar-link">Windows</a>
+                            <a href="/BetterDiscord/install_mac.html" class="sidebar-link">Mac</a>
+                            <a href="/BetterDiscord/install_linux.html" class="sidebar-link">Linux</a>
+                            <strong class="sidebar-title">How to use</strong>
+                            <a href="/BetterDiscord/plugin_api.html" class="sidebar-link current">Plugin API</a>
+                            <a href=/BetterDiscord/emotes.html class="sidebar-link">Emotes</a>
+                            <strong class="sidebar-title">Troubleshooting</strong>
+                            <a href="/BetterDiscord/betterdiscord_troubleshoot.html" class="sidebar-link">BetterDiscord</a>
+                            <a href="/BetterDiscord/theme_troubleshoot.html" class="sidebar-link">Themes</a>
+                            <a href="/BetterDiscord/plugin_troubleshoot.html" class="sidebar-link">Plugins</a>
+                            <strong class="sidebar-title">Guides</strong>
+                            <a href="/BetterDiscord/install_theme.html" class="sidebar-link">Installing Theme</a>
+                            <a href="/BetterDiscord/install_plugin.html" class="sidebar-link">Installing Plugin</a>
+                            <a href="/BetterDiscord/making_theme.html" class="sidebar-link">Making Theme</a>
+                            <a href="/BetterDiscord/making_plugin.html" class="sidebar-link">Making Plugin</a>
+                            <strong class="sidebar-title">Downloads</strong>
+                            <a href="/BetterDiscord/themes.html" class="sidebar-link">Themes</a>
+                            <a href="/BetterDiscord/plugins.html" class="sidebar-link">Plugins</a>
+                        </div>
+                    </aside>
+                    </div>
                     </div>
                 </div>
-            </footer>
-        </div>
-        <!-- /.row -->
-    </div>
-    <!-- /.container -->
-</div><a href=javascript:void(0); id=scroll style=display:none title="Scroll to Top">Top<span></span></a>
-<script src=js/top.js></script>
-<script src=https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js></script>
-<script src=https://cdnjs.cloudflare.com/ajax/libs/anchor-js/2.0.0/anchor.min.js></script>
-<script>
-    (function(i, s, o, g, r, a, m) {
-        i['GoogleAnalyticsObject'] = r;
-        i[r] = i[r] || function() {
-            (i[r].q = i[r].q || []).push(arguments)
-        }, i[r].l = 1 * new Date();
-        a = s.createElement(o),
-            m = s.getElementsByTagName(o)[0];
-        a.async = 1;
-        a.src = g;
-        m.parentNode.insertBefore(a, m)
-    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
 
-    ga('create', 'UA-65593962-3', 'auto');
-    ga('send', 'pageview');
-</script>
+                <footer id="footer" class="wrapper">
+                    <div class="inner">
+                        <div id="footer-copyright">
+                            &copy; 2016 <a href="https://www.snapchat.com/add/Omniscien.t" target="_blank">Chris Flores</a>
+                        </div>
+                        <div id="footer-links">
+                            <a href="https://twitter.com/Omniscien_t" class="footer-link" target="_blank"><i class="fa fa-twitter"></i></a>
+                            <a href="https://github.com/0mniscient" class="footer-link" target="_blank"><i class="fa fa-github-alt"></i></a>
+                        </div>
+                    </div>
+                </footer>
+
+            </div>
+            <div id="mobile-nav-dimmer"></div>
+            <nav id="mobile-nav">
+                <div id="mobile-nav-inner">
+                    <ul id="mobile-nav-list">
+                        <a href="https://0mniscient.github.io/BetterDiscord/news/" class="mobile-nav-link">News</a>
+                        <a href="https://0mniscient.github.io/BetterDiscord/plugin_api.html" class="mobile-nav-link">API</a>
+                        <a href="https://0mniscient.github.io/BetterDiscord/themes.html" class="mobile-nav-link">Themes</a>
+                        <a href="https://0mniscient.github.io/BetterDiscord/plugins.html" class="mobile-nav-link">Plugins</a>
+                        <li class="mobile-nav-item">
+                            <a href="https://github.com/0mniscient/" class="mobile-nav-link" rel="external" target="_blank">GitHub</a>
+                        </li>
+                    </ul>
+
+                  <strong class="mobile-nav-title">Getting Started</strong>
+                    <a href="/BetterDiscord/" class="mobile-nav-link">Overview</a>
+                  <strong class="mobile-nav-title">Installation</strong>
+                    <a href="/BetterDiscord/install_win.html" class="mobile-nav-link">Windows</a>
+                    <a href="/BetterDiscord/mac_win.html" class="mobile-nav-link">Mac</a>
+                    <a href="/BetterDiscord/linux_win.html" class="mobile-nav-link">Linux</a>
+                  <strong class="mobile-nav-title">How to use</strong>
+                    <a href="/BetterDiscord/plugin_api.html" class="mobile-nav-link current">Plugin API</a>
+                    <a href="/BetterDiscord/emotes.html" class="mobile-nav-link">Emotes</a>
+                  <strong class="mobile-nav-title">Troubleshooting</strong>
+                    <a href="/BetterDiscord/betterdiscord_troubleshoot.html" class="mobile-nav-link">BetterDiscord</a>
+                    <a href="/BetterDiscord/theme_troubleshoot.html" class="mobile-nav-link">Themes</a>
+                    <a href="/BetterDiscord/plugin_troubleshoot.html" class="mobile-nav-link">Plugins</a>
+                  <strong class="mobile-nav-title">Guides</strong>
+                    <a href="/BetterDiscord/install_theme.html" class="mobile-nav-link">Installing Themes</a>
+                    <a href="/BetterDiscord/install_plugin.html" class="mobile-nav-link">Installing Plugins</a>
+                    <a href="/BetterDiscord/making_theme.html" class="mobile-nav-link">Making Theme</a>
+                    <a href="/BetterDiscord/making_plugin.html" class="mobile-nav-link">Making Plugin</a>
+                    <strong class="mobile-nav-title">Downloads</strong>
+                      <a href="/BetterDiscord/themes.html" class="mobile-nav-link">Themes</a>
+                      <a href="/BetterDiscord/plugins.html" class="mobile-nav-link">Plugins</a>
+
+                </div>
+                <div id="mobile-lang-select-wrap">
+                    <span id="mobile-lang-select-label"><i class="fa fa-globe"></i><span>English</span></span>
+                    <select id="mobile-lang-select" data-canonical="docs/index.html">
+
+                        <option value="en" selected>English</option>
+
+                    </select>
+                </div>
+            </nav>
+            <!-- Scripts -->
+            <script src="/BetterDiscord/Scripts/main.js"></script>
+            <script src="https://cdn.jsdelivr.net/retinajs/1.3.0/retina.min.js" async></script>
+
+            <!-- Algolia -->
+
+            <script type="text/javascript" src="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.js"></script>
+
+</body>
+
+</html>
