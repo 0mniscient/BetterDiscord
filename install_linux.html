@@ -76,10 +76,23 @@
                                     </header>
                                     <div class="article-content" itemprop="articleBody">
                                         <p>It only takes a few minutes to set up BetterDiscord. If you encounter a problem and can’t find the solution here, please submit a <a href="https://github.com/Jiiks/BetterDiscordApp/issues/new" target=_blank>GitHub issue</a> and we will try to solve it.</p>
+                                        <h2 id="Requirements" class="article-heading"><a href="#Requirements" class="headerlink" title="Linux Requirements"></a>Requirements<a class="article-anchor" href="#Requirements" aria-hidden="true"></a></h2>
+                                        <ul><li><a href=https://nodejs.org/en/download/ target_blank>Node.js</a>
+                                        <li><a href="http://electron.atom.io/releases/" target="_blank">Atom</a></ul>
                                         <h2 id="Installation" class="article-heading"><a href="#Installation" class="headerlink" title="Linux Installation"></a>Installation<a class="article-anchor" href="#Installation" aria-hidden="true"></a></h2>
-                                        <p>First thing first head on over to the <a href=https://github.com/Jiiks/BetterDiscordApp/tree/master/Installers/Electron target=_blank>Github</a> site.</p>
-                                        <ul><li><p>Download all the files</p>
-                                        <li><p>The rest is up to you as I don't have Linux running on my PC and cannot come up with a tutorial. If you would like to contribute click the pencil next to the title and make a commit to this page.</ul>
+                                        <p>Now this process is a bit complicated, you have 2 options on how you want to download the installer.
+                                        <ul><li><b>Option 1:</b> Clone/Download Zip the makers entire <a href=https://github.com/Jiiks/BetterDiscordApp target=_blank>Github Repo</a>.<br><img alt="Clone/Download ZIP" src=https://i.imgur.com/BvEMwzy.png>
+                                        <li><b>Option 2:</b> Download the files from the makers <a href=https://github.com/Jiiks/BetterDiscordApp/tree/master/Installers/Electron target=_blank>Github</a>.</ul>
+                                        <p>Now for the more complicated part of this installation.</p>
+                                        <ul><li>Launch terminalon Linux and run <code>npm install</code>
+                                        <li>Now in terminal run <code>./node_modules/.bin/electron ./src</code> and it will open the installer
+                                        <li>If the installer freeze during the instalation, run <code>sudo chown yourname /usr/share/discord-canary/resources</code></ul>
+                                        <p>After you have finished the installation change the <code>utils</code> import in the <code>BetterDiscord.js</code> files.</p>
+   -                        <p>
+   -                            <div class="highlighter-rouge"><pre class="highlight"><code>Instead of
+   -<font color=#859900>var</font> _utils = <font color=#268bd2>require</font>(<font color=#2aa198>"./utils"</font>);
+   -it would be
+   -<font color=#859900>var</font> _utils = <font color=#268bd2>require</font>(<font color=#2aa198>"./Utils"</font>);</code></div></pre></ul>
                                         <h2 id="Updates" class="article-heading"><a href="#Updates" class="headerlink" title="Discord and BD Updates"></a>Updates<a class="article-anchor" href="#Updates" aria-hidden="true"></a></h2>
                                         <p>BetterDiscord and Discord updates are 2 things to keep in mind.</p>
                                         <h2 id="bdupdates" class="article-heading"><a href="#bdupdates" class="headerlink" title="BetterDiscord Updates"></a>BetterDiscord Updates<a class="article-anchor" href="#bdupdates" aria-hidden="true"></a></h2>
@@ -99,6 +112,7 @@
                                         <div id="article-toc-inner">
                                             <strong class="sidebar-title">Contents</strong>
                                             <ol class="toc">
+                                                <li class="toc-item toc-level-2"><a class="toc-link" href="#Requirements"><span class="toc-text">Requirements</span></a>
                                                 <li class="toc-item toc-level-2"><a class="toc-link" href="#Installation"><span class="toc-text">Installation</span></a>
                                                 <li class="toc-item toc-level-2"><a class="toc-link" href="#Updates"><span class="toc-text">Updates</span></a>
                                                   <ol class="toc-child">
