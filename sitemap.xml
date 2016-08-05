@@ -3,88 +3,114 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
   <url>
     <loc>https://betterdocs.net/</loc>
-    <changefreq>daily</changefreq>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://betterdocs.net/making_plugin.html</loc>
-    <changefreq>daily</changefreq>
-  </url>
-  <url>
-    <loc>https://betterdocs.net/install_theme.html</loc>
-    <changefreq>daily</changefreq>
-  </url>
-  <url>
-    <loc>https://betterdocs.net/install_plugin.html</loc>
-    <changefreq>daily</changefreq>
-  </url>
-  <url>
-    <loc>https://betterdocs.net/betterdiscord_troubleshoot.html</loc>
-    <changefreq>daily</changefreq>
-  </url>
-  <url>
-    <loc>https://betterdocs.net/theme_troubleshoot.html</loc>
-    <changefreq>daily</changefreq>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://betterdocs.net/making_theme.html</loc>
-    <changefreq>daily</changefreq>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://betterdocs.net/install_plugin.html</loc>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://betterdocs.net/theme_troubleshoot.html</loc>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://betterdocs.net/install_theme.html</loc>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://betterdocs.net/plugin_troubleshoot.html</loc>
-    <changefreq>daily</changefreq>
-  </url>
-  <url>
-    <loc>https://betterdocs.net/install_linux.html</loc>
-    <changefreq>daily</changefreq>
-  </url>
-  <url>
-    <loc>https://betterdocs.net/emotes.html</loc>
-    <changefreq>daily</changefreq>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://betterdocs.net/index.html</loc>
-    <changefreq>daily</changefreq>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://betterdocs.net/plugins.html</loc>
-    <changefreq>daily</changefreq>
+    <loc>https://betterdocs.net/betterdiscord_troubleshoot.html</loc>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://betterdocs.net/install_mac.html</loc>
-    <changefreq>daily</changefreq>
+    <loc>https://betterdocs.net/emotes.html</loc>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://betterdocs.net/install_win.html</loc>
-    <changefreq>daily</changefreq>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://betterdocs.net/news/</loc>
-    <changefreq>daily</changefreq>
+    <loc>https://betterdocs.net/install_mac.html</loc>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://betterdocs.net/install_linux.html</loc>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://betterdocs.net/plugins.html</loc>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://betterdocs.net/themes.html</loc>
-    <changefreq>daily</changefreq>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://betterdocs.net/news/</loc>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://betterdocs.net/plugin_api.html</loc>
-    <changefreq>daily</changefreq>
-  </url>
-  <url>
-    <loc>https://betterdocs.net/news/05_06_2016.html</loc>
-    <changefreq>daily</changefreq>
-  </url>
-  <url>
-    <loc>https://betterdocs.net/news/07_11_2016.html</loc>
-    <changefreq>daily</changefreq>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://betterdocs.net/news_archive/</loc>
-    <changefreq>daily</changefreq>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://betterdocs.net/news/07_11_2016.html</loc>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://betterdocs.net/news/05_06_2016.html</loc>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://betterdocs.net/news/07_22_2016.html</loc>
-    <changefreq>daily</changefreq>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://betterdocs.net/contact.html</loc>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
   </url>
 </urlset>
-<!--<guid value="e9511d5c-e725-498d-9f48-a915ff75a791" />-->
+<!--<guid value="5527a355-fa08-4387-85d4-0b7bbdc8d71f" />-->
 <!--Created using XmlSitemapGenerator.org - Free HTML, RSS and XML sitemap generator-->
