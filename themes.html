@@ -36,6 +36,9 @@
     ga('create', 'UA-65593962-3', 'auto');
     ga('send', 'pageview');
 </script>
+<!-- jQuery -->
+<script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.lazyload/1.9.1/jquery.lazyload.min.js"></script>
 
 </head>
 
@@ -68,7 +71,11 @@
                 </a>
             </div>
         </header>
-
+        <script>
+            $(function() {
+                $("img.lazy").lazyload();
+            });
+        </script>
         <div id="content-wrap">
             <div class="wrapper">
                 <div class="inner">
@@ -76,13 +83,13 @@
                         <h1 id="plugin-list-title">Themes</h1>
                         <a href="https://github.com/0mniscient/BetterDiscord/edit/gh-pages/themes.html" class="add-pencil" title="Add Theme"><i class="fa fa-plus"></i></a>
                         <input type="search" id="plugin-search-input" placeholder="Search">
-                        <div id="plugin-list-count">4 items</div>
+                        <div id="plugin-list-count">10 items</div>
                     </header>
                     <ul id="plugin-list">
 
                         <li class="plugin on">
                             <div class="plugin-screenshot">
-                                <img src="https://betterdocs.net/images/Reborn.jpg" class="plugin-screenshot-img">
+                                <img data-original="https://betterdocs.net/images/Reborn.jpg" class="lazy plugin-screenshot-img">
 
                                 <a href="https://betterdocs.net/images/Reborn.jpg" class="plugin-preview-link" target="_blank"><i class="fa fa-eye"></i></a>
 
@@ -105,7 +112,7 @@
 
                         <li class="plugin on">
                             <div class="plugin-screenshot">
-                                <img src="https://github.com/cosmicsalad/Discord-Themes-and-Plugins/raw/master/dm-ss.jpg" class="plugin-screenshot-img">
+                                <img data-original="https://github.com/cosmicsalad/Discord-Themes-and-Plugins/raw/master/dm-ss.jpg" class="lazy plugin-screenshot-img">
 
                                 <a href="https://github.com/cosmicsalad/Discord-Themes-and-Plugins/raw/master/dm-ss.jpg" class="plugin-preview-link" target="_blank"><i class="fa fa-eye"></i></a>
 
@@ -127,7 +134,7 @@
 
                         <li class="plugin on">
                             <div class="plugin-screenshot">
-                                <img src="https://imgur.com/apUSFCc.png" class="plugin-screenshot-img">
+                                <img data-original="https://imgur.com/apUSFCc.png" class="lazy plugin-screenshot-img">
 
                                 <a href="https://imgur.com/apUSFCc.png" class="plugin-preview-link" target="_blank"><i class="fa fa-eye"></i></a>
 
@@ -149,7 +156,7 @@
 
                         <li class="plugin on">
                             <div class="plugin-screenshot">
-                                <img src="https://imgur.com/TUZpkAh.png" class="plugin-screenshot-img">
+                                <img data-original="https://imgur.com/TUZpkAh.png" class="lazy plugin-screenshot-img">
 
                                 <a href="https://imgur.com/TUZpkAh.png" class="plugin-preview-link" target="_blank"><i class="fa fa-eye"></i></a>
 
@@ -167,6 +174,146 @@
                                 <a href="#Flat" class="plugin-tag">Flat</a>
 
                                 <a href="#Animations" class="plugin-tag">Animations</a>
+
+                            </div>
+                        </li>
+
+                        <li class="plugin on">
+                            <div class="plugin-screenshot">
+                                <img data-original="https://i.imgur.com/4wNjej8.jpg" class="lazy plugin-screenshot-img">
+
+                                <a href="https://i.imgur.com/4wNjej8.jpg" class="plugin-preview-link" target="_blank"><i class="fa fa-eye"></i></a>
+
+                            </div>
+                            <a href="https://github.com/Matthaz/Overwatch_theme/blob/master/Overwatch.theme.css" class="plugin-name" target="_blank">Overwatch</a>
+                            <p class="plugin-desc">A nice transparent Overwatch theme.</p>
+                            <div class="plugin-tag-list">
+
+                                <a href="#Matt" class="plugin-tag">Matt</a>
+
+                                <a href="#Game" class="plugin-tag">Game</a>
+
+                                <a href="#Transparent" class="plugin-tag">Transparent</a>
+
+                                <a href="#Gaming" class="plugin-tag">Gaming</a>
+
+                                <a href="#Overwatch" class="plugin-tag">Overwatch</a>
+
+                                <a href="#Orange" class="plugin-tag">Orange</a>
+
+                                <a href="#Dark" class="plugin-tag">Dark</a>
+
+                            </div>
+                        </li>
+
+                        <li class="plugin on">
+                            <div class="plugin-screenshot">
+                                <img data-original="https://i.imgur.com/KembEgY.png" class="lazy plugin-screenshot-img">
+
+                                <a href="https://i.imgur.com/KembEgY.png" class="plugin-preview-link" target="_blank"><i class="fa fa-eye"></i></a>
+
+                            </div>
+                            <a href="https://github.com/Narugokyu/nova-theme/blob/master/space_nova.theme.css" class="plugin-name" target="_blank">Space Nova</a>
+                            <p class="plugin-desc">Outerspace Dark theme.</p>
+                            <div class="plugin-tag-list">
+
+                                <a href="#Narugokyu" class="plugin-tag">Narugokyu</a>
+
+                                <a href="#Space" class="plugin-tag">Space</a>
+
+                                <a href="#Transparent" class="plugin-tag">Transparent</a>
+
+                                <a href="#Dark" class="plugin-tag">Dark</a>
+
+                            </div>
+                        </li>
+
+                        <li class="plugin on">
+                            <div class="plugin-screenshot">
+                                <img data-original="https://i.imgur.com/WiaUPUW.png" class="lazy plugin-screenshot-img">
+
+                                <a href="https://i.imgur.com/WiaUPUW.png" class="plugin-preview-link" target="_blank"><i class="fa fa-eye"></i></a>
+
+                            </div>
+                            <a href="https://github.com/jadeonking/Witcher-3-Theme-for-Discord/blob/master/Witcher3.theme.css" class="plugin-name" target="_blank">Witcher-3-Theme-for-Discord</a>
+                            <p class="plugin-desc">The Witcher 3 Dark Theme.</p>
+                            <div class="plugin-tag-list">
+
+                                <a href="#Jadeonking" class="plugin-tag">Jadeonking</a>
+
+                                <a href="#Game" class="plugin-tag">Game</a>
+
+                                <a href="#Transparent" class="plugin-tag">Transparent</a>
+
+                                <a href="#Dark" class="plugin-tag">Dark</a>
+
+                                <a href="#Gaming" class="plugin-tag">Gaming</a>
+
+                                <a href="#Witcher" class="plugin-tag">Witcher</a>
+
+                            </div>
+                        </li>
+
+                        <li class="plugin on">
+                            <div class="plugin-screenshot">
+                                <img data-original="https://i.imgur.com/IHZdiU6.png" class="lazy plugin-screenshot-img">
+
+                                <a href="https://i.imgur.com/IHZdiU6.png" class="plugin-preview-link" target="_blank"><i class="fa fa-eye"></i></a>
+
+                            </div>
+                            <a href="https://github.com/Viniuau/Dat-Discord/blob/master/Dat%20Discord.theme.css" class="plugin-name" target="_blank">Dat Discord</a>
+                            <p class="plugin-desc">A theme green/blue based.</p>
+                            <div class="plugin-tag-list">
+
+                                <a href="#Viniuau" class="plugin-tag">Viniuau</a>
+
+                                <a href="#Transparent" class="plugin-tag">Transparent</a>
+
+                                <a href="#Dark" class="plugin-tag">Dark</a>
+
+                                <a href="#Blue" class="plugin-tag">Blue</a>
+
+                            </div>
+                        </li>
+
+                        <li class="plugin on">
+                            <div class="plugin-screenshot">
+                                <img data-original="https://i.imgur.com/sgExoJm.png" class="lazy plugin-screenshot-img">
+
+                                <a href="https://i.imgur.com/sgExoJm.png" class="plugin-preview-link" target="_blank"><i class="fa fa-eye"></i></a>
+
+                            </div>
+                            <a href="https://github.com/CurimuChizu/CC-Themes/blob/master/CC-Themes/ReZero.theme.css" class="plugin-name" target="_blank">Zero Theme</a>
+                            <p class="plugin-desc">ReZero anime theme.</p>
+                            <div class="plugin-tag-list">
+
+                                <a href="#CC" class="plugin-tag">CC</a>
+
+                                <a href="#Dark" class="plugin-tag">Dark</a>
+
+                                <a href="#Red" class="plugin-tag">Red</a>
+
+                                <a href="#Anime" class="plugin-tag">Anime</a>
+
+                            </div>
+                        </li>
+
+                        <li class="plugin on">
+                            <div class="plugin-screenshot">
+                                <img data-original="https://i.imgur.com/dgRUWfn.png" class="lazy plugin-screenshot-img">
+
+                                <a href="https://i.imgur.com/dgRUWfn.png" class="plugin-preview-link" target="_blank"><i class="fa fa-eye"></i></a>
+
+                            </div>
+                            <a href="https://github.com/trueprominency/Shades-of-Red-Theme/blob/master/shades-of-red.theme.css" class="plugin-name" target="_blank">Shades of Red</a>
+                            <p class="plugin-desc">Great colors of red collide</p>
+                            <div class="plugin-tag-list">
+
+                                <a href="#TrueProminency" class="plugin-tag">TrueProminency</a>
+
+                                <a href="#Dark" class="plugin-tag">Dark</a>
+
+                                <a href="#Red" class="plugin-tag">Red</a>
 
                             </div>
                         </li>
