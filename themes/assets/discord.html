@@ -6,11 +6,12 @@
   </head>
   <script type="text/javascript">
     $(document).ready(() => {
-        $.ajax({
+        var re = /\/\/META{.*}\*\/\//; 
+$.ajax({
             type: "GET",
             url: location.search.split('theme=')[1],
             success: data => {
-                $("head").append(`<style>${data.replace(\/\/META{.*}\*\/\/, '')}</style>`)
+                $("head").append(`<style>${data.replace(re, '')}</style>`)
             }
         });
     });
