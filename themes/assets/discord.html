@@ -1,48 +1,368 @@
-
 <head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no" name="viewport"><link rel="stylesheet" href="2558cb94521e9f0e92fa.css" type="css/text"><link rel="icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAEWElEQVRYR+2WW0ybZRjHf18P0AKlchaQjdotthCFOFEvHJnKFi+mUBNxiQru4BJ0zrhRjW5ozRwzAaaLGp2yKLobTxlE4+LmjLvQLYgGXDgsGXSgIAzGKCCFFvqZr4NCaUvbjezK9+ZL3tP/9/2f93neV2C2PfalKF/R07EHkReA+Ln+Zf4OI3CoZ4Vh/1fFwoy0tzAnsLu6Yy+iuG+ZBf1vJwgVNeWGN70BqtqHgIQbAgCXa8zGxMUA4g0Sd8vUmI1u9+dDUNX+P0BAB9KSIlmTreUmjZLeS5O0dIyiVsmJjJC57Zx0uHA4Xay9M460JBXd/9j5vdVG3+BUwKiGFAJNlAJTQQopCRH0DzncgitTVW5xf23s32msvXZUkTLSk1Vc6Jmg/tQAYxPTPtNDAnhyYxq3r9a4F8vlnuMS0ll1Ol0olTKaO0Y5+l1f+ABajYI921chC0/XR8glwv6PLmAb83YhqAMP3ZdEwb3LUxZOnhnih1+kMjPfggK8+oyeeK0yJLuDTRq2Oan8uDN0AOnU7yrV+ew75XDx98Akt6SoPBkwN2l8YoZLw1OsSFWjkAs4mpuJyM317HGwzuqVFUs6sHZNPIX3J3sB2CdnOPjZRa6MOomLVbKrJNOTDYNXHNS/VIvuzDESxvvQdrd51qrWrUOZmcmfdzzC8Rmjp39JAOn05xpivQBazo/x+be9nr6nHk4n5zYNrpERWoueIPr098EiQeOGHTStfy54KZbsl8KwsEl/Wf2JlRmXiFwmUL5Zh6blV/pNJjfEwqbduZP4ykqE6GjGjhxhcNs2z/BQmpHjpe9iOVAQ+C7Yt2O132LT3WenrXOcLH0MGVFT9Oh0PuKxZWXEWSzIk6+GcDGA1Nerv5v8zsbAAFXlBs8tJdVnu32GKLV39esvKmKiocEr1nEVFajz80Gh8PT7A5gdfEMPFr+3oXmzjpSE+RBINb29a5yVqWpuzYjC3lDPgMnkZXtGayvKrCx3n2i3I6jVAR2YWygDnV8ATbQC6SDqM6I8IlJF+6PNxrEfB9h49HlSmk74AhiNONracJw7R8ymTUEBgBcDvgekAaM+hruytWSmqd0hqP3mL/cFU/y2icS+Di+A9LNncVqtXDabibdY0GzdGhRAhLprepA8a57PZ3+5l1RbGxIA0Bw2QGJvO8XvPLpkzocBcG1PsuVyQITTYTsg/XrhByWkd/0W0IUwHDi0EGACuJo7QdoDX7yCoal+OQDms6C8qr1OhJJg4tJ4emcjhR+WXi+ATQaZHgdefqtTOy13fA0UhAKRd+I98k6+73dqKCEQwbQK6n0eXLurzxsE0XVzKBBb9ubVRk6N6xfPDQbQlf0g61tPed8FoQgunmOFTBdIhyEn1PWS+E+PV3LgtXuuH2BOtBMswOtBIGzjsSlldRU/Py3ABp8HSah/EGjerBtFIuQKIL3FcmbzvBm4KINPdTCy/XCTUjMafbjGbNwi7fUf0vzhxYE3BewAAAAASUVORK5CYII=" type="image/png">  <title>Discord</title>
-  <link rel="stylesheet" href="https://betterdocs.net/themes/assets/style.css">
-  <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no" name="viewport">
+    <link rel="stylesheet" href="2558cb94521e9f0e92fa.css" type="css/text">
+    <link rel="icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAEWElEQVRYR+2WW0ybZRjHf18P0AKlchaQjdotthCFOFEvHJnKFi+mUBNxiQru4BJ0zrhRjW5ozRwzAaaLGp2yKLobTxlE4+LmjLvQLYgGXDgsGXSgIAzGKCCFFvqZr4NCaUvbjezK9+ZL3tP/9/2f93neV2C2PfalKF/R07EHkReA+Ln+Zf4OI3CoZ4Vh/1fFwoy0tzAnsLu6Yy+iuG+ZBf1vJwgVNeWGN70BqtqHgIQbAgCXa8zGxMUA4g0Sd8vUmI1u9+dDUNX+P0BAB9KSIlmTreUmjZLeS5O0dIyiVsmJjJC57Zx0uHA4Xay9M460JBXd/9j5vdVG3+BUwKiGFAJNlAJTQQopCRH0DzncgitTVW5xf23s32msvXZUkTLSk1Vc6Jmg/tQAYxPTPtNDAnhyYxq3r9a4F8vlnuMS0ll1Ol0olTKaO0Y5+l1f+ABajYI921chC0/XR8glwv6PLmAb83YhqAMP3ZdEwb3LUxZOnhnih1+kMjPfggK8+oyeeK0yJLuDTRq2Oan8uDN0AOnU7yrV+ew75XDx98Akt6SoPBkwN2l8YoZLw1OsSFWjkAs4mpuJyM317HGwzuqVFUs6sHZNPIX3J3sB2CdnOPjZRa6MOomLVbKrJNOTDYNXHNS/VIvuzDESxvvQdrd51qrWrUOZmcmfdzzC8Rmjp39JAOn05xpivQBazo/x+be9nr6nHk4n5zYNrpERWoueIPr098EiQeOGHTStfy54KZbsl8KwsEl/Wf2JlRmXiFwmUL5Zh6blV/pNJjfEwqbduZP4ykqE6GjGjhxhcNs2z/BQmpHjpe9iOVAQ+C7Yt2O132LT3WenrXOcLH0MGVFT9Oh0PuKxZWXEWSzIk6+GcDGA1Nerv5v8zsbAAFXlBs8tJdVnu32GKLV39esvKmKiocEr1nEVFajz80Gh8PT7A5gdfEMPFr+3oXmzjpSE+RBINb29a5yVqWpuzYjC3lDPgMnkZXtGayvKrCx3n2i3I6jVAR2YWygDnV8ATbQC6SDqM6I8IlJF+6PNxrEfB9h49HlSmk74AhiNONracJw7R8ymTUEBgBcDvgekAaM+hruytWSmqd0hqP3mL/cFU/y2icS+Di+A9LNncVqtXDabibdY0GzdGhRAhLprepA8a57PZ3+5l1RbGxIA0Bw2QGJvO8XvPLpkzocBcG1PsuVyQITTYTsg/XrhByWkd/0W0IUwHDi0EGACuJo7QdoDX7yCoal+OQDms6C8qr1OhJJg4tJ4emcjhR+WXi+ATQaZHgdefqtTOy13fA0UhAKRd+I98k6+73dqKCEQwbQK6n0eXLurzxsE0XVzKBBb9ubVRk6N6xfPDQbQlf0g61tPed8FoQgunmOFTBdIhyEn1PWS+E+PV3LgtXuuH2BOtBMswOtBIGzjsSlldRU/Py3ABp8HSah/EGjerBtFIuQKIL3FcmbzvBm4KINPdTCy/XCTUjMafbjGbNwi7fUf0vzhxYE3BewAAAAASUVORK5CYII=" type="image/png">
+    <title>Discord</title>
+    <link rel="stylesheet" href="https://betterdocs.net/themes/assets/style.css">
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
     <script type="text/javascript">
-    $(document).ready(() => {
-        var re = /\/\/META{.*}\*\/\//;
-$.ajax({
-            type: "GET",
-            url: location.search.split('theme=')[1],
-            success: data => {
-                $("head").append(`<style>${data.replace(re, '')}</style>`)
-            }
+        $(document).ready(() => {
+            var re = /\/\/META{.*}\*\/\//;
+            $.ajax({
+                type: "GET",
+                url: location.search.split('theme=')[1],
+                success: data => {
+                    $("head").append(`<style>${data.replace(re, '')}</style>`)
+                }
+            });
         });
-    });
     </script>
-  </head>
+</head>
+
 <body data-gr-c-s-loaded="true">
-  <div id="app-mount"><div data-reactroot="" class=""><div class="titlebar"><div class="titlebar-edge"></div><!-- react-empty: 4 --></div><div><div class="app flex-vertical theme-dark"><!-- react-empty: 7 --><div class="flex-vertical flex-spacer"><section class="flex-horizontal flex-spacer"><div class="guilds-wrapper"><div class="guilds"><div class="guild"><div class="guild-inner" draggable="false" style="border-radius: 25px; background-color: rgb(46, 49, 54);"><a draggable="false" class="" href="#"><div class="friends-icon"></div></a></div></div><div class="friends-online">15 Online</div><span class="dms"><div class="guild" style="transform: translateX(0px);"><div class="guild-inner" draggable="false" style="border-radius: 25px;"><a draggable="false" class="avatar-small stop-animation" href="#" style="background-image: url(&quot;https://i.imgur.com/3sc5OG3.png&quot;);"></a></div><div class="badge">1</div></div></span><div class="guild-separator"></div><div class="guild"><div draggable="true"><div class="guild-inner" draggable="false" style="border-radius: 25px;"><a draggable="false" class="avatar-small" href="#" style="background-image: url(&quot;https://cdn.discordapp.com/icons/153708594091655168/c207f857ca016cbd6fe2811e590d3b18.jpg&quot;);"></a></div></div><div class="badge">10</div></div><div class="guild selected unread"><div draggable="true"><div class="guild-inner" draggable="false" style="border-radius: 15px;"><a draggable="false" class="avatar-small" href="#" style="background-image: url(&quot;https://cdn.discordapp.com/icons/86004744966914048/6e5729ed5c12d5af558d80d7a194c3f9.jpg&quot;);"></a></div></div></div><div class="guild unread"><div draggable="true"><div class="guild-inner" draggable="false" style="border-radius: 25px;"><a draggable="false" class="avatar-small" href="#" style="background-image: url(&quot;https://cdn.discordapp.com/icons/41771983423143937/ae140f33228348df347067059474bb11.jpg&quot;);"></a></div></div></div><button class="guild guilds-add">+</button></div></div><div class="flex-vertical channels-wrap"><div class="flex-vertical flex-spacer"><div class="guild-header"><header><span>BetterDiscord</span><button type="button" class="btn btn-hamburger"><span></span><span></span><span></span><span></span><span></span><span></span></button></header><ul><li><a>Notification Settings</a></li><li><a>Privacy Settings</a></li><li><a class="red-highlight">Leave Server</a></li></ul></div><!-- react-empty: 142 --><div class="scroller-wrap fade dark"><div class="scroller guild-channels"><div style="width: 100%; height: 0px; visibility: hidden;"></div><header><span>Text Channels</span></header><div class="channel channel-text selected" draggable="true"><a draggable="false" class="" href="#"><span class="channel-name">info</span><!-- react-empty: 618 --></a></div><div class="channel channel-text unread" draggable="true"><a draggable="false" class="" href="#"><span class="channel-name">Unread</span><!-- react-empty: 993 --></a></div><div class="channel channel-text" draggable="true"><a draggable="false" class="" href="#"><span class="channel-name">Read</span><!-- react-empty: 993 --></a></div><div class="channel channel-text channel-muted unread" draggable="true"><a draggable="false" class="" href="#"><span class="channel-name">Muted</span><!-- react-empty: 626 --></a></div><header><span>Voice Channels</span></header><div class="channel channel-voice" draggable="true"><a draggable="false"><span class="channel-arrow"></span><span class="channel-name">Pfft</span></a><!-- react-empty: 2325 --></div><ul class="channel-voice-states"><li class=""><div class="" draggable="true"><div class="avatar-small stop-animation" style="background-image: url(&quot;https://cdn.discordapp.com/avatars/172218388880293888/e64c4a0cc7d041422ee617e4d0548414.jpg&quot;);"></div><span>Omniscient</span></div></li><li class="speaking"><div class="" draggable="true"><div class="avatar-small stop-animation" style="background-image: url(&quot;https://i.imgur.com/3sc5OG3.png&quot;);"></div><span>BetterDiscord</span></div></li></ul><div style="width: 100%; height: 374px; visibility: hidden;"></div></div></div></div><div id="voice-connection"><div class="voice-connection-inner"><div class="voice-connection-status
+    <div id="app-mount">
+        <div data-reactroot="" class="">
+            <div class="titlebar">
+                <div class="titlebar-edge"></div>
+                <!-- react-empty: 4 -->
+            </div>
+            <div>
+                <div class="app flex-vertical theme-dark">
+                    <!-- react-empty: 7 -->
+                    <div class="flex-vertical flex-spacer">
+                        <section class="flex-horizontal flex-spacer">
+                            <div class="guilds-wrapper">
+                                <div class="guilds">
+                                    <div class="guild">
+                                        <div class="guild-inner" draggable="false" style="border-radius: 25px; background-color: rgb(46, 49, 54);">
+                                            <a draggable="false" class="" href="#">
+                                                <div class="friends-icon"></div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="friends-online">15 Online</div><span class="dms"><div class="guild" style="transform: translateX(0px);"><div class="guild-inner" draggable="false" style="border-radius: 25px;"><a draggable="false" class="avatar-small stop-animation" href="#" style="background-image: url(&quot;https://i.imgur.com/3sc5OG3.png&quot;);"></a></div><div class="badge">1</div></div></span>
+                                    <div class="guild-separator"></div>
+                                    <div class="guild">
+                                        <div draggable="true">
+                                            <div class="guild-inner" draggable="false" style="border-radius: 25px;">
+                                                <a draggable="false" class="avatar-small" href="#" style="background-image: url(&quot;https://cdn.discordapp.com/icons/153708594091655168/c207f857ca016cbd6fe2811e590d3b18.jpg&quot;);"></a>
+                                            </div>
+                                        </div>
+                                        <div class="badge">10</div>
+                                    </div>
+                                    <div class="guild selected unread">
+                                        <div draggable="true">
+                                            <div class="guild-inner" draggable="false" style="border-radius: 15px;">
+                                                <a draggable="false" class="avatar-small" href="#" style="background-image: url(&quot;https://cdn.discordapp.com/icons/86004744966914048/6e5729ed5c12d5af558d80d7a194c3f9.jpg&quot;);"></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="guild unread">
+                                        <div draggable="true">
+                                            <div class="guild-inner" draggable="false" style="border-radius: 25px;">
+                                                <a draggable="false" class="avatar-small" href="#" style="background-image: url(&quot;https://cdn.discordapp.com/icons/41771983423143937/ae140f33228348df347067059474bb11.jpg&quot;);"></a>
+                                            </div>
+                                        </div>
+                                    </div><button class="guild guilds-add">+</button></div>
+                            </div>
+                            <div class="flex-vertical channels-wrap">
+                                <div class="flex-vertical flex-spacer">
+                                    <div class="guild-header">
+                                        <header><span>BetterDiscord</span><button type="button" class="btn btn-hamburger"><span></span><span></span><span></span><span></span><span></span><span></span></button></header>
+                                        <ul>
+                                            <li><a>Notification Settings</a></li>
+                                            <li><a>Privacy Settings</a></li>
+                                            <li><a class="red-highlight">Leave Server</a></li>
+                                        </ul>
+                                    </div>
+                                    <!-- react-empty: 142 -->
+                                    <div class="scroller-wrap fade dark">
+                                        <div class="scroller guild-channels">
+                                            <div style="width: 100%; height: 0px; visibility: hidden;"></div>
+                                            <header><span>Text Channels</span></header>
+                                            <div class="channel channel-text selected" draggable="true"><a draggable="false" class="" href="#"><span class="channel-name">info</span><!-- react-empty: 618 --></a></div>
+                                            <div class="channel channel-text unread" draggable="true"><a draggable="false" class="" href="#"><span class="channel-name">Unread</span><!-- react-empty: 993 --></a></div>
+                                            <div class="channel channel-text" draggable="true"><a draggable="false" class="" href="#"><span class="channel-name">Read</span><!-- react-empty: 993 --></a></div>
+                                            <div class="channel channel-text channel-muted unread" draggable="true"><a draggable="false" class="" href="#"><span class="channel-name">Muted</span><!-- react-empty: 626 --></a></div>
+                                            <header><span>Voice Channels</span></header>
+                                            <div class="channel channel-voice" draggable="true"><a draggable="false"><span class="channel-arrow"></span><span class="channel-name">Pfft</span></a>
+                                                <!-- react-empty: 2325 -->
+                                            </div>
+                                            <ul class="channel-voice-states">
+                                                <li class="">
+                                                    <div class="" draggable="true">
+                                                        <div class="avatar-small stop-animation" style="background-image: url(&quot;https://cdn.discordapp.com/avatars/172218388880293888/e64c4a0cc7d041422ee617e4d0548414.jpg&quot;);"></div><span>Omniscient</span></div>
+                                                </li>
+                                                <li class="speaking">
+                                                    <div class="" draggable="true">
+                                                        <div class="avatar-small stop-animation" style="background-image: url(&quot;https://i.imgur.com/3sc5OG3.png&quot;);"></div><span>BetterDiscord</span></div>
+                                                </li>
+                                            </ul>
+                                            <div style="width: 100%; height: 374px; visibility: hidden;"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="voice-connection">
+                                    <div class="voice-connection-inner">
+                                        <div class="voice-connection-status
                        voice-connection-status-connected
-                       voice-connection-quality-fine"><span class="ping"></span><!-- react-text: 8294 -->Voice Connected<!-- /react-text --></div><a class="voice-connection-channel" href="#">Pfft / BetterDiscord</a></div><div class="btn-group"><button class="btn btn-info"></button><button class="btn btn-disconnect"></button></div></div><!-- react-empty: 43 --><div class="account"><div class="avatar-small stop-animation" style="background-image: url(&quot;https://cdn.discordapp.com/avatars/172218388880293888/e64c4a0cc7d041422ee617e4d0548414.jpg&quot;);"><div class="status status-online"></div></div><div class="account-details"><span class="username">Omniscient</span><span class="discriminator"><!-- react-text: 381 -->#<!-- /react-text --><!-- react-text: 382 -->7994<!-- /react-text --></span></div><div class="btn-group"><button class="btn btn-mute"></button><button class="btn btn-deafen"></button><button class="btn btn-settings"></button></div></div></div><div class="chat flex-vertical flex-spacer"><div class="title-wrap"><!-- react-empty: 149 --><div class="title"><span class="channel-name">info</span></div><div class="topic topic-expandable"><!-- react-text: 1427 -->BetterDiscord Docs are out now! <!-- /react-text --><a href="https://betterdocs.net" target="_blank" rel="noreferrer"><!-- react-text: 1429 -->https://betterdocs.net<!-- /react-text --></a><!-- react-text: 1430 -->   <!-- /react-text --><u><strong><!-- react-text: 1433 -->All the help you need!<!-- /react-text --></strong></u></div><div class="header-toolbar"><button type="button" class=""><span style="background-image: url(&quot;data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNiIgaGVpZ2h0PSIyNiI+CiAgPHBhdGggZmlsbD0iI0ZGRiIgZmlsbC1ydWxlPSJldmVub2RkIiBkPSJNMTMuMDA2Mjg2NjIgMjJjMSAwIDEuNzE0Mjg1NzItLjQwMTk1MzEgMS45OTk5OTk5OC0xLjAwNDg4MjhoLTMuOTk5OTk5OThjLjI4NTcxNDMuNjAyOTI5NyAxIDEuMDA0ODgyOCAyIDEuMDA0ODgyOHptNi45ODA1Mjk3OC0zLjk2MzQzOTlWMTBjMC0yLjY0LTIuMzAyODY2OC00Ljk3NTAzNjYyLTUuMDEwNTU5MDgtNC45NzUwMzY2MiAwLS43Mi0uMzQ0MDU1MTctMS4wMjk4NDYyLTEuOTczMTE0LTEuMDI5ODQ2Mi0xLjYyOTA1ODg1IDAtMS45NjU4NTA4NC4zMDk4NDYyLTEuOTY1ODUwODQgMS4wMjk4NDYyQzguMzI5NjAwMTggNS4wMjQ5NjMzOCA1Ljk5NTQ4MzQgNy4zNiA1Ljk5NTQ4MzQgMTB2OC4wMzY1NjAxaC0uOTg5MTk2Nzh2MS45NTE0MTZIMjF2LTEuOTUxNDE2aC0xLjAxMzE4MzZ6TTE4IDE4SDh2LTcuN0M4IDguNDMgOS40NDQ0NDQ0NCA3IDExLjMzMzMzMzMzIDdoMy4zMzMzMzMzNEMxNi41NTU1NTU2IDcgMTggOC40MyAxOCAxMC4zVjE4eiIvPgo8L3N2Zz4=&quot;);"></span></button><button id="CHANNEL_PINS_BUTTON_ID" type="button" class=""><span style="background-image: url(&quot;data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNiIgaGVpZ2h0PSIyNiI+CiAgPGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj4KICAgIDxwYXRoIGQ9Ik0xIDFoMjR2MjRIMSIvPgogICAgPHBhdGggZmlsbD0iI0ZGRiIgZD0iTTE1IDE1VjZoLTR2OWgtLjUwODk5NDgyQzEwLjIyNzg4MDQ4IDE1IDEwIDE1LjIyMzg1NzYgMTAgMTUuNWMwIC4yNjgwNjY0LjIxOTgzMDUuNS40OTEwMDUxOC41aDUuMDE3OTg5NjRDMTUuNzcyMTE5NTIgMTYgMTYgMTUuNzc2MTQyNCAxNiAxNS41YzAtLjI2ODA2NjQtLjIxOTgzMDUtLjUtLjQ5MTAwNTE4LS41SDE1em0yLTloMVY0SDh2MmgxdjhsLTIgMnYyaDUuMnY0aDEuNnYtNEgxOXYtMmwtMi0yVjZ6Ii8+CiAgPC9nPgo8L3N2Zz4=&quot;);"></span></button><button type="button" class="active"><span style="background-image: url(&quot;data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNiIgaGVpZ2h0PSIyNiI+CiAgPGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj4KICAgIDxwYXRoIGQ9Ik0xIDFoMjR2MjRIMVYxeiIvPgogICAgPHBhdGggZmlsbD0iI0ZGRiIgZD0iTTE2Ljc3MjA3NTQgMTQuNjc5MTc3OGMtLjIyNDkwOTctLjIyNTY4ODYtLjQ3NDE1NzMtLjQzNTE2ODEtLjc0MjA3NTQtLjYyOTE3NzguMzUtLjAzLjY4LS4wNS45Ny0uMDUgMi4zMyAwIDcgMS4xNyA3IDMuNVYyMGgtNHYtMWMwLTEuODgxNjkxNC0xLjQwNzcwNTYtMy4zMjMwMTQzLTMuMjI3OTI0Ni00LjMyMDgyMjJ6bS0xLjQzODU3MzUtOC4xNzU4NTM0QzE1LjgwOTgwODIgNi4xODUyNTE3MyAxNi4zODI3ODQ1IDYgMTcgNmMxLjY2IDAgMi45OSAxLjM0IDIuOTkgM3MtMS4zMyAzLTIuOTkgM2MtLjYxNzE5MTQgMC0xLjE5MDE0NzEtLjE4NTIzNzMtMS42NjY0NDIzLS41MDMyODcyQzE1Ljc1NzQ4MzIgMTAuNzYyMTQwOTUgMTYgOS45MDk1NTYgMTYgOS4wMDAwNjY5M2MwLS45MDk1Mjg5Ni0uMjQyNTM4MS0xLjc2MjE0ODgtLjY2NjQ5ODEtMi40OTY3NDI1M3pNMTAgMTNjMi4yMSAwIDQtMS43OSA0LTRzLTEuNzktNC00LTQtNCAxLjc5LTQgNCAxLjc5IDQgNCA0em0wIDJjLTIuNjcgMC04IDEuMzQtOCA0djJoMTZ2LTJjMC0yLjY2LTUuMzMtNC04LTR6Ii8+CiAgPC9nPgo8L3N2Zz4=&quot;);"></span></button><div class="separator"></div><!-- react-empty: 684 --><button type="button" class=""><span style="background-image: url(https://discordapp.com/assets/567632a2702aed0296e15d68d6cae738.svg);"></span></button><button type="button" class=""><span style="background-image: url(&quot;data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNiIgaGVpZ2h0PSIyNiI+CiAgPHBhdGggZmlsbD0iI0ZGRiIgZmlsbC1ydWxlPSJldmVub2RkIiBkPSJNOCA5LjMyNTg0MjdjMCAuNzQxNTczMDMuNjE2NDM4MzYgMS4zNTk1NTA1NiAxLjM1NjE2NDM4IDEuMzU5NTUwNTYuNzM5NzI2MDMgMCAxLjM1NjE2NDQtLjYxNzk3NzUzIDEuMzU2MTY0NC0xLjM1OTU1MDU2IDAtMS40ODMxNDYwNyAxLjYwMjczOTctMS41NDQ5NDM4MiAxLjc4NzY3MTIyLTEuNTQ0OTQzODIuMTg0OTMxNSAwIDEuNzg3NjcxMjMuMDYxNzk3NzUgMS43ODc2NzEyMyAxLjU0NDk0Mzgydi4zMDg5ODg3NmMwIC42MTc5Nzc1My0uMzA4MjE5MTggMS4xMTIzNTk1NS0uODYzMDEzNyAxLjQyMTM0ODMybC0xLjIzMjg3NjcuNjc5Nzc1MjhjLS42NzgwODIyLjM3MDc4NjUtMS4wNDc5NDUyIDEuMDUwNTYxOC0xLjA0Nzk0NTIgMS43OTIxMzQ4M3YxLjExMjM1OTUyQzExLjE0MzgzNTYzIDE1LjM4MjAyMjUgMTEuNzYwMjczOTYgMTYgMTIuNSAxNmMuNzM5NzI2MDMgMCAxLjM1NjE2NDM4LS42MTc5Nzc1IDEuMzU2MTY0MzgtMS4zNTk1NTA1NnYtLjY3OTc3NTI4bC44NjMwMTM3LS40MzI1ODQyN0MxNi4xMzY5ODYzIDEyLjc4NjUxNjgyIDE3IDExLjMwMzM3MDggMTcgOS42OTY2Mjkydi0uMzcwNzg2NUMxNyA2LjQ4MzE0NjA3IDE0LjcxOTE3ODA4IDUgMTIuNSA1IDEwLjIxOTE3ODA4IDUgOCA2LjQ4MzE0NjA3IDggOS4zMjU4NDI3ek0xMi41IDE3Yy0yIDAtMiAzIDAgM3MyLTMgMC0zeiIvPgo8L3N2Zz4=&quot;);"></span></button></div></div><div class="content flex-spacer flex-horizontal"><div class="flex-spacer flex-vertical"><div class="messages-wrapper"><div class="new-messages-bar"><button type="button">50+ new messages since Forever</button><button type="button">Mark As Read</button></div><div class="scroller-wrap"><div class="scroller messages"><div class="empty-message"><h1><!-- react-text: 389 -->Welcome to the beginning of the <!-- /react-text --><strong><!-- react-text: 391 -->#info<!-- /react-text --></strong><!-- react-text: 392 --> channel.<!-- /react-text --></h1></div><div class="message-group has-divider hide-overflow"><div class="avatar-large stop-animation" style="background-image: url(&quot;https://i.imgur.com/3sc5OG3.png&quot;);"></div><div class="comment"><div class="message first"><div class="body"><h2><span class="username-wrapper"><strong class="user-name" style="color: rgb(81, 145, 226);">BetterDiscord</strong></span><span class="highlight-separator"> - </span><span class="timestamp">12/07/2015</span></h2><div class="message-text"><div class="btn-option"></div><div class="markup"><!-- react-text: 406 -->Supported Discord Version: ^0.0.292
-
-Download: <!-- /react-text --><a href="https://betterdiscord.net" target="_blank" rel="noreferrer"><!-- react-text: 408 -->https://betterdiscord.net<!-- /react-text --></a><!-- react-text: 409 -->
-
-Latest Core Version: 0.2.8 - Installer 0.2.81 - 12/07/2016
-Date: 07/05/2016
+                       voice-connection-quality-fine"><span class="ping"></span>
+                                            <!-- react-text: 8294 -->Voice Connected
+                                            <!-- /react-text -->
+                                        </div><a class="voice-connection-channel" href="#">Pfft / BetterDiscord</a></div>
+                                    <div class="btn-group"><button class="btn btn-info"></button><button class="btn btn-disconnect"></button></div>
+                                </div>
+                                <!-- react-empty: 43 -->
+                                <div class="account">
+                                    <div class="avatar-small stop-animation" style="background-image: url(&quot;https://cdn.discordapp.com/avatars/172218388880293888/e64c4a0cc7d041422ee617e4d0548414.jpg&quot;);">
+                                        <div class="status status-online"></div>
+                                    </div>
+                                    <div class="account-details"><span class="username">Omniscient</span><span class="discriminator"><!-- react-text: 381 -->#<!-- /react-text --><!-- react-text: 382 -->7994<!-- /react-text --></span></div>
+                                    <div class="btn-group"><button class="btn btn-mute"></button><button class="btn btn-deafen"></button><button class="btn btn-settings"></button></div>
+                                </div>
+                            </div>
+                            <div class="chat flex-vertical flex-spacer">
+                                <div class="title-wrap">
+                                    <!-- react-empty: 149 -->
+                                    <div class="title"><span class="channel-name">info</span></div>
+                                    <div class="topic topic-expandable">
+                                        <!-- react-text: 1427 -->BetterDiscord Docs are out now!
+                                        <!-- /react-text -->
+                                        <a href="https://betterdocs.net" target="_blank" rel="noreferrer">
+                                            <!-- react-text: 1429 -->https://betterdocs.net
+                                            <!-- /react-text -->
+                                        </a>
+                                        <!-- react-text: 1430 -->
+                                        <!-- /react-text --><u><strong><!-- react-text: 1433 -->All the help you need!<!-- /react-text --></strong></u></div>
+                                    <div class="header-toolbar"><button type="button" class=""><span style="background-image: url(&quot;data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNiIgaGVpZ2h0PSIyNiI+CiAgPHBhdGggZmlsbD0iI0ZGRiIgZmlsbC1ydWxlPSJldmVub2RkIiBkPSJNMTMuMDA2Mjg2NjIgMjJjMSAwIDEuNzE0Mjg1NzItLjQwMTk1MzEgMS45OTk5OTk5OC0xLjAwNDg4MjhoLTMuOTk5OTk5OThjLjI4NTcxNDMuNjAyOTI5NyAxIDEuMDA0ODgyOCAyIDEuMDA0ODgyOHptNi45ODA1Mjk3OC0zLjk2MzQzOTlWMTBjMC0yLjY0LTIuMzAyODY2OC00Ljk3NTAzNjYyLTUuMDEwNTU5MDgtNC45NzUwMzY2MiAwLS43Mi0uMzQ0MDU1MTctMS4wMjk4NDYyLTEuOTczMTE0LTEuMDI5ODQ2Mi0xLjYyOTA1ODg1IDAtMS45NjU4NTA4NC4zMDk4NDYyLTEuOTY1ODUwODQgMS4wMjk4NDYyQzguMzI5NjAwMTggNS4wMjQ5NjMzOCA1Ljk5NTQ4MzQgNy4zNiA1Ljk5NTQ4MzQgMTB2OC4wMzY1NjAxaC0uOTg5MTk2Nzh2MS45NTE0MTZIMjF2LTEuOTUxNDE2aC0xLjAxMzE4MzZ6TTE4IDE4SDh2LTcuN0M4IDguNDMgOS40NDQ0NDQ0NCA3IDExLjMzMzMzMzMzIDdoMy4zMzMzMzMzNEMxNi41NTU1NTU2IDcgMTggOC40MyAxOCAxMC4zVjE4eiIvPgo8L3N2Zz4=&quot;);"></span></button><button id="CHANNEL_PINS_BUTTON_ID" type="button" class=""><span style="background-image: url(&quot;data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNiIgaGVpZ2h0PSIyNiI+CiAgPGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj4KICAgIDxwYXRoIGQ9Ik0xIDFoMjR2MjRIMSIvPgogICAgPHBhdGggZmlsbD0iI0ZGRiIgZD0iTTE1IDE1VjZoLTR2OWgtLjUwODk5NDgyQzEwLjIyNzg4MDQ4IDE1IDEwIDE1LjIyMzg1NzYgMTAgMTUuNWMwIC4yNjgwNjY0LjIxOTgzMDUuNS40OTEwMDUxOC41aDUuMDE3OTg5NjRDMTUuNzcyMTE5NTIgMTYgMTYgMTUuNzc2MTQyNCAxNiAxNS41YzAtLjI2ODA2NjQtLjIxOTgzMDUtLjUtLjQ5MTAwNTE4LS41SDE1em0yLTloMVY0SDh2MmgxdjhsLTIgMnYyaDUuMnY0aDEuNnYtNEgxOXYtMmwtMi0yVjZ6Ii8+CiAgPC9nPgo8L3N2Zz4=&quot;);"></span></button><button type="button" class="active"><span style="background-image: url(&quot;data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNiIgaGVpZ2h0PSIyNiI+CiAgPGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj4KICAgIDxwYXRoIGQ9Ik0xIDFoMjR2MjRIMVYxeiIvPgogICAgPHBhdGggZmlsbD0iI0ZGRiIgZD0iTTE2Ljc3MjA3NTQgMTQuNjc5MTc3OGMtLjIyNDkwOTctLjIyNTY4ODYtLjQ3NDE1NzMtLjQzNTE2ODEtLjc0MjA3NTQtLjYyOTE3NzguMzUtLjAzLjY4LS4wNS45Ny0uMDUgMi4zMyAwIDcgMS4xNyA3IDMuNVYyMGgtNHYtMWMwLTEuODgxNjkxNC0xLjQwNzcwNTYtMy4zMjMwMTQzLTMuMjI3OTI0Ni00LjMyMDgyMjJ6bS0xLjQzODU3MzUtOC4xNzU4NTM0QzE1LjgwOTgwODIgNi4xODUyNTE3MyAxNi4zODI3ODQ1IDYgMTcgNmMxLjY2IDAgMi45OSAxLjM0IDIuOTkgM3MtMS4zMyAzLTIuOTkgM2MtLjYxNzE5MTQgMC0xLjE5MDE0NzEtLjE4NTIzNzMtMS42NjY0NDIzLS41MDMyODcyQzE1Ljc1NzQ4MzIgMTAuNzYyMTQwOTUgMTYgOS45MDk1NTYgMTYgOS4wMDAwNjY5M2MwLS45MDk1Mjg5Ni0uMjQyNTM4MS0xLjc2MjE0ODgtLjY2NjQ5ODEtMi40OTY3NDI1M3pNMTAgMTNjMi4yMSAwIDQtMS43OSA0LTRzLTEuNzktNC00LTQtNCAxLjc5LTQgNCAxLjc5IDQgNCA0em0wIDJjLTIuNjcgMC04IDEuMzQtOCA0djJoMTZ2LTJjMC0yLjY2LTUuMzMtNC04LTR6Ii8+CiAgPC9nPgo8L3N2Zz4=&quot;);"></span></button>
+                                        <div class="separator"></div>
+                                        <!-- react-empty: 684 --><button type="button" class=""><span style="background-image: url(https://discordapp.com/assets/567632a2702aed0296e15d68d6cae738.svg);"></span></button><button type="button" class=""><span style="background-image: url(&quot;data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNiIgaGVpZ2h0PSIyNiI+CiAgPHBhdGggZmlsbD0iI0ZGRiIgZmlsbC1ydWxlPSJldmVub2RkIiBkPSJNOCA5LjMyNTg0MjdjMCAuNzQxNTczMDMuNjE2NDM4MzYgMS4zNTk1NTA1NiAxLjM1NjE2NDM4IDEuMzU5NTUwNTYuNzM5NzI2MDMgMCAxLjM1NjE2NDQtLjYxNzk3NzUzIDEuMzU2MTY0NC0xLjM1OTU1MDU2IDAtMS40ODMxNDYwNyAxLjYwMjczOTctMS41NDQ5NDM4MiAxLjc4NzY3MTIyLTEuNTQ0OTQzODIuMTg0OTMxNSAwIDEuNzg3NjcxMjMuMDYxNzk3NzUgMS43ODc2NzEyMyAxLjU0NDk0Mzgydi4zMDg5ODg3NmMwIC42MTc5Nzc1My0uMzA4MjE5MTggMS4xMTIzNTk1NS0uODYzMDEzNyAxLjQyMTM0ODMybC0xLjIzMjg3NjcuNjc5Nzc1MjhjLS42NzgwODIyLjM3MDc4NjUtMS4wNDc5NDUyIDEuMDUwNTYxOC0xLjA0Nzk0NTIgMS43OTIxMzQ4M3YxLjExMjM1OTUyQzExLjE0MzgzNTYzIDE1LjM4MjAyMjUgMTEuNzYwMjczOTYgMTYgMTIuNSAxNmMuNzM5NzI2MDMgMCAxLjM1NjE2NDM4LS42MTc5Nzc1IDEuMzU2MTY0MzgtMS4zNTk1NTA1NnYtLjY3OTc3NTI4bC44NjMwMTM3LS40MzI1ODQyN0MxNi4xMzY5ODYzIDEyLjc4NjUxNjgyIDE3IDExLjMwMzM3MDggMTcgOS42OTY2Mjkydi0uMzcwNzg2NUMxNyA2LjQ4MzE0NjA3IDE0LjcxOTE3ODA4IDUgMTIuNSA1IDEwLjIxOTE3ODA4IDUgOCA2LjQ4MzE0NjA3IDggOS4zMjU4NDI3ek0xMi41IDE3Yy0yIDAtMiAzIDAgM3MyLTMgMC0zeiIvPgo8L3N2Zz4=&quot;);"></span></button></div>
+                                </div>
+                                <div class="content flex-spacer flex-horizontal">
+                                    <div class="flex-spacer flex-vertical">
+                                        <div class="messages-wrapper">
+                                            <div class="new-messages-bar"><button type="button">50+ new messages since Forever</button><button type="button">Mark As Read</button></div>
+                                            <div class="scroller-wrap">
+                                                <div class="scroller messages">
+                                                    <div class="empty-message">
+                                                        <h1><!-- react-text: 389 -->Welcome to the beginning of the <!-- /react-text --><strong><!-- react-text: 391 -->#info<!-- /react-text --></strong><!-- react-text: 392 --> channel.<!-- /react-text --></h1></div>
+                                                    <div class="message-group has-divider hide-overflow">
+                                                        <div class="avatar-large stop-animation" style="background-image: url(&quot;https://i.imgur.com/3sc5OG3.png&quot;);"></div>
+                                                        <div class="comment">
+                                                            <div class="message first">
+                                                                <div class="body">
+                                                                    <h2><span class="username-wrapper"><strong class="user-name" style="color: rgb(81, 145, 226);">BetterDiscord</strong></span><span class="highlight-separator"> - </span><span class="timestamp">12/07/2015</span></h2>
+                                                                    <div class="message-text">
+                                                                        <div class="btn-option"></div>
+                                                                        <div class="markup"><!-- react-text: 406 -->Supported Discord Version: ^0.0.292
+                                                                            
+Download:<!-- /react-text --> <a href="https://betterdiscord.net" target="_blank" rel="noreferrer"><!-- react-text: 408 -->https://betterdiscord.net<!-- /react-text --></a><!-- react-text: 409 -->
+                                                                            
+Latest Core Version: 0.2.8 - Installer 0.2.81 - 12/07/2016 
+Date: 07/05/2016 
 ====================================================
-Latest JavaScript Version: 1.73
-Date: 24/05/2016
+Latest JavaScript Version: 1.73 
+Date: 24/05/2016 
 ====================================================
-
-<!-- /react-text --><a href="https://betterdocs.net/" target="_blank" rel="noreferrer"><!-- react-text: 419 -->https://betterdocs.net/<!-- /react-text --></a><!-- react-text: 420 --> | <!-- /react-text --><a href="https://twitter.com/Omniscien_t" target="_blank" rel="noreferrer"><!-- react-text: 422 -->https://twitter.com/Omniscien_t<!-- /react-text --></a><!-- react-text: 423 --> | <!-- /react-text --><a href="https://github.com/0mniscient" target="_blank" rel="noreferrer"><!-- react-text: 425 -->https://github.com/0mniscient<!-- /react-text --></a><span class="edited"><!-- react-text: 427 -->(<!-- /react-text --><!-- react-text: 428 -->edited<!-- /react-text --><!-- react-text: 429 -->)<!-- /react-text --></span></div></div></div><div class="accessory"></div></div></div></div><div class="divider"><div></div><span>April 2, 2016</span><div></div></div><div class="message-group has-divider hide-overflow"><div class="avatar-large stop-animation" style="background-image: url(&quot;https://cdn.discordapp.com/avatars/81388395867156480/7b1707181fda3f006e2b77608e4c692e.jpg&quot;);"></div><div class="comment"><div class="message first"><div class="body"><h2><span class="username-wrapper"><strong class="user-name" style="color: rgb(150, 184, 220);">Jiiks</strong></span><span class="highlight-separator"> - </span><span class="timestamp">04/02/2016</span></h2><div class="message-text"><div class="btn-option"></div><div class="markup"><code class="inline">Once ` Preview</code>
-
-<!-- /react-text --><pre><code class="hljs">Triple ` Preview
+<!-- /react-text -->
+<a href="https://betterdocs.net/" target="_blank" rel="noreferrer"><!-- react-text: 419 -->https://betterdocs.net/<!-- /react-text --></a> <!-- react-text: 420 -->|<!-- /react-text --> <a href="https://twitter.com/Omniscien_t" target="_blank" rel="noreferrer"><!-- react-text: 422 -->https://twitter.com/Omniscien_t<!-- /react-text --></a> <!-- react-text: 423 -->|<!-- /react-text --> <a href="https://github.com/0mniscient" target="_blank" rel="noreferrer"><!-- react-text: 425 -->https://github.com/0mniscient<!-- /react-text --></a><span class="edited"><!-- react-text: 427 -->(<!-- /react-text --><!-- react-text: 428 -->edited<!-- /react-text --><!-- react-text: 429 -->)<!-- /react-text --></span></div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="accessory"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="divider">
+                                                        <div></div><span>April 2, 2016</span>
+                                                        <div></div>
+                                                    </div>
+                                                    <div class="message-group has-divider hide-overflow">
+                                                        <div class="avatar-large stop-animation" style="background-image: url(&quot;https://cdn.discordapp.com/avatars/81388395867156480/7b1707181fda3f006e2b77608e4c692e.jpg&quot;);"></div>
+                                                        <div class="comment">
+                                                            <div class="message first">
+                                                                <div class="body">
+                                                                    <h2><span class="username-wrapper"><strong class="user-name" style="color: rgb(150, 184, 220);">Jiiks</strong></span><span class="highlight-separator"> - </span><span class="timestamp">04/02/2016</span></h2>
+                                                                    <div class="message-text">
+                                                                        <div class="btn-option"></div>
+                                                                        <div class="markup"><code class="inline">Once ` Preview</code>
+                                                                            <!-- /react-text --><pre><code class="hljs">Triple ` Preview
 1 Line
 2 Lines
-3 Lines</code></pre><!-- react-text: 457 --><span class="edited"><!-- react-text: 467 -->(<!-- /react-text --><!-- react-text: 468 -->edited<!-- /react-text --><!-- react-text: 469 -->)<!-- /react-text --></span></div></div></div><div class="accessory"></div></div></div></div><div class="divider"><div></div><span>April 5, 2016</span><div></div></div>
-<div class="message-group has-divider hide-overflow"><div class="avatar-large stop-animation" style="background-image: url(&quot;https://cdn.discordapp.com/avatars/81388395867156480/7b1707181fda3f006e2b77608e4c692e.jpg&quot;);"></div><div class="comment"><div class="message first"><div class="body"><h2><span class="username-wrapper"><strong class="user-name" style="color: rgb(150, 184, 220);">Jiiks</strong></span><span class="highlight-separator"> - </span><span class="timestamp">04/05/2016</span></h2><div class="message mentioned"><div class="body"><div class="message-text"><div class="btn-option"></div><div class="markup"><!-- react-text: 488 -->Here is a mention <span class="highlight"><!-- react-text: 5060 -->@Omniscient<!-- /react-text --></span><!-- /react-text --><span class="edited"><!-- react-text: 543 -->(<!-- /react-text --><!-- react-text: 544 -->edited<!-- /react-text --><!-- react-text: 545 -->)<!-- /react-text --></span></div></div></div><div class="accessory"></div></div></div></div></div></div><div class="divider divider-red"><div></div><span>New Messages</span><div></div></div><div class="message-group hide-overflow"><div class="avatar-large stop-animation" style="background-image: url(&quot;https://cdn.discordapp.com/avatars/81388395867156480/7b1707181fda3f006e2b77608e4c692e.jpg&quot;);"></div><div class="comment"><div class="message first"><div class="body"><h2><span class="username-wrapper"><strong class="user-name" style="color: rgb(150, 184, 220);">Jiiks</strong></span><span class="highlight-separator"> - </span><span class="timestamp">07/24/2016</span></h2><div class="message-text"><div class="btn-option"></div><div class="markup"><!-- react-text: 564 -->Expired
-<!-- /react-text --><a href="https://discord.gg/0Tmfo5ZbORCRqbAd" target="_blank" rel="noreferrer"><!-- react-text: 566 -->https://discord.gg/0Tmfo5ZbORCRqbAd<!-- /react-text --></a></div></div></div><div class="accessory"><div class="invite-button expired"><div class="invite-button-icon expired"></div><div class="invite-button-inner"><div class="invite-button-header">Invite Expired</div></div></div></div></div></div></div><div class="message-group hide-overflow"><div class="avatar-large stop-animation" style="background-image: url(&quot;https://i.imgur.com/3sc5OG3.png&quot;);"></div><div class="comment"><div class="message first"><div class="body"><h2><span class="username-wrapper"><strong class="user-name" style="color: rgb(81, 145, 226);">BetterDiscord</strong></span><span class="highlight-separator"> - </span><span class="timestamp">07/24/2016</span></h2><div class="message-text"><div class="btn-option"></div><div class="markup"><!-- react-text: 589 -->Non Expired
-<!-- /react-text --><a href="https://discord.gg/vWeGAza" target="_blank" rel="noreferrer"><!-- react-text: 591 -->https://discord.gg/vWeGAza<!-- /react-text --></a><span class="edited"><!-- react-text: 593 -->(<!-- /react-text --><!-- react-text: 594 -->edited<!-- /react-text --><!-- react-text: 595 -->)<!-- /react-text --></span></div></div></div><div class="accessory"><div class="invite-button accepted"><div class="invite-button-icon accepted"></div><div class="invite-button-inner"><div class="invite-button-header">INVITATION</div></div></div></div></div></div></div></div></div></div><form lpformnum="1"><div class="channel-textarea channel-textarea-disabled"><div class="channel-textarea-inner"><textarea rows="1" placeholder="You do not have permission to send messages in this channel." disabled="" style="height: auto; overflow: hidden;"></textarea></div></div><!-- react-empty: 180 --></form></div><div class="channel-members-wrap"><div class="scroller-wrap fade light"><div class="scroller channel-members"><div style="width: 100%; height: 0px; visibility: hidden;"></div><h2><!-- react-text: 188 -->Owner<!-- /react-text --><!-- react-text: 189 -->—<!-- /react-text --><!-- react-text: 190 -->1<!-- /react-text --></h2><div class="member member-status member-status-online"><div class="avatar-small stop-animation" style="background-image: url(&quot;https://cdn.discordapp.com/avatars/81388395867156480/7b1707181fda3f006e2b77608e4c692e.jpg&quot;);"><div class="status status-online"></div></div><div class="member-inner"><div class="member-username" style="color: rgb(150, 184, 220);"><span class="member-username-inner">Jiiks</span></div></div></div><h2><!-- react-text: 214 -->Developer<!-- /react-text --><!-- react-text: 215 -->—<!-- /react-text --><!-- react-text: 216 -->1<!-- /react-text --></h2><div class="member member-status member-status-online"><div class="avatar-small stop-animation" style="background-image: url(&quot;https://cdn.discordapp.com/avatars/172218388880293888/e64c4a0cc7d041422ee617e4d0548414.jpg&quot;);"><div class="status status-idle"></div></div><div class="member-inner"><div class="member-username" style="color: rgb(255, 0, 51);"><span class="member-username-inner">Omniscient</span></div></div></div><h2><!-- react-text: 224 -->OFFLINE<!-- /react-text --><!-- react-text: 225 -->—<!-- /react-text --><!-- react-text: 226 -->1<!-- /react-text --></h2><div class="member member-status member-status-offline"><div class="avatar-small stop-animation" style="background-image: url(&quot;https://i.imgur.com/3sc5OG3.png&quot;);"><div class="status status-offline"></div></div><div class="member-inner"><div class="member-username" style="color: rgb(81, 145, 226);"><span class="member-username-inner">BetterDiscord</span></div><div class="member-activity"><!-- react-text: 234 -->Playing <!-- /react-text --><strong><!-- react-text: 236 -->Discord<!-- /react-text --></strong></div></div></div><div style="width: 100%; height: 100%; visibility: hidden;"></div></div></div><!-- react-empty: 186 --></div></div></div></section><div class="upload-area"><div class="upload-drop-modal"><div class="bgScale"></div><div class="inner"><div class="icons"><div class="wrap-one"><div class="icon one"></div></div><div class="wrap-three"><div class="icon three"></div></div><div class="wrap-two"><div class="icon two"></div></div></div><div class="title">Drag &amp; Drop</div><div class="instructions"><pre>
+3 Lines</code></pre><!-- react-text: 457 --><span class="edited"><!-- react-text: 467 -->(<!-- /react-text --><!-- react-text: 468 -->edited<!-- /react-text --><!-- react-text: 469 -->)<!-- /react-text --></span></div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="accessory"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="divider">
+                                                        <div></div><span>April 5, 2016</span>
+                                                        <div></div>
+                                                    </div>
+                                                    <div class="message-group has-divider hide-overflow">
+                                                        <div class="avatar-large stop-animation" style="background-image: url(&quot;https://cdn.discordapp.com/avatars/81388395867156480/7b1707181fda3f006e2b77608e4c692e.jpg&quot;);"></div>
+                                                        <div class="comment">
+                                                            <div class="message first">
+                                                                <div class="body">
+                                                                    <h2><span class="username-wrapper"><strong class="user-name" style="color: rgb(150, 184, 220);">Jiiks</strong></span><span class="highlight-separator"> - </span><span class="timestamp">04/05/2016</span></h2>
+                                                                    <div class="message mentioned">
+                                                                        <div class="body">
+                                                                            <div class="message-text">
+                                                                                <div class="btn-option"></div>
+                                                                                <div class="markup"><!-- react-text: 488 -->Here is a mention <span class="highlight"><!-- react-text: 5060 -->@Omniscient<!-- /react-text --></span><!-- /react-text --><span class="edited"><!-- react-text: 543 -->(<!-- /react-text --><!-- react-text: 544 -->edited<!-- /react-text --><!-- react-text: 545 -->)<!-- /react-text --></span></div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="accessory"></div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="divider divider-red">
+                                                        <div></div><span>New Messages</span>
+                                                        <div></div>
+                                                    </div>
+                                                    <div class="message-group hide-overflow">
+                                                        <div class="avatar-large stop-animation" style="background-image: url(&quot;https://cdn.discordapp.com/avatars/81388395867156480/7b1707181fda3f006e2b77608e4c692e.jpg&quot;);"></div>
+                                                        <div class="comment">
+                                                            <div class="message first">
+                                                                <div class="body">
+                                                                    <h2><span class="username-wrapper"><strong class="user-name" style="color: rgb(150, 184, 220);">Jiiks</strong></span><span class="highlight-separator"> - </span><span class="timestamp">07/24/2016</span></h2>
+                                                                    <div class="message-text">
+                                                                        <div class="btn-option"></div>
+                                                                        <div class="markup"><!-- react-text: 564 -->Expired<!-- /react-text -->
+<a href="https://discord.gg/0Tmfo5ZbORCRqbAd" target="_blank" rel="noreferrer"><!-- react-text: 566 -->https://discord.gg/0Tmfo5ZbORCRqbAd<!-- /react-text --></a></div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="accessory">
+                                                                    <div class="invite-button expired">
+                                                                        <div class="invite-button-icon expired"></div>
+                                                                        <div class="invite-button-inner">
+                                                                            <div class="invite-button-header">Invite Expired</div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="message-group hide-overflow">
+                                                        <div class="avatar-large stop-animation" style="background-image: url(&quot;https://i.imgur.com/3sc5OG3.png&quot;);"></div>
+                                                        <div class="comment">
+                                                            <div class="message first">
+                                                                <div class="body">
+                                                                    <h2><span class="username-wrapper"><strong class="user-name" style="color: rgb(81, 145, 226);">BetterDiscord</strong></span><span class="highlight-separator"> - </span><span class="timestamp">07/24/2016</span></h2>
+                                                                    <div class="message-text">
+                                                                        <div class="btn-option"></div>
+                                                                        <div class="markup"><!-- react-text: 589 -->Non Expired<!-- /react-text -->
+<a href="https://discord.gg/vWeGAza" target="_blank" rel="noreferrer"><!-- react-text: 591 -->https://discord.gg/vWeGAza<!-- /react-text --></a><span class="edited"><!-- react-text: 593 -->(<!-- /react-text --><!-- react-text: 594 -->edited<!-- /react-text --><!-- react-text: 595 -->)<!-- /react-text --></span></div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="accessory">
+                                                                    <div class="invite-button accepted">
+                                                                        <div class="invite-button-icon accepted"></div>
+                                                                        <div class="invite-button-inner">
+                                                                            <div class="invite-button-header">INVITATION</div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <form lpformnum="1">
+                                            <div class="channel-textarea channel-textarea-disabled">
+                                                <div class="channel-textarea-inner"><textarea rows="1" placeholder="You do not have permission to send messages in this channel." disabled="" style="height: auto; overflow: hidden;"></textarea></div>
+                                            </div>
+                                            <!-- react-empty: 180 -->
+                                        </form>
+                                    </div>
+                                    <div class="channel-members-wrap">
+                                        <div class="scroller-wrap fade light">
+                                            <div class="scroller channel-members">
+                                                <div style="width: 100%; height: 0px; visibility: hidden;"></div>
+                                                <h2><!-- react-text: 188 -->Owner<!-- /react-text --><!-- react-text: 189 -->—<!-- /react-text --><!-- react-text: 190 -->1<!-- /react-text --></h2>
+                                                <div class="member member-status member-status-online">
+                                                    <div class="avatar-small stop-animation" style="background-image: url(&quot;https://cdn.discordapp.com/avatars/81388395867156480/7b1707181fda3f006e2b77608e4c692e.jpg&quot;);">
+                                                        <div class="status status-online"></div>
+                                                    </div>
+                                                    <div class="member-inner">
+                                                        <div class="member-username" style="color: rgb(150, 184, 220);"><span class="member-username-inner">Jiiks</span></div>
+                                                    </div>
+                                                </div>
+                                                <h2><!-- react-text: 214 -->Developer<!-- /react-text --><!-- react-text: 215 -->—<!-- /react-text --><!-- react-text: 216 -->1<!-- /react-text --></h2>
+                                                <div class="member member-status member-status-online">
+                                                    <div class="avatar-small stop-animation" style="background-image: url(&quot;https://cdn.discordapp.com/avatars/172218388880293888/e64c4a0cc7d041422ee617e4d0548414.jpg&quot;);">
+                                                        <div class="status status-idle"></div>
+                                                    </div>
+                                                    <div class="member-inner">
+                                                        <div class="member-username" style="color: rgb(255, 0, 51);"><span class="member-username-inner">Omniscient</span></div>
+                                                    </div>
+                                                </div>
+                                                <h2><!-- react-text: 224 -->OFFLINE<!-- /react-text --><!-- react-text: 225 -->—<!-- /react-text --><!-- react-text: 226 -->1<!-- /react-text --></h2>
+                                                <div class="member member-status member-status-offline">
+                                                    <div class="avatar-small stop-animation" style="background-image: url(&quot;https://i.imgur.com/3sc5OG3.png&quot;);">
+                                                        <div class="status status-offline"></div>
+                                                    </div>
+                                                    <div class="member-inner">
+                                                        <div class="member-username" style="color: rgb(81, 145, 226);"><span class="member-username-inner">BetterDiscord</span></div>
+                                                        <div class="member-activity">
+                                                            <!-- react-text: 234 -->Playing
+                                                            <!-- /react-text --><strong><!-- react-text: 236 -->Discord<!-- /react-text --></strong></div>
+                                                    </div>
+                                                </div>
+                                                <div style="width: 100%; height: 100%; visibility: hidden;"></div>
+                                            </div>
+                                        </div>
+                                        <!-- react-empty: 186 -->
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <div class="upload-area">
+                            <div class="upload-drop-modal">
+                                <div class="bgScale"></div>
+                                <div class="inner">
+                                    <div class="icons">
+                                        <div class="wrap-one">
+                                            <div class="icon one"></div>
+                                        </div>
+                                        <div class="wrap-three">
+                                            <div class="icon three"></div>
+                                        </div>
+                                        <div class="wrap-two">
+                                            <div class="icon two"></div>
+                                        </div>
+                                    </div>
+                                    <div class="title">Drag &amp; Drop</div>
+                                    <div class="instructions"><pre>
 You can add comments before uploading.
-Hold shift to upload directly.</pre></div></div></div></div><!-- react-empty: 97 --><!-- react-empty: 98 --><!-- react-empty: 99 --></div></div></div><div class="tooltips"></div><div class="tutorial-indicators"></div><div class="theme-dark"></div><span></span><!-- react-empty: 104 --><span class="incoming-calls"></span><!-- react-empty: 681 --></div></div>
-  <div style="display: none;">}</div><script>window.__require = window.require</script>
-  <script>window.__OVERLAY__ = window.overlay != null</script><script src="https://d2wy8f7a9ursnm.cloudfront.net/bugsnag-2.5.0.min.js" data-apikey="261992831938f41f01ac83576bec95da"></script>
-<script src="https://betterdocs.net/themes/assets/9bcc735252d5cdc3055f.js"></script>
+Hold shift to upload directly.</pre></div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- react-empty: 97 -->
+                        <!-- react-empty: 98 -->
+                        <!-- react-empty: 99 -->
+                    </div>
+                </div>
+            </div>
+            <div class="tooltips"></div>
+            <div class="tutorial-indicators"></div>
+            <div class="theme-dark"></div><span></span>
+            <!-- react-empty: 104 --><span class="incoming-calls"></span>
+            <!-- react-empty: 681 -->
+        </div>
+    </div>
+    <div style="display: none;">}</div>
+    <script>
+        window.__require = window.require
+    </script>
+    <script>
+        window.__OVERLAY__ = window.overlay != null
+    </script>
+    <script src="https://d2wy8f7a9ursnm.cloudfront.net/bugsnag-2.5.0.min.js" data-apikey="261992831938f41f01ac83576bec95da"></script>
+    <script src="https://betterdocs.net/themes/assets/9bcc735252d5cdc3055f.js"></script>
 </body>
