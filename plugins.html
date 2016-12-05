@@ -1,642 +1,670 @@
 <!DOCTYPE html>
-<html xmlns="https://www.w3.org/1999/xhtml" xmlns:fb="http://ogp.me/ns/fb#"><head>
+<html xmlns="https://www.w3.org/1999/xhtml" xmlns:fb="http://ogp.me/ns/fb#">
+
 <head>
-<title>Plugins | Discord</title>
-<meta charset=utf-8>
-<meta content="IE=edge" http-equiv=X-UA-Compatible>
-<meta content="width=device-width,initial-scale=1" name=viewport>
-<meta content="List of free high quality Discord plugins by our community! Modify your Discord to your own liking with advanced plugins!" name=description>
-<meta content="Omni Omniscient Jiiks Hammock Maple Bluescream BetterDiscord Discord Themes Plugins Theme Plugin Installation How-To" name="keywords">
-<!-- CSS -->
-<link rel="stylesheet" href="https://betterdocs.net/stylesheets/style.css">
-<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet" type="text/css">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 
-<!-- Open Graph -->
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://betterdocs.net/" />
-<meta property="og:site_name" content="Omni" />
-<meta property="og:title" content="BetterDiscord Docs" />
-<meta property="og:image" content="https://i.imgur.com/3sc5OG3.png" />
-<!-- Icon -->
-<link href=https://imgur.com/GZVRLfz.png rel="shortcut icon">
-<!-- Google Analytics -->
-<script>
-    (function(i, s, o, g, r, a, m) {
-        i['GoogleAnalyticsObject'] = r;
-        i[r] = i[r] || function() {
-            (i[r].q = i[r].q || []).push(arguments)
-        }, i[r].l = 1 * new Date();
-        a = s.createElement(o),
-            m = s.getElementsByTagName(o)[0];
-        a.async = 1;
-        a.src = g;
-        m.parentNode.insertBefore(a, m)
-    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+    <head>
+        <title>Plugins | Discord</title>
+        <meta charset=utf-8>
+        <meta content="IE=edge" http-equiv=X-UA-Compatible>
+        <meta content="width=device-width,initial-scale=1" name=viewport>
+        <meta content="List of free high quality Discord plugins by our community! Modify your Discord to your own liking with advanced plugins!" name=description>
+        <meta content="Omni Omniscient Jiiks Hammock Maple Bluescream BetterDiscord Discord Themes Plugins Theme Plugin Installation How-To" name="keywords">
+        <!-- CSS -->
+        <link rel="stylesheet" href="https://betterdocs.net/stylesheets/style.css">
+        <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 
-    ga('create', 'UA-65593962-3', 'auto');
-    ga('send', 'pageview');
-</script>
-</head>
+        <!-- Open Graph -->
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://betterdocs.net/" />
+        <meta property="og:site_name" content="Omni" />
+        <meta property="og:title" content="BetterDiscord Docs" />
+        <meta property="og:image" content="https://i.imgur.com/3sc5OG3.png" />
+        <!-- Icon -->
+        <link href=https://imgur.com/GZVRLfz.png rel="shortcut icon">
+        <!-- Google Analytics -->
+        <script>
+            (function(i, s, o, g, r, a, m) {
+                i['GoogleAnalyticsObject'] = r;
+                i[r] = i[r] || function() {
+                    (i[r].q = i[r].q || []).push(arguments)
+                }, i[r].l = 1 * new Date();
+                a = s.createElement(o),
+                    m = s.getElementsByTagName(o)[0];
+                a.async = 1;
+                a.src = g;
+                m.parentNode.insertBefore(a, m)
+            })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
 
-<body>
-    <div id="container">
-        <header id="header" class="wrapper">
-            <div id="header-inner" class="inner">
-                <h1 id="logo-wrap">
+            ga('create', 'UA-65593962-3', 'auto');
+            ga('send', 'pageview');
+        </script>
+    </head>
+
+    <body>
+        <div id="container">
+            <header id="header" class="wrapper">
+                <div id="header-inner" class="inner">
+                    <h1 id="logo-wrap">
       <a href="https://betterdocs.net/" id="logo">BetterDiscord</a>
     </h1>
-                <nav id="main-nav">
-                    <a href="https://betterdocs.net" class="main-nav-link">Docs</a>
-                    <a href="https://betterdocs.net/news/" class="main-nav-link">News</a>
-                    <a href="https://betterdocs.net/plugin_api.html" class="main-nav-link">API</a>
-                    <a href="https://betterdocs.net/themes.html" class="main-nav-link">Themes</a>
-                    <a href="https://betterdocs.net/plugins.html" class="main-nav-link">Plugins</a>
-                    <a href="https://github.com/0mniscient/" class="main-nav-link"><i class="fa fa-github-alt"></i></a>
-                </nav>
-                <div id="lang-select-wrap">
-                    <label id="lang-select-label"><i class="fa fa-globe"></i><span>English</span></label>
-                    <select id="lang-select" data-canonical="docs/index.html">
+                    <nav id="main-nav">
+                        <a href="https://betterdocs.net" class="main-nav-link">Docs</a>
+                        <a href="https://betterdocs.net/news/" class="main-nav-link">News</a>
+                        <a href="https://betterdocs.net/plugin_api.html" class="main-nav-link">API</a>
+                        <a href="https://betterdocs.net/themes.html" class="main-nav-link">Themes</a>
+                        <a href="https://betterdocs.net/plugins.html" class="main-nav-link">Plugins</a>
+                        <a href="https://github.com/0mniscient/" class="main-nav-link"><i class="fa fa-github-alt"></i></a>
+                    </nav>
+                    <div id="lang-select-wrap">
+                        <label id="lang-select-label"><i class="fa fa-globe"></i><span>English</span></label>
+                        <select id="lang-select" data-canonical="docs/index.html">
 
                         <option value="en" selected>English</option>
 
                     </select>
+                    </div>
+                    <a id="mobile-nav-toggle">
+                        <span class="mobile-nav-toggle-bar"></span>
+                        <span class="mobile-nav-toggle-bar"></span>
+                        <span class="mobile-nav-toggle-bar"></span>
+                    </a>
                 </div>
-                <a id="mobile-nav-toggle">
-                    <span class="mobile-nav-toggle-bar"></span>
-                    <span class="mobile-nav-toggle-bar"></span>
-                    <span class="mobile-nav-toggle-bar"></span>
-                </a>
-            </div>
-        </header>
+            </header>
 
-        <div id="content-wrap">
-            <div class="wrapper">
+            <div id="content-wrap">
+                <div class="wrapper">
+                    <div class="inner">
+                        <header id="plugin-list-header">
+                            <h1 id="plugin-list-title">Plugins</h1>
+                            <a href="https://github.com/0mniscient/BetterDiscord/edit/gh-pages/plugins.html" class="add-pencil" title="Add Plugin"><i class="fa fa-plus"></i></a>
+                            <input type="search" id="plugin-search-input" placeholder="Need Dev to add search engine">
+                            <div id="plugin-list-count">35 items</div>
+                        </header>
+                        <ul id="plugin-list">
+
+                            <li class="plugin on">
+                                <a href="http://sh.st/6J8JN" class="plugin-name" target="_blank">Double Click Edit</a>
+                                <p class="plugin-desc">Double click your messages to edit them.</p>
+                                <div class="plugin-tag-list">
+
+                                    <a href="#Jiiks" class="plugin-tag">Jiiks</a>
+
+                                    <a href="#Message" class="plugin-tag">Message</a>
+
+                                    <a href="#Edit" class="plugin-tag">Edit</a>
+
+                                </div>
+                            </li>
+
+                            <li class="plugin on">
+                                <a href="http://sh.st/6J8J4" class="plugin-name" target="_blank">Server Themes</a>
+                                <p class="plugin-desc">Allow individual servers to use specific themes.</p>
+                                <div class="plugin-tag-list">
+
+                                    <a href="#Denial" class="plugin-tag">Denial</a>
+
+                                    <a href="#Themes" class="plugin-tag">Themes</a>
+
+                                    <a href="#Themes" class="plugin-tag">Servers</a>
+
+                                </div>
+                            </li>
+
+                            <li class="plugin on">
+                                <a href="http://sh.st/6J8J9" class="plugin-name" target="_blank">EvenBetterRepo</a>
+                                <p class="plugin-desc">Easily access theme & plugin repository from within Discord client. Repo controlled on GitHub, so it's easy to change to add your own plugins & themes.</p>
+                                <div class="plugin-tag-list">
+
+                                    <a href="#Denial" class="plugin-tag">Denial</a>
+
+                                    <a href="#Themes" class="plugin-tag">Themes</a>
+
+                                    <a href="#Plugins" class="plugin-tag">Plugins</a>
+
+                                    <a href="#Repo" class="plugin-tag">Repo</a>
+
+                                </div>
+                            </li>
+
+                            <li class="plugin on">
+                                <a href="http://sh.st/6J8Kr" class="plugin-name" target="_blank">Digital Clock</a>
+                                <p class="plugin-desc">Add a clock to your client. Use the #clockPluginClock selector to style it yourself.</p>
+                                <div class="plugin-tag-list">
+
+                                    <a href="#Jiiks" class="plugin-tag">Jiiks</a>
+
+                                    <a href="#Clock" class="plugin-tag">Clock</a>
+
+                                    <a href="#Time" class="plugin-tag">Time</a>
+
+                                </div>
+                            </li>
+
+                            <li class="plugin on">
+                                <a href="http://sh.st/6J8Kf" class="plugin-name" target="_blank">Renamer</a>
+                                <p class="plugin-desc">Give anyone a nickname that only you can see simply by right clicking on them.</p>
+                                <div class="plugin-tag-list">
+
+                                    <a href="#Mitchell" class="plugin-tag">Mitchell</a>
+
+                                    <a href="#Nickname" class="plugin-tag">Nickname</a>
+
+                                    <a href="#Name" class="plugin-tag">Name</a>
+
+                                    <a href="#Nick" class="plugin-tag">Nick</a>
+
+                                </div>
+                            </li>
+
+                            <li class="plugin on">
+                                <a href="http://sh.st/6J8Kb" class="plugin-name" target="_blank">Copy Code</a>
+                                <p class="plugin-desc">Copies Code from Code Blocks with a Button</p>
+                                <div class="plugin-tag-list">
+
+                                    <a href="#Finicalmist" class="plugin-tag">Finicalmist</a>
+
+                                    <a href="#Copy" class="plugin-tag">Copy</a>
+
+                                    <a href="#Code" class="plugin-tag">Code</a>
+
+                                </div>
+                            </li>
+
+                            <li class="plugin on">
+                                <a href="http://sh.st/6J8KI" class="plugin-name" target="_blank">Automatic Link Unshortener</a>
+                                <p class="plugin-desc">Checks for common link shorteners and converts them to the original link.</p>
+                                <div class="plugin-tag-list">
+
+                                    <a href="#Samfun123" class="plugin-tag">Samfun123</a>
+
+                                    <a href="#Link" class="plugin-tag">Link</a>
+
+                                    <a href="#Short" class="plugin-tag">Short</a>
+
+                                    <a href="#Convert" class="plugin-tag">Convert</a>
+
+                                </div>
+                            </li>
+
+                            <li class="plugin on">
+                                <a href="http://sh.st/6J8KK" class="plugin-name" target="_blank">Direct Media Converter</a>
+                                <p class="plugin-desc">Tries to convert most direct image links to embedded images.</p>
+                                <div class="plugin-tag-list">
+
+                                    <a href="#Samfun123" class="plugin-tag">Samfun123</a>
+
+                                    <a href="#Images" class="plugin-tag">Images</a>
+
+                                    <a href="#Embed" class="plugin-tag">Embed</a>
+
+                                    <a href="#Convert" class="plugin-tag">Convert</a>
+
+                                </div>
+                            </li>
+
+                            <li class="plugin on">
+                                <a href="http://sh.st/6J8KV" class="plugin-name" target="_blank">Search</a>
+                                <p class="plugin-desc">Adds Ctrl + F Allows searching through history automatically by scrolling through it, similar to how its implimented in a browser.</p>
+                                <div class="plugin-tag-list">
+
+                                    <a href="#Mitchell" class="plugin-tag">Mitchell</a>
+
+                                    <a href="#Search" class="plugin-tag">Search</a>
+
+                                    <a href="#History" class="plugin-tag">History</a>
+
+                                </div>
+                            </li>
+
+                            <li class="plugin on">
+                                <a href="https://raw.githubusercontent.com/Anxeal/BDEnhancements/master/plugins/HideImages.plugin.js" class="plugin-name" target="_blank">Hide Images</a>
+                                <p class="plugin-desc">Adds a button to the right-click menu to hide images on certain channels and servers.</p>
+                                <div class="plugin-tag-list">
+
+                                    <a href="#Anxeal -" class="plugin-tag">Anxeal</a>
+
+                                    <a href="#Hide" class="plugin-tag">Hide</a>
+
+                                    <a href="#Channels" class="plugin-tag">Channels</a>
+
+                                </div>
+                            </li>
+
+                            <li class="plugin on">
+                                <a href="http://sh.st/6J8K2" class="plugin-name" target="_blank">Colored Typing</a>
+                                <p class="plugin-desc">Make the text color of the "typing..." text same as role color.</p>
+                                <div class="plugin-tag-list">
+
+                                    <a href="#Anxeal -" class="plugin-tag">Anxeal</a>
+
+                                    <a href="#Bolli" class="plugin-tag">Bolli</a>
+
+                                    <a href="#Color" class="plugin-tag">Color</a>
+
+                                    <a href="#Typing" class="plugin-tag">Typing</a>
+
+                                    <a href="#Role" class="plugin-tag">Role</a>
+
+                                </div>
+                            </li>
+
+                            <li class="plugin on">
+                                <a href="http://sh.st/6KoRC" class="plugin-name" target="_blank">Colored Voice</a>
+                                <p class="plugin-desc">Make the text color of the names in the voice channel same as role color.</p>
+                                <div class="plugin-tag-list">
+
+                                    <a href="#Anxeal" class="plugin-tag">Anxeal</a>
+
+                                    <a href="#Color" class="plugin-tag">Color</a>
+
+                                    <a href="#Typing" class="plugin-tag">Voice</a>
+
+                                    <a href="#Role" class="plugin-tag">Role</a>
+
+                                </div>
+                            </li>
+
+                            <li class="plugin on">
+                                <a href="http://sh.st/6KoR1" class="plugin-name" target="_blank">Creation Date</a>
+                                <p class="plugin-desc">See when a user's account was created.</p>
+                                <div class="plugin-tag-list">
+
+                                    <a href="#Natsulus" class="plugin-tag">Natsulus</a>
+
+                                    <a href="#User" class="plugin-tag">User</a>
+
+                                    <a href="#Creation" class="plugin-tag">Creation</a>
+
+                                    <a href="#Date" class="plugin-tag">Date</a>
+
+                                </div>
+                            </li>
+
+                            <li class="plugin on">
+                                <a href="http://sh.st/6KoR6" class="plugin-name" target="_blank">CompactGuilds</a>
+                                <p class="plugin-desc">Reduces sidebar's width or hides it completetly by displaying it only when cursor is near left edge.</p>
+                                <div class="plugin-tag-list">
+
+                                    <a href="#Kosshi" class="plugin-tag">Kosshi</a>
+
+                                    <a href="#Compact" class="plugin-tag">Compact</a>
+
+                                    <a href="#Guilds" class="plugin-tag">Guilds</a>
+
+                                    <a href="#Channels" class="plugin-tag">Channels</a>
+
+                                </div>
+                            </li>
+
+                            <li class="plugin on">
+                                <a href="http://sh.st/6KoTa" class="plugin-name" target="_blank">Quick Save</a>
+                                <p class="plugin-desc">Lets you save images fast with a short random name (Or the original if you want to)</p>
+                                <div class="plugin-tag-list">
+
+                                    <a href="#Kosshi" class="plugin-tag">Kosshi</a>
+
+                                    <a href="#Save" class="plugin-tag">Save</a>
+
+                                    <a href="#Image" class="plugin-tag">Image</a>
+
+                                </div>
+                            </li>
+
+                            <li class="plugin on">
+                                <a href="http://sh.st/6KoTx" class="plugin-name" target="_blank">Changing Background</a>
+                                <p class="plugin-desc">Changes the Background Image from Themes automatically</p>
+                                <div class="plugin-tag-list">
+
+                                    <a href="#Finicalmist" class="plugin-tag">Finicalmist</a>
+
+                                    <a href="#Background" class="plugin-tag">Background</a>
+
+                                    <a href="#Automatic" class="plugin-tag">Automatic</a>
+
+                                    <a href="#Image" class="plugin-tag">Image</a>
+
+                                </div>
+                            </li>
+
+                            <li class="plugin on">
+                                <a href="http://sh.st/6KoTm" class="plugin-name" target="_blank">AFK Deafen</a>
+                                <p class="plugin-desc">Automatically deafens/undeafens Discord when joining/leaving specified AFK channels</p>
+                                <div class="plugin-tag-list">
+
+                                    <a href="#TonyLemur" class="plugin-tag">TonyLemur</a>
+
+                                    <a href="#Auto" class="plugin-tag">Auto</a>
+
+                                    <a href="#AFK" class="plugin-tag">AFK</a>
+
+                                    <a href="#Deafen" class="plugin-tag">Deafen</a>
+
+                                </div>
+                            </li>
+
+                            <li class="plugin on">
+                                <a href="http://sh.st/6KoTT" class="plugin-name" target="_blank">Auto-Select Server</a>
+                                <p class="plugin-desc">Automatically make the server that you're speaking in the currently selected one on startup.</p>
+                                <div class="plugin-tag-list">
+
+                                    <a href="#TonyLemur" class="plugin-tag">TonyLemur</a>
+
+                                    <a href="#Auto" class="plugin-tag">Auto</a>
+
+                                </div>
+                            </li>
+
+                            <li class="plugin on">
+                                <a href="http://sh.st/6KoTP" class="plugin-name" target="_blank">Latency Display</a>
+                                <p class="plugin-desc">Shows a live, always-visible ping indicator on the connection info button</p>
+                                <div class="plugin-tag-list">
+
+                                    <a href="#TonyLemur" class="plugin-tag">TonyLemur</a>
+
+                                    <a href="#Voice" class="plugin-tag">Voice</a>
+
+                                </div>
+                            </li>
+
+                            <li class="plugin on">
+                                <a href="http://sh.st/6KoTG" class="plugin-name" target="_blank">TTS Events</a>
+                                <p class="plugin-desc">Plays text-to-speech messages when users join/leave voice channels</p>
+                                <div class="plugin-tag-list">
+
+                                    <a href="#TonyLemur" class="plugin-tag">TonyLemur</a>
+
+                                    <a href="#TTS" class="plugin-tag">TTS</a>
+
+                                </div>
+                            </li>
+
+                            <li class="plugin on">
+                                <a href="http://sh.st/6KoTZ" class="plugin-name" target="_blank">Owner Tags</a>
+                                <p class="plugin-desc">Show a tag next to a server owner's name.</p>
+                                <div class="plugin-tag-list">
+
+                                    <a href="#Noodlebox" class="plugin-tag">Noodlebox</a>
+
+                                    <a href="#Tag" class="plugin-tag">Tag</a>
+
+                                </div>
+                            </li>
+
+                            <li class="plugin on">
+                                <a href="http://sh.st/6KoTN" class="plugin-name" target="_blank">Autoplay GIF and GIFV</a>
+                                <p class="plugin-desc">Automatically play GIF and GIFV embeds without having to hover.</p>
+                                <div class="plugin-tag-list">
+
+                                    <a href="#Noodlebox" class="plugin-tag">Noodlebox</a>
+
+                                    <a href="#Auto" class="plugin-tag">Auto</a>
+
+                                    <a href="#Gif" class="plugin-tag">Gif</a>
+
+                                </div>
+                            </li>
+
+                            <li class="plugin on">
+                                <a href="http://sh.st/6KhUI" class="plugin-name" target="_blank">Kawaii Emotes</a>
+                                <p class="plugin-desc">Better emote parsing for BetterDiscord. Fixes a few bugs and styles emotes more consistently with standard emoji. Also adds a tab-completion menu.
+                                </p>
+                                <div class="plugin-tag-list">
+
+                                    <a href="#Noodlebox" class="plugin-tag">Noodlebox</a>
+
+                                    <a href="#Emoji" class="plugin-tag">Emoji</a>
+
+                                    <a href="#Emote" class="plugin-tag">Emote</a>
+
+                                </div>
+                            </li>
+
+                            <li class="plugin on">
+                                <a href="http://sh.st/6KhUD" class="plugin-name" target="_blank">pencu translations for Lojban</a>
+                                <p class="plugin-desc">Hover over Lojban words and get a popup with the definition.
+                                </p>
+                                <div class="plugin-tag-list">
+
+                                    <a href="#cadgu'a -" class="plugin-tag">cadgu'a -</a>
+
+                                    <a href="#Translate" class="plugin-tag">Translate</a>
+
+                                    <a href="#Lojban" class="plugin-tag">Lojban</a>
+
+                                </div>
+                            </li>
+
+                            <li class="plugin on">
+                                <a href="http://sh.st/6KvKb" class="plugin-name" target="_blank">LineNumbers</a>
+                                <p class="plugin-desc">Add line numbers to code blocks</p>
+                                <div class="plugin-tag-list">
+
+                                    <a href="#Noodlebox" class="plugin-tag">Noodlebox</a>
+
+                                    <a href="#Code" class="plugin-tag">Code</a>
+
+                                    <a href="#Numbers" class="plugin-tag">Numbers</a>
+
+                                </div>
+                            </li>
+
+                            <li class="plugin on">
+                                <a href="http://sh.st/6KhU2" class="plugin-name" target="_blank">ThemeCustomizer</a>
+                                <p class="plugin-desc">Customize CSS variables of themes</p>
+                                <div class="plugin-tag-list">
+
+                                    <a href="#Zerthox" class="plugin-tag">Zerthox</a>
+
+                                    <a href="#Theme" class="plugin-tag">Theme</a>
+
+                                    <a href="#Customization" class="plugin-tag">Customization</a>
+
+                                </div>
+                            </li>
+
+                            <li class="plugin on">
+                                <a href="http://sh.st/6KhIw" class="plugin-name" target="_blank">Toggle All</a>
+                                <p class="plugin-desc">Enable/disable all plugins or themes with a button</p>
+                                <div class="plugin-tag-list">
+
+                                    <a href="#Zerthox" class="plugin-tag">Zerthox</a>
+
+                                    <a href="#Toggle" class="plugin-tag">Toggle</a>
+
+                                </div>
+                            </li>
+
+                            <li class="plugin on">
+                                <a href="http://sh.st/8r0rb" class="plugin-name" target="_blank">EvenBetterDiscord</a>
+                                <p class="plugin-desc">Loads FFZ emotes from alternate repository. (Get the latest FrankerFaceZ emotes sooner.)</p>
+                                <div class="plugin-tag-list">
+
+                                    <a href="#DeathStrikeV" class="plugin-tag">DeathStrikeV</a>
+
+                                    <a href="#FFZ" class="plugin-tag">FFZ</a>
+
+                                    <a href="#Emotes" class="plugin-tag">Emotes</a>
+
+                                    <a href="#Better" class="plugin-tag">Better</a>
+
+                                </div>
+                            </li>
+                            <li class="plugin on">
+                                <a href="http://viid.me/qqLmhg" class="plugin-name" target="_blank">Line Stickers</a>
+                                <p class="plugin-desc">Adds Line stickers to Discord!</p>
+                                <div class="plugin-tag-list">
+
+                                    <a href="#Awakening" class="plugin-tag">Awakening</a>
+
+                                    <a href="#Line" class="plugin-tag">Line</a>
+
+                                    <a href="#Emotes" class="plugin-tag">Emotes</a>
+
+                                </div>
+                            </li>
+
+                            <li class="plugin on">
+                                <a href="http://viid.me/qqOukw" class="plugin-name" target="_blank">Typing Sound</a>
+                                <p class="plugin-desc">Plays Osu chat sounds when you type, can be used to play any sounds.</p>
+                                <div class="plugin-tag-list">
+
+                                    <a href="#Jiiks" class="plugin-tag">Jiiks</a>
+
+                                    <a href="#Typing" class="plugin-tag">Sound</a>
+
+                                    <a href="#Osu" class="plugin-tag">Osu</a>
+
+                                </div>
+                            </li>
+
+                            <li class="plugin on">
+                                <a href="http://viid.me/qwjGUD" class="plugin-name" target="_blank">Quoter</a>
+                                <p class="plugin-desc">Reply to people with a button, quoting full message or selected text</p>
+                                <div class="plugin-tag-list">
+
+                                    <a href="#Samogot" class="plugin-tag">Samogot </a>
+
+                                    <a href="#Quote" class="plugin-tag">Quote</a>
+
+                                    <a href="#Messages" class="plugin-tag">Messages</a>
+
+                                </div>
+                            </li>
+
+                            <li class="plugin on">
+                                <a href="http://viid.me/qwjG80" class="plugin-name" target="_blank">Return Scroll</a>
+                                <p class="plugin-desc">Button for returning to previous scroll position after posting a message</p>
+                                <div class="plugin-tag-list">
+
+                                    <a href="#Samogot" class="plugin-tag">Samogot </a>
+
+                                    <a href="#Scroll" class="plugin-tag">Scroll</a>
+
+                                    <a href="#Messages" class="plugin-tag">Messages</a>
+
+                                </div>
+                            </li>
+
+                            <li class="plugin on">
+                                <a href="http://viid.me/qwjHzN" class="plugin-name" target="_blank">Count Unread</a>
+                                <p class="plugin-desc">Button for counting unread messages</p>
+                                <div class="plugin-tag-list">
+
+                                    <a href="#Samogot" class="plugin-tag">Samogot </a>
+
+                                    <a href="#Counter" class="plugin-tag">Counter</a>
+
+                                    <a href="#Read" class="plugin-tag">Read</a>
+
+                                    <a href="#Messages" class="plugin-tag">Messages</a>
+
+                                </div>
+                            </li>
+                            
+                            <li class="plugin on">
+                                <a href="http://viid.me/qew2DD" class="plugin-name" target="_blank">Silent Typing</a>
+                                <p class="plugin-desc">Don't send typing notifications</p>
+                                <div class="plugin-tag-list">
+
+                                    <a href="#Noodlebox" class="plugin-tag">Noodlebox </a>
+
+                                    <a href="#Typing" class="plugin-tag">Typing</a>
+
+                                    <a href="#Sound" class="plugin-tag">Sound</a>
+
+                                    <a href="#Notifications" class="plugin-tag">Notifications</a>
+
+                                </div>
+                            </li>
+                            
+                            <li class="plugin on">
+                                <a href="http://viid.me/qew3zS" class="plugin-name" target="_blank">BetterCustomCSS</a>
+                                <p class="plugin-desc">Lets you edit CSS live with your favorite text editor. Like Custom CSS but better.</p>
+                                <div class="plugin-tag-list">
+
+                                    <a href="#Kosshi" class="plugin-tag">Kosshi</a>
+
+                                    <a href="#CSS" class="plugin-tag">CSS</a>
+
+                                    <a href="#Better" class="plugin-tag">Better</a>
+
+                                </div>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <footer id="footer" class="wrapper">
                 <div class="inner">
-                    <header id="plugin-list-header">
-                        <h1 id="plugin-list-title">Plugins</h1>
-                        <a href="https://github.com/0mniscient/BetterDiscord/edit/gh-pages/plugins.html" class="add-pencil" title="Add Plugin"><i class="fa fa-plus"></i></a>
-                        <input type="search" id="plugin-search-input" placeholder="Need Dev to add search engine">
-                        <div id="plugin-list-count">33 items</div>
-                    </header>
-                    <ul id="plugin-list">
-
-                        <li class="plugin on">
-                            <a href="http://sh.st/6J8JN" class="plugin-name" target="_blank">Double Click Edit</a>
-                            <p class="plugin-desc">Double click your messages to edit them.</p>
-                            <div class="plugin-tag-list">
-
-                                <a href="#Jiiks" class="plugin-tag">Jiiks</a>
-
-                                <a href="#Message" class="plugin-tag">Message</a>
-
-                                <a href="#Edit" class="plugin-tag">Edit</a>
-
-                            </div>
-                        </li>
-                        
-                        <li class="plugin on">
-                            <a href="http://sh.st/6J8J4" class="plugin-name" target="_blank">Server Themes</a>
-                            <p class="plugin-desc">Allow individual servers to use specific themes.</p>
-                            <div class="plugin-tag-list">
-
-                                <a href="#Denial" class="plugin-tag">Denial</a>
-
-                                <a href="#Themes" class="plugin-tag">Themes</a>
-                                
-                                <a href="#Themes" class="plugin-tag">Servers</a>
-
-                            </div>
-                        </li>
-
-                        <li class="plugin on">
-                            <a href="http://sh.st/6J8J9" class="plugin-name" target="_blank">EvenBetterRepo</a>
-                            <p class="plugin-desc">Easily access theme & plugin repository from within Discord client.  Repo controlled on GitHub, so it's easy to change to add your own plugins & themes.</p>
-                            <div class="plugin-tag-list">
-
-                                <a href="#Denial" class="plugin-tag">Denial</a>
-                                
-                                <a href="#Themes" class="plugin-tag">Themes</a>
-
-                                <a href="#Plugins" class="plugin-tag">Plugins</a>
-                                
-                                <a href="#Repo" class="plugin-tag">Repo</a>
-
-                            </div>
-                        </li>
-                        
-                        <li class="plugin on">
-                            <a href="http://sh.st/6J8Kr" class="plugin-name" target="_blank">Digital Clock</a>
-                            <p class="plugin-desc">Add a clock to your client. Use the #clockPluginClock selector to style it yourself.</p>
-                            <div class="plugin-tag-list">
-
-                                <a href="#Jiiks" class="plugin-tag">Jiiks</a>
-
-                                <a href="#Clock" class="plugin-tag">Clock</a>
-
-                                <a href="#Time" class="plugin-tag">Time</a>
-
-                            </div>
-                        </li>
-
-                        <li class="plugin on">
-                            <a href="http://sh.st/6J8Kf" class="plugin-name" target="_blank">Renamer</a>
-                            <p class="plugin-desc">Give anyone a nickname that only you can see simply by right clicking on them.</p>
-                            <div class="plugin-tag-list">
-
-                                <a href="#Mitchell" class="plugin-tag">Mitchell</a>
-
-                                <a href="#Nickname" class="plugin-tag">Nickname</a>
-
-                                <a href="#Name" class="plugin-tag">Name</a>
-
-                                <a href="#Nick" class="plugin-tag">Nick</a>
-
-                            </div>
-                        </li>
-
-                        <li class="plugin on">
-                            <a href="http://sh.st/6J8Kb" class="plugin-name" target="_blank">Copy Code</a>
-                            <p class="plugin-desc">Copies Code from Code Blocks with a Button</p>
-                            <div class="plugin-tag-list">
-
-                                <a href="#Finicalmist" class="plugin-tag">Finicalmist</a>
-
-                                <a href="#Copy" class="plugin-tag">Copy</a>
-
-                                <a href="#Code" class="plugin-tag">Code</a>
-
-                            </div>
-                        </li>
-
-                        <li class="plugin on">
-                            <a href="http://sh.st/6J8KI" class="plugin-name" target="_blank">Automatic Link Unshortener</a>
-                            <p class="plugin-desc">Checks for common link shorteners and converts them to the original link.</p>
-                            <div class="plugin-tag-list">
-
-                                <a href="#Samfun123" class="plugin-tag">Samfun123</a>
-
-                                <a href="#Link" class="plugin-tag">Link</a>
-
-                                <a href="#Short" class="plugin-tag">Short</a>
-
-                                <a href="#Convert" class="plugin-tag">Convert</a>
-
-                            </div>
-                        </li>
-
-                        <li class="plugin on">
-                            <a href="http://sh.st/6J8KK" class="plugin-name" target="_blank">Direct Media Converter</a>
-                            <p class="plugin-desc">Tries to convert most direct image links to embedded images.</p>
-                            <div class="plugin-tag-list">
-
-                                <a href="#Samfun123" class="plugin-tag">Samfun123</a>
-
-                                <a href="#Images" class="plugin-tag">Images</a>
-
-                                <a href="#Embed" class="plugin-tag">Embed</a>
-
-                                <a href="#Convert" class="plugin-tag">Convert</a>
-
-                            </div>
-                        </li>
-
-                        <li class="plugin on">
-                            <a href="http://sh.st/6J8KV" class="plugin-name" target="_blank">Search</a>
-                            <p class="plugin-desc">Adds Ctrl + F Allows searching through history automatically by scrolling through it, similar to how its implimented in a browser.</p>
-                            <div class="plugin-tag-list">
-
-                                <a href="#Mitchell" class="plugin-tag">Mitchell</a>
-
-                                <a href="#Search" class="plugin-tag">Search</a>
-
-                                <a href="#History" class="plugin-tag">History</a>
-
-                            </div>
-                        </li>
-                        
-                        <li class="plugin on">
-                            <a href="https://raw.githubusercontent.com/Anxeal/BDEnhancements/master/plugins/HideImages.plugin.js" class="plugin-name" target="_blank">Hide Images</a>
-                            <p class="plugin-desc">Adds a button to the right-click menu to hide images on certain channels and servers.</p>
-                            <div class="plugin-tag-list">
-
-                                <a href="#Anxeal -" class="plugin-tag">Anxeal</a>
-
-                                <a href="#Hide" class="plugin-tag">Hide</a>
-
-                                <a href="#Channels" class="plugin-tag">Channels</a>
-
-                            </div>
-                        </li>
-                        
-                        <li class="plugin on">
-                            <a href="http://sh.st/6J8K2" class="plugin-name" target="_blank">Colored Typing</a>
-                            <p class="plugin-desc">Make the text color of the "typing..." text same as role color.</p>
-                            <div class="plugin-tag-list">
-
-                                <a href="#Anxeal -" class="plugin-tag">Anxeal</a>
-
-                                <a href="#Bolli" class="plugin-tag">Bolli</a>
-
-                                <a href="#Color" class="plugin-tag">Color</a>
-                                
-                                <a href="#Typing" class="plugin-tag">Typing</a>
-                                
-                                <a href="#Role" class="plugin-tag">Role</a>
-
-                            </div>
-                        </li>
-                        
-                        <li class="plugin on">
-                            <a href="http://sh.st/6KoRC" class="plugin-name" target="_blank">Colored Voice</a>
-                            <p class="plugin-desc">Make the text color of the names in the voice channel same as role color.</p>
-                            <div class="plugin-tag-list">
-
-                                <a href="#Anxeal" class="plugin-tag">Anxeal</a>
-
-                                <a href="#Color" class="plugin-tag">Color</a>
-                                
-                                <a href="#Typing" class="plugin-tag">Voice</a>
-                                
-                                <a href="#Role" class="plugin-tag">Role</a>
-
-                            </div>
-                        </li>
-                        
-                        <li class="plugin on">
-                            <a href="http://sh.st/6KoR1" class="plugin-name" target="_blank">Creation Date</a>
-                            <p class="plugin-desc">See when a user's account was created.</p>
-                            <div class="plugin-tag-list">
-
-                                <a href="#Natsulus" class="plugin-tag">Natsulus</a>
-
-                                <a href="#User" class="plugin-tag">User</a>
-                                
-                                <a href="#Creation" class="plugin-tag">Creation</a>
-                                
-                                <a href="#Date" class="plugin-tag">Date</a>
-
-                            </div>
-                        </li>
-						
-						<li class="plugin on">
-                            <a href="http://sh.st/6KoR6" class="plugin-name" target="_blank">CompactGuilds</a>
-                            <p class="plugin-desc">Reduces sidebar's width or hides it completetly by displaying it only when cursor is near left edge.</p>
-                            <div class="plugin-tag-list">
-
-                                <a href="#Kosshi" class="plugin-tag">Kosshi</a>
-
-                                <a href="#Compact" class="plugin-tag">Compact</a>
-                                
-                                <a href="#Guilds" class="plugin-tag">Guilds</a>
-                                
-                                <a href="#Channels" class="plugin-tag">Channels</a>
-
-                            </div>
-                        </li>
-						
-						<li class="plugin on">
-                            <a href="http://sh.st/6KoTa" class="plugin-name" target="_blank">Quick Save</a>
-                            <p class="plugin-desc">Lets you save images fast with a short random name (Or the original if you want to)</p>
-                            <div class="plugin-tag-list">
-
-                                <a href="#Kosshi" class="plugin-tag">Kosshi</a>
-
-                                <a href="#Save" class="plugin-tag">Save</a>
-                                
-                                <a href="#Image" class="plugin-tag">Image</a>
-                                
-                            </div>
-                        </li>
-                        
-                        <li class="plugin on">
-                            <a href="http://sh.st/6KoTx" class="plugin-name" target="_blank">Changing Background</a>
-                            <p class="plugin-desc">Changes the Background Image from Themes automatically</p>
-                            <div class="plugin-tag-list">
-
-                                <a href="#Finicalmist" class="plugin-tag">Finicalmist</a>
-
-                                <a href="#Background" class="plugin-tag">Background</a>
-                                
-                                <a href="#Automatic" class="plugin-tag">Automatic</a>
-                                
-                                <a href="#Image" class="plugin-tag">Image</a>
-                                
-                            </div>
-                        </li>
-                        
-                        <li class="plugin on">
-                            <a href="http://sh.st/6KoTm" class="plugin-name" target="_blank">AFK Deafen</a>
-                            <p class="plugin-desc">Automatically deafens/undeafens Discord when joining/leaving specified AFK channels</p>
-                            <div class="plugin-tag-list">
-
-                                <a href="#TonyLemur" class="plugin-tag">TonyLemur</a>
-                                
-                                <a href="#Auto" class="plugin-tag">Auto</a>
-                                
-                                <a href="#AFK" class="plugin-tag">AFK</a>
-                                
-                                <a href="#Deafen" class="plugin-tag">Deafen</a>
-                                
-                            </div>
-                        </li>
-                        
-                        <li class="plugin on">
-                            <a href="http://sh.st/6KoTT" class="plugin-name" target="_blank">Auto-Select Server</a>
-                            <p class="plugin-desc">Automatically make the server that you're speaking in the currently selected one on startup.</p>
-                            <div class="plugin-tag-list">
-
-                                <a href="#TonyLemur" class="plugin-tag">TonyLemur</a>
-                                
-                                <a href="#Auto" class="plugin-tag">Auto</a>
-                                
-                            </div>
-                        </li>
-                        
-                        <li class="plugin on">
-                            <a href="http://sh.st/6KoTP" class="plugin-name" target="_blank">Latency Display</a>
-                            <p class="plugin-desc">Shows a live, always-visible ping indicator on the connection info button</p>
-                            <div class="plugin-tag-list">
-
-                                <a href="#TonyLemur" class="plugin-tag">TonyLemur</a>
-                                
-                                <a href="#Voice" class="plugin-tag">Voice</a>
-                                                                
-                            </div>
-                        </li>
-                        
-                        <li class="plugin on">
-                            <a href="http://sh.st/6KoTG" class="plugin-name" target="_blank">TTS Events</a>
-                            <p class="plugin-desc">Plays text-to-speech messages when users join/leave voice channels</p>
-                            <div class="plugin-tag-list">
-
-                                <a href="#TonyLemur" class="plugin-tag">TonyLemur</a>
-                                
-                                <a href="#TTS" class="plugin-tag">TTS</a>
-                                
-                            </div>
-                        </li>
-                        
-                        <li class="plugin on">
-                            <a href="http://sh.st/6KoTZ" class="plugin-name" target="_blank">Owner Tags</a>
-                            <p class="plugin-desc">Show a tag next to a server owner's name.</p>
-                            <div class="plugin-tag-list">
-
-                                <a href="#Noodlebox" class="plugin-tag">Noodlebox</a>
-                                
-                                <a href="#Tag" class="plugin-tag">Tag</a>
-                                
-                            </div>
-                        </li>
-                        
-                        <li class="plugin on">
-                            <a href="http://sh.st/6KoTN" class="plugin-name" target="_blank">Autoplay GIF and GIFV</a>
-                            <p class="plugin-desc">Automatically play GIF and GIFV embeds without having to hover.</p>
-                            <div class="plugin-tag-list">
-
-                                <a href="#Noodlebox" class="plugin-tag">Noodlebox</a>
-                                
-                                <a href="#Auto" class="plugin-tag">Auto</a>
-                                
-                                <a href="#Gif" class="plugin-tag">Gif</a>
-                                
-                            </div>
-                        </li>
-                        
-                        <li class="plugin on">
-                            <a href="http://sh.st/6KhUI" class="plugin-name" target="_blank">Kawaii Emotes</a>
-                            <p class="plugin-desc">Better emote parsing for BetterDiscord. Fixes a few bugs and styles emotes more consistently with standard emoji. Also adds a tab-completion menu.
-</p>
-                            <div class="plugin-tag-list">
-
-                                <a href="#Noodlebox" class="plugin-tag">Noodlebox</a>
-                                
-                                <a href="#Emoji" class="plugin-tag">Emoji</a>
-                                
-                                <a href="#Emote" class="plugin-tag">Emote</a>
-                                
-                            </div>
-                        </li>
-                        
-                        <li class="plugin on">
-                            <a href="http://sh.st/6KhUD" class="plugin-name" target="_blank">pencu translations for Lojban</a>
-                            <p class="plugin-desc">Hover over Lojban words and get a popup with the definition.
-</p>
-                            <div class="plugin-tag-list">
-
-                                <a href="#cadgu'a -" class="plugin-tag">cadgu'a -</a>
-                                
-                                <a href="#Translate" class="plugin-tag">Translate</a>
-                                
-                                <a href="#Lojban" class="plugin-tag">Lojban</a>
-                                
-                            </div>
-                        </li>
-                        
-                        <li class="plugin on">
-                            <a href="http://sh.st/6KvKb" class="plugin-name" target="_blank">LineNumbers</a>
-                            <p class="plugin-desc">Add line numbers to code blocks</p>
-                            <div class="plugin-tag-list">
-
-                                <a href="#Noodlebox" class="plugin-tag">Noodlebox</a>
-                                
-                                <a href="#Code" class="plugin-tag">Code</a>
-                                
-                                <a href="#Numbers" class="plugin-tag">Numbers</a>
-                                
-                            </div>
-                        </li>
-                        
-                        <li class="plugin on">
-                            <a href="http://sh.st/6KhU2" class="plugin-name" target="_blank">ThemeCustomizer</a>
-                            <p class="plugin-desc">Customize CSS variables of themes</p>
-                            <div class="plugin-tag-list">
-
-                                <a href="#Zerthox" class="plugin-tag">Zerthox</a>
-                                
-                                <a href="#Theme" class="plugin-tag">Theme</a>
-                                
-                                <a href="#Customization" class="plugin-tag">Customization</a>
-                                
-                            </div>
-                        </li>
-                        
-                        <li class="plugin on">
-                            <a href="http://sh.st/6KhIw" class="plugin-name" target="_blank">Toggle All</a>
-                            <p class="plugin-desc">Enable/disable all plugins or themes with a button</p>
-                            <div class="plugin-tag-list">
-
-                                <a href="#Zerthox" class="plugin-tag">Zerthox</a>
-                                
-                                <a href="#Toggle" class="plugin-tag">Toggle</a>
-                                                                
-                            </div>
-                        </li>
-                        
-                        <li class="plugin on">
-                            <a href="http://sh.st/8r0rb" class="plugin-name" target="_blank">EvenBetterDiscord</a>
-                            <p class="plugin-desc">Loads FFZ emotes from alternate repository.
-(Get the latest FrankerFaceZ emotes sooner.)</p>
-                            <div class="plugin-tag-list">
-
-                                <a href="#DeathStrikeV" class="plugin-tag">DeathStrikeV</a>
-                                
-                                <a href="#FFZ" class="plugin-tag">FFZ</a>
-                                
-                                <a href="#Emotes" class="plugin-tag">Emotes</a>
-                                
-                                <a href="#Better" class="plugin-tag">Better</a>
-                                                                
-                            </div>
-                        </li>
-                        <li class="plugin on">
-                            <a href="http://viid.me/qqLmhg" class="plugin-name" target="_blank">Line Stickers</a>
-                            <p class="plugin-desc">Adds Line stickers to Discord!</p>
-                            <div class="plugin-tag-list">
-
-                                <a href="#Awakening" class="plugin-tag">Awakening</a>
-                                
-                                <a href="#Line" class="plugin-tag">Line</a>
-                                
-                                <a href="#Emotes" class="plugin-tag">Emotes</a>
-                                                                                                
-                            </div>
-                        </li>
-                        
-                        <li class="plugin on">
-                            <a href="http://viid.me/qqOukw" class="plugin-name" target="_blank">Typing Sound</a>
-                            <p class="plugin-desc">Plays Osu chat sounds when you type, can be used to play any sounds.</p>
-                            <div class="plugin-tag-list">
-
-                                <a href="#Jiiks" class="plugin-tag">Jiiks</a>
-                                
-                                <a href="#Typing" class="plugin-tag">Sound</a>
-                                
-                                <a href="#Osu" class="plugin-tag">Osu</a>
-                                                                                                
-                            </div>
-                        </li>
-			    
-			    <li class="plugin on">
-                            <a href="http://viid.me/qwjGUD" class="plugin-name" target="_blank">Quoter</a>
-                            <p class="plugin-desc">Reply to people with a button, quoting full message or selected text</p>
-                            <div class="plugin-tag-list">
-
-                                <a href="#Samogot" class="plugin-tag">Samogot </a>
-                                
-                                <a href="#Quote" class="plugin-tag">Quote</a>
-                                
-                                <a href="#Messages" class="plugin-tag">Messages</a>
-                                                                                                
-                            </div>
-                        </li>
-			    
-			    <li class="plugin on">
-                            <a href="http://viid.me/qwjG80" class="plugin-name" target="_blank">Return Scroll</a>
-                            <p class="plugin-desc">Button for returning to previous scroll position after posting a message</p>
-                            <div class="plugin-tag-list">
-
-                                <a href="#Samogot" class="plugin-tag">Samogot </a>
-                                
-                                <a href="#Scroll" class="plugin-tag">Scroll</a>
-                                
-                                <a href="#Messages" class="plugin-tag">Messages</a>
-                                                                                                
-                            </div>
-                        </li>
-			    
-			    <li class="plugin on">
-                            <a href="http://viid.me/qwjHzN" class="plugin-name" target="_blank">Count Unread</a>
-                            <p class="plugin-desc">Button for counting unread messages</p>
-                            <div class="plugin-tag-list">
-
-                                <a href="#Samogot" class="plugin-tag">Samogot </a>
-                                
-                                <a href="#Counter" class="plugin-tag">Counter</a>
-				    
-				<a href="#Read" class="plugin-tag">Read</a>
-                                
-                                <a href="#Messages" class="plugin-tag">Messages</a>
-                                                                                                
-                            </div>
-                        </li>
-
-                    </ul>
+                    <div id="footer-copyright">
+                        &copy; 2016 <a href="https://www.snapchat.com/add/Omniscien.t" target="_blank">Chris Flores</a>
+                    </div>
+                    <div id="footer-links">
+                        <a href="https://twitter.com/Omniscien_t" class="footer-link" target="_blank"><i class="fa fa-twitter"></i></a>
+                        <a href="https://github.com/0mniscient" class="footer-link" target="_blank"><i class="fa fa-github-alt"></i></a>
+                    </div>
+                    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                    <script>
+                        (adsbygoogle = window.adsbygoogle || []).push({
+                            google_ad_client: "ca-pub-1998206533560539",
+                            enable_page_level_ads: true
+                        });
+                    </script>
+                    <!-- Ad -->
+                    <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-1998206533560539" data-ad-slot="6846685408" data-ad-format="auto"></ins>
+                    <script>
+                        (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
                 </div>
-            </div>
+            </footer>
+
         </div>
-        <footer id="footer" class="wrapper">
-            <div class="inner">
-                <div id="footer-copyright">
-                    &copy; 2016 <a href="https://www.snapchat.com/add/Omniscien.t" target="_blank">Chris Flores</a>
-                </div>
-                <div id="footer-links">
-                    <a href="https://twitter.com/Omniscien_t" class="footer-link" target="_blank"><i class="fa fa-twitter"></i></a>
-                    <a href="https://github.com/0mniscient" class="footer-link" target="_blank"><i class="fa fa-github-alt"></i></a>
-                </div>
-										<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<script>
-  (adsbygoogle = window.adsbygoogle || []).push({
-    google_ad_client: "ca-pub-1998206533560539",
-    enable_page_level_ads: true
-  });
-</script>
-<!-- Ad -->
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-1998206533560539"
-     data-ad-slot="6846685408"
-     data-ad-format="auto"></ins>
-<script>
-(adsbygoogle = window.adsbygoogle || []).push({});
-</script>
+        <div id="mobile-nav-dimmer"></div>
+        <nav id="mobile-nav">
+            <div id="mobile-nav-inner">
+                <ul id="mobile-nav-list">
+                    <a href="https://betterdocs.net" class="mobile-nav-link">Docs</a>
+                    <a href="https://betterdocs.net/news/" class="mobile-nav-link">News</a>
+                    <a href="https://betterdocs.net/plugin_api.html" class="mobile-nav-link">API</a>
+                    <a href="https://betterdocs.net/themes.html" class="mobile-nav-link">Themes</a>
+                    <a href="https://betterdocs.net/plugins.html" class="mobile-nav-link">Plugins</a>
+                    <li class="mobile-nav-item">
+                        <a href="https://github.com/0mniscient/" class="mobile-nav-link" rel="external" target="_blank">GitHub</a>
+                    </li>
+                </ul>
             </div>
-        </footer>
-
-    </div>
-    <div id="mobile-nav-dimmer"></div>
-    <nav id="mobile-nav">
-        <div id="mobile-nav-inner">
-            <ul id="mobile-nav-list">
-                <a href="https://betterdocs.net" class="mobile-nav-link">Docs</a>
-                <a href="https://betterdocs.net/news/" class="mobile-nav-link">News</a>
-                <a href="https://betterdocs.net/plugin_api.html" class="mobile-nav-link">API</a>
-                <a href="https://betterdocs.net/themes.html" class="mobile-nav-link">Themes</a>
-                <a href="https://betterdocs.net/plugins.html" class="mobile-nav-link">Plugins</a>
-                <li class="mobile-nav-item">
-                    <a href="https://github.com/0mniscient/" class="mobile-nav-link" rel="external" target="_blank">GitHub</a>
-                </li>
-            </ul>
-        </div>
-        <div id="mobile-lang-select-wrap">
-            <span id="mobile-lang-select-label"><i class="fa fa-globe"></i><span>English</span></span>
-            <select id="mobile-lang-select" data-canonical="docs/index.html">
+            <div id="mobile-lang-select-wrap">
+                <span id="mobile-lang-select-label"><i class="fa fa-globe"></i><span>English</span></span>
+                <select id="mobile-lang-select" data-canonical="docs/index.html">
 
                 <option value="en" selected>English</option>
 
             </select>
-        </div>
-    </nav>
-    <!-- Scripts -->
-    <script src="https://betterdocs.net/scripts/main.js"></script>
-    <script src="https://cdn.jsdelivr.net/retinajs/1.3.0/retina.min.js" async></script>
-    <script>
-        $(window).load(function() {
-            $(".col-3 input").val("");
-            $(".input-effect input").focusout(function() {
-                if ($(this).val() != "") {
-                    $(this).addClass("has-content");
-                } else {
-                    $(this).removeClass("has-content");
-                }
+            </div>
+        </nav>
+        <!-- Scripts -->
+        <script src="https://betterdocs.net/scripts/main.js"></script>
+        <script src="https://cdn.jsdelivr.net/retinajs/1.3.0/retina.min.js" async></script>
+        <script>
+            $(window).load(function() {
+                $(".col-3 input").val("");
+                $(".input-effect input").focusout(function() {
+                    if ($(this).val() != "") {
+                        $(this).addClass("has-content");
+                    } else {
+                        $(this).removeClass("has-content");
+                    }
+                });
             });
-        });
-    </script>
+        </script>
 
 
 
 
 
-</body>
+    </body>
 
 </html>
