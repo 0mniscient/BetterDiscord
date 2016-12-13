@@ -40,6 +40,7 @@
             ga('create', 'UA-65593962-3', 'auto');
             ga('send', 'pageview');
         </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.js"></script>
     </head>
 
     <body>
@@ -95,7 +96,7 @@
                         <header id="plugin-list-header">
                             <h1 id="plugin-list-title">Plugins</h1>
                             <a href="https://github.com/0mniscient/BetterDiscord/edit/gh-pages/plugins.html" class="add-pencil" title="Add Plugin"><i class="fa fa-plus"></i></a>
-                            <input type="search" id="plugin-search-input" placeholder="Need Dev to add search engine">
+                            <input type="search" id="plugin-search-input" placeholder="Search plugins...">
                             <div id="plugin-list-count">35 items</div>
                         </header>
                         <div class="theme-btns">
@@ -126,7 +127,7 @@
 
                                     <a href="#Themes" class="plugin-tag">Themes</a>
 
-                                    <a href="#Themes" class="plugin-tag">Servers</a>
+                                    <a href="#Servers" class="plugin-tag">Servers</a>
 
                                 </div>
                             </li>
@@ -143,6 +144,22 @@
                                     <a href="#Plugins" class="plugin-tag">Plugins</a>
 
                                     <a href="#Repo" class="plugin-tag">Repo</a>
+
+                                </div>
+                            </li>
+                            
+                            <li class="plugin on">
+                                <a href="https://xcord.in/" class="plugin-name" target="_blank">xCord</a>
+                                <p class="plugin-desc">Enable ExoZone xChat features for Discord.</p>
+                                <div class="plugin-tag-list">
+
+                                    <a href="#MRVDOG" class="plugin-tag">MRVDOG</a>
+
+                                    <a href="#xCord" class="plugin-tag">xCord</a>
+
+                                    <a href="#xChat" class="plugin-tag">xChat</a>
+                                    
+                                    <a href="#Menu" class="plugin-tag">Menu</a>
 
                                 </div>
                             </li>
@@ -679,7 +696,22 @@
                 });
             });
         </script>
-
+        <script>
+            $(function() {
+   $("#plugin-search-input").keyup(function() {
+       console.log("searching for: " + $(this).val());
+       var search = $(this).val().toLowerCase();
+       
+       $("#plugin-list").find(".plugin").each(function() {
+           if( $(this).text().toLowerCase().includes(search) ) {
+               $(this).show();
+           }else{
+               $(this).hide();
+           }
+       });
+   }); 
+});
+        </script>
 
 
 
