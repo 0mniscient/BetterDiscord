@@ -38,6 +38,7 @@
         ga('create', 'UA-65593962-3', 'auto');
         ga('send', 'pageview');
     </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.js"></script>
 </head>
 
 <body>
@@ -93,7 +94,7 @@
                     <header id="plugin-list-header">
                         <h1 id="plugin-list-title">Themes</h1>
                         <a href="https://github.com/0mniscient/BetterDiscord/edit/gh-pages/themes.html" class="add-pencil" title="Add Theme"><i class="fa fa-plus"></i></a>
-                        <input type="search" id="plugin-search-input" placeholder="Need Dev to add search engine">
+                        <input type="search" id="plugin-search-input" placeholder="Search themes...">
                         <div id="plugin-list-count">31 items</div>
                     </header>
                     <div class="theme-btns">
@@ -173,8 +174,6 @@
                             <div class="plugin-tag-list">
 
                                 <a href="#BeardDesign" class="plugin-tag">BeardDesign</a>
-
-                                <a href="#apollo" class="plugin-tag">Flat</a>
 
                                 <a href="#light" class="plugin-tag">Dark</a>
 
@@ -473,8 +472,6 @@
                                 <a href="#Dark" class="plugin-tag">Dark</a>
 
                                 <a href="#Modern" class="plugin-tag">Modern</a>
-
-                                <a href="#Wheat" class="plugin-tag">Wheat</a>
 
                             </div>
                         </li>
@@ -791,7 +788,22 @@
     <!-- Scripts -->
     <script src="https://betterdocs.net/scripts/main.js"></script>
     <script src="https://cdn.jsdelivr.net/retinajs/1.3.0/retina.min.js" async></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script>
+            $(function() {
+   $("#plugin-search-input").keyup(function() {
+       console.log("searching for: " + $(this).val());
+       var search = $(this).val().toLowerCase();
+       
+       $("#plugin-list").find(".plugin").each(function() {
+           if( $(this).text().toLowerCase().includes(search) ) {
+               $(this).show();
+           }else{
+               $(this).hide();
+           }
+       });
+   }); 
+});
+        </script>
 
 </body>
 
