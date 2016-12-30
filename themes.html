@@ -105,6 +105,24 @@
 
                         <li class="plugin on">
                             <div class="plugin-screenshot">
+                                <img src="https://imgur.com/ME6KMNQ.gif" data-src="https://u.nya.is/amipxf.jpg" class="lazy plugin-screenshot-img" width="auto" height="auto">
+                                <a href="https://betterdocs.net/themes/ponyo.html" class="plugin-preview-link"><i class="fa fa-eye"></i></a>
+                            </div>
+                            <a href="https://betterdocs.net/themes/ponyo.html" class="plugin-name">Ponyo</a>
+                            <p class="plugin-desc">It's um a theme.</p>
+                            <div class="plugin-tag-list">
+
+                                <a href="#Uri" class="plugin-tag">Uri</a>
+
+                                <a href="#Private" class="plugin-tag">Private</a>
+
+                                <a href="#Ponyo" class="plugin-tag">Ponyo</a>
+
+                            </div>
+                        </li>
+                        
+                        <li class="plugin on">
+                            <div class="plugin-screenshot">
                                 <img src="https://imgur.com/ME6KMNQ.gif" data-src="https://betterdocs.net/images/Reborn.jpg" class="lazy plugin-screenshot-img" width="auto" height="auto">
                                 <a href="https://betterdocs.net/themes/discordreborn.html" class="plugin-preview-link"><i class="fa fa-eye"></i></a>
                             </div>
@@ -195,7 +213,7 @@
                                 <a href="#Omniscient" class="plugin-tag">Omniscient</a>
 
                                 <a href="#Purple" class="plugin-tag">Dark</a>
-                                
+
                                 <a href="#Flat" class="plugin-tag">Flat</a>
 
                             </div>
@@ -732,7 +750,7 @@
 
                             </div>
                         </li>
-                        
+
                         <li class="plugin on">
                             <div class="plugin-screenshot">
                                 <img src="https://imgur.com/ME6KMNQ.gif" data-src="https://i.imgur.com/flmBUUi.png" class="lazy plugin-screenshot-img" width="auto" height="auto">
@@ -810,26 +828,26 @@
     <script src="https://betterdocs.net/scripts/main.js"></script>
     <script src="https://cdn.jsdelivr.net/retinajs/1.3.0/retina.min.js" async></script>
     <script>
-            $(function() {
-   $("#plugin-search-input").keyup(function() {
-       console.log("searching for: " + $(this).val());
-       var search = $(this).val().toLowerCase();
-       
-       $("#plugin-list").find(".plugin").each(function() {
-           if( $(this).text().toLowerCase().includes(search) ) {
-               $(this).show();
-           }else{
-               $(this).hide();
-           }
-       });
-   }); 
-});
-        </script>
-<script>
-    var bLazy = new Blazy({ 
-        selector: 'img',
-        container: '#content-wrap'
-    });
+        $(function() {
+            $("#plugin-search-input").keyup(function() {
+                console.log("searching for: " + $(this).val());
+                var search = $(this).val().toLowerCase();
+
+                $("#plugin-list").find(".plugin").each(function() {
+                    if ($(this).text().toLowerCase().includes(search)) {
+                        $(this).show();
+                    } else {
+                        $(this).hide();
+                    }
+                });
+            });
+        });
+    </script>
+    <script>
+        var bLazy = new Blazy({
+            selector: 'img',
+            container: '#content-wrap'
+        });
     </script>
 
 
