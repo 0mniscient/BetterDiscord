@@ -13,8 +13,8 @@
         <!-- CSS -->
         <link rel="stylesheet" href="https://betterdocs.net/stylesheets/style.css">
         <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet" type="text/css">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        <link rel="stylesheet" href="/stylesheets/iziToast.min.css">
         <!-- Open Graph -->
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://betterdocs.net/" />
@@ -75,34 +75,99 @@
             </header>
             <style>
                 .theme-btns {
-                    margin-top: 30px;
-                    align-items: center;
-                    display: flex;
-                    justify-content: center;
-                }
-                
-                .theme-btn {
-                    text-decoration: inherit;
-                    background-color: #5191e2;
-                    padding: 10px;
-                    color: #fff;
-                    border-radius: 3px;
-                    font-size: 21px;
-                }
-                
-                .tag-invis {
-                    display: none;
-                }
-                
+                margin-top: -70px;
+            }
+            
+            .theme-btn.second-btn {
+                border-radius: 3px 0px 0px 3px;
+            }
+            
+            .theme-btn.first-btn {
+                border-radius: 0px 3px 3px 0px;
+            }
+            
+            .theme-btn:hover {
+                background: #3e87e2;
+            }
+            
+            .theme-class {}
+            
+            .theme-btn {
+                text-decoration: inherit;
+                background-color: #5191e2;
+                padding: 9px;
+                color: #fff;
+                font-size: 96%;
+                float: right;
+                transition: .2s all linear;
+            }
+            
+            .tabrow {
+                list-style: none;
+                margin: 100px 0 20px;
+                padding: 0;
+                line-height: 24px;
+                overflow: hidden;
+                font-size: 13px;
+                position: relative;
+            }
+            
+            .tabrow li {
+                border: 1px solid rgba(0, 0, 0, 0.2);
+                border-left: none;
+                background: #25323e;
+                display: inline-block;
+                position: relative;
+                border-top-left-radius: 3px;
+                border-top-right-radius: 3px;
+                margin: 0 -5px;
+                padding: 3px 20px;
+                cursor: pointer;
+                color: #cccccc;
+                left: 10px;
+                transition: .2s all linear;
+            }
+            
+            .tabrow li:hover {
+                background: #171f26;
+                color: #1094e8;
+            }
+            
+            .tag-invis {
+                display: none;
+            }
+            
+            .ad-center {
+                display: block;
+                margin: 0 auto;
+            }
+            
+            .tab-selected {
+                background: #171f26 !important;
+                color: #fff !important;
+            }
+            
+            .left-tab {
+                border-bottom-left-radius: 3px;
+            }
+            
+            .right-tab {
+                border-bottom-right-radius: 3px;
+                border-top-left-radius: 0px !important;
+            }
+            
+            @media screen and (max-width: 700px) {
                 .ad-center {
-                    display: block;
-                    margin: 0 auto;
+                    display: none !important;
                 }
-                
-                @media screen and (max-width: 700px) {
-                    .ad-center {
-                        display: none !important;
-                    }
+                .tabrow {
+                    margin: 39px 0 -15px;
+                }
+                .theme-btn {
+                    float: none;
+                }
+                .theme-btn.first-btn {
+                    margin-left: 35%;
                 }
             </style>
             <div id="content-wrap">
@@ -116,13 +181,20 @@
                         </script>
                         <header id="plugin-list-header">
                             <h1 id="plugin-list-title">Plugins</h1>
-                            <a href="https://github.com/0mniscient/BetterDiscord/edit/gh-pages/plugins.html" class="add-pencil" title="Add Plugin"><i class="fa fa-plus"></i></a>
+                            <a href="https://goo.gl/forms/CsqMsLqpFXHHqEb13" target="_blank" class="add-pencil" title="Add Plugin"><i class="fa fa-plus"></i></a>
                             <input type="search" id="plugin-search-input" placeholder="Search plugins...">
                             <div id="plugin-list-count">48 items</div>
                         </header>
                         <div class="theme-btns">
-                            <a href="install_plugin.html" target="_blank" class="theme-btn">How to install plugins</a>
+                        <div class="theme-class">
+                            <a href="install_plugin.html" target="_blank" class="theme-btn first-btn">How to install</a>
                         </div>
+                        <div class="theme-class">
+                            <a href="https://goo.gl/forms/CsqMsLqpFXHHqEb13" target="_blank" class="theme-btn second-btn">Upload Plugin</a>
+                        </div>
+                        <ul class="tabrow">
+                        </ul>
+                    </div>
                         <ul id="plugin-list">
 
                             <li class="plugin on">
@@ -820,7 +892,7 @@
                                     <a href="#Avatar" class="plugin-tag">Avatar</a>
 
                                     <a href="#Quality" class="plugin-tag tag-invis">Quality</a>
-                                    
+
                                     <a href="#High" class="plugin-tag tag-invis">High</a>
 
                                 </div>
@@ -946,8 +1018,21 @@
             })();
             //]]>
         </script>
-
-
+        <script src="/scripts/iziToast.min.js" type="text/javascript"></script>
+        <script>
+            iziToast.show({
+                title: 'Caution',
+                class: 'popupdun',
+                message: 'Some plugins may be outdated!',
+                color: 'yellow',
+                icon: 'ico-warning',
+                position: 'topCenter',
+                transitionIn: 'flipInX',
+                transitionOut: 'flipOutX',
+                timeout: 8000,
+                resetOnHover: true,
+            });
+        </script>
     </body>
 
 </html>

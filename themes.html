@@ -73,20 +73,63 @@
             </div>
         </header>
         <style>
-            .theme-btns {
-                margin-top: 30px;
-                align-items: center;
-                display: flex;
-                justify-content: center;
+                .theme-btns {
+                margin-top: -70px;
             }
+            
+            .theme-btn.second-btn {
+                border-radius: 3px 0px 0px 3px;
+            }
+            
+            .theme-btn.first-btn {
+                border-radius: 0px 3px 3px 0px;
+            }
+            
+            .theme-btn:hover {
+                background: #3e87e2;
+            }
+            
+            .theme-class {}
             
             .theme-btn {
                 text-decoration: inherit;
                 background-color: #5191e2;
-                padding: 10px;
+                padding: 9px;
                 color: #fff;
-                border-radius: 3px;
-                font-size: 21px;
+                font-size: 96%;
+                float: right;
+                transition: .2s all linear;
+            }
+            
+            .tabrow {
+                list-style: none;
+                margin: 100px 0 20px;
+                padding: 0;
+                line-height: 24px;
+                overflow: hidden;
+                font-size: 13px;
+                position: relative;
+            }
+            
+            .tabrow li {
+                border: 1px solid rgba(0, 0, 0, 0.2);
+                border-left: none;
+                background: #25323e;
+                display: inline-block;
+                position: relative;
+                border-top-left-radius: 3px;
+                border-top-right-radius: 3px;
+                margin: 0 -5px;
+                padding: 3px 20px;
+                cursor: pointer;
+                color: #cccccc;
+                left: 10px;
+                transition: .2s all linear;
+            }
+            
+            .tabrow li:hover {
+                background: #171f26;
+                color: #1094e8;
             }
             
             .tag-invis {
@@ -98,11 +141,33 @@
                 margin: 0 auto;
             }
             
+            .tab-selected {
+                background: #171f26 !important;
+                color: #fff !important;
+            }
+            
+            .left-tab {
+                border-bottom-left-radius: 3px;
+            }
+            
+            .right-tab {
+                border-bottom-right-radius: 3px;
+                border-top-left-radius: 0px !important;
+            }
+            
             @media screen and (max-width: 700px) {
                 .ad-center {
                     display: none !important;
                 }
-            }
+                .tabrow {
+                    margin: 39px 0 -15px;
+                }
+                .theme-btn {
+                    float: none;
+                }
+                .theme-btn.first-btn {
+                    margin-left: 35%;
+                }
         </style>
         <div id="content-wrap">
             <div class="wrapper">
@@ -115,12 +180,25 @@
                     </script>
                     <header id="plugin-list-header">
                         <h1 id="plugin-list-title">Themes</h1>
-                        <a href="https://github.com/0mniscient/BetterDiscord/edit/gh-pages/themes.html" class="add-pencil" title="Add Theme"><i class="fa fa-plus"></i></a>
+                        <a href="https://goo.gl/forms/5KrnbDpSm2E0IIs32" target="_blank" class="add-pencil" title="Add Theme"><i class="fa fa-plus"></i></a>
                         <input type="search" id="plugin-search-input" placeholder="Search themes...">
-                        <div id="plugin-list-count">39 items</div>
+                        <div id="plugin-list-count">38 items</div>
                     </header>
                     <div class="theme-btns">
-                        <a href="install_theme.html" target="_blank" class="theme-btn">How to install themes</a>
+                        <div class="theme-class">
+                            <a href="install_theme.html" target="_blank" class="theme-btn first-btn">How to install</a>
+                        </div>
+                        <div class="theme-class">
+                            <a href="https://goo.gl/forms/5KrnbDpSm2E0IIs32" target="_blank" class="theme-btn second-btn">Upload Theme</a>
+                        </div>
+                        <ul class="tabrow">
+                            <a href="#">
+                                <li class="tab-selected left-tab"><span>Themes</span></li>
+                            </a>
+                            <a href="/mods.html">
+                                <li class="right-tab"><span>Mods</span></li>
+                            </a>
+                        </ul>
                     </div>
                     <ul id="plugin-list">
 
@@ -202,26 +280,6 @@
                                 <a href="#Red" class="plugin-tag">Red</a>
 
                                 <a href="#Blue" class="plugin-tag">Blue</a>
-
-                            </div>
-                        </li>
-
-                        <li class="plugin on">
-                            <div class="plugin-screenshot">
-                                <img src="https://imgur.com/ME6KMNQ.gif" data-src="https://imgur.com/apUSFCc.png" class="lazy plugin-screenshot-img" width="auto" height="auto">
-                                <a href="https://betterdocs.net/themes/sleepingbeauty.html" class="plugin-preview-link"><i class="fa fa-eye"></i></a>
-                            </div>
-                            <a href="https://betterdocs.net/themes/sleepingbeauty.html" class="plugin-name">Sleeping Beauty</a>
-                            <p class="plugin-desc">A soft little theme for Disney fans! </p>
-                            <div class="plugin-tag-list">
-
-                                <a href="#Maple" class="plugin-tag">Maple</a>
-
-                                <a href="#Disney" class="plugin-tag">Disney</a>
-
-                                <a href="#Transparent" class="plugin-tag">Transparent</a>
-
-                                <a href="#Green" class="plugin-tag">Green</a>
 
                             </div>
                         </li>
@@ -390,10 +448,10 @@
                                 <a href="#Material" class="plugin-tag">Material</a>
 
                                 <a href="#Dark" class="plugin-tag">Dark</a>
-                                
+
                             </div>
                         </li>
-                        
+
                         <li class="plugin on">
                             <div class="plugin-screenshot">
                                 <img src="https://imgur.com/ME6KMNQ.gif" data-src="https://i.imgur.com/4wNjej8.jpg" class="lazy plugin-screenshot-img" width="auto" height="auto">
@@ -412,7 +470,7 @@
                                 <a href="#Overwatch" class="plugin-tag">Overwatch</a>
 
                                 <a href="#Orange" class="plugin-tag">Orange</a>
-                                
+
                                 <a href="#Gaming" class="plugin-tag tag-invis">Gaming</a>
 
                                 <a href="#Dark" class="plugin-tag tag-invis">Dark</a>
@@ -503,7 +561,7 @@
 
                             </div>
                         </li>
-                        
+
                         <li class="plugin on">
                             <div class="plugin-screenshot">
                                 <img src="https://imgur.com/ME6KMNQ.gif" data-src="https://imgur.com/sIU4902.png" class="lazy plugin-screenshot-img" width="auto" height="auto">
@@ -520,7 +578,7 @@
                                 <a href="#Blue" class="plugin-tag">Blue</a>
 
                                 <a href="#Porter Robinson" class="plugin-tag">Porter Robinson</a>
-                                
+
                                 <a href="#Dark" class="plugin-tag tag-invis">Dark</a>
 
                             </div>
@@ -621,7 +679,7 @@
 
                             </div>
                         </li>
-                        
+
                         <li class="plugin on">
                             <div class="plugin-screenshot">
                                 <img src="https://imgur.com/ME6KMNQ.gif" data-src="https://imgur.com/y0xigtB.png" class="lazy plugin-screenshot-img" width="auto" height="auto">
@@ -632,13 +690,13 @@
                             <div class="plugin-tag-list">
 
                                 <a href="#Omniscient" class="plugin-tag">Omniscient</a>
-                                
+
                                 <a href="#Community" class="plugin-tag">Community</a>
 
                                 <a href="#White" class="plugin-tag">White</a>
 
                                 <a href="#Green" class="plugin-tag">Green</a>
-                                
+
                                 <a href="#Light" class="plugin-tag tag-invis">Light</a>
 
                             </div>
