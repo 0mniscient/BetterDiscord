@@ -311,8 +311,11 @@
 .chat .has-more button {
     color: var(--main-color);
 }
-.chat .new-messages-bar:hover {
+.chat .new-messages-bar {
     background-color: var(--main-color)
+}
+.chat .new-messages-bar:hover {
+    background-color: var(--hover-color)
 }
 .message-group .edit-message .edit-operation>a {
     color: var(--main-color);
