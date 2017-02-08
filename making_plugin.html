@@ -1,41 +1,44 @@
 <!DOCTYPE html>
-<html xmlns="https://www.w3.org/1999/xhtml" xmlns:fb="http://ogp.me/ns/fb#"><head>
-<title>How to make a Plugin</title>
-<meta charset=utf-8>
-<meta content="IE=edge" http-equiv=X-UA-Compatible>
-<meta content="width=device-width,initial-scale=1" name=viewport>
-<meta content="A step by step tutorial how to make a plugin for BetterDiscord users" name=description>
-<meta content="Omni Omniscient Jiiks Hammock Maple Bluescream BetterDiscord Discord Themes Plugins Theme Plugin Installation How-To" name="keywords">
-<!-- CSS -->
-<link rel="stylesheet" href="https://betterdocs.net/stylesheets/style.css">
-<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet" type="text/css">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+<html xmlns="https://www.w3.org/1999/xhtml" xmlns:fb="http://ogp.me/ns/fb#">
 
-<!-- Open Graph -->
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://betterdocs.net/" />
-<meta property="og:site_name" content="Omni" />
-<meta property="og:title" content="BetterDiscord Docs" />
-<meta property="og:image" content="https://i.imgur.com/3sc5OG3.png" />
-<!-- Icon -->
-<link href=https://imgur.com/GZVRLfz.png rel="shortcut icon">
-<!-- Google Analytics -->
-<script>
-    (function(i, s, o, g, r, a, m) {
-        i['GoogleAnalyticsObject'] = r;
-        i[r] = i[r] || function() {
-            (i[r].q = i[r].q || []).push(arguments)
-        }, i[r].l = 1 * new Date();
-        a = s.createElement(o),
-            m = s.getElementsByTagName(o)[0];
-        a.async = 1;
-        a.src = g;
-        m.parentNode.insertBefore(a, m)
-    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+<head>
+    <title>How to make a Plugin</title>
+    <meta charset=utf-8>
+    <meta content="IE=edge" http-equiv=X-UA-Compatible>
+    <meta content="width=device-width,initial-scale=1" name=viewport>
+    <meta content="A step by step tutorial how to make a plugin for BetterDiscord users." name=description>
+    <meta content="Omni Omniscient Jiiks Hammock Maple Bluescream BetterDiscord Discord Themes Plugins Theme Plugin Installation How-To" name="keywords">
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://betterdocs.net/stylesheets/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 
-    ga('create', 'UA-65593962-3', 'auto');
-    ga('send', 'pageview');
-</script>
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://betterdocs.net/" />
+    <meta property="og:site_name" content="Omni" />
+    <meta property="og:title" content="BetterDiscord Docs" />
+    <meta property="og:description" content="A step by step tutorial how to make a plugin for BetterDiscord users." />
+    <meta property="og:image" content="https://i.imgur.com/3sc5OG3.png" />
+    <!-- Icon -->
+    <link href=https://imgur.com/GZVRLfz.png rel="shortcut icon">
+    <!-- Google Analytics -->
+    <script>
+        (function(i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function() {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-65593962-3', 'auto');
+        ga('send', 'pageview');
+    </script>
 </head>
 
 <body>
@@ -158,23 +161,19 @@ return "Omniscient";
                                                                                         <ul>
                                                                                             <li>Plugins are limited to one file.
                                                                                                 <ul>
-                                                                                                    <li>There can be multiple files in the BetterDiscord plugins directory, but to prevent junk and prevent future collisions, it is best practice to include your
-                                                                                                        entire plugin within one .js file.</li>
+                                                                                                    <li>There can be multiple files in the BetterDiscord plugins directory, but to prevent junk and prevent future collisions, it is best practice to include your entire plugin within one .js file.</li>
                                                                                                 </ul>
                                                                                                 <li>Discord isn't just a browser
                                                                                                     <ul>
-                                                                                                        <li>Discord is node.js and chromium as one. BetterDiscord plugins can use all native node.js functions and modules. It is possible to include pure js node
-                                                                                                            modules within your plugin using webpack. Any modules that require compilation and/or do not have pure js alternatives will of course not work.</li>
+                                                                                                        <li>Discord is node.js and chromium as one. BetterDiscord plugins can use all native node.js functions and modules. It is possible to include pure js node modules within your plugin using webpack. Any modules that require compilation and/or do not have pure js alternatives will of course not work.</li>
                                                                                                     </ul>
                                                                                                     <li>Plugins are susceptible to throttling.
                                                                                                         <ul>
-                                                                                                            <li>By default, Discord will throttle plugins when Discord is minimized. Currently there are no in-plugin workarounds to fix this. Throttling is the
-                                                                                                                same as chromium, functions like setInterval and setTimeout will be throttled to at least 1000ms</li>
+                                                                                                            <li>By default, Discord will throttle plugins when Discord is minimized. Currently there are no in-plugin workarounds to fix this. Throttling is the same as chromium, functions like setInterval and setTimeout will be throttled to at least 1000ms</li>
                                                                                                         </ul>
                                                                                                         <li>Add namespaces to your events.
                                                                                                             <ul>
-                                                                                                                <li>When creating selectors like $(document).on('dblclick'), instead use a namespace such as $(document).on('dblclick.dce') in order to easily
-                                                                                                                    unload the event with $(document).off("dblclick.dce") without unloading all dblclick events.</li>
+                                                                                                                <li>When creating selectors like $(document).on('dblclick'), instead use a namespace such as $(document).on('dblclick.dce') in order to easily unload the event with $(document).off("dblclick.dce") without unloading all dblclick events.</li>
                                                                                                             </ul>
                                                                                         </ul>
                                                                             </div>
@@ -235,22 +234,18 @@ return "Omniscient";
                         <a href="https://twitter.com/Omniscien_t" class="footer-link" target="_blank"><i class="fa fa-twitter"></i></a>
                         <a href="https://github.com/0mniscient" class="footer-link" target="_blank"><i class="fa fa-github-alt"></i></a>
                     </div>
-											<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<script>
-  (adsbygoogle = window.adsbygoogle || []).push({
-    google_ad_client: "ca-pub-1998206533560539",
-    enable_page_level_ads: true
-  });
-</script>
-<!-- Ad -->
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-1998206533560539"
-     data-ad-slot="6846685408"
-     data-ad-format="auto"></ins>
-<script>
-(adsbygoogle = window.adsbygoogle || []).push({});
-</script>
+                    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                    <script>
+                        (adsbygoogle = window.adsbygoogle || []).push({
+                            google_ad_client: "ca-pub-1998206533560539",
+                            enable_page_level_ads: true
+                        });
+                    </script>
+                    <!-- Ad -->
+                    <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-1998206533560539" data-ad-slot="6846685408" data-ad-format="auto"></ins>
+                    <script>
+                        (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
                 </div>
             </footer>
 

@@ -1,41 +1,44 @@
 <!DOCTYPE html>
-<html xmlns="https://www.w3.org/1999/xhtml" xmlns:fb="http://ogp.me/ns/fb#"><head>
-<title>BetterDiscord Plugin API</title>
-<meta charset=utf-8>
-<meta content="IE=edge" http-equiv=X-UA-Compatible>
-<meta content="width=device-width,initial-scale=1" name=viewport>
-<meta content="How to use BetterDiscords plugin API to make plugin for our community." name=description>
-<meta content="Omni Omniscient Jiiks Hammock Maple Bluescream BetterDiscord Discord Themes Plugins Theme Plugin Installation How-To" name="keywords">
-<!-- CSS -->
-<link rel="stylesheet" href="/stylesheets/style.css">
-<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet" type="text/css">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+<html xmlns="https://www.w3.org/1999/xhtml" xmlns:fb="http://ogp.me/ns/fb#">
 
-<!-- Open Graph -->
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://betterdocs.net/" />
-<meta property="og:site_name" content="Omni" />
-<meta property="og:title" content="BetterDiscord Docs" />
-<meta property="og:image" content="https://i.imgur.com/3sc5OG3.png" />
-<!-- Icon -->
-<link href=https://imgur.com/GZVRLfz.png rel="shortcut icon">
-<!-- Google Analytics -->
-<script>
-    (function(i, s, o, g, r, a, m) {
-        i['GoogleAnalyticsObject'] = r;
-        i[r] = i[r] || function() {
-            (i[r].q = i[r].q || []).push(arguments)
-        }, i[r].l = 1 * new Date();
-        a = s.createElement(o),
-            m = s.getElementsByTagName(o)[0];
-        a.async = 1;
-        a.src = g;
-        m.parentNode.insertBefore(a, m)
-    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+<head>
+    <title>BetterDiscord Plugin API</title>
+    <meta charset=utf-8>
+    <meta content="IE=edge" http-equiv=X-UA-Compatible>
+    <meta content="width=device-width,initial-scale=1" name=viewport>
+    <meta content="How to use BetterDiscords plugin API to make plugin for our community." name=description>
+    <meta content="Omni Omniscient Jiiks Hammock Maple Bluescream BetterDiscord Discord Themes Plugins Theme Plugin Installation How-To" name="keywords">
+    <!-- CSS -->
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 
-    ga('create', 'UA-65593962-3', 'auto');
-    ga('send', 'pageview');
-</script>
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://betterdocs.net/" />
+    <meta property="og:site_name" content="Omni" />
+    <meta property="og:title" content="BetterDiscord Docs" />
+    <meta property="og:description" content="How to use BetterDiscords plugin API to make plugin for our community." />
+    <meta property="og:image" content="https://i.imgur.com/3sc5OG3.png" />
+    <!-- Icon -->
+    <link href=https://imgur.com/GZVRLfz.png rel="shortcut icon">
+    <!-- Google Analytics -->
+    <script>
+        (function(i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function() {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-65593962-3', 'auto');
+        ga('send', 'pageview');
+    </script>
 </head>
 
 <body>
@@ -80,8 +83,7 @@
                                         <a href="https://github.com/0mniscient/BetterDiscord/edit/gh-pages/plugin_api.html" class="article-edit-link" title="Improve this doc"><i class="fa fa-pencil"></i></a>
                                     </header>
                                     <div class="article-content" itemprop="articleBody">
-                                        <p>This is BetterDiscords Plugin API this is a great help for plugin developers. If you encounter a problem and can’t find the solution here, please submit a <a href="https://github.com/Jiiks/BetterDiscordApp/issues/new"
-                                                target=_blank>GitHub issue</a> and we will try to solve it.</p>
+                                        <p>This is BetterDiscords Plugin API this is a great help for plugin developers. If you encounter a problem and can’t find the solution here, please submit a <a href="https://github.com/Jiiks/BetterDiscordApp/issues/new" target=_blank>GitHub issue</a> and we will try to solve it.</p>
                                         <h2 id="pluginapi" class="article-heading"><a href="#pluginapi" class="headerlink" title="BetterDiscord Plugin API"></a>Plugin API<a class="article-anchor" href="#pluginapi" aria-hidden="true"></a></h2>
                                         <p>This is currently the API it might not be much but it's progressing.
                                             <p>
@@ -119,7 +121,7 @@
                                                         </tr>
                                                         <tr>
                                                             <td>BdApi.getUserNameById("id");</td>
-															<td>Attempts to return username by userid</td>
+                                                            <td>Attempts to return username by userid</td>
                                                         </tr>
                                                         <tr>
                                                             <td>BdApi.setPlaying("game");</td>
@@ -192,22 +194,18 @@
                     <a href="https://twitter.com/Omniscien_t" class="footer-link" target="_blank"><i class="fa fa-twitter"></i></a>
                     <a href="https://github.com/0mniscient" class="footer-link" target="_blank"><i class="fa fa-github-alt"></i></a>
                 </div>
-										<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<script>
-  (adsbygoogle = window.adsbygoogle || []).push({
-    google_ad_client: "ca-pub-1998206533560539",
-    enable_page_level_ads: true
-  });
-</script>
-<!-- Ad -->
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-1998206533560539"
-     data-ad-slot="6846685408"
-     data-ad-format="auto"></ins>
-<script>
-(adsbygoogle = window.adsbygoogle || []).push({});
-</script>
+                <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({
+                        google_ad_client: "ca-pub-1998206533560539",
+                        enable_page_level_ads: true
+                    });
+                </script>
+                <!-- Ad -->
+                <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-1998206533560539" data-ad-slot="6846685408" data-ad-format="auto"></ins>
+                <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
             </div>
         </footer>
 
