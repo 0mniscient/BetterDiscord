@@ -9,6 +9,7 @@
             <a href="https://betterdocs.net/plugin_api.html" class="main-nav-link">API</a>
             <a href="https://betterdocs.net/themes.html" class="main-nav-link">Themes</a>
             <a href="https://betterdocs.net/plugins.html" class="main-nav-link">Plugins</a>
+            <a href="https://betterdocs.net/store/themes.html" class="main-nav-link">Store</a>
             <a href="https://github.com/0mniscient/" class="main-nav-link"><i class="fa fa-github-alt"></i></a> </nav>
         <div id="lang-select-wrap">
             <label id="lang-select-label"><i class="fa fa-globe"></i><span>English</span></label>
