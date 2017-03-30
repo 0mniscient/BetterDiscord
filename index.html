@@ -38,6 +38,11 @@
         ga('create', 'UA-65593962-3', 'auto');
         ga('send', 'pageview');
     </script>
+    <script> 
+    $(function(){
+      $("#header").load("import/header.html"); 
+    });
+    </script> 
     <style>
         .unofficial {
             color: #59ace0;
@@ -49,7 +54,8 @@
 
 <body>
     <div id="container">
-        <?php include 'php/toolbar.php';?>
+        <header id="header" class="wrapper">
+        </header>
         <div id="content-wrap">
             <div id="content" class="wrapper">
                 <div id="content-inner">
