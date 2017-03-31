@@ -34,7 +34,6 @@
             a.src = g;
             m.parentNode.insertBefore(a, m)
         })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
-
         ga('create', 'UA-65593962-3', 'auto');
         ga('send', 'pageview');
     </script>
@@ -44,7 +43,8 @@
   crossorigin="anonymous"></script>
     <script> 
     $(function(){
-      $("#import-header").load("https://betterdocs.net/import/header.html"); 
+      $("#import-header").load("import/header.html");
+	  $("#import-mobile-nav").load("import/mobile-nav.html");
     });
     </script> 
     <style>
@@ -59,8 +59,22 @@
 <body>
     <div id="container">
         <header id="header" class="wrapper">
-            <div id="import-header">
-            </div>
+            <div id="header-inner" class="inner">
+        <h1 id="logo-wrap"> 
+          <a href="https://betterdocs.net/" id="logo">BetterDiscord</a> 
+      </h1>
+        <div id="import-header"></div>
+        <div id="lang-select-wrap">
+            <label id="lang-select-label"><i class="fa fa-globe"></i><span>English</span></label>
+            <select id="lang-select" data-canonical="docs/index.html">
+                <option value="en" selected="">English</option>
+            </select>
+        </div>
+        <a id="mobile-nav-toggle">
+            <span class="mobile-nav-toggle-bar"></span>
+            <span class="mobile-nav-toggle-bar"></span>
+            <span class="mobile-nav-toggle-bar"></span> </a>
+    </div>
         </header>
         <div id="content-wrap">
             <div id="content" class="wrapper">
@@ -199,13 +213,7 @@
             <nav id="mobile-nav">
                 <div id="mobile-nav-inner">
                     <ul id="mobile-nav-list">
-                        <a href="https://betterdocs.net/news/" class="mobile-nav-link">News</a>
-                        <a href="https://betterdocs.net/plugin_api.html" class="mobile-nav-link">API</a>
-                        <a href="https://betterdocs.net/themes.html" class="mobile-nav-link">Themes</a>
-                        <a href="https://betterdocs.net/plugins.html" class="mobile-nav-link">Plugins</a>
-                        <li class="mobile-nav-item">
-                            <a href="https://github.com/0mniscient/" class="mobile-nav-link" rel="external" target="_blank">GitHub</a>
-                        </li>
+                       <div id="import-mobile-nav"></div>
                     </ul>
 
                     <strong class="mobile-nav-title">Getting Started</strong>
@@ -245,7 +253,7 @@
             <script src="https://cdn.jsdelivr.net/retinajs/1.3.0/retina.min.js" async></script>
 
             <script type="text/javascript">
-                //<![CDATA[ 
+                //<![CDATA[ 
                 (function() {
                     var configuration = {
                         "token": "eb8900400e7353fcbd2e9758c3c3cb6d",

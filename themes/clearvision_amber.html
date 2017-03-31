@@ -34,10 +34,19 @@
             a.src = g;
             m.parentNode.insertBefore(a, m)
         })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
-
         ga('create', 'UA-65593962-3', 'auto');
         ga('send', 'pageview');
     </script>
+    <script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+    <script> 
+    $(function(){
+      $("#import-header").load("import/header.html");
+	  $("#import-mobile-nav").load("import/mobile-nav.html");
+    });
+    </script> 
 </head>
 
 <body>
@@ -47,14 +56,7 @@
                 <h1 id="logo-wrap">
       <a href="https://betterdocs.net/" id="logo">BetterDiscord</a>
     </h1>
-                <nav id="main-nav">
-                    <a href="https://betterdocs.net" class="main-nav-link">Docs</a>
-                    <a href="https://betterdocs.net/news/" class="main-nav-link">News</a>
-                    <a href="https://betterdocs.net/plugin_api.html" class="main-nav-link">API</a>
-                    <a href="https://betterdocs.net/themes.html" class="main-nav-link">Themes</a>
-                    <a href="https://betterdocs.net/plugins.html" class="main-nav-link">Plugins</a>
-                    <a href="https://github.com/0mniscient/" class="main-nav-link"><i class="fa fa-github-alt"></i></a>
-                </nav>
+                <div id="import-header"></div>
                 <div id="lang-select-wrap">
                     <label id="lang-select-label"><i class="fa fa-globe"></i><span>English</span></label>
                     <select id="lang-select" data-canonical="docs/index.html">
@@ -136,13 +138,7 @@
         <div id="mobile-nav-inner">
             <ul id="mobile-nav-list">
                 <a href="https://betterdocs.net" class="mobile-nav-link">Docs</a>
-                <a href="https://betterdocs.net/news/" class="mobile-nav-link">News</a>
-                <a href="https://betterdocs.net/plugin_api.html" class="mobile-nav-link">API</a>
-                <a href="https://betterdocs.net/themes.html" class="mobile-nav-link">Themes</a>
-                <a href="https://betterdocs.net/plugins.html" class="mobile-nav-link">Plugins</a>
-                <li class="mobile-nav-item">
-                    <a href="https://github.com/0mniscient/" class="mobile-nav-link" rel="external" target="_blank">GitHub</a>
-                </li>
+                <div id="import-mobile-nav"></div>
             </ul>
         </div>
         <div id="mobile-lang-select-wrap">
