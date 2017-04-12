@@ -1,10 +1,10 @@
 # Remove Ads
 
-If you are a Theme or Plugin developer and wish for you theme or plugin to be directly linked to your github instead of an ad link then please make a PR for your OWN belonging. I don't "steal" anyones work. This site is simply a showcase of peoples themes and plugins so they can be recognized by a larger crowd.
+If you are a Theme or Plugin developer and wish for you theme or plugin to be directly linked to your github instead of an ad link then please make a PR for your **OWN** belonging. I don't "steal" anyones work. This site is simply a showcase of peoples themes and plugins so they can be recognized by a larger crowd.
 
 # Why Have Ads?
 
-I did make the site all by myself with the help of Jiiks (Creator of BD) on creating the theme preview and everyones opinions. I don't think having ads will kill anyone and like I said before if you don't want me recieving revenue from your work then make a PR.
+I did make the site all by myself with the help of Jiiks (Creator of BD) on creating the theme preview (https://github.com/0mniscient/BetterDiscord/pull/2/files although I didn't merge it he did make the preview) and everyones opinions. I don't think having ads will kill anyone and like I said before if you don't want me recieving revenue from your work then make a PR.
 
 # Do you host anything malicous ?
 
