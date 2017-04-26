@@ -305,9 +305,9 @@ TABLE OF CONTENTS
 		//-- 5.6 activate countdown
 		$('.countdown-container').countDown({
 			targetDate: {
-				'day': 		9,
-				'month': 	3,
-				'year': 	2016,
+				'day': 		1,
+				'month': 	1,
+				'year': 	2020,
 				'hour': 	0,
 				'min': 		0,
 				'sec': 		0
