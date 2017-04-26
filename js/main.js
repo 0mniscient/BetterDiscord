@@ -169,7 +169,7 @@ TABLE OF CONTENTS
     			animationIn: "fadeInDown",          									//-- css class for entrace animation
     			animationOut: "fadeOutUp",        										//-- css class for exit animation
     			speed: 4000,               		 										//-- delay in milliseconds between two words
-    			words: ['we are<br><span class="highlight">better</span>', 'we have<br><span class="highlight">themes & plugins</span>', 'high quality<br><span class="highlight">shit.</span>']  	//-- Array of words, it may contain HTML values
+    			words: ['better than<br><span class="highlight">ever</span>', 'we have<br><span class="highlight">themes & plugins</span>', 'high quality<br><span class="highlight">shit.</span>']  	//-- Array of words, it may contain HTML values
 			});
 			
 			clearTimeout(this);
