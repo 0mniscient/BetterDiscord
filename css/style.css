@@ -791,11 +791,11 @@ nav a.to-right .arrow-label,
 	-ms-transition-delay:1500ms;
 }
 .page-container{
-	transition:all 1s cubic-bezier(.17,.67,.26,1);
-	-webkit-transition:all 1s cubic-bezier(.17,.67,.26,1);
-	-moz-transition:all 1s cubic-bezier(.17,.67,.26,1);
-	-o-transition:all 1s cubic-bezier(.17,.67,.26,1);
-	-ms-transition:all 1s cubic-bezier(.17,.67,.26,1);
+	transition:all 1s cubic-bezier(.35,0,.27,1);
+	-webkit-transition:all 1s cubic-bezier(.35,0,.27,1);
+	-moz-transition:all 1s cubic-bezier(.35,0,.27,1);
+	-o-transition:all 1s cubic-bezier(.35,0,.27,1);
+	-ms-transition:all 1s cubic-bezier(.35,0,.27,1);
 }
 
 /*-- ========================================= --
