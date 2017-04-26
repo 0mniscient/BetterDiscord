@@ -1,0 +1,255 @@
+/**
+ * fullPage 2.4.6
+ * https://github.com/alvarotrigo/fullPage.js
+ * MIT licensed
+ *
+ * Copyright (C) 2013 alvarotrigo.com - A project by Alvaro Trigo
+ */
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow:hidden;
+
+    /*-- Avoid flicker on slides transitions for mobile phones #336 --*/
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+#superContainer {
+    height: 100%;
+    position: relative;
+
+    /* Touch detection for Windows 8 */
+    -ms-touch-action: none;
+
+    /* IE 11 on Windows Phone 8.1*/
+    touch-action: none;
+}
+.fp-section {
+    position: relative;
+    -webkit-box-sizing: border-box; /* Safari<=5 Android<=3 */
+    -moz-box-sizing: border-box; /* <=28 */
+    box-sizing: border-box;
+}
+.fp-slide {
+    float: left;
+}
+.fp-slide, .fp-slidesContainer {
+    height: 100%;
+    display: block;
+}
+.fp-slides {
+    z-index:1;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    -webkit-transition: all 0.3s ease-out; /* Safari<=6 Android<=4.3 */
+    transition: all 0.3s ease-out;
+}
+.fp-section.fp-table, .fp-slide.fp-table {
+    display: table;
+    table-layout:fixed;
+    width: 100%;
+}
+.fp-tableCell {
+    display: table-cell;
+    vertical-align: middle;
+    width: 100%;
+    height: 100%;
+}
+.fp-slidesContainer {
+    float: left;
+    position: relative;
+}
+.fp-controlArrow {
+    position: absolute;
+    z-index: 4;
+    top: 50%;
+    cursor: pointer;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    margin-top: -38px;
+}
+.fp-controlArrow.fp-prev {
+    left: 15px;
+    width: 0;
+    border-width: 38.5px 34px 38.5px 0;
+    border-color: transparent #fff transparent transparent;
+}
+.fp-controlArrow.fp-next {
+    right: 15px;
+    border-width: 38.5px 0 38.5px 34px;
+    border-color: transparent transparent transparent #fff;
+}
+.fp-scrollable {
+    overflow: scroll;
+
+}
+.fp-notransition {
+    -webkit-transition: none !important;
+    transition: none !important;
+}
+#fp-nav {
+    position: fixed;
+    z-index: 2;
+    margin-top: -32px;
+    top: 50%;
+    opacity: 1;
+	visibility:hidden;
+	-webkit-animation-duration:1s;
+	animation-duration:1s;
+	-webkit-animation-fill-mode:both;
+	animation-fill-mode:both;
+	transition:all 0.8s ease;
+	-webkit-transition:all 0.8s ease;
+	-moz-transition:all 0.8s ease;
+	-o-transition:all 0.8s ease;
+	-ms-transition:all 0.8s ease;
+}
+#fp-nav.right {
+    right: 65px;
+}
+#fp-nav.right.move-right{
+	right: -385px;
+}
+#fp-nav.left {
+    left: 17px;
+}
+.fp-slidesNav{
+    position: absolute;
+    z-index: 4;
+    left: 50%;
+    opacity: 1;
+}
+.fp-slidesNav.bottom {
+    bottom: 17px;
+}
+.fp-slidesNav.top {
+    top: 17px;
+}
+#fp-nav ul,
+.fp-slidesNav ul {
+  margin: 0;
+  padding: 0;
+}
+#fp-nav ul li,
+.fp-slidesNav ul li {
+    display: block;
+    width: 14px;
+    height: 13px;
+    margin: 40px 0px;
+    position:relative;
+}
+.fp-slidesNav ul li {
+    display: inline-block;
+}
+#fp-nav ul li a,
+.fp-slidesNav ul li a{
+    display: block;
+    position: relative;
+	margin:8px 0;
+    z-index: 1;
+    cursor: pointer;
+    text-decoration: none;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 0 10px 18px 10px;
+	border-color: transparent transparent white transparent;
+	transform:scale(1,1);
+	-moz-transform:scale(1,1);
+	-webkit-transform:scale(1,1);
+	-o-transform:scale(1,1);
+	-ms-transform:scale(1,1);
+}
+#fp-nav ul li a::before{
+	content:'';
+	display:inline-block;
+	position:absolute;
+	left:-20px;
+	top:-10px;
+	width:40px;
+	height:40px;
+	border-radius:50%;
+	-moz-border-radius:50%;
+	-webkit-border-radius:50%;
+	-ms-border-radius:50%;
+	-o-border-radius:50%;
+	border:2px solid white;
+	transform:scale(0.2,0.2);
+	-moz-transform:scale(0.2,0.2);
+	-webkit-transform:scale(0.2,0.2);
+	-o-transform:scale(0.2,0.2);
+	-ms-transform:scale(0.2,0.2);
+	opacity:0;
+}
+#fp-nav ul li a,
+#fp-nav ul li a::before
+{
+	transition:all 0.3s ease;
+	-webkit-transition:all 0.3s ease;
+	-moz-transition:all 0.3s ease;
+	-o-transition:all 0.3s ease;
+	-ms-transition:all 0.3s ease;
+}
+#fp-nav ul li a:hover{
+	transform:scale(0.7,0.7);
+	-moz-transform:scale(0.7,0.7);
+	-webkit-transform:scale(0.7,0.7);
+	-o-transform:scale(0.7,0.7);
+	-ms-transform:scale(0.7,0.7);
+}
+#fp-nav ul li a:hover::before{
+	opacity:1;
+	transform:scale(1.4,1.4);
+	-moz-transform:scale(1.4,1.4);
+	-webkit-transform:scale(1.4,1.4);
+	-o-transform:scale(1.4,1.4);
+	-ms-transform:scale(1.4,1.4);
+}
+
+#fp-nav ul li a.active,
+.fp-slidesNav ul li a.active{
+	transform:scale(0.7,0.7);
+	-moz-transform:scale(0.7,0.7);
+	-webkit-transform:scale(0.7,0.7);
+	-o-transform:scale(0.7,0.7);
+	-ms-transform:scale(0.7,0.7);
+}
+#fp-nav ul li a.active::before{
+	opacity:1;
+	transform:scale(1.4,1.4);
+	-moz-transform:scale(1.4,1.4);
+	-webkit-transform:scale(1.4,1.4);
+	-o-transform:scale(1.4,1.4);
+	-ms-transform:scale(1.4,1.4);
+}
+
+#fp-nav ul li .fp-tooltip {
+    position: absolute;
+    top: -2px;
+	padding-right:5px;
+    color: #fff;
+    font-size: 12px;
+	font-weight:700;
+    white-space: nowrap;
+    width: auto;
+    overflow: hidden;
+	text-transform:uppercase;
+    display: block;
+    opacity: 0;
+	right: 0px;
+	-webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+#fp-nav ul li a:hover ~ .fp-tooltip,
+#fp-nav ul li a.active ~ .fp-tooltip
+{
+    opacity: 1;
+	right:35px;
+}
+#fp-nav ul li .fp-tooltip.right {
+	top:2px;
+}
+#fp-nav ul li .fp-tooltip.left {
+    left: 20px;
+}

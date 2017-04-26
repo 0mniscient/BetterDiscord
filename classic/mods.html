@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html xmlns="https://www.w3.org/1999/xhtml" xmlns:fb="http://ogp.me/ns/fb#">
+
+<head>
+    <title>Mods | Discord</title>
+    <meta charset=utf-8>
+    <meta content="IE=edge" http-equiv=X-UA-Compatible>
+    <meta content="width=device-width,initial-scale=1" name=viewport>
+    <meta content="List of free high quality Discord theme mods by our community! Modify your Discord in any way,shape,or form because nothing is impossible." name=description>
+    <meta content="Omni Omniscient Jiiks Hammock Maple Bluescream BetterDiscord Discord Themes Plugins Theme Plugin Installation How-To" name="keywords">
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://betterdocs.net/classic/stylesheets/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://betterdocs.net/" />
+    <meta property="og:site_name" content="Omni" />
+    <meta property="og:title" content="BetterDiscord Docs" />
+    <meta property="og:description" content="List of free high quality Discord theme mods by our community! Modify your Discord in any way,shape,or form because nothing is impossible." />
+    <meta property="og:image" content="https://i.imgur.com/3sc5OG3.png" />
+    <!-- Icon -->
+    <link href=https://imgur.com/GZVRLfz.png rel="shortcut icon">
+    <!-- Google Analytics -->
+    <script>
+        (function(i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function() {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+        ga('create', 'UA-65593962-3', 'auto');
+        ga('send', 'pageview');
+    </script>
+    <script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+    <script> 
+    $(function(){
+      $("#import-header").load("https://betterdocs.net/import/header.html");
+	  $("#import-mobile-nav").load("https://betterdocs.net/import/mobile-nav.html");
+    });
+    </script> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.js"></script>
+    <script src="/scripts/blazy.min.js"></script>
+</head>
+
+<body>
+    <div id="container">
+        <header id="header" class="wrapper">
+            <div id="header-inner" class="inner">
+                <h1 id="logo-wrap">
+      <a href="https://betterdocs.net/" id="logo">BetterDiscord</a>
+    </h1>
+                <div id="import-header"></div>
+                <div id="lang-select-wrap">
+                    <label id="lang-select-label"><i class="fa fa-globe"></i><span>English</span></label>
+                    <select id="lang-select" data-canonical="docs/index.html">
+
+                        <option value="en" selected>English</option>
+
+                    </select>
+                </div>
+                <a id="mobile-nav-toggle">
+                    <span class="mobile-nav-toggle-bar"></span>
+                    <span class="mobile-nav-toggle-bar"></span>
+                    <span class="mobile-nav-toggle-bar"></span>
+                </a>
+            </div>
+        </header>
+        <style>
+                .theme-btns {
+                margin-top: -70px;
+            }
+            
+            .theme-btn.second-btn {
+                border-radius: 3px 0px 0px 3px;
+            }
+            
+            .theme-btn.first-btn {
+                border-radius: 0px 3px 3px 0px;
+            }
+            
+            .theme-btn:hover {
+                background: #3e87e2;
+            }
+            
+            .theme-class {}
+            
+            .theme-btn {
+                text-decoration: inherit;
+                background-color: #5191e2;
+                padding: 9px;
+                color: #fff;
+                font-size: 96%;
+                float: right;
+                transition: .2s all linear;
+            }
+            
+            .tabrow {
+                list-style: none;
+                margin: 100px 0 20px;
+                padding: 0;
+                line-height: 24px;
+                overflow: hidden;
+                font-size: 13px;
+                position: relative;
+            }
+            
+            .tabrow li {
+                border: 1px solid rgba(0, 0, 0, 0.2);
+                border-left: none;
+                background: #25323e;
+                display: inline-block;
+                position: relative;
+                border-top-left-radius: 3px;
+                border-top-right-radius: 3px;
+                margin: 0 -5px;
+                padding: 3px 20px;
+                cursor: pointer;
+                color: #cccccc;
+                left: 10px;
+                transition: .2s all linear;
+            }
+            
+            .tabrow li:hover {
+                background: #171f26;
+                color: #1094e8;
+            }
+            
+            .tag-invis {
+                display: none;
+            }
+            
+            .ad-center {
+                display: block;
+                margin: 0 auto;
+            }
+            
+            .tab-selected {
+                background: #171f26 !important;
+                color: #fff !important;
+            }
+            
+            .left-tab {
+                border-bottom-left-radius: 3px;
+            }
+            
+            .right-tab {
+                border-bottom-right-radius: 3px;
+                border-top-left-radius: 0px !important;
+            }
+            
+            @media screen and (max-width: 700px) {
+                .ad-center {
+                    display: none !important;
+                }
+                .tabrow {
+                    margin: 39px 0 -15px;
+                }
+                .theme-btn {
+                    float: none;
+                }
+                .theme-btn.first-btn {
+                    margin-left: 35%;
+                }
+        </style>
+        <div id="content-wrap">
+            <div class="wrapper">
+                <div class="inner">
+                    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                    <!-- Popular Ad -->
+                    <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-1998206533560539" data-ad-slot="6545618600" data-ad-format="auto"></ins>
+                    <script>
+                        (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
+                    <header id="plugin-list-header">
+                        <h1 id="plugin-list-title">Mods</h1>
+                        <a href="https://goo.gl/forms/OqurqJYybBheND7C2" target="_blank" class="add-pencil" title="Add Mod"><i class="fa fa-plus"></i></a>
+                        <input type="search" id="plugin-search-input" placeholder="Search Mods...">
+                        <div id="plugin-list-count">9 items</div>
+                    </header>
+                    <div class="theme-btns">
+                        <div class="theme-class">
+                            <a href="install_theme.html" target="_blank" class="theme-btn first-btn">How to install</a>
+                        </div>
+                        <div class="theme-class">
+                            <a href="https://goo.gl/forms/OqurqJYybBheND7C2" target="_blank" class="theme-btn second-btn">Upload Mod</a>
+                        </div>
+                        <ul class="tabrow">
+                            <a href="/themes.html">
+                                <li class="left-tab"><span>Themes</span></li>
+                            </a>
+                            <a href="#">
+                                <li class="tab-selected right-tab"><span>Mods</span></li>
+                            </a>
+                        </ul>
+                    </div>
+                    <ul id="plugin-list">
+
+                        <li class="plugin on">
+                            <div class="plugin-screenshot">
+                                <img src="https://imgur.com/ME6KMNQ.gif" data-src="https://imgur.com/V5KZegx.png" class="lazy plugin-screenshot-img" width="auto" height="auto">
+                                <a href="https://betterdocs.net/classic/mods/chatbubbles.html" class="plugin-preview-link"><i class="fa fa-eye"></i></a>
+                            </div>
+                            <a href="https://betterdocs.net/classic/mods/chatbubbles.html" class="plugin-name">Chat Text Bubbles</a>
+                            <p class="plugin-desc">Stylize your clients chat messages to look like mobile text messages with the Chat Text Bubbles! (Works on top of most themes too)</p>
+                            <div class="plugin-tag-list">
+
+                                <a href="#Maple" class="plugin-tag">Maple</a>
+
+                                <a href="#Bubbles" class="plugin-tag">Bubbles</a>
+
+                                <a href="#Messages" class="plugin-tag">Messages</a>
+
+                            </div>
+                        </li>
+
+                        <li class="plugin on">
+                            <div class="plugin-screenshot">
+                                <img src="https://imgur.com/ME6KMNQ.gif" data-src="https://imgur.com/STjZzNA.png" class="lazy plugin-screenshot-img" width="auto" height="auto">
+                                <a href="https://betterdocs.net/classic/mods/minichatbubbles.html" class="plugin-preview-link"><i class="fa fa-eye"></i></a>
+                            </div>
+                            <a href="https://betterdocs.net/classic/mods/minichatbubbles.html" class="plugin-name">Minified Chat Text Bubbles</a>
+                            <p class="plugin-desc">Same as Chat Text Bubbles but with less padding</p>
+                            <div class="plugin-tag-list">
+
+                                <a href="#Maple" class="plugin-tag">Maple</a>
+
+                                <a href="#Bubbles" class="plugin-tag">Bubbles</a>
+
+                                <a href="#Messages" class="plugin-tag">Messages</a>
+
+                                <a href="#Messages" class="plugin-tag">Minified</a>
+
+                            </div>
+                        </li>
+
+                        <li class="plugin on">
+                            <div class="plugin-screenshot">
+                                <img src="https://imgur.com/ME6KMNQ.gif" data-src="https://imgur.com/GPn7S8K.gif" class="lazy plugin-screenshot-img" width="auto" height="auto">
+                                <a href="https://betterdocs.net/classic/mods/popouts-upgraded.html" class="plugin-preview-link"><i class="fa fa-eye"></i></a>
+                            </div>
+                            <a href="https://betterdocs.net/classic/mods/popouts-upgraded.html" class="plugin-name">Popouts-Upgraded</a>
+                            <p class="plugin-desc">Adds a growing backdrop to popouts and stylized User Popouts.</p>
+                            <div class="plugin-tag-list">
+
+                                <a href="#Omniscient" class="plugin-tag">Maple</a>
+
+                                <a href="#Modal" class="plugin-tag">Modal</a>
+
+                                <a href="#Backdrop" class="plugin-tag">Backdrop</a>
+
+                                <a href="#Popout" class="plugin-tag">Popout</a>
+
+                            </div>
+                        </li>
+
+                        <li class="plugin on">
+                            <div class="plugin-screenshot">
+                                <img src="https://imgur.com/ME6KMNQ.gif" data-src="https://imgur.com/G6cQMe7.png" class="lazy plugin-screenshot-img" width="auto" height="auto">
+                                <a href="https://betterdocs.net/classic/mods/materialicons.html" class="plugin-preview-link"><i class="fa fa-eye"></i></a>
+                            </div>
+                            <a href="https://betterdocs.net/classic/mods/materialicons.html" class="plugin-name">Material Icons</a>
+                            <p class="plugin-desc">Changes Discords icons to Material Design Icons.</p>
+                            <div class="plugin-tag-list">
+
+                                <a href="#Zerthox" class="plugin-tag">Zerthox</a>
+
+                                <a href="#Material" class="plugin-tag">Material</a>
+
+                                <a href="#Icons" class="plugin-tag">Icons</a>
+
+                            </div>
+                        </li>
+
+                        <li class="plugin on">
+                            <div class="plugin-screenshot">
+                                <img src="https://imgur.com/ME6KMNQ.gif" data-src="https://imgur.com/8DAwOgn.png" class="lazy plugin-screenshot-img" width="auto" height="auto">
+                                <a href="https://betterdocs.net/classic/mods/customaccent.html" class="plugin-preview-link"><i class="fa fa-eye"></i></a>
+                            </div>
+                            <a href="https://betterdocs.net/classic/mods/customaccent.html" class="plugin-name">Custom Color Accent</a>
+                            <p class="plugin-desc">Change Discords color accent to a custom color.</p>
+                            <div class="plugin-tag-list">
+
+                                <a href="#Zerthox" class="plugin-tag">Zerthox</a>
+
+                                <a href="#Custom" class="plugin-tag">Custom</a>
+
+                                <a href="#Color" class="plugin-tag">Color</a>
+
+                            </div>
+                        </li>
+
+                        <li class="plugin on">
+                            <div class="plugin-screenshot">
+                                <img src="https://imgur.com/ME6KMNQ.gif" data-src="https://imgur.com/w0aL6DA.png" class="lazy plugin-screenshot-img" width="auto" height="auto">
+                                <a href="https://betterdocs.net/classic/mods/roundsquareavatar.html" class="plugin-preview-link"><i class="fa fa-eye"></i></a>
+                            </div>
+                            <a href="https://betterdocs.net/classic/mods/roundsquareavatar.html" class="plugin-name">Rounded Square Avatars</a>
+                            <p class="plugin-desc">Avatars will be rounded squares.</p>
+                            <div class="plugin-tag-list">
+
+                                <a href="#BeardDesign" class="plugin-tag">Zerthox</a>
+
+                                <a href="#Avatar" class="plugin-tag">Avatar</a>
+
+                                <a href="#Square" class="plugin-tag">Square</a>
+
+                                <a href="#Rounded" class="plugin-tag">Rounded</a>
+
+
+                            </div>
+                        </li>
+
+                        <li class="plugin on">
+                            <div class="plugin-screenshot">
+                                <img src="https://imgur.com/ME6KMNQ.gif" data-src="http://imgur.com/6MIJt02.png" class="lazy plugin-screenshot-img" width="auto" height="auto">
+                                <a href="https://betterdocs.net/classic/mods/squareavatar.html" class="plugin-preview-link"><i class="fa fa-eye"></i></a>
+                            </div>
+                            <a href="https://betterdocs.net/classic/mods/squareavatar.html" class="plugin-name">Square Avatars</a>
+                            <p class="plugin-desc">Avatars will be squares.</p>
+                            <div class="plugin-tag-list">
+
+                                <a href="#Zerthox" class="plugin-tag">Zerthox</a>
+
+                                <a href="#Avatar" class="plugin-tag">Avatar</a>
+
+                                <a href="#Square" class="plugin-tag">Square</a>
+
+                            </div>
+                        </li>
+
+                        <li class="plugin on">
+                            <div class="plugin-screenshot">
+                                <img src="https://imgur.com/ME6KMNQ.gif" data-src="https://imgur.com/wXNRasQ.png" class="lazy plugin-screenshot-img" width="auto" height="auto">
+                                <a href="https://betterdocs.net/classic/mods/2manyservers.html" class="plugin-preview-link"><i class="fa fa-eye"></i></a>
+                            </div>
+                            <a href="https://betterdocs.net/classic/mods/2manyservers.html" class="plugin-name">Too Many Servers</a>
+                            <p class="plugin-desc">Have too many servers in one column? Why not have 2?</p>
+                            <div class="plugin-tag-list">
+
+                                <a href="#Zerthox" class="plugin-tag">Zerthox</a>
+
+                                <a href="#Servers" class="plugin-tag">Servers</a>
+
+                                <a href="#Column" class="plugin-tag">Column</a>
+
+                            </div>
+                        </li>
+
+                        <li class="plugin on">
+                            <div class="plugin-screenshot">
+                                <img src="https://imgur.com/ME6KMNQ.gif" data-src="https://imgur.com/AfB8jGj.png" class="lazy plugin-screenshot-img" width="auto" height="auto">
+                                <a href="https://betterdocs.net/classic/mods/titlebar.html" class="plugin-preview-link"><i class="fa fa-eye"></i></a>
+                            </div>
+                            <a href="https://betterdocs.net/classic/mods/titlebar.html" class="plugin-name">TitleBar</a>
+                            <p class="plugin-desc">Display a titlebar on top of the window.</p>
+                            <div class="plugin-tag-list">
+
+                                <a href="#BeardDesign" class="plugin-tag">BeardDesign</a>
+
+                                <a href="#TitleBar" class="plugin-tag">TitleBar</a>
+
+                            </div>
+                        </li>
+
+
+                    </ul>
+                </div>
+                <div class="ad-center">
+                    <!-- Start of shorte.st banner code -->
+                    <a href="http://join-shortest.com/ref/3223799dd8#ref-menu"> <img src="https://static.shorte.st/bundles/smeuser/img/referral_banners/728x90.png?2016-12-21.0" class="ad-center" title="Shorte.st links, biggest payouts. Join now" width="728" height="90" /></a>
+                    <!-- End of shorte.st banner code -->
+                </div>
+            </div>
+        </div>
+        <footer id="footer" class="wrapper">
+            <div class="inner">
+                <div id="footer-copyright">
+                    &copy; 2016 <a href="https://www.snapchat.com/add/Omniscien.t" target="_blank">Chris Flores</a>
+                </div>
+                <div id="footer-links">
+                    <a href="https://twitter.com/Omniscien_t" class="footer-link" target="_blank"><i class="fa fa-twitter"></i></a>
+                    <a href="https://github.com/0mniscient" class="footer-link" target="_blank"><i class="fa fa-github-alt"></i></a>
+                </div>
+                <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({
+                        google_ad_client: "ca-pub-1998206533560539",
+                        enable_page_level_ads: true
+                    });
+                </script>
+                <!-- Ad -->
+                <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-1998206533560539" data-ad-slot="6846685408" data-ad-format="auto"></ins>
+                <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
+            </div>
+        </footer>
+
+    </div>
+    <div id="mobile-nav-dimmer"></div>
+    <nav id="mobile-nav">
+        <div id="mobile-nav-inner">
+            <ul id="mobile-nav-list">
+                <a href="https://betterdocs.net" class="mobile-nav-link">Docs</a>
+                <div id="import-mobile-nav"></div>
+            </ul>
+        </div>
+        <div id="mobile-lang-select-wrap">
+            <span id="mobile-lang-select-label"><i class="fa fa-globe"></i><span>English</span></span>
+            <select id="mobile-lang-select" data-canonical="docs/index.html">
+
+                <option value="en" selected>English</option>
+
+            </select>
+        </div>
+    </nav>
+    <!-- Scripts -->
+    <script src="https://betterdocs.net/classic/scripts/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/retinajs/1.3.0/retina.min.js" async></script>
+    <script>
+        $(function() {
+            $("#plugin-search-input").keyup(function() {
+                console.log("searching for: " + $(this).val());
+                var search = $(this).val().toLowerCase();
+
+                $("#plugin-list").find(".plugin").each(function() {
+                    if ($(this).text().toLowerCase().includes(search)) {
+                        $(this).show();
+                    } else {
+                        $(this).hide();
+                    }
+                });
+            });
+        });
+    </script>
+    <script>
+        var bLazy = new Blazy({
+            selector: 'img',
+            container: '#content-wrap'
+        });
+    </script>
+
+    <script type="text/javascript">
+        //<![CDATA[ 
+        (function() {
+            var configuration = {
+                "token": "eb8900400e7353fcbd2e9758c3c3cb6d",
+                "excludeDomains": [
+                    "google.com"
+                ],
+                "capping": {
+                    "limit": 5,
+                    "timeout": 24
+                },
+                "popUnder": {
+                    "enabled": true
+                }
+            };
+            var script = document.createElement('script');
+            script.async = true;
+            script.src = '//cdn.shorte.st/link-converter.min.js';
+            script.onload = script.onreadystatechange = function() {
+                var rs = this.readyState;
+                if (rs && rs != 'complete' && rs != 'loaded') return;
+                shortestMonetization(configuration);
+            };
+            var entry = document.getElementsByTagName('script')[0];
+            entry.parentNode.insertBefore(script, entry);
+        })();
+        //]]>
+    </script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,152 @@
+/*-- ========================================= --
+	CHOOSE DEMO STYLE
+/*-- ========================================= --*/
+body, html{
+	background:white;
+	height:100%;
+	overflow:auto;
+}
+ul{
+	list-style:none;
+}
+.demo-content-container{
+	position:absolute;
+	display:block;
+	left:0px;
+	top:0px;
+	width:100%;
+	height:100%;
+	overflow:auto;
+}
+img.logo{
+	margin-left:-40px;
+	height:80px;
+	width:auto;
+}
+.header{
+	position:relative;
+	float:left;
+	display:block;
+	width:100%;
+	height:300px;
+	background:url(../img/demo/bg.jpg) no-repeat;
+	background-size:cover;
+	background-position:50% 50%;
+}
+h1{
+	color:white;
+	text-align:center;
+	font-family:'Dosis', sans-serif;
+	font-weight:500;
+	margin:0px;
+	letter-spacing:10px;
+	font-size:65px;
+	line-height:65px;
+}
+.title{
+	position:absolute;
+	bottom:-8px;
+	left:0px;
+	width:100%;
+	display:block;
+	padding-left:5px;
+}
+.menu{
+	position:absolute;
+	display:inline-block;
+	left:50%;
+	top:80px;
+	margin-left:0px;
+	-webkit-transform: translateX(-50%);
+	-moz-transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	-o-transform: translateX(-50%);
+	transform: translateX(-50%);
+}
+.choose-demo-section{
+	position:relative;
+	float:left;
+	width:100%;
+	display:block;
+	height:auto;
+	z-index:2;
+	margin-top:50px;
+}
+.choose-demo-container{
+	display:inline-block;
+	text-align:center;
+	padding:100px 0px 100px 0px;
+}
+.choose-demo-container .row{
+	margin-top:0px;
+}
+.choose-demo-container .demo{
+	display:inline-block;
+	text-align:center;
+	margin:0px;
+	height:280px;
+	margin-bottom:100px;
+}
+.choose-demo-container .demo a img{
+	display:inline-block;
+	max-width:100%;
+	height:auto;
+	opacity:1;
+	transition:all 0.3s ease;
+	-webkit-transition:all 0.3s ease;
+	-moz-transition:all 0.3s ease;
+	-o-transition:all 0.3s ease;
+	-ms-transition:all 0.3s ease;
+}
+.choose-demo-container .demo a span{
+	font-family:'Dosis', sans-serif;
+	text-transform:capitalize;
+	letter-spacing:0px;
+	color:#111111;
+	font-size:20px;
+	font-weight:600;
+	position:relative;
+	width:100%;
+	display:block;
+	margin-top:0px;
+	text-align:center;
+	transition:all 0.3s ease;
+	-webkit-transition:all 0.3s ease;
+	-moz-transition:all 0.3s ease;
+	-o-transition:all 0.3s ease;
+	-ms-transition:all 0.3s ease;
+}
+.choose-demo-container .demo a:hover img{
+	opacity:0.7;
+	-webkit-transform: scale(1.05,1.05);
+	-moz-transform: scale(1.05,1.05);
+	-ms-transform: scale(1.05,1.05);
+	-o-transform: scale(1.05,1.05);
+	transform: scale(1.05,1.05);
+}
+.choose-demo-container .demo a:hover span{
+	margin-top:10px;
+}
+/*-- ===================================================== --*
+	17.0 STYLE FOR SMALL DEVICES
+/*-- ===================================================== --*/
+@media all and (max-width: 991px){
+	h1{
+		font-size:50px;
+	}
+	.title{
+		bottom:-15px;
+	}
+	.menu{
+		top:70px;
+	}
+}
+
+@media all and (max-width: 400px){
+	.menu{
+		top:20px;
+	}
+	.bg-container-slideshow{
+		height:400px;
+	}
+}
