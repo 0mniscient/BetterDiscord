@@ -56,6 +56,10 @@ html, body{
 	-o-perspective-origin: 50% 50%;
 	perspective-origin: 50% 50%;
 }
+.body-page {
+	overflow-y: scroll;
+	background-color: #19191b;
+}
 a{
 	text-decoration:none;
 	outline:none;
@@ -174,7 +178,7 @@ span.quote-name::before{
 }
 .small-title{
 	text-align:center;
-	color:#6a6a6a;
+	color:#b5b5b5;
 	margin-bottom:10px;
 	top: 15px;
 }
@@ -197,7 +201,7 @@ span.quote-name::before{
 	-ms-transform: translateX(-50%);
 	-o-transform: translateX(-50%);
 	transform: translateX(-50%);
-	background:#151515;
+	background:#e6e6e6;
 }
 .title-with-border::after{
 	width:1px;
@@ -209,7 +213,10 @@ span.quote-name::before{
 	-o-transform: translateX(0%);
 	transform: translateX(0%);
 }
-
+h2.title-with-border {
+    color: #fff;
+}
+.small-title
 /*-- ========================================= --
 	3.0 FORMS
 /*-- ========================================= --*/
@@ -627,7 +634,9 @@ canvas{
 	height:100%;
 	z-index:1;
 }
- 
+.main-canvas {
+	background-color: #121213;
+}
 .bg-container-slideshow,
 .bg-container-kenburns,
 .bg-container-youtube,
@@ -864,7 +873,7 @@ nav a::before{
 	top:0px;
 	width:0%;
 	height:100%;
-	background:#151515;
+	background:#19191b;
 }
 
 nav a.to-left{
@@ -963,7 +972,7 @@ nav a .arrow-wrap::before{
 	top:50%;
 	width:100%;
 	height:2px;
-	background:#151515;
+	background: #E1E1E1;
 	-webkit-transform: translateY(-50%) rotate(-40deg);
 	-moz-transform: translateY(-50%) rotate(-40deg);
 	-ms-transform: translateY(-50%) rotate(-40deg);
@@ -981,7 +990,7 @@ nav a .arrow-wrap::after{
 	top:50%;
 	width:100%;
 	height:2px;
-	background:#151515;
+	background:#E1E1E1;
 	-webkit-transform: translateY(-50%) rotate(40deg);
 	-moz-transform: translateY(-50%) rotate(40deg);
 	-ms-transform: translateY(-50%) rotate(40deg);
@@ -1037,7 +1046,7 @@ nav a.to-right:hover .arrow-label
 	left:0px;
 	width:100%;
 	height:100%;
-	background:rgba(255,255,255,1);
+	background:#121213;
 	opacity:0;
 	z-index:12;
 	-webkit-transform: rotateX(100deg);
@@ -1189,7 +1198,7 @@ nav a.to-right:hover .arrow-label
 	width:100%;
 	height:100%;
 	z-index:11;
-	background:white;
+	background:#19191b;
 }
 .preloader .ball-scale-ripple{
 	position:absolute;
@@ -1200,7 +1209,7 @@ nav a.to-right:hover .arrow-label
 	margin-top:-25px;
 }
 .preloader .ball-scale-ripple > div{
-	border:2px solid #151515;
+	border:2px solid #fff;
 }
 
 
@@ -1215,10 +1224,19 @@ nav a.to-right:hover .arrow-label
 	top:50px;
 	text-align:center;
 }
+.home-section .logo.page {
+    top: 0px;
+    background-color: #121213;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
 .home-section .logo img{
 	display:inline-block;
 	height:75px;
 	width:auto;
+}
+.home-section .logo.page img {
+	height: 43px;
 }
 .home-section .guide{
 	position:absolute;
@@ -1236,6 +1254,9 @@ nav a.to-right:hover .arrow-label
 }
 .home-section .content-container{
 	text-align:center;
+}
+.home-section.page .content-container {
+	text-align: inherit;
 }
 .home-section .show-countdown{
 	margin-top:70px;
@@ -1289,7 +1310,7 @@ nav a.to-right:hover .arrow-label
 	display:block;
 	width:100%;
 	height:100%; 
-	background:rgba(255,255,255,0.9);
+	background:#121213;
 }
 
 /*-- ============================= 11.1 COMPANY DESCRIPTION ============================= --*/
@@ -1397,7 +1418,7 @@ nav a.to-right:hover .arrow-label
 	font-weight:700;
 	font-size:16px;
 	letter-spacing:1px;
-	color:#151515;
+	color:#E7E7E7;
 	text-transform:uppercase;
 	opacity:1;
 }
@@ -1408,8 +1429,12 @@ nav a.to-right:hover .arrow-label
 	display:block;
 	width:100%;
 	text-align:center;
-	color:#151515;
+	color:#E7E7E7;
 	opacity:0;
+}
+.service-container .service .text-container .desc p,
+.contact-container .contact .text-container .desc p{
+    color: #E7E7E7;
 }
 
 /*-- ============================= 11.2 SERVICES ============================= --*/
@@ -1565,7 +1590,7 @@ nav a.to-right:hover .arrow-label
 	display:block;
 	width:100%;
 	height:100%; 
-	background:rgba(255,255,255,0.9);
+	background:#121213;
 }
 
 /*-- ============================= 12.1 CONTACT DETAILS ============================= --*/
@@ -1727,8 +1752,29 @@ nav a.to-right:hover .arrow-label
     font-size: 24px;
     top: -26px;
     position: relative;
+	color: #fff;
 }
-
+#plugin-search-input {
+    border: 2px solid #2f2f2f;
+    background-color: #19191b;
+}
+.plugin-desc {
+    color: #e2e2e2;
+}
+::-webkit-scrollbar-track {
+    background: #121213;
+}
+::-webkit-scrollbar-track:hover {
+    background: #121213;
+}
+#plugin-search-input, #plugin-search-input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #B4B4B4;
+}
+.wordsrotator_words .wordsrotator_wordIn,
+.wordsrotator_words .wordsrotator_wordOut,
+h1#wordrotator{
+    color: #fff;
+}
 /*-- ===================================================== --*
 	13.0 STYLE FOR SMALL DEVICES
 /*-- ===================================================== --*/
@@ -1831,6 +1877,11 @@ nav a.to-right:hover .arrow-label
 		position:relative;
 		top:0px;
 		margin-top:100px;
+	}
+	.home-section .logo.page{
+		position:relative;
+		top:0px;
+		margin-top:0px;
 	}
 	.link-nextpage-top,
 	.link-nextpage-bottom{
