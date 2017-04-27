@@ -38,7 +38,7 @@ TABLE OF CONTENTS
 		$('.home-section .show-countdown').css('display','inline-block');
 		
 		$('.home-section .logo img').removeClass('entrance').addClass('fadeInDown');
-		$('.home-section h3.small-title, .home-section .wordrotator-container, .home-section .show-countdown, .content-container').removeClass('entrance').addClass('fadeInDown');
+		$('.home-section h3.small-title, .home-section .wordrotator-container, .home-section .show-countdown').removeClass('entrance').addClass('fadeInDown');
 		
 		//-- show guide on large devices
 		if($(window).width() >= 1200){
