@@ -1786,7 +1786,7 @@ h1#wordrotator{
     top: 45px;
 }
 * {
-	-webkit-font-smoothing: antialiased;
+    -webkit-font-smoothing: antialiased;
 }
 .left-tabs {
     float: left;
@@ -1813,7 +1813,17 @@ h1#wordrotator{
     height: 26px;
 	border-bottom: 2px solid #3d81e4;
 }
-
+#plugin-list-count {
+    float: left;
+    padding-right: 30px;
+    margin-left: 20px;
+}
+hr {
+    border-top: 2px solid #2f2f2f;
+}
+#plugin-list-title .bd-title {
+    color: #3d81e4;
+}
 
 /*-- ===================================================== --*
 	13.0 STYLE FOR SMALL DEVICES
