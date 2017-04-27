@@ -75,6 +75,14 @@
       	<script src="js/html5shiv.js"></script>
       	<script src="js/respond.min.js"></script>
     	<![endif]-->
+    	
+    	<script>
+        var bLazy = new Blazy({
+            selector: 'img',
+            container: '#container'
+        });
+    </script>
+    	
     	<style>
 		#content-wrap {
     background: #19191b;
@@ -1203,12 +1211,6 @@
                     }
                 });
             });
-        });
-    </script>
-    <script>
-        var bLazy = new Blazy({
-            selector: 'img',
-            container: '#content-wrap'
         });
     </script>
         <!-- bootstrap -->
