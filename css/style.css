@@ -54,6 +54,7 @@ html, body{
 	-ms-perspective-origin: 50% 50%;
 	-o-perspective-origin: 50% 50%;
 	perspective-origin: 50% 50%;
+	-webkit-overflow-scrolling: touch;
 }
 .body-page {
 	background-color: #19191b;
@@ -1766,6 +1767,9 @@ nav a.to-right:hover .arrow-label
 }
 ::-webkit-scrollbar-track:hover {
     background: #121213;
+}
+::-webkit-scrollbar {
+	-webkit-appearance: none;
 }
 #plugin-search-input, #plugin-search-input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
   color: #B4B4B4;
