@@ -1311,7 +1311,7 @@ nav a.to-right:hover .arrow-label
 	display:block;
 	width:100%;
 	height:100%; 
-	background:#121213;
+	background:transparent;
 }
 
 /*-- ============================= 11.1 COMPANY DESCRIPTION ============================= --*/
@@ -1591,7 +1591,7 @@ nav a.to-right:hover .arrow-label
 	display:block;
 	width:100%;
 	height:100%; 
-	background:#121213;
+	background:transparent;
 }
 
 /*-- ============================= 12.1 CONTACT DETAILS ============================= --*/
