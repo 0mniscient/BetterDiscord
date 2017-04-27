@@ -1824,6 +1824,10 @@ hr {
 #plugin-list-title .bd-title {
     color: #3d81e4;
 }
+.total-items {
+    float: right;
+    padding-right: 15px;
+}
 
 /*-- ===================================================== --*
 	13.0 STYLE FOR SMALL DEVICES
