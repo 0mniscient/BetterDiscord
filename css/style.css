@@ -56,6 +56,9 @@ html, body{
 	perspective-origin: 50% 50%;
 	-webkit-overflow-scrolling: touch;
 }
+html {
+	overflow: hidden !important;
+}
 .body-page {
 	background-color: #19191b;
 	overflow: auto;
@@ -411,8 +414,8 @@ label.loading-contact:before{
 	position:absolute;
 	left:50%;
 	margin-left:-45px;
-	transform:translateX(-50%);
 	-webkit-transform:translateX(-50%);
+	transform:translateX(-50%);
 	font-family:'FontAwesome';
 	content:'\f021';
 	
@@ -597,16 +600,16 @@ label.contact-notif-error{
 	border:none;
 	width:100%;
 	height:100%;
-	transform-origin:-25% 50%;
 	-moz-transform-origin:-25% 50%;
 	-webkit-transform-origin:-25% 50%;
 	-o-transform-origin:-25% 50%;
 	-ms-transform-origin:-25% 50%;
-	transform:rotate3d(0, 0, 1, 45deg);
+	transform-origin:-25% 50%;
 	-moz-transform:rotate3d(0, 0, 1, 45deg);
 	-webkit-transform:rotate3d(0, 0, 1, 45deg);
 	-o-transform:rotate3d(0, 0, 1, 45deg);
 	-ms-transform:rotate3d(0, 0, 1, 45deg);
+	transform:rotate3d(0, 0, 1, 45deg);
 }
 
 /*-- ================== 4.1 BUTTONS WHEN HOVER ====================== --*/
@@ -615,11 +618,11 @@ label.contact-notif-error{
 	color:rgba(255,255,255,0);
 }
 .button-regular:hover::after{
-	transform:rotate3d(0, 0, 1, 0deg);
 	-moz-transform:rotate3d(0, 0, 1, 0deg);
 	-webkit-transform:rotate3d(0, 0, 1, 0deg);
 	-o-transform:rotate3d(0, 0, 1, 0deg);
 	-ms-transform:rotate3d(0, 0, 1, 0deg);
+	transform:rotate3d(0, 0, 1, 0deg);
 }
 
 
@@ -1097,9 +1100,9 @@ nav a.to-right:hover .arrow-label
 	display:block;
 	width:150px;
 	height:150px;
-	border-radius:50%;
 	-moz-border-radius:50%;
 	-webkit-border-radius:50%;
+	border-radius:50%;
 	-webkit-transform: rotateY(0deg);
 	-moz-transform: rotateY(0deg);
 	-ms-transform: rotateY(0deg);
@@ -1347,11 +1350,11 @@ nav a.to-right:hover .arrow-label
 	height:120px;
 	line-height:140px;
 	border:2px solid #151515;
-	border-radius:50%;
 	-webkit-border-radius:50%;
 	-moz-border-radius:50%;
 	-ms-border-radius:50%;
 	-o-border-radius:50%;
+	border-radius:50%;
 	-webkit-transform-origin: 50% 50%;
 	-moz-transform-origin: 50% 50%;
 	-ms-transform-origin: 50% 50%;
@@ -1675,11 +1678,11 @@ nav a.to-right:hover .arrow-label
 	border-bottom:none;
 }
 .subscribe-form-container .button-regular:hover::after{
-	transform:rotate3d(0, 0, 1, 0deg);
 	-moz-transform:rotate3d(0, 0, 1, 0deg);
 	-webkit-transform:rotate3d(0, 0, 1, 0deg);
 	-o-transform:rotate3d(0, 0, 1, 0deg);
 	-ms-transform:rotate3d(0, 0, 1, 0deg);
+	transform:rotate3d(0, 0, 1, 0deg);
 	color:#151515;
 }
 
@@ -1707,11 +1710,11 @@ nav a.to-right:hover .arrow-label
 	display:block;
 	z-index:-1;
 	opacity:0;
-	border-radius:50%;
 	-webkit-border-radius:50%;
 	-moz-border-radius:50%;
 	-o-border-radius:50%;
 	-ms-border-radius:50%;
+	border-radius:50%;
 	-webkit-backface-visibility:hidden;
 }
 .social-media-container a::after{
@@ -1828,6 +1831,34 @@ hr {
     float: right;
     padding-right: 15px;
 }
+.article-anchor {
+    display: inline-block;
+}
+.article-anchor.page {
+	margin-left: 0px;
+	color: #fff;
+	transition: .1s color linear;
+}
+.article-anchor.page:hover {
+	color: #3d81e4;
+}
+.plugin.on {
+    background: #101013;
+    margin: 11px 6px 0px 6px;
+    box-shadow: 0px 0px 6px 0.7px #0c0c0c;
+    transition: .2s box-shadow linear, .2s transform linear;
+	transform: scale(0.99);
+}
+.plugin.on:hover {
+    box-shadow: 0px 0px 10px 3px #0c0c0c;
+	transform: scale(1);
+}
+.plugin {
+    -ms-flex: 0 0 32%;
+    flex: 0 0 32%;
+	backface-visibility: hidden;
+}
+
 
 /*-- ===================================================== --*
 	13.0 STYLE FOR SMALL DEVICES
@@ -2002,5 +2033,20 @@ hr {
 	}
 	.contact-container .contact:last-child{
 		margin-bottom:0px;
+	}
+	.bd-header {
+    font-size: 163% !important;
+	}
+	#plugin-list-count {
+    margin-left: 2px !important;
+	}
+	#container {
+		margin-top: 0px !important;
+	}
+	.home-section.page .content-container {
+		margin-top: 0px !important;
+	}
+	#plugin-list-header hr {
+		display: none;
 	}
 }

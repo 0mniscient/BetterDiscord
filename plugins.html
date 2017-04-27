@@ -40,6 +40,7 @@
     	</script>
     	
     	<!-- JAVASCRIPT IMPORT -->
+        <script type="text/javascript" src="js/jquery.js"></script>
     	<script src="classic/scripts/blazy.min.js"></script>
       
       	<!-- 3.0 CSS IMPORT -->
@@ -131,21 +132,15 @@
                <div class="tab-links fadeInDown">
                	<div class="left-tabs">
                	<a href="#">
-               		<div class="tabb first-tab">
-               			Installation
-               		</div>
+               		<div class="tabb first-tab">Installation</div>
                		</a>
                		
                		<a href="themes.html">
-               		<div class="tabb second-tab">
-               			Themes
-               		</div>
+               		<div class="tabb second-tab">Themes</div>
                		</a>
                		
                		<a href="plugins.html">
-               		<div class="tabb third-tab active-tab">
-               			Plugins
-               		</div>
+               		<div class="tabb third-tab active-tab">Plugin</div>
                		</a>
                		
                	</div>
@@ -168,10 +163,14 @@
 				<input type="search" id="plugin-search-input" placeholder="Search themes...">
 			</header>
 		   <header id="plugin-list-header">
-			<h1 id="plugin-list-title" class="bd-header"><span class="bd-title">Better</span>Discord</h1>
+			<h1 id="plugin-list-title" class="bd-header">
+			<div id="betterdiscord">
+			<span class="bd-title">Better</span>Discord <a class="article-anchor page" href="#betterdiscord" aria-hidden="true"></a></div>
+			</h1>
 				<div id="plugin-list-count">68 Plugins</div>
 			   	<hr>
 			</header>
+                        <ul id="plugin-list">
 
                             <li class="plugin on">
                                 <a href="http://sh.st/6J8JN" class="plugin-name" target="_blank">Double Click Edit</a>
@@ -1167,8 +1166,29 @@
 
                                 </div>
                             </li>
-
                     </ul>
+                    
+                    <header id="plugin-list-header">
+			<h1 id="plugin-list-title" class="bd-header">
+			<div id="beautifuldiscord">
+			BeautifulDiscord <a class="article-anchor page" href="#beautifuldiscord" aria-hidden="true"></a></div>
+			</h1>
+				<div id="plugin-list-count">0 Plugins</div>
+			   	<hr>
+			</header>
+                   
+                 <ul id="plugin-list">
+                   
+                   <li class="plugin on">
+                                <a href="#" class="plugin-name" target="_blank">In Progress</a>
+                                <p class="plugin-desc">Putting up plugins soon.</p>
+                                <div class="plugin-tag-list">
+
+                                    <a href="#Soon" class="plugin-tag">Soon</a>
+
+                                </div>
+                      </li>
+				  </ul>
                 </div>
             </div>
         </div>
@@ -1203,8 +1223,6 @@
         });
     </script>
     <!-- 9.0 javascript import -->
-        <!-- jquery -->
-        <script type="text/javascript" src="js/jquery.js"></script>
         <!-- bootstrap -->
         <script type="text/javascript" src="js/bootstrap.min.js"></script>
         <!-- countdown -->
