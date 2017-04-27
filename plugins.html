@@ -1181,6 +1181,24 @@
                     <!-- end content container -->
     
 		</div>
+   		    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/retinajs/1.3.0/retina.min.js" async></script>
+    <script>
+        $(function() {
+            $("#plugin-search-input").keyup(function() {
+                console.log("searching for: " + $(this).val());
+                var search = $(this).val().toLowerCase();
+
+                $("#plugin-list").find(".plugin").each(function() {
+                    if ($(this).text().toLowerCase().includes(search)) {
+                        $(this).show();
+                    } else {
+                        $(this).hide();
+                    }
+                });
+            });
+        });
+    </script>
     <!-- 9.0 javascript import -->
         <!-- jquery -->
         <script type="text/javascript" src="js/jquery.js"></script>
@@ -1206,31 +1224,6 @@
         <script type="text/javascript" src="js/jquery.wordrotator.min.js"></script>
         <!-- main js -->
         <script type="text/javascript" src="js/main.js"></script>
-    
-    <!-- Scripts -->
-    <script src="https://cdn.jsdelivr.net/retinajs/1.3.0/retina.min.js" async></script>
-    <script>
-        $(function() {
-            $("#plugin-search-input").keyup(function() {
-                console.log("searching for: " + $(this).val());
-                var search = $(this).val().toLowerCase();
-
-                $("#plugin-list").find(".plugin").each(function() {
-                    if ($(this).text().toLowerCase().includes(search)) {
-                        $(this).show();
-                    } else {
-                        $(this).hide();
-                    }
-                });
-            });
-        });
-    </script>
-    <script>
-        var bLazy = new Blazy({
-            selector: 'img',
-            container: '#content-wrap'
-        });
-    </script>
 
 <script type="text/javascript">
 // Place this code snippet near the footer of your page before the close of the /body tag
