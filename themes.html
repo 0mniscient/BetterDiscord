@@ -9,8 +9,7 @@
     	<meta content="IE=edge" http-equiv="X-UA-Compatible">
     	<meta content="width=device-width,initial-scale=1" name="viewport">
     	<meta content="List of free high quality Discord themes by our community! Customize Discord to your own liking with transparent themes and modern themes!" name="description">
-    	<meta content="Omni Omniscient Jiiks Hammock Maple Bluescream BetterDiscord Discord Themes Plugins Theme Plugin Installation How-To" name="keywords">
-    	
+    	<meta content="Themes Reborn Dark Matter Transparent Light Quiet Color Clear Vision Material Design Flat Anime Background Animations" name="keywords">
 
     	<!-- Open Graph -->
     	<meta property="og:type" content="website" />
@@ -42,6 +41,7 @@
     	
     	<!-- JAVASCRIPT IMPORT -->
     	<script src="classic/scripts/blazy.min.js"></script>
+        <script type="text/javascript" src="js/jquery.js"></script>
       
       	<!-- 3.0 CSS IMPORT -->
         <!-- CSS IMPORT FOR PLUGIN -->
@@ -89,6 +89,11 @@
     margin-top: 85px;
 }
 		</style>
+		<script> 
+    $(function(){
+	  $("#import-mobile-nav").load("https://betterdocs.net/classic/import/mobile-nav.html");
+    });
+    </script>
   	</head>
   	
     <body class="body-page">
@@ -109,6 +114,21 @@
         
             	<!-- 8.1.1 logo -->
                 <div class="logo page">
+                <header id="header" class="wrapper">
+            <div id="header-inner" class="inner">
+        <div id="import-header"></div>
+        <div id="lang-select-wrap">
+            <label id="lang-select-label"><i class="fa fa-globe"></i><span>English</span></label>
+            <select id="lang-select" data-canonical="docs/index.html">
+                <option value="en" selected="">English</option>
+            </select>
+        </div>
+        <a id="mobile-nav-toggle">
+            <span class="mobile-nav-toggle-bar"></span>
+            <span class="mobile-nav-toggle-bar"></span>
+            <span class="mobile-nav-toggle-bar"></span> </a>
+    </div>
+        </header>
                 <a href="/">
                 	<img class="animated entrance logo-page" src="img/betterdocs_white.svg" alt="logo" />
                 	</a>
@@ -131,7 +151,7 @@
 
                         <li class="plugin on">
                             <div class="plugin-screenshot">
-                                <img src="https://imgh.us/betterdocs_white.svg" data-src="images/shop-display.png" class="lazy plugin-screenshot-img" width="auto" height="auto">
+                                <img src="https://imgh.us/betterdocs_white.svg" data-src="classic/images/shop-display.png" class="lazy plugin-screenshot-img" width="auto" height="auto">
                                 <a href="https://betterdocs.net/classic/shop/themes.html" class="plugin-preview-link"><i class="fa fa-shopping-cart"></i></a>
                             </div>
                             <a href="https://betterdocs.net/classic/shop/themes.html" class="plugin-name">Shop</a>
@@ -1099,9 +1119,24 @@
                     <!-- end content container -->
     
 		</div>
+   <div id="mobile-nav-dimmer"></div>
+    <nav id="mobile-nav">
+        <div id="mobile-nav-inner">
+            <ul id="mobile-nav-list">
+                <a href="https://betterdocs.net" class="mobile-nav-link">Docs</a>
+                <div id="import-mobile-nav"></div>
+            </ul>
+        </div>
+        <div id="mobile-lang-select-wrap">
+            <span id="mobile-lang-select-label"><i class="fa fa-globe"></i><span>English</span></span>
+            <select id="mobile-lang-select" data-canonical="docs/index.html">
+
+                <option value="en" selected>English</option>
+
+            </select>
+        </div>
+    </nav>
     <!-- 9.0 javascript import -->
-        <!-- jquery -->
-        <script type="text/javascript" src="js/jquery.js"></script>
         <!-- bootstrap -->
         <script type="text/javascript" src="js/bootstrap.min.js"></script>
         <!-- countdown -->

@@ -1775,10 +1775,20 @@ nav a.to-right:hover .arrow-label
 h1#wordrotator{
     color: #fff;
 }
+.logo.page #header {
+	display: none;
+}
+#mobile-nav-toggle {
+    top: 45px;
+}
+
 /*-- ===================================================== --*
 	13.0 STYLE FOR SMALL DEVICES
 /*-- ===================================================== --*/
 @media all and (max-width: 991px){
+	.logo.page #header {
+	display: initial !important;
+	}
 	.about-section .content,
 	.contact-section .content
 	{
@@ -1814,6 +1824,9 @@ h1#wordrotator{
 	14.0 STYLE FOR EXTRA SMALL DEVICES 
 /*-- ===================================================== --*/
 @media all and (max-width: 767px){
+	.logo.page #header {
+	display: initial !important;
+	}
 	h1{
 		font-size:50px;
 		line-height:70px;

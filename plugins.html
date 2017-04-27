@@ -2,22 +2,21 @@
 <html xmlns="https://www.w3.org/1999/xhtml" xmlns:fb="http://ogp.me/ns/fb#" class="html-page">
 	<head>
     	<!-- title -->
-    	<title>Themes | Discord</title>
+    	<title>Plugins | Discord</title>
     	
     	<!-- meta -->
     	<meta charset="utf-8">
     	<meta content="IE=edge" http-equiv="X-UA-Compatible">
     	<meta content="width=device-width,initial-scale=1" name="viewport">
-    	<meta content="List of free high quality Discord themes by our community! Customize Discord to your own liking with transparent themes and modern themes!" name="description">
-    	<meta content="Omni Omniscient Jiiks Hammock Maple Bluescream BetterDiscord Discord Themes Plugins Theme Plugin Installation How-To" name="keywords">
-    	
+    	<meta content="List of free high quality Discord plugins by our community! Modify your Discord to your own liking with advanced plugins!" name="description">
+    	<meta content="BetterDiscord Plugins Plugin Chat Nickname Embed Jiiks Custom Server Themes  Digital Clock Renamer Better CreationDate Emotes Sticker Notifications" name="keywords">
 
     	<!-- Open Graph -->
     	<meta property="og:type" content="website" />
     	<meta property="og:url" content="https://betterdocs.net/" />
     	<meta property="og:site_name" content="Omni" />
     	<meta property="og:title" content="BetterDiscord Docs" />
-    	<meta property="og:description" content="List of free high quality Discord themes by our community! Customize Discord to your own liking with transparent themes and modern themes!" />
+    	<meta property="og:description" content="List of free high quality Discord plugins by our community! Modify your Discord to your own liking with advanced plugins!" />
     	<meta property="og:image" content="https://i.imgur.com/3sc5OG3.png" />
     
     	<!-- Icon -->
@@ -89,6 +88,11 @@
     margin-top: 85px;
 }
 		</style>
+		<script>
+		$(function(){
+	  $("#import-mobile-nav").load("https://betterdocs.net/classic/import/mobile-nav.html");
+    });
+    </script>
   	</head>
   	
     <body class="body-page">
@@ -109,6 +113,21 @@
         
             	<!-- 8.1.1 logo -->
                 <div class="logo page">
+                <header id="header" class="wrapper">
+            <div id="header-inner" class="inner">
+        <div id="import-header"></div>
+        <div id="lang-select-wrap">
+            <label id="lang-select-label"><i class="fa fa-globe"></i><span>English</span></label>
+            <select id="lang-select" data-canonical="docs/index.html">
+                <option value="en" selected="">English</option>
+            </select>
+        </div>
+        <a id="mobile-nav-toggle">
+            <span class="mobile-nav-toggle-bar"></span>
+            <span class="mobile-nav-toggle-bar"></span>
+            <span class="mobile-nav-toggle-bar"></span> </a>
+    </div>
+        </header>
                 <a href="/">
                 	<img class="animated entrance logo-page" src="img/betterdocs_white.svg" alt="logo" />
                 	</a>
@@ -125,7 +144,7 @@
                             <h1 id="plugin-list-title">Plugins</h1>
                             <a href="https://goo.gl/forms/CsqMsLqpFXHHqEb13" target="_blank" class="add-pencil" title="Add Plugin"><i class="fa fa-plus"></i></a>
                             <input type="search" id="plugin-search-input" placeholder="Search plugins...">
-                            <div id="plugin-list-count">67 items</div>
+                            <div id="plugin-list-count">68 items</div>
                         </header>
                         <ul id="plugin-list">
 
@@ -1106,6 +1125,20 @@
                                     <a href="#Files" class="plugin-tag">Files</a>
                                     
                                     <a href="#Images" class="plugin-tag">Images</a>
+
+                                </div>
+                            </li>
+                            
+                            <li class="plugin on">
+                                <a href="https://github.com/qwerasd205/saveChannels" class="plugin-name" target="_blank">saveChannels</a>
+                                <p class="plugin-desc">saveChannels is a plugin for BetterDiscord that saves selected channels within guilds between discord sessions, so that you don't have to select the right channels every time you reload discord!</p>
+                                <div class="plugin-tag-list">
+
+                                    <a href="#Qwerasd" class="plugin-tag">Qwerasd</a>
+
+                                    <a href="#Save" class="plugin-tag">Save</a>
+                                    
+                                    <a href="#Session" class="plugin-tag">Session</a>
 
                                 </div>
                             </li>
