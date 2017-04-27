@@ -1788,11 +1788,40 @@ h1#wordrotator{
 * {
 	-webkit-font-smoothing: antialiased;
 }
+.left-tabs {
+    float: left;
+    margin: 0 auto;
+    position: absolute;
+    margin-top: 12px;
+    margin-left: 20%;
+}
+.tabb.active-tab {
+    border-bottom: 2px solid #3d81e4;
+}
+.tabb {
+    color: #fff;
+    font-size: 20px;
+    height: 26px;
+    transition: .2s border-bottom linear;
+    float: left;
+    margin-left: 23px;
+	border-bottom: 2px solid transparent;
+}
+.tabb:hover {
+    color: #fff;
+    font-size: 20px;
+    height: 26px;
+	border-bottom: 2px solid #3d81e4;
+}
+
 
 /*-- ===================================================== --*
 	13.0 STYLE FOR SMALL DEVICES
 /*-- ===================================================== --*/
 @media all and (max-width: 991px){
+	.tab-links {
+		display: none;
+	}
 	.logo.page #header {
 	display: initial !important;
 	}
