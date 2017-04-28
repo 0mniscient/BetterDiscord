@@ -1848,4 +1848,7 @@ nav.top-nav a {
 #plugin-list-header hr {
 	display: none;
 }
+.bd-header.beauty-header {
+    font-size: 130%!important;
+}
 }
