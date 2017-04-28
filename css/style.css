@@ -1637,6 +1637,9 @@ hr {
 #plugin-list-title .bd-title {
 	color: #3d81e4;
 }
+#plugin-list-title .beauty-title {
+	color: #6e86d5;
+}
 .total-items {
 	float: right;
 	padding-right: 15px;
