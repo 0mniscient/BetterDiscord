@@ -1,8 +1,4 @@
 /*-- 
-AUTHOR   : SimplePixel
-URL      : http://themeforest.net/user/SimplePixel
-TEMPLATE : PIIN - Minimalist Coming Soon Template
-VERSION  : 2.0
 
 TABLE OF CONTENTS
 1.0 BASIC STYLE
@@ -1021,7 +1017,7 @@ nav a.to-left:hover .arrow-label, nav a.to-right:hover .arrow-label {
 	text-transform: uppercase;
 	width: 100%;
 	display: block;
-	color: #151515;
+	color: #cecece;
 	font-size: 13px;
 	font-weight: 700;
 	letter-spacing: 2px;
