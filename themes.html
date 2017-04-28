@@ -1144,6 +1144,7 @@
 			   	<hr>
 			</header>
 			
+			<div id="plugin-list-2">
 			<ul id="plugin-list">
 
                         <li class="plugin on">
@@ -1161,7 +1162,7 @@
                         </li>
                        
                     </ul>
-			
+					</div>
                 </div>
             </div>
         </div>
@@ -1204,6 +1205,22 @@
                 var search = $(this).val().toLowerCase();
 
                 $("#plugin-list").find(".plugin").each(function() {
+                    if ($(this).text().toLowerCase().includes(search)) {
+                        $(this).show();
+                    } else {
+                        $(this).hide();
+                    }
+                });
+            });
+        });
+    </script>
+       <script>
+        $(function() {
+            $("#plugin-search-input").keyup(function() {
+                console.log("searching for: " + $(this).val());
+                var search = $(this).val().toLowerCase();
+
+                $("#plugin-list-2").find(".plugin").each(function() {
                     if ($(this).text().toLowerCase().includes(search)) {
                         $(this).show();
                     } else {
