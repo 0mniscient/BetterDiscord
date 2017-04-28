@@ -1,0 +1,753 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:ror="http://rorweb.com/0.1/" >
+<channel>
+  <title>ROR Sitemap for https://betterdocs.net/</title>
+  <link>https://betterdocs.net/</link>
+
+<item>
+     <link>https://betterdocs.net/</link>
+     <title>BetterDocs Documentation and Tutorials</title>
+     <description>BetterDocs Documentation and Tutorials</description>
+     <ror:updatePeriod>daily</ror:updatePeriod>
+     <ror:sortOrder>0</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://betterdocs.net/classic/</link>
+     <title>BetterDiscord Documentation and Tutorials</title>
+     <description>BetterDiscord Documentation and Tutorials</description>
+     <ror:updatePeriod>daily</ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://betterdocs.net/themes.html</link>
+     <title>Themes | Discord</title>
+     <description>Themes | Discord</description>
+     <ror:updatePeriod>daily</ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://betterdocs.net/plugins.html</link>
+     <title>Plugins | Discord</title>
+     <description>Plugins | Discord</description>
+     <ror:updatePeriod>daily</ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://betterdocs.net/classic/index.html</link>
+     <title>BetterDiscord Documentation and Tutorials</title>
+     <description>BetterDiscord Documentation and Tutorials</description>
+     <ror:updatePeriod>daily</ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://betterdocs.net/classic/shop/themes.html</link>
+     <title>Theme Shop | Discord</title>
+     <description>Theme Shop | Discord</description>
+     <ror:updatePeriod>daily</ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://betterdocs.net/themes/ponyo.html</link>
+     <title>Pony</title>
+     <description>Pony</description>
+     <ror:updatePeriod>daily</ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://betterdocs.net/themes/discordreborn.html</link>
+     <title>Discord Reborn</title>
+     <description>Discord Reborn</description>
+     <ror:updatePeriod>daily</ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://betterdocs.net/themes/darkmatter.html</link>
+     <title>Dark Matter</title>
+     <description>Dark Matter</description>
+     <ror:updatePeriod>daily</ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://betterdocs.net/themes/quiet.html</link>
+     <title>Quiet</title>
+     <description>Quiet</description>
+     <ror:updatePeriod>daily</ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://betterdocs.net/themes/nova.html</link>
+     <title>Nova</title>
+     <description>Nova</description>
+     <ror:updatePeriod>daily</ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://betterdocs.net/themes/beardsmaterialtheme.html</link>
+     <title>Beard's Material Theme</title>
+     <description>Beard's Material Theme</description>
+     <ror:updatePeriod>daily</ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://betterdocs.net/themes/clearvision_amethyst.html</link>
+     <title>ClearVision - Amethyst</title>
+     <description>ClearVision - Amethyst</description>
+     <ror:updatePeriod>daily</ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://betterdocs.net/themes/clearvision_amber.html</link>
+     <title>ClearVision - Amber</title>
+     <description>ClearVision - Amber</description>
+     <ror:updatePeriod>daily</ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://betterdocs.net/themes/clearvision_emerald.html</link>
+     <title>ClearVision - Emerald</title>
+     <description>ClearVision - Emerald</description>
+     <ror:updatePeriod>daily</ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://betterdocs.net/themes/clearvision_ruby.html</link>
+     <title>ClearVision - Ruby</title>
+     <description>ClearVision - Ruby</description>
+     <ror:updatePeriod>daily</ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://betterdocs.net/themes/clearvision_sapphire.html</link>
+     <title>ClearVision - Sapphire</title>
+     <description>ClearVision - Sapphire</description>
+     <ror:updatePeriod>daily</ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://betterdocs.net/themes/discordapp10.html</link>
+     <title>Discord App 10</title>
+     <description>Discord App 10</description>
+     <ror:updatePeriod>daily</ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://betterdocs.net/themes/overwatch.html</link>
+     <title>Overwatch</title>
+     <description>Overwatch</description>
+     <ror:updatePeriod>daily</ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://betterdocs.net/themes/colorize.html</link>
+     <title>Colorize</title>
+     <description>Colorize</description>
+     <ror:updatePeriod>daily</ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://betterdocs.net/themes/outerspace.html</link>
+     <title>Outerspace</title>
+     <description>Outerspace</description>
+     <ror:updatePeriod>daily</ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://betterdocs.net/themes/witcher3.html</link>
+     <title>Witcher 3</title>
+     <description>Witcher 3</description>
+     <ror:updatePeriod>daily</ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://betterdocs.net/themes/datdiscord.html</link>
+     <title>Dat Discord</title>
+     <description>Dat Discord</description>
+     <ror:updatePeriod>daily</ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://betterdocs.net/themes/red&amp;black.html</link>
+     <title>Red &amp; Black</title>
+     <description>Red &amp; Black</description>
+     <ror:updatePeriod>daily</ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://betterdocs.net/themes/shelter.html</link>
+     <title>Shelter</title>
+     <description>Shelter</description>
+     <ror:updatePeriod>daily</ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://betterdocs.net/themes/shadesofred.html</link>
+     <title>Shades of Red</title>
+     <description>Shades of Red</description>
+     <ror:updatePeriod>daily</ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://betterdocs.net/themes/wheattransparency.html</link>
+     <title>Wheat Transparency</title>
+     <description>Wheat Transparency</description>
+     <ror:updatePeriod>daily</ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://betterdocs.net/themes/originalmodern.html</link>
+     <title>Original Modern</title>
+     <description>Original Modern</description>
+     <ror:updatePeriod>daily</ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://betterdocs.net/themes/cyanfirewatch.html</link>
+     <title>Cyan Firewatch</title>
+     <description>Cyan Firewatch</description>
+     <ror:updatePeriod>daily</ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://betterdocs.net/themes/akame.html</link>
+     <title>Akame</title>
+     <description>Akame</description>
+     <ror:updatePeriod>daily</ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://betterdocs.net/themes/aqua.html</link>
+     <title>Aqua</title>
+     <description>Aqua</description>
+     <ror:updatePeriod>daily</ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://betterdocs.net/themes/cleardiscord.html</link>
+     <title>Clear Discord</title>
+     <description>Clear Discord</description>
+     <ror:updatePeriod>daily</ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://betterdocs.net/themes/casualdark.html</link>
+     <title>Casual Dark</title>
+     <description>Casual Dark</description>
+     <ror:updatePeriod>daily</ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://betterdocs.net/themes/rezero.html</link>
+     <title>Rezero</title>
+     <description>Rezero</description>
+     <ror:updatePeriod>daily</ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://betterdocs.net/themes/shinyoctowaffle.html</link>
+     <title>Shiny Octo Waffle</title>
+     <description>Shiny Octo Waffle</description>
+     <ror:updatePeriod>daily</ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://betterdocs.net/themes/duskcord.html</link>
+     <title>Duskcord</title>
+     <description>Duskcord</description>
+     <ror:updatePeriod>daily</ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://betterdocs.net/themes/discordify.html</link>
+     <title>Discordify</title>
+     <description>Discordify</description>
+     <ror:updatePeriod>daily</ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://betterdocs.net/themes/squared.html</link>
+     <title>Squared</title>
+     <description>Squared</description>
+     <ror:updatePeriod>daily</ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://betterdocs.net/themes/battlefield.html</link>
+     <title>Battlefield</title>
+     <description>Battlefield</description>
+     <ror:updatePeriod>daily</ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://betterdocs.net/themes/metro-for-discord.html</link>
+     <title>Metro For Discord v2</title>
+     <description>Metro For Discord v2</description>
+     <ror:updatePeriod>daily</ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://betterdocs.net/themes/infernal_prison.html</link>
+     <title>Infernal Prison</title>
+     <description>Infernal Prison</description>
+     <ror:updatePeriod>daily</ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://betterdocs.net/themes/glacial_prison.html</link>
+     <title>Glacial Prison</title>
+     <description>Glacial Prison</description>
+     <ror:updatePeriod>daily</ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://betterdocs.net/themes/glossy-cyan.html</link>
+     <title>Glossy Cyan</title>
+     <description>Glossy Cyan</description>
+     <ror:updatePeriod>daily</ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://betterdocs.net/themes/kobato.html</link>
+     <title>Kobato</title>
+     <description>Kobato</description>
+     <ror:updatePeriod>daily</ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://betterdocs.net/themes/TEST.html</link>
+     <title>TEST</title>
+     <description>TEST</description>
+     <ror:updatePeriod>daily</ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://betterdocs.net/themes/justblack.html</link>
+     <title>JustBlack</title>
+     <description>JustBlack</description>
+     <ror:updatePeriod>daily</ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://betterdocs.net/themes/draknessu.html</link>
+     <title>Draknessu</title>
+     <description>Draknessu</description>
+     <ror:updatePeriod>daily</ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://betterdocs.net/themes/light-blue.html</link>
+     <title>Discord Light-Blue</title>
+     <description>Discord Light-Blue</description>
+     <ror:updatePeriod>daily</ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://betterdocs.net/themes/maroon.html</link>
+     <title>Maroon</title>
+     <description>Maroon</description>
+     <ror:updatePeriod>daily</ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://betterdocs.net/themes/nier-automata.html</link>
+     <title>NieR Automata</title>
+     <description>NieR Automata</description>
+     <ror:updatePeriod>daily</ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://betterdocs.net/themes/assets/darkdiscord.html?theme=https://raw.githubusercontent.com/0mniscient/Discord-Themes/master/Themes/Discord%20Reborn%206.theme.css</link>
+     <title>Discord</title>
+     <description>Discord</description>
+     <ror:updatePeriod>daily</ror:updatePeriod>
+     <ror:sortOrder>3</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://betterdocs.net/themes/assets/darkdiscord.html?theme=https://raw.githubusercontent.com/cosmicsalad/Discord-Themes-and-Plugins/master/themes/DarkMatter/DarkMatter.theme.css</link>
+     <title>Discord</title>
+     <description>Discord</description>
+     <ror:updatePeriod>daily</ror:updatePeriod>
+     <ror:sortOrder>3</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://betterdocs.net/themes/assets/darkdiscord.html?theme=https://raw.githubusercontent.com/0mniscient/Discord-Themes/master/Themes/Quiet.theme.css</link>
+     <title>Discord</title>
+     <description>Discord</description>
+     <ror:updatePeriod>daily</ror:updatePeriod>
+     <ror:sortOrder>3</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://betterdocs.net/themes/assets/darkdiscord.html?theme=https://raw.githubusercontent.com/DinosParkour/discord-theme/master/nova.css</link>
+     <title>Discord</title>
+     <description>Discord</description>
+     <ror:updatePeriod>daily</ror:updatePeriod>
+     <ror:sortOrder>3</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://betterdocs.net/themes/assets/darkdiscord.html?theme=https://raw.githubusercontent.com/BeardDesign1/Material-design-theme/themes/Beard</link>
+     <title>Discord</title>
+     <description>Discord</description>
+     <ror:updatePeriod>daily</ror:updatePeriod>
+     <ror:sortOrder>3</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://betterdocs.net/themes/assets/darkdiscord.html?theme=https://raw.githubusercontent.com/Zerthox/ClearVision/master/themes/ClearVision_Amethyst.theme.css</link>
+     <title>Discord</title>
+     <description>Discord</description>
+     <ror:updatePeriod>daily</ror:updatePeriod>
+     <ror:sortOrder>3</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://betterdocs.net/themes/assets/darkdiscord.html?theme=https://raw.githubusercontent.com/Zerthox/ClearVision/master/themes/ClearVision_Amber.theme.css</link>
+     <title>Discord</title>
+     <description>Discord</description>
+     <ror:updatePeriod>daily</ror:updatePeriod>
+     <ror:sortOrder>3</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://betterdocs.net/themes/assets/darkdiscord.html?theme=https://raw.githubusercontent.com/Zerthox/ClearVision/master/themes/ClearVision_Emerald.theme.css</link>
+     <title>Discord</title>
+     <description>Discord</description>
+     <ror:updatePeriod>daily</ror:updatePeriod>
+     <ror:sortOrder>3</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://betterdocs.net/themes/assets/darkdiscord.html?theme=https://raw.githubusercontent.com/Zerthox/ClearVision/master/themes/ClearVision_Ruby.theme.css</link>
+     <title>Discord</title>
+     <description>Discord</description>
+     <ror:updatePeriod>daily</ror:updatePeriod>
+     <ror:sortOrder>3</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://betterdocs.net/themes/assets/darkdiscord.html?theme=https://raw.githubusercontent.com/Zerthox/ClearVision/master/themes/ClearVision_Sapphire.theme.css</link>
+     <title>Discord</title>
+     <description>Discord</description>
+     <ror:updatePeriod>daily</ror:updatePeriod>
+     <ror:sortOrder>3</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://betterdocs.net/themes/assets/darkdiscord.html?theme=https://betterdocs.net/classic/stylesheets/discordapp10.theme.css</link>
+     <title>Discord</title>
+     <description>Discord</description>
+     <ror:updatePeriod>daily</ror:updatePeriod>
+     <ror:sortOrder>3</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://betterdocs.net/themes/assets/darkdiscord.html?theme=https://raw.githubusercontent.com/Matthaz/Overwatch_theme/master/Overwatch.theme.css</link>
+     <title>Discord</title>
+     <description>Discord</description>
+     <ror:updatePeriod>daily</ror:updatePeriod>
+     <ror:sortOrder>3</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://betterdocs.net/themes/assets/darkdiscord.html?theme=https://raw.githubusercontent.com/0mniscient/Discord-Themes/master/Themes/Colorize.theme.css</link>
+     <title>Discord</title>
+     <description>Discord</description>
+     <ror:updatePeriod>daily</ror:updatePeriod>
+     <ror:sortOrder>3</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://betterdocs.net/themes/assets/darkdiscord.html?theme=https://raw.githubusercontent.com/Narugokyu/nova-theme/master/space_nova.theme.css</link>
+     <title>Discord</title>
+     <description>Discord</description>
+     <ror:updatePeriod>daily</ror:updatePeriod>
+     <ror:sortOrder>3</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://betterdocs.net/themes/assets/darkdiscord.html?theme=https://raw.githubusercontent.com/jadeonking/WitcherCord/master/Themes/Witcher3.theme.css</link>
+     <title>Discord</title>
+     <description>Discord</description>
+     <ror:updatePeriod>daily</ror:updatePeriod>
+     <ror:sortOrder>3</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://betterdocs.net/themes/assets/darkdiscord.html?theme=https://raw.githubusercontent.com/Viniuau/Dat-Discord/master/Dat%20Discord.theme.css</link>
+     <title>Discord</title>
+     <description>Discord</description>
+     <ror:updatePeriod>daily</ror:updatePeriod>
+     <ror:sortOrder>3</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://betterdocs.net/themes/assets/darkdiscord.html?theme=https://raw.githubusercontent.com/CurimuChizu/CC-Themes/master/CC-Themes/Red.n.Black.theme.css</link>
+     <title>Discord</title>
+     <description>Discord</description>
+     <ror:updatePeriod>daily</ror:updatePeriod>
+     <ror:sortOrder>3</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://betterdocs.net/themes/assets/darkdiscord.html?theme=https://betterdocs.net/classic/stylesheets/shelter.theme.css</link>
+     <title>Discord</title>
+     <description>Discord</description>
+     <ror:updatePeriod>daily</ror:updatePeriod>
+     <ror:sortOrder>3</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://betterdocs.net/themes/assets/darkdiscord.html?theme=https://raw.githubusercontent.com/trueprominency/Shades-of-Red-Theme/master/shades-of-red.theme.css</link>
+     <title>Discord</title>
+     <description>Discord</description>
+     <ror:updatePeriod>daily</ror:updatePeriod>
+     <ror:sortOrder>3</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://betterdocs.net/themes/assets/darkdiscord.html?theme=https://raw.githubusercontent.com/Zekeeh/Wheat-Transparency/master/WheatTransparency.theme.css</link>
+     <title>Discord</title>
+     <description>Discord</description>
+     <ror:updatePeriod>daily</ror:updatePeriod>
+     <ror:sortOrder>3</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://betterdocs.net/themes/assets/darkdiscord.html?theme=https://raw.githubusercontent.com/mathiaslsn/OriginalModern/master/mat.theme.css</link>
+     <title>Discord</title>
+     <description>Discord</description>
+     <ror:updatePeriod>daily</ror:updatePeriod>
+     <ror:sortOrder>3</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://betterdocs.net/themes/assets/darkdiscord.html?theme=https://raw.githubusercontent.com/denBot/Cyan-Firewatch/master/cyan-firewatch.theme.css</link>
+     <title>Discord</title>
+     <description>Discord</description>
+     <ror:updatePeriod>daily</ror:updatePeriod>
+     <ror:sortOrder>3</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://betterdocs.net/themes/assets/darkdiscord.html?theme=https://raw.githubusercontent.com/llcoll/Discord-Themes/master/Themes/Akame/Akame.theme.css</link>
+     <title>Discord</title>
+     <description>Discord</description>
+     <ror:updatePeriod>daily</ror:updatePeriod>
+     <ror:sortOrder>3</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://betterdocs.net/themes/assets/lightdiscord.html?theme=https://raw.githubusercontent.com/0mniscient/Discord-Themes/master/Themes/Aqua.theme.css</link>
+     <title>Discord</title>
+     <description>Discord</description>
+     <ror:updatePeriod>daily</ror:updatePeriod>
+     <ror:sortOrder>3</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://betterdocs.net/themes/assets/darkdiscord.html?theme=https://raw.githubusercontent.com/Dddsasul/TeamKappa-theme/master/ClearDiscord.theme.css</link>
+     <title>Discord</title>
+     <description>Discord</description>
+     <ror:updatePeriod>daily</ror:updatePeriod>
+     <ror:sortOrder>3</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://betterdocs.net/themes/assets/darkdiscord.html?theme=https://raw.githubusercontent.com/Quietess/Casual-Dark/master/CasualDark.css</link>
+     <title>Discord</title>
+     <description>Discord</description>
+     <ror:updatePeriod>daily</ror:updatePeriod>
+     <ror:sortOrder>3</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://betterdocs.net/themes/assets/darkdiscord.html?theme=https://raw.githubusercontent.com/CurimuChizu/CC-Themes/master/CC-Themes/ReZero.theme.css</link>
+     <title>Discord</title>
+     <description>Discord</description>
+     <ror:updatePeriod>daily</ror:updatePeriod>
+     <ror:sortOrder>3</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://betterdocs.net/themes/assets/darkdiscord.html?theme=https://raw.githubusercontent.com/PepeLUL/Shiny-Octo-Waffle-Theme/master/Shiny.theme.css</link>
+     <title>Discord</title>
+     <description>Discord</description>
+     <ror:updatePeriod>daily</ror:updatePeriod>
+     <ror:sortOrder>3</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://betterdocs.net/themes/assets/darkdiscord.html?theme=https://raw.githubusercontent.com/jadeonking/WitcherCord/master/Themes/DuskCord.theme.css</link>
+     <title>Discord</title>
+     <description>Discord</description>
+     <ror:updatePeriod>daily</ror:updatePeriod>
+     <ror:sortOrder>3</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://betterdocs.net/themes/assets/darkdiscord.html?theme=https://raw.githubusercontent.com/nirewen/Discordify/master/Discordify.theme.css</link>
+     <title>Discord</title>
+     <description>Discord</description>
+     <ror:updatePeriod>daily</ror:updatePeriod>
+     <ror:sortOrder>3</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://betterdocs.net/themes/assets/darkdiscord.html?theme=https://raw.githubusercontent.com/Dreemlan/squared-theme/master/squared.theme.css</link>
+     <title>Discord</title>
+     <description>Discord</description>
+     <ror:updatePeriod>daily</ror:updatePeriod>
+     <ror:sortOrder>3</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://betterdocs.net/themes/assets/lightdiscord.html?theme=https://raw.githubusercontent.com/TakosThings/battlefield/master/battlefield.theme.css</link>
+     <title>Discord</title>
+     <description>Discord</description>
+     <ror:updatePeriod>daily</ror:updatePeriod>
+     <ror:sortOrder>3</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://betterdocs.net/themes/assets/lightdiscord.html?theme=https://raw.githubusercontent.com/TakosThings/Metro-for-Discord/master/Metro_for_Discord.theme.css</link>
+     <title>Discord</title>
+     <description>Discord</description>
+     <ror:updatePeriod>daily</ror:updatePeriod>
+     <ror:sortOrder>3</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://betterdocs.net/themes/assets/lightdiscord.html?theme=https://raw.githubusercontent.com/KaminariKillua/Themes/master/InfernalPrison/InfernalPrison.theme.css</link>
+     <title>Discord</title>
+     <description>Discord</description>
+     <ror:updatePeriod>daily</ror:updatePeriod>
+     <ror:sortOrder>3</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://betterdocs.net/themes/assets/lightdiscord.html?theme=https://raw.githubusercontent.com/KaminariKillua/Themes/master/GlacialPrison/GlacialPrison.theme.css</link>
+     <title>Discord</title>
+     <description>Discord</description>
+     <ror:updatePeriod>daily</ror:updatePeriod>
+     <ror:sortOrder>3</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://betterdocs.net/themes/assets/darkdiscord.html?theme=https://raw.githubusercontent.com/HansAnonymous/BD-Themes-and-Plugins/master/Themes/GlossyCyan.H.theme.css</link>
+     <title>Discord</title>
+     <description>Discord</description>
+     <ror:updatePeriod>daily</ror:updatePeriod>
+     <ror:sortOrder>3</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://betterdocs.net/themes/assets/darkdiscord.html?theme=https://raw.githubusercontent.com/DRedDogPE/DiscordThemes/master/Kobato/Kobato.theme.css</link>
+     <title>Discord</title>
+     <description>Discord</description>
+     <ror:updatePeriod>daily</ror:updatePeriod>
+     <ror:sortOrder>3</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://betterdocs.net/themes/assets/darkdiscord.html?theme=https://testsquadron.com/discord/TEST.theme.css</link>
+     <title>Discord</title>
+     <description>Discord</description>
+     <ror:updatePeriod>daily</ror:updatePeriod>
+     <ror:sortOrder>3</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://betterdocs.net/themes/assets/darkdiscord.html?theme=https://raw.githubusercontent.com/Dddsasul/TeamKappa-theme/master/JustBlack.theme.css</link>
+     <title>Discord</title>
+     <description>Discord</description>
+     <ror:updatePeriod>daily</ror:updatePeriod>
+     <ror:sortOrder>3</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://betterdocs.net/themes/assets/darkdiscord.html?theme=https://raw.githubusercontent.com/Haqz/Playen/master/playen.theme.css</link>
+     <title>Discord</title>
+     <description>Discord</description>
+     <ror:updatePeriod>daily</ror:updatePeriod>
+     <ror:sortOrder>3</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://betterdocs.net/themes/assets/lightdiscord.html?theme=https://raw.githubusercontent.com/Mylan719/Discord-light-theme/master/Discord%20Light-Blue.theme.css</link>
+     <title>Discord</title>
+     <description>Discord</description>
+     <ror:updatePeriod>daily</ror:updatePeriod>
+     <ror:sortOrder>3</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://betterdocs.net/themes/assets/darkdiscord.html?theme=https://raw.githubusercontent.com/phit/discord-maroon-theme/master/maroon.theme.css</link>
+     <title>Discord</title>
+     <description>Discord</description>
+     <ror:updatePeriod>daily</ror:updatePeriod>
+     <ror:sortOrder>3</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://betterdocs.net/themes/assets/darkdiscord.html?theme=https://raw.githubusercontent.com/Wahrandz/NieR-Automata-/master/Theme%20css/Final%3B%20Nier_Automata%20By%20AbdelBouklech.theme.css</link>
+     <title>Discord</title>
+     <description>Discord</description>
+     <ror:updatePeriod>daily</ror:updatePeriod>
+     <ror:sortOrder>3</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+</channel>
+</rss>
+  
