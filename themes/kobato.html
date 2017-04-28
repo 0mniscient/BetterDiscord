@@ -1,29 +1,29 @@
 <!DOCTYPE html>
-<html xmlns="https://www.w3.org/1999/xhtml" xmlns:fb="http://ogp.me/ns/fb#">
-
+<html xmlns="https://www.w3.org/1999/xhtml" xmlns:fb="http://ogp.me/ns/fb#" class="html-page">
 <head>
-    <title>Kobato</title>
-    <meta charset=utf-8>
-    <meta content="IE=edge" http-equiv=X-UA-Compatible>
-    <meta content="width=device-width,initial-scale=1" name=viewport>
-    <meta content="Kobato theme made for EternalEnd" name=description>
-    <meta content="Omni Omniscient Jiiks Hammock Maple Bluescream BetterDiscord Discord Themes Plugins Theme Plugin Installation How-To" name="keywords">
-    <!-- CSS -->
-    <!-- CSS -->
-    <link rel="stylesheet" href="../stylesheets/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-    <!-- Open Graph -->
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://betterdocs.net/" />
-    <meta property="og:site_name" content="BetterDiscord Docs" />
-    <meta property="og:title" content="Kobato" />
-    <meta property="og:description" content="Kobato theme made for EternalEnd" />
-    <meta property="og:image" content="https://i.imgur.com/3sc5OG3.png" />
-    <!-- Icon -->
-    <link href=https://imgur.com/GZVRLfz.png rel="shortcut icon">
-    <!-- Google Analytics -->
-    <script>
+<!-- title -->
+<title>Kobato</title>
+
+<!-- meta -->
+<meta charset="utf-8">
+<meta content="IE=edge" http-equiv="X-UA-Compatible">
+<meta content="initial-scale=1, maximum-scale=1" name="viewport">
+<meta content="Kobato theme made for EternalEnd" name="description">
+<meta content="Better Discord Theme CSS Pink Transparent Bright Light Kobato" name="keywords">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://betterdocs.net/" />
+<meta property="og:site_name" content="BetterDocs" />
+<meta property="og:title" content="Kobato" />
+<meta property="og:description" content="Kobato theme made for EternalEnd" />
+<meta property="og:image" content="https://i.imgur.com/3sc5OG3.png" />
+
+<!-- Icon -->
+<link href="../img/betterdocs_small.png" rel="shortcut icon">
+
+<!-- Google Analytics -->
+<script>
         (function(i, s, o, g, r, a, m) {
             i['GoogleAnalyticsObject'] = r;
             i[r] = i[r] || function() {
@@ -37,56 +37,130 @@
         })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
         ga('create', 'UA-65593962-3', 'auto');
         ga('send', 'pageview');
-    </script>
-    <script
-  src="https://code.jquery.com/jquery-3.2.1.min.js"
-  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-  crossorigin="anonymous"></script>
-    <script> 
+    	</script>
+
+<!-- JAVASCRIPT IMPORT -->
+<script type="text/javascript" src="../js/jquery.js"></script>
+<script src="../classic/scripts/blazy.min.js"></script>
+
+<!-- 3.0 CSS IMPORT -->
+<!-- CSS IMPORT FOR PLUGIN -->
+<link rel="stylesheet" href="../css/bootstrap.min.css" type="text/css">
+<link rel="stylesheet" href="../css/font-awesome.min.css" type="text/css">
+<link rel="stylesheet" href="../css/animate.min.css" type="text/css">
+<link rel="stylesheet" href="../css/simple-line-icons.css" type="text/css">
+<link rel="stylesheet" href="../css/magnific-popup.css" type="text/css">
+<link rel="stylesheet" href="../css/owl.carousel.css" type="text/css">
+<link rel="stylesheet" href="../css/owl.theme.css" type="text/css">
+<link rel="stylesheet" href="../css/jquery.fullPage.css" type="text/css">
+<link rel="stylesheet" href="../css/jquery.wordrotator.min.css" type="text/css">
+<link rel="stylesheet" href="../css/loader.min.css" type="text/css">
+<link rel="stylesheet" href="../css/jquery.kenburnsy.css" type="text/css">
+
+<!-- CSS IMPORT FOR FONT -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:400,500,700" type="text/css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,600,700" type="text/css">
+
+<!-- CSS IMPORT FOR MAIN STYLE AND COLOR SCHEME -->
+<link rel="stylesheet" href="https://betterdocs.net/classic/stylesheets/style.css">
+<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+<!-- CSS IMPORT FOR MAIN STYLE AND COLOR SCHEME -->
+<link rel="stylesheet" href="../css/style.css" type="text/css">
+<link rel="stylesheet" href="../css/color-scheme.css" type="text/css">
+
+<!-- support HTML5 elements and media queries for IE9 -->
+<!--[if lt IE 9]>
+      	<script src="js/html5shiv.js"></script>
+      	<script src="js/respond.min.js"></script>
+    	<![endif]-->
+<script> 
     $(function(){
-      $("#import-header").load("https://betterdocs.net/classic/import/header.html");
 	  $("#import-mobile-nav").load("https://betterdocs.net/classic/import/mobile-nav.html");
     });
-    </script> 
+    </script>
+<style>
+#container {
+	overflow: initial !important;
+	-webkit-overflow-scrolling: touch;
+}
+	.active .nav-tab>a:after, .tab-conversation.active>a:after, .active .publisher-nav-color::after {
+    content: "";
+	background: #2e9fff !important;
+}
+
+
+</style>
 </head>
 
-<body>
-    <div id="container">
-        <header id="header" class="wrapper">
-            <div id="header-inner" class="inner">
-                <h1 id="logo-wrap">
-      <a href="https://betterdocs.net/" id="logo">BetterDiscord</a>
-    </h1>
-                <div id="import-header"></div>
-                <div id="lang-select-wrap">
-                    <label id="lang-select-label"><i class="fa fa-globe"></i><span>English</span></label>
-                    <select id="lang-select" data-canonical="docs/index.html">
+<body class="body-page">
+<!-- 4.0 preloader -->
+<div class="preloader">
+  <div class="ball-scale-ripple">
+    <div></div>
+  </div>
+</div>
+<!-- end peloader --> 
 
-                        <option value="en" selected>English</option>
-
-                    </select>
+<!-- canvas -->
+<canvas id="bg-canvas"></canvas>
+<!-- end canvas -->
+<div class="page-container"> 
+  <!-- 8.1 home section -->
+  <div class="home-section page"> 
+    
+    <!-- 8.1.1 logo -->
+    <div class="logo page">
+      <header id="header" class="wrapper">
+        <div id="header-inner" class="inner">
+          <div id="import-header"></div>
+          <div id="lang-select-wrap">
+            <label id="lang-select-label"><i class="fa fa-globe"></i><span>English</span></label>
+            <select id="lang-select" data-canonical="docs/index.html">
+              <option value="en" selected="">English</option>
+            </select>
+          </div>
+          <a id="mobile-nav-toggle"> <span class="mobile-nav-toggle-bar"></span> <span class="mobile-nav-toggle-bar"></span> <span class="mobile-nav-toggle-bar"></span> </a> </div>
+      </header>
+      <div class="tab-links fadeInDown">
+        <div class="left-tabs"> <a href="#">
+          <div class="tabb first-tab">Installation</div>
+          </a> <a href="themes.html">
+          <div class="tabb second-tab">Themes</div>
+          </a> <a href="plugins.html">
+          <div class="tabb third-tab">Plugins</div>
+          </a> </div>
+      </div>
+      <a href="/"> <img class="animated entrance logo-page" src="../img/betterdocs_white.svg" alt="logo" /> </a>
+      <div class="tab-links fadeInDown">
+        <div class="right-tabs"> <a href="store.html">
+          <div class="tabb fourth-tab">Store</div>
+          </a> <a href="submit.html">
+          <div class="tabb fifth-tab">Submit</div>
+          </a> <a href="https://paypal.me/Chaotiic">
+          <div class="tabb sixth-tab">Donate</div>
+          </a> </div>
+      </div>
+    </div>
+    <!-- end logo --> 
+    
+    <!-- content container -->
+    <div class="content-container">
+      <div id="container">
+        <div id="content-wrap bg-container-canvas">
+          <div class="wrapper">
+            <div class="inner">
+              <header class="release-header">
+                <h1 class="release-title" itemprop="name">Kobato</h1>
+                <div class="release-btns"> <a href="https://github.com/DRedDogPE/DiscordThemes/blob/master/Kobato/Kobato.theme.css" target="_blank" class="btn-release">Download</a>
+                  <div class="btn-author">Syaoran3</div>
                 </div>
-                <a id="mobile-nav-toggle">
-                    <span class="mobile-nav-toggle-bar"></span>
-                    <span class="mobile-nav-toggle-bar"></span>
-                    <span class="mobile-nav-toggle-bar"></span>
-                </a>
-            </div>
-        </header>
-
-        <div id="content-wrap">
-            <div class="wrapper">
-                <div class="inner">
-                    <header class="release-header">
-                        <h1 class="release-title" itemprop="name">Kobato</h1>
-                        <div class="release-btns">
-                            <a href="http://viid.me/qtyVOl" target="_blank" class="btn-release">Download</a>
-                            <div class="btn-author">Syaoran3</div>
-                        </div>
-                        <iframe name="iframe1" id="iframe1" class="discord-preview" src="../themes/assets/darkdiscord.html?theme=https://raw.githubusercontent.com/DRedDogPE/DiscordThemes/master/Kobato/Kobato.theme.css"></iframe>
-                    </header>
-                    <div id="disqus_thread"></div>
-                    <script>
+                <iframe name="iframe1" id="iframe1" class="discord-preview" src="../themes/assets/darkdiscord.html?theme=https://raw.githubusercontent.com/DRedDogPE/DiscordThemes/master/Kobato/Kobato.theme.css"></iframe>
+              </header>
+              <div id="disqus_thread"></div>
+              <script>
+			
                         /**
                          *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
                          *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
@@ -104,58 +178,100 @@
                             (d.head || d.body).appendChild(s);
                         })();
                     </script>
-                    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-
-                </div>
+              <noscript>
+              Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+              </noscript>
             </div>
+          </div>
         </div>
-        <footer id="footer" class="wrapper">
-            <div class="inner">
-                <div id="footer-copyright">
-                    &copy; 2016 <a href="https://www.snapchat.com/add/Omniscien.t" target="_blank">Chris Flores</a>
-                </div>
-                <div id="footer-links">
-                    <a href="https://twitter.com/Omniscien_t" class="footer-link" target="_blank"><i class="fa fa-twitter"></i></a>
-                    <a href="https://github.com/0mniscient" class="footer-link" target="_blank"><i class="fa fa-github-alt"></i></a>
-                </div>
-                <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-                <script>
-                    (adsbygoogle = window.adsbygoogle || []).push({
-                        google_ad_client: "ca-pub-1998206533560539",
-                        enable_page_level_ads: true
-                    });
-                </script>
-                <!-- Ad -->
-                <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-1998206533560539" data-ad-slot="6846685408" data-ad-format="auto"></ins>
-                <script>
-                    (adsbygoogle = window.adsbygoogle || []).push({});
-                </script>
-            </div>
-        </footer>
-
+      </div>
     </div>
-    <div id="mobile-nav-dimmer"></div>
-    <nav id="mobile-nav">
-        <div id="mobile-nav-inner">
-            <ul id="mobile-nav-list">
-                <a href="https://betterdocs.net" class="mobile-nav-link">Docs</a>
-                <div id="import-mobile-nav"></div>
-            </ul>
-        </div>
-        <div id="mobile-lang-select-wrap">
-            <span id="mobile-lang-select-label"><i class="fa fa-globe"></i><span>English</span></span>
-            <select id="mobile-lang-select" data-canonical="docs/index.html">
+  </div>
+  <!-- end content container --> 
+  
+  <!-- 8.1.3 navigation guide (will be hidden on small devices) --> 
+  <!-- <img src="img/guide.png" class="guide centering-x animated entrance" alt="guide" /> --> 
+  <!-- end navigation guide --> 
+</div>
+<!-- end home section --> 
+<!-- end content container -->
 
-                <option value="en" selected>English</option>
+<div id="mobile-nav-dimmer"></div>
+<nav id="mobile-nav">
+  <div id="mobile-nav-inner">
+    <ul id="mobile-nav-list">
+      <a href="https://betterdocs.net" class="mobile-nav-link">Docs</a>
+      <div id="import-mobile-nav"></div>
+    </ul>
+  </div>
+  <div id="mobile-lang-select-wrap"> <span id="mobile-lang-select-label"><i class="fa fa-globe"></i><span>English</span></span>
+    <select id="mobile-lang-select" data-canonical="docs/index.html">
+      <option value="en" selected>English</option>
+    </select>
+  </div>
+</nav>
+<!-- 9.0 javascript import --> 
+<!-- Scripts --> 
+<script src="https://cdn.jsdelivr.net/retinajs/1.3.0/retina.min.js" async></script> 
+<script>
+        $(function() {
+            $("#plugin-search-input").keyup(function() {
+                console.log("searching for: " + $(this).val());
+                var search = $(this).val().toLowerCase();
 
-            </select>
-        </div>
-    </nav>
-    <!-- Scripts -->
-    <script src="https://betterdocs.net/classic/scripts/main.js"></script>
-    <script src="https://cdn.jsdelivr.net/retinajs/1.3.0/retina.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+                $("#plugin-list").find(".plugin").each(function() {
+                    if ($(this).text().toLowerCase().includes(search)) {
+                        $(this).show();
+                    } else {
+                        $(this).hide();
+                    }
+                });
+            });
+        });
+    </script> 
+<script>
+        $(function() {
+            $("#plugin-search-input").keyup(function() {
+                console.log("searching for: " + $(this).val());
+                var search = $(this).val().toLowerCase();
 
+                $("#plugin-list-2").find(".plugin").each(function() {
+                    if ($(this).text().toLowerCase().includes(search)) {
+                        $(this).show();
+                    } else {
+                        $(this).hide();
+                    }
+                });
+            });
+        });
+    </script> 
+<!-- bootstrap --> 
+<script type="text/javascript" src="../js/bootstrap.min.js"></script> 
+<!-- countdown --> 
+<script type="text/javascript" src="../js/jquery.lwtCountdown-1.0.js"></script> 
+<!-- backstretch --> 
+<script type="text/javascript" src="../js/jquery.backstretch.min.js"></script> 
+<!-- constellation (star-effect) --> 
+<script type="text/javascript" src="../js/constellation.js"></script> 
+<!-- jquery validate --> 
+<script type="text/javascript" src="../js/jquery.validate.min.js"></script> 
+<!-- magnific popup --> 
+<script type="text/javascript" src="../js/jquery.magnific-popup.min.js"></script> 
+<!-- owl carousel --> 
+<script type="text/javascript" src="../js/owl.carousel.js"></script> 
+<!-- jquery slimscroll (dependency of jquery full page) --> 
+<script type="text/javascript" src="../js/jquery.slimscroll.min.js"></script> 
+<!-- jquery full page --> 
+<script type="text/javascript" src="../js/jquery.fullPage.min.js"></script> 
+<!-- jquery wordrotator --> 
+<script type="text/javascript" src="../js/jquery.wordrotator.min.js"></script> 
+<!-- main js --> 
+<script type="text/javascript" src="../js/main.js"></script> 
+<script type="text/javascript">
+// Place this code snippet near the footer of your page before the close of the /body tag
+// LEGAL NOTICE: The content of this website and all associated program code are protected under the Digital Millennium Copyright Act. Intentionally circumventing this code may constitute a violation of the DMCA.
+                            
+eval(function(p,a,c,k,e,d){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a)>35?String.fromCharCode(c+29):c.toString(36))};if(!''.replace(/^/,String)){while(c--){d[e(c)]=k[c]||e(c)}k=[function(e){return d[e]}];e=function(){return'\\w+'};c=1};while(c--){if(k[c]){p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c])}}return p}(';q O=\'\',28=\'1V\';1R(q i=0;i<12;i++)O+=28.X(C.N(C.J()*28.E));q 2z=6,2s=4q,2F=4p,2D=4o,2l=B(t){q o=!1,i=B(){z(k.1g){k.2X(\'2R\',e);D.2X(\'1U\',e)}P{k.2V(\'2Q\',e);D.2V(\'1W\',e)}},e=B(){z(!o&&(k.1g||4n.2f===\'1U\'||k.2U===\'2L\')){o=!0;i();t()}};z(k.2U===\'2L\'){t()}P z(k.1g){k.1g(\'2R\',e);D.1g(\'1U\',e)}P{k.2P(\'2Q\',e);D.2P(\'1W\',e);q n=!1;2N{n=D.4l==4k&&k.1Y}34(r){};z(n&&n.32){(B a(){z(o)G;2N{n.32(\'17\')}34(e){G 4j(a,50)};o=!0;i();t()})()}}};D[\'\'+O+\'\']=(B(){q t={t$:\'1V+/=\',4i:B(e){q a=\'\',d,n,o,c,s,l,i,r=0;e=t.e$(e);1a(r<e.E){d=e.14(r++);n=e.14(r++);o=e.14(r++);c=d>>2;s=(d&3)<<4|n>>4;l=(n&15)<<2|o>>6;i=o&63;z(37(n)){l=i=64}P z(37(o)){i=64};a=a+V.t$.X(c)+V.t$.X(s)+V.t$.X(l)+V.t$.X(i)};G a},11:B(e){q n=\'\',d,l,c,s,r,i,a,o=0;e=e.1A(/[^A-4h-4g-9\\+\\/\\=]/g,\'\');1a(o<e.E){s=V.t$.1H(e.X(o++));r=V.t$.1H(e.X(o++));i=V.t$.1H(e.X(o++));a=V.t$.1H(e.X(o++));d=s<<2|r>>4;l=(r&15)<<4|i>>2;c=(i&3)<<6|a;n=n+S.T(d);z(i!=64){n=n+S.T(l)};z(a!=64){n=n+S.T(c)}};n=t.n$(n);G n},e$:B(t){t=t.1A(/;/g,\';\');q n=\'\';1R(q o=0;o<t.E;o++){q e=t.14(o);z(e<1s){n+=S.T(e)}P z(e>4f&&e<4e){n+=S.T(e>>6|4d);n+=S.T(e&63|1s)}P{n+=S.T(e>>12|2I);n+=S.T(e>>6&63|1s);n+=S.T(e&63|1s)}};G n},n$:B(t){q o=\'\',e=0,n=4b=1u=0;1a(e<t.E){n=t.14(e);z(n<1s){o+=S.T(n);e++}P z(n>3W&&n<2I){1u=t.14(e+1);o+=S.T((n&31)<<6|1u&63);e+=2}P{1u=t.14(e+1);2n=t.14(e+2);o+=S.T((n&15)<<12|(1u&63)<<6|2n&63);e+=3}};G o}};q a=[\'4a==\',\'49\',\'48=\',\'47\',\'46\',\'45=\',\'44=\',\'43=\',\'42\',\'41\',\'40=\',\'3Z=\',\'3Y\',\'3X\',\'4r=\',\'4c\',\'4s=\',\'4K=\',\'4Y=\',\'4X=\',\'4W=\',\'4V=\',\'4U==\',\'4T==\',\'4S==\',\'4R==\',\'4Q=\',\'4P\',\'4O\',\'4N\',\'4M\',\'4L\',\'4J\',\'4u==\',\'3U=\',\'4I=\',\'4H=\',\'4G==\',\'4F=\',\'4E\',\'4D=\',\'4C=\',\'4B==\',\'4A=\',\'4z==\',\'4y==\',\'4x=\',\'4w=\',\'4v\',\'4t==\',\'3V==\',\'3t\',\'3r==\',\'3q=\'],f=C.N(C.J()*a.E),w=t.11(a[f]),g=w,Z=1,W=\'#2v\',r=\'#3p\',Y=\'#3o\',v=\'#2v\',M=\'\',p=\'3j!\',b=\'3h 3g 3f 3e\\\'3d 3u 3k 2k 2q. 3v\\\'s 3S.  3R 3Q\\\'t?\',y=\'3P 3O 3N 3M-3T, 3K!\',s=\'I 3J, I 3H 3G 3E 2k 2q.  3y 3I 39!\',o=0,u=0,n=\'3z.3D\',l=0,L=e()+\'.2m\';B h(t){z(t)t=t.1S(t.E-15);q o=k.2u(\'2C\');1R(q n=o.E;n--;){q e=S(o[n].1G);z(e)e=e.1S(e.E-15);z(e===t)G!0};G!1};B m(t){z(t)t=t.1S(t.E-15);q e=k.3x;x=0;1a(x<e.E){1n=e[x].1Q;z(1n)1n=1n.1S(1n.E-15);z(1n===t)G!0;x++};G!1};B e(t){q n=\'\',o=\'1V\';t=t||30;1R(q e=0;e<t;e++)n+=o.X(C.N(C.J()*o.E));G n};B i(o){q i=[\'3m\',\'3i==\',\'3a\',\'3c\',\'2t\',\'3w==\',\'3B=\',\'3A==\',\'3C=\',\'3F==\',\'3b==\',\'3l==\',\'3n\',\'3s\',\'4Z\',\'2t\'],r=[\'2O=\',\'52==\',\'5j==\',\'6n==\',\'6p=\',\'6q\',\'6s=\',\'6m=\',\'2O=\',\'6z\',\'6j==\',\'6k\',\'5Y==\',\'66==\',\'51==\',\'6b=\'];x=0;1P=[];1a(x<o){c=i[C.N(C.J()*i.E)];d=r[C.N(C.J()*r.E)];c=t.11(c);d=t.11(d);q a=C.N(C.J()*2)+1;z(a==1){n=\'//\'+c+\'/\'+d}P{n=\'//\'+c+\'/\'+e(C.N(C.J()*20)+4)+\'.2m\'};1P[x]=26 24();1P[x].1X=B(){q t=1;1a(t<7){t++}};1P[x].1G=n;x++}};B Q(t){};G{38:B(t,r){z(6x k.K==\'6i\'){G};q o=\'0.1\',r=g,e=k.1d(\'1y\');e.1k=r;e.j.1h=\'1O\';e.j.17=\'-1o\';e.j.U=\'-1o\';e.j.1t=\'2c\';e.j.13=\'6h\';q d=k.K.2e,a=C.N(d.E/2);z(a>15){q n=k.1d(\'2a\');n.j.1h=\'1O\';n.j.1t=\'1r\';n.j.13=\'1r\';n.j.U=\'-1o\';n.j.17=\'-1o\';k.K.6g(n,k.K.2e[a]);n.1f(e);q i=k.1d(\'1y\');i.1k=\'2d\';i.j.1h=\'1O\';i.j.17=\'-1o\';i.j.U=\'-1o\';k.K.1f(i)}P{e.1k=\'2d\';k.K.1f(e)};l=6f(B(){z(e){t((e.1T==0),o);t((e.23==0),o);t((e.1K==\'2i\'),o);t((e.1N==\'2o\'),o);t((e.1J==0),o)}P{t(!0,o)}},27)},1F:B(e,c){z((e)&&(o==0)){o=1;D[\'\'+O+\'\'].1z();D[\'\'+O+\'\'].1F=B(){G}}P{q y=t.11(\'6e\'),u=k.6d(y);z((u)&&(o==0)){z((2s%3)==0){q l=\'69=\';l=t.11(l);z(h(l)){z(u.1E.1A(/\\s/g,\'\').E==0){o=1;D[\'\'+O+\'\'].1z()}}}};q f=!1;z(o==0){z((2F%3)==0){z(!D[\'\'+O+\'\'].2A){q d=[\'5X==\',\'67==\',\'62=\',\'61=\',\'5Z=\'],m=d.E,r=d[C.N(C.J()*m)],a=r;1a(r==a){a=d[C.N(C.J()*m)]};r=t.11(r);a=t.11(a);i(C.N(C.J()*2)+1);q n=26 24(),s=26 24();n.1X=B(){i(C.N(C.J()*2)+1);s.1G=a;i(C.N(C.J()*2)+1)};s.1X=B(){o=1;i(C.N(C.J()*3)+1);D[\'\'+O+\'\'].1z()};n.1G=r;z((2D%3)==0){n.1W=B(){z((n.13<8)&&(n.13>0)){D[\'\'+O+\'\'].1z()}}};i(C.N(C.J()*3)+1);D[\'\'+O+\'\'].2A=!0};D[\'\'+O+\'\'].1F=B(){G}}}}},1z:B(){z(u==1){q F=2J.6y(\'2y\');z(F>0){G!0}P{2J.6v(\'2y\',(C.J()+1)*27)}};q h=\'6t==\';h=t.11(h);z(!m(h)){q c=k.1d(\'6o\');c.1Z(\'6c\',\'5W\');c.1Z(\'2f\',\'1m/5u\');c.1Z(\'1Q\',h);k.2u(\'5U\')[0].1f(c)};5r(l);k.K.1E=\'\';k.K.j.16+=\'R:1r !19\';k.K.j.16+=\'1C:1r !19\';q L=k.1Y.23||D.36||k.K.23,f=D.5q||k.K.1T||k.1Y.1T,a=k.1d(\'1y\'),Z=e();a.1k=Z;a.j.1h=\'2r\';a.j.17=\'0\';a.j.U=\'0\';a.j.13=L+\'1v\';a.j.1t=f+\'1v\';a.j.33=W;a.j.21=\'5p\';k.K.1f(a);q d=\'<a 1Q="5o://5n.5m" j="H-1e:10.5l;H-1j:1i-1l;1c:5k;">5V 5i 5h 5f-53 2C</a>\';d=d.1A(\'5e\',e());d=d.1A(\'5d\',e());q i=k.1d(\'1y\');i.1E=d;i.j.1h=\'1O\';i.j.1B=\'1I\';i.j.17=\'1I\';i.j.13=\'5c\';i.j.1t=\'5b\';i.j.21=\'2h\';i.j.1J=\'.6\';i.j.2j=\'2g\';i.1g(\'59\',B(){n=n.58(\'\').57().56(\'\');D.2w.1Q=\'//\'+n});k.1D(Z).1f(i);q o=k.1d(\'1y\'),Q=e();o.1k=Q;o.j.1h=\'2r\';o.j.U=f/7+\'1v\';o.j.54=L-5s+\'1v\';o.j.5g=f/3.5+\'1v\';o.j.33=\'#5t\';o.j.21=\'2h\';o.j.16+=\'H-1j: "5I 5T", 1w, 1x, 1i-1l !19\';o.j.16+=\'5S-1t: 5R !19\';o.j.16+=\'H-1e: 5Q !19\';o.j.16+=\'1m-1p: 1q !19\';o.j.16+=\'1C: 5P !19\';o.j.1K+=\'2Y\';o.j.2T=\'1I\';o.j.5O=\'1I\';o.j.5M=\'2E\';k.K.1f(o);o.j.5L=\'1r 5J 5H -5v 5G(0,0,0,0.3)\';o.j.1N=\'2B\';q g=30,w=22,x=18,M=18;z((D.36<35)||(5F.13<35)){o.j.2M=\'50%\';o.j.16+=\'H-1e: 5D !19\';o.j.2T=\'5C;\';i.j.2M=\'65%\';q g=22,w=18,x=12,M=12};o.1E=\'<2S j="1c:#5B;H-1e:\'+g+\'1L;1c:\'+r+\';H-1j:1w, 1x, 1i-1l;H-1M:5A;R-U:1b;R-1B:1b;1m-1p:1q;">\'+p+\'</2S><2W j="H-1e:\'+w+\'1L;H-1M:5z;H-1j:1w, 1x, 1i-1l;1c:\'+r+\';R-U:1b;R-1B:1b;1m-1p:1q;">\'+b+\'</2W><5y j=" 1K: 2Y;R-U: 0.2Z;R-1B: 0.2Z;R-17: 29;R-2x: 29; 2G:5x 5w #68; 13: 25%;1m-1p:1q;"><p j="H-1j:1w, 1x, 1i-1l;H-1M:2H;H-1e:\'+x+\'1L;1c:\'+r+\';1m-1p:1q;">\'+y+\'</p><p j="R-U:5E;"><2a 5K="V.j.1J=.9;" 5N="V.j.1J=1;"  1k="\'+e()+\'" j="2j:2g;H-1e:\'+M+\'1L;H-1j:1w, 1x, 1i-1l; H-1M:2H;2G-55:2E;1C:1b;5a-1c:\'+Y+\';1c:\'+v+\';1C-17:2c;1C-2x:2c;13:60%;R:29;R-U:1b;R-1B:1b;" 6r="D.2w.6u();">\'+s+\'</2a></p>\'}}})();D.2K=B(t,e){q n=6w.6l,o=D.6a,a=n(),i,r=B(){n()-a<e?i||o(r):t()};o(r);G{3L:B(){i=1}}};q 2p;z(k.K){k.K.j.1N=\'2B\'};2l(B(){z(k.1D(\'2b\')){k.1D(\'2b\').j.1N=\'2i\';k.1D(\'2b\').j.1K=\'2o\'};2p=D.2K(B(){D[\'\'+O+\'\'].38(D[\'\'+O+\'\'].1F,D[\'\'+O+\'\'].4m)},2z*27)});',62,408,'|||||||||||||||||||style|document||||||var|||||||||if||function|Math|window|length||return|font||random|body|||floor|LFrMbyPYIkis|else||margin|String|fromCharCode|top|this||charAt||||decode||width|charCodeAt||cssText|left||important|while|10px|color|createElement|size|appendChild|addEventListener|position|sans|family|id|serif|text|thisurl|5000px|align|center|0px|128|height|c2|px|Helvetica|geneva|DIV|JSKaFLyuJh|replace|bottom|padding|getElementById|innerHTML|adzxXlrFYy|src|indexOf|30px|opacity|display|pt|weight|visibility|absolute|spimg|href|for|substr|clientHeight|load|ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789|onload|onerror|documentElement|setAttribute||zIndex||clientWidth|Image||new|1000|MYopexknve|auto|div|babasbmsgx|60px|banner_ad|childNodes|type|pointer|10000|hidden|cursor|ad|WUfvrcHJIG|jpg|c3|none|EsMQMDNqMH|blocker|fixed|rKzFkkCGZG|cGFydG5lcmFkcy55c20ueWFob28uY29t|getElementsByTagName|ffffff|location|right|babn|JHrtIXehsO|ranAlready|visible|script|QsgsQkmqWP|15px|vEYiuKLiax|border|300|224|sessionStorage|hrnzKWwPdO|complete|zoom|try|ZmF2aWNvbi5pY28|attachEvent|onreadystatechange|DOMContentLoaded|h3|marginLeft|readyState|detachEvent|h1|removeEventListener|block|5em|||doScroll|backgroundColor|catch|640|innerWidth|isNaN|sICxeUALDi|in|anVpY3lhZHMuY29t|YWRzLnlhaG9vLmNvbQ|YWQuZm94bmV0d29ya3MuY29t|re|you|like|looks|It|YWQubWFpbC5ydQ|Welcome|an|YWRzLnp5bmdhLmNvbQ|YWRuLmViYXkuY29t|YWRzYXR0LmFiY25ld3Muc3RhcndhdmUuY29t|e82c5b|575757|c3BvbnNvcmVkX2xpbms|b3V0YnJhaW4tcGFpZA|YWRzYXR0LmVzcG4uc3RhcndhdmUuY29t|Z29vZ2xlX2Fk|using|That|YS5saXZlc3BvcnRtZWRpYS5ldQ|styleSheets|Let|moc|YWR2ZXJ0aXNpbmcuYW9sLmNvbQ|YWdvZGEubmV0L2Jhbm5lcnM|Y2FzLmNsaWNrYWJpbGl0eS5jb20|kcolbdakcolb|my|cHJvbW90ZS5wYWlyLmNvbQ|disabled|have|me|understand|sorry|clear|advertising|need|we|But|doesn|Who|okay|income|QWREaXY|YWRzZW5zZQ|191|QWQzMDB4MjUw|QWQzMDB4MTQ1|YWQtY29udGFpbmVyLTI|YWQtY29udGFpbmVyLTE|YWQtY29udGFpbmVy|YWQtZm9vdGVy|YWQtbGI|YWQtbGFiZWw|YWQtaW5uZXI|YWQtaW1n|YWQtaGVhZGVy|YWQtZnJhbWU|YWRCYW5uZXJXcmFw|YWQtbGVmdA|c1|QWRBcmVh|192|2048|127|z0|Za|encode|setTimeout|null|frameElement|oXluRXEiTb|event|286|136|85|QWQ3Mjh4OTA|QWRGcmFtZTE|cG9wdXBhZA|QWRJbWFnZQ|YWRzbG90|YmFubmVyaWQ|YWRzZXJ2ZXI|YWRfY2hhbm5lbA|IGFkX2JveA|YmFubmVyYWQ|YWRBZA|YWRiYW5uZXI|YWRCYW5uZXI|YmFubmVyX2Fk|YWRUZWFzZXI|Z2xpbmtzd3JhcHBlcg|QWRDb250YWluZXI|QWRCb3gxNjA|RGl2QWRD|QWRGcmFtZTI|RGl2QWRC|RGl2QWRB|RGl2QWQz|RGl2QWQy|RGl2QWQx|RGl2QWQ|QWRzX2dvb2dsZV8wNA|QWRzX2dvb2dsZV8wMw|QWRzX2dvb2dsZV8wMg|QWRzX2dvb2dsZV8wMQ|QWRMYXllcjI|QWRMYXllcjE|QWRGcmFtZTQ|QWRGcmFtZTM|YXMuaW5ib3guY29t||d2lkZV9za3lzY3JhcGVyLmpwZw|YmFubmVyLmpwZw|adblock|minWidth|radius|join|reverse|split|click|background|40px|160px|FILLVECTID2|FILLVECTID1|anti|minHeight|own|your|NDY4eDYwLmpwZw|black|5pt|com|blockadblock|http|9999|innerHeight|clearInterval|120|fff|css|8px|solid|1px|hr|500|200|999|45px|18pt|35px|screen|rgba|24px|Arial|14px|onmouseover|boxShadow|borderRadius|onmouseout|marginRight|12px|16pt|normal|line|Black|head|Installing|stylesheet|Ly93d3cuZ29vZ2xlLmNvbS9hZHNlbnNlL3N0YXJ0L2ltYWdlcy9mYXZpY29uLmljbw|YmFubmVyX2FkLmdpZg|Ly93d3cuZG91YmxlY2xpY2tieWdvb2dsZS5jb20vZmF2aWNvbi5pY28||Ly9hZHMudHdpdHRlci5jb20vZmF2aWNvbi5pY28|Ly9hZHZlcnRpc2luZy55YWhvby5jb20vZmF2aWNvbi5pY28||||bGFyZ2VfYmFubmVyLmdpZg|Ly93d3cuZ3N0YXRpYy5jb20vYWR4L2RvdWJsZWNsaWNrLmljbw|CCC|Ly9wYWdlYWQyLmdvb2dsZXN5bmRpY2F0aW9uLmNvbS9wYWdlYWQvanMvYWRzYnlnb29nbGUuanM|requestAnimationFrame|YWR2ZXJ0aXNlbWVudC0zNDMyMy5qcGc|rel|querySelector|aW5zLmFkc2J5Z29vZ2xl|setInterval|insertBefore|468px|undefined|c3F1YXJlLWFkLnBuZw|ZmF2aWNvbjEuaWNv|now|Q0ROLTMzNC0xMDktMTM3eC1hZC1iYW5uZXI|NzIweDkwLmpwZw|link|c2t5c2NyYXBlci5qcGc|MTM2N19hZC1jbGllbnRJRDI0NjQuanBn|onclick|YWRjbGllbnQtMDAyMTQ3LWhvc3QxLWJhbm5lci1hZC5qcGc|Ly95dWkueWFob29hcGlzLmNvbS8zLjE4LjEvYnVpbGQvY3NzcmVzZXQvY3NzcmVzZXQtbWluLmNzcw|reload|setItem|Date|typeof|getItem|YWQtbGFyZ2UucG5n'.split('|'),0,{}));
+</script>
 </body>
-
 </html>
