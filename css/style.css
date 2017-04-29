@@ -1688,6 +1688,9 @@ hr {
 .btn-author.outdated {
     background-color: #e25151;
 }
+.plugin-tag.tag-invis {
+    display: none;
+}
 
 /*-- ===================================================== --*
 	13.0 STYLE FOR SMALL DEVICES
