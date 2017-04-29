@@ -1685,6 +1685,9 @@ hr {
     content: "";
 	background: #2e9fff !important;
 }
+.btn-author.outdated {
+    background-color: #e25151;
+}
 
 /*-- ===================================================== --*
 	13.0 STYLE FOR SMALL DEVICES
