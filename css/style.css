@@ -1691,6 +1691,13 @@ hr {
 .plugin-tag.tag-invis {
     display: none;
 }
+.title-with-border.submission {
+    bottom: 95px;
+}
+.home-section .content-container.submission {
+    margin-top: 75px;
+}
+
 
 /*-- ===================================================== --*
 	13.0 STYLE FOR SMALL DEVICES
