@@ -1864,4 +1864,7 @@ nav.top-nav a {
 .bd-header.beauty-header {
     font-size: 130%!important;
 }
+.discord-preview {
+		display: none;
+	}
 }
