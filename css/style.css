@@ -1866,5 +1866,8 @@ nav.top-nav a {
 }
 .discord-preview {
 		display: none;
-	}
+}
+.home-section .content-container.submission {
+    margin-top: 190px;
+}
 }
