@@ -15881,6 +15881,30 @@ hr {
 .button-regular.beautifuldiscord::after {
 	color: #6e86d5;
 }
+button.menu-btn {
+    position: absolute;
+    left: 12px;
+    top: 16px;
+    background: #5090e1;
+    color: #fff;
+    border: 2px solid #5090e1;
+}
+.pushy a {
+    padding: 22px 30px !important;
+    top: 0px;
+    width: 0px;
+    height: 10px;
+    transform: initial;
+    margin-left: -44px !important;
+    font-size: 25px;
+	position: relative;
+}
+.pushy-link.active-mtab a {
+    border-left: 8px solid #3e7fe1;
+}
+li.pushy-link {
+    list-style-type: none;
+}
 /*-- ===================================================== --*
 	13.0 STYLE FOR SMALL DEVICES
 /*-- ===================================================== --*/
@@ -16048,9 +16072,6 @@ nav.top-nav a {
 }
 .discord-preview {
 	display: none;
-}
-.home-section .logo.page.home img {
-	display: none !important;
 }
 .release-title-submission {
 	font-size: 235% !important;
