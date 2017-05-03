@@ -1733,6 +1733,9 @@ hr {
 .about-section p.about-desc {
 	margin-top: 50px;
 }
+.mobile-nav-toggle-bar {
+    position: absolute;
+}
 }
 
 /*-- ===================================================== --*
