@@ -15914,6 +15914,11 @@ hr {
     top: -4px;
     left: 4px;
 }
+.centered-text-theme {
+    color: #fff;
+    text-align: center;
+    padding-top: 20px;
+}
 /*-- ===================================================== --*
 	13.0 STYLE FOR SMALL DEVICES
 /*-- ===================================================== --*/
