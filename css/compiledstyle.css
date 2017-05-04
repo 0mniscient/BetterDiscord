@@ -15881,29 +15881,38 @@ hr {
 .button-regular.beautifuldiscord::after {
 	color: #6e86d5;
 }
-button.menu-btn {
+.menu-btn {
     position: absolute;
     left: 12px;
-    top: 16px;
+    top: 6px;
     background: #5090e1;
     color: #fff;
     border: 2px solid #5090e1;
+    font-size: 15px;
+    padding: 4px 6px 2px 5px;
 }
 .pushy a {
-    padding: 22px 30px !important;
-    top: 0px;
-    width: 0px;
-    height: 10px;
-    transform: initial;
-    margin-left: -44px !important;
-    font-size: 25px;
-	position: relative;
+    padding: 0px 0px !important;
+    height: 0px;
+    margin-left: 18px !important;
+    font-size: 26px;
+    position: relative;
+    line-height: 0px;
 }
-.pushy-link.active-mtab a {
-    border-left: 8px solid #3e7fe1;
+.pushy-link.active-mtab {
+    border-left: 3px solid #3e7fe1;
+    background-color: #232322;
 }
-li.pushy-link {
+.pushy-link {
     list-style-type: none;
+    padding: 20px 1px 24px 0px;
+}
+.pushy ul:first-child {
+    padding-left: 0px;
+}
+.pushy-open-left .menu-btn {
+    top: -4px;
+    left: 4px;
 }
 /*-- ===================================================== --*
 	13.0 STYLE FOR SMALL DEVICES

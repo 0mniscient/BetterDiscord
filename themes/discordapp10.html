@@ -51,8 +51,9 @@
 <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet" type="text/css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 
-<!-- CSS IMPORT FOR MAIN STYLE AND COLOR SCHEME -->
+<!-- CSS IMPORT -->
 <link rel="stylesheet" href="../css/compiledstyle.css" type="text/css">
+<link rel="stylesheet" href="../css/pushy.css" type="text/css">
 
 <!-- support HTML5 elements and media queries for IE9 -->
 <!--[if lt IE 9]>
@@ -98,14 +99,32 @@
     <div class="logo page">
       <header id="header" class="wrapper">
         <div id="header-inner" class="inner">
-          <div id="import-header"></div>
-          <div id="lang-select-wrap">
-            <label id="lang-select-label"><i class="fa fa-globe"></i><span>English</span></label>
-            <select id="lang-select" data-canonical="docs/index.html">
-              <option value="en" selected="">English</option>
-            </select>
+		  <!-- Pushy Menu -->
+          <nav class="pushy pushy-left">
+            <div class="pushy-content">
+              <ul>
+                <!-- Submenu -->
+                <li class="pushy-link"><a href="/">Home</a></li>
+                <li class="pushy-link"><a href="installation.html">Installation</a></li>
+                <li class="pushy-link"><a href="themes.html">Themes</a></li>
+                <li class="pushy-link"><a href="plugins.html">Plugins</a></li>
+                <li class="pushy-link"><a href="store.html">Store</a></li>
+                <li class="pushy-link"><a href="submit.html">Submit</a></li>
+                <li class="pushy-link"><a href="https://paypal.me/Chaotiic">Donate</a></li>
+              </ul>
+            </div>
+          </nav>
+          
+          <!-- Site Overlay -->
+          <div class="site-overlay"></div>
+          
+          <!-- Your Content -->
+          <div id="container"> 
+            <!-- Menu Button -->
+            <button class="menu-btn">&#9776;</button>
           </div>
-          <a id="mobile-nav-toggle"> <span class="mobile-nav-toggle-bar"></span> <span class="mobile-nav-toggle-bar"></span> <span class="mobile-nav-toggle-bar"></span> </a> </div>
+          <div id="import-header"></div>
+            </div>
       </header>
       <div class="tab-links fadeInDown">
         <div class="left-tabs"> <a href="#">
@@ -235,7 +254,9 @@
 <!-- jquery full page --> 
 <script type="text/javascript" src="../js/jquery.fullPage.min.js"></script> 
 <!-- jquery wordrotator --> 
-<script type="text/javascript" src="../js/jquery.wordrotator.min.js"></script> 
+<script type="text/javascript" src="../js/jquery.wordrotator.min.js"></script>
+<!-- push js --> 
+<script type="text/javascript" src="../js/pushy.min.js"></script> 
 <!-- main js --> 
 <script type="text/javascript" src="../js/main.js"></script> 
 <script type="text/javascript">

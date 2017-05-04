@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <!-- title -->
-<title>Submit Themes/Plugins</title>
+<title>Submission</title>
 
 <!-- meta -->
 <meta charset=utf-8>
@@ -29,6 +29,7 @@
 
 <!-- CSS IMPORT -->
 <link rel="stylesheet" href="css/compiledstyle.css" type="text/css">
+<link rel="stylesheet" href="css/pushy.css" type="text/css">
 
 <!-- Google Analytics -->
 <script>
@@ -73,44 +74,65 @@
     <!-- 8.1.1 logo -->
     <div class="logo page home">
       <header id="header" class="wrapper">
-        <div id="header-inner" class="inner">
+        <div id="header-inner" class="inner"> 
+          <!-- Pushy Menu -->
+          <nav class="pushy pushy-left">
+            <div class="pushy-content">
+              <ul>
+                <!-- Submenu -->
+                <li class="pushy-link"><a href="/">Home</a></li>
+                <li class="pushy-link"><a href="installation.html">Installation</a></li>
+                <li class="pushy-link"><a href="themes.html">Themes</a></li>
+                <li class="pushy-link"><a href="plugins.html">Plugins</a></li>
+                <li class="pushy-link"><a href="store.html">Store</a></li>
+                <li class="pushy-link active-mtab"><a href="submit.html">Submit</a></li>
+                <li class="pushy-link"><a href="https://paypal.me/Chaotiic">Donate</a></li>
+              </ul>
+            </div>
+          </nav>
+          
+          <!-- Site Overlay -->
+          <div class="site-overlay"></div>
+          
+          <!-- Your Content -->
+          <div id="container"> 
+            <!-- Menu Button -->
+            <button class="menu-btn">&#9776;</button>
+          </div>
           <div id="import-header"></div>
-            <a id="mobile-nav-toggle"> <span class="mobile-nav-toggle-bar"></span> <span class="mobile-nav-toggle-bar"></span> <span class="mobile-nav-toggle-bar"></span> </a> </div>
-      </header>
-        <div class="tab-links fadeInDown">
-          <div class="left-tabs"> <a href="#">
-            <div class="tabb first-tab">Installation</div>
-          </a> <a href="themes.html">
-        <div class="tabb second-tab">Themes</div>
-          </a> <a href="plugins.html">
-        <div class="tabb third-tab">Plugins</div>
-          </a> </div>
-
         </div>
-          <a href="/"> <img class="animated logo-page fadeInDown" src="img/betterdocs_white.svg" alt="logo"> </a>
-        <div class="tab-links fadeInDown">
-          <div class="right-tabs"> <a href="store.html">
-            <div class="tabb fourth-tab">Store</div>
-          </a> <a href="submit.html">
-        <div class="tabb fifth-tab active-tab">Submit</div>
-          </a> <a href="https://paypal.me/Chaotiic">
-        <div class="tabb sixth-tab">Donate</div>
+      </header>
+      <div class="tab-links fadeInDown">
+        <div class="left-tabs"> <a href="#">
+          <div class="tabb first-tab">Installation</div>
+          </a> <a href="themes.html">
+          <div class="tabb second-tab">Themes</div>
+          </a> <a href="plugins.html">
+          <div class="tabb third-tab">Plugins</div>
           </a> </div>
-      </div></div>
+      </div>
+      <a href="/"> <img class="animated logo-page fadeInDown" src="img/betterdocs_white.svg" alt="logo"> </a>
+      <div class="tab-links fadeInDown">
+        <div class="right-tabs"> <a href="store.html">
+          <div class="tabb fourth-tab">Store</div>
+          </a> <a href="submit.html">
+          <div class="tabb fifth-tab active-tab">Submit</div>
+          </a> <a href="https://paypal.me/Chaotiic">
+          <div class="tabb sixth-tab">Donate</div>
+          </a> </div>
+      </div>
+    </div>
     <!-- end logo --> 
     
     <!-- content container -->
-    <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-12 centering-y content-container">      
+    <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-12 centering-y content-container"> 
       <!-- 8.1.2 word rotator -->
       <div class="wordrotator-container animated entrance">
         <h1 class="large-title release-title-submission">SUBMISSIONS</h1>
       </div>
       <!-- end word rotator --> 
       
-      <a href="https://goo.gl/forms/gb4yWWJcc64Tdyw43" class="button-regular show-countdown animated entrance" data-text="Themes">Themes</a>
-      <a href="https://goo.gl/forms/hVkZ0Vb2AP79AMIy1" class="button-regular show-countdown animated entrance" data-text="Plugins">Plugins</a>
-      <a href="https://goo.gl/forms/iNct0S7gldczjCuZ2" class="button-regular show-countdown animated entrance" data-text="Feedback">Feedback</a>
-       </div>
+      <a href="https://goo.gl/forms/gb4yWWJcc64Tdyw43" class="button-regular show-countdown animated entrance" data-text="Themes">Themes</a> <a href="https://goo.gl/forms/hVkZ0Vb2AP79AMIy1" class="button-regular show-countdown animated entrance" data-text="Plugins">Plugins</a> <a href="https://goo.gl/forms/iNct0S7gldczjCuZ2" class="button-regular show-countdown animated entrance" data-text="Feedback">Feedback</a> </div>
     <!-- end content container --> 
     
     <!-- 8.1.3 navigation guide (will be hidden on small devices) --> 
@@ -213,7 +235,9 @@
 <!-- jquery full page --> 
 <script type="text/javascript" src="js/jquery.fullPage.min.js"></script> 
 <!-- jquery wordrotator --> 
-<script type="text/javascript" src="js/jquery.wordrotator.min.js"></script> 
+<script type="text/javascript" src="js/jquery.wordrotator.min.js"></script>
+<!-- push js --> 
+<script type="text/javascript" src="js/pushy.min.js"></script>  
 <!-- main js --> 
 <script type="text/javascript" src="js/main.js"></script>
 </body>
