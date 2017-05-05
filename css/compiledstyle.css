@@ -7279,6 +7279,12 @@ Copyright (c) 2014 Daniel Eden
 	-webkit-animation-fill-mode: both;
 	animation-fill-mode: both;
 }
+.animated.short {
+	-webkit-animation-duration: 0.7s;
+	animation-duration: 0.7s;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+}
 .animated.infinite {
 	-webkit-animation-iteration-count: infinite;
 	animation-iteration-count: infinite
@@ -15299,12 +15305,26 @@ nav a.to-left:hover .arrow-label, nav a.to-right:hover .arrow-label {
 	-ms-animation-delay: 1s;
 	-o-animation-delay: 1s;
 }
+.home-section .wordrotator-container.shorter {
+	animation-delay: 0s;
+	-webkit-animation-delay: 0s;
+	-moz-animation-delay: 0s;
+	-ms-animation-delay: 0s;
+	-o-animation-delay: 0s;
+}
 .home-section .show-countdown {
 	animation-delay: 1.5s;
 	-webkit-animation-delay: 1.5s;
 	-moz-animation-delay: 1.5s;
 	-ms-animation-delay: 1.5s;
 	-o-animation-delay: 1.5s;
+}
+.home-section .show-countdown.shorter {
+	animation-delay: 0.5s;
+	-webkit-animation-delay: 0.5s;
+	-moz-animation-delay: 0.5s;
+	-ms-animation-delay: 0.5s;
+	-o-animation-delay: 0.5s;
 }
 .home-section .guide {
 	animation-delay: 2s;
@@ -15919,6 +15939,15 @@ hr {
     text-align: center;
     padding-top: 20px;
 }
+.release-title-submission.beautifuldiscord {
+	color: #6d85d4;
+}
+.bd-install {
+    height: 170px;
+}
+
+
+
 /*-- ===================================================== --*
 	13.0 STYLE FOR SMALL DEVICES
 /*-- ===================================================== --*/
@@ -16089,6 +16118,9 @@ nav.top-nav a {
 }
 .release-title-submission {
 	font-size: 235% !important;
+}
+.release-title-submission.beautifuldiscord {
+    font-size: 155% !important;
 }
 }
 
