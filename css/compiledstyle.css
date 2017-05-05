@@ -15994,6 +15994,16 @@ hr {
 	visibility: none;
 	margin-left: 1000px;
 }
+.bd-image {
+    height: 120px;
+}
+.bd-install-image {
+    left: 11%;
+    position: absolute;
+    top: 30%;
+}
+
+
 
 /*-- ===================================================== --*
 	13.0 STYLE FOR SMALL DEVICES
