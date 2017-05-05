@@ -88,3 +88,6 @@ input.game-input {color: #ffffff !important}
 .avatar-large, .avatar-profile, .avatar-small, .avatar-xlarge, .avatar-xsmall, .avatar-xxlarge, .user-popout .avatar-wrapper .avatar-popout {-webkit-border-radius: 50% !important;border-radius: 50% !important;}
 .markup .emoji.jumboable[src*="emojis"] {width: 32px !important;height: 32px !important;}
 .avatar-large {width: 40px !important;height: 40px !important;-webkit-background-size: 40px 40px !important;-moz-background-size: 40px 40px !important;background-size: 40px 40px !important;}
+strong.user-name {color: #CCCCCC;}
+.member-username {color: #CCCCCC;}
+span.reactions {display: block;}
