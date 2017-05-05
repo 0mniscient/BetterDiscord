@@ -15984,9 +15984,16 @@ hr {
 .button-regular.installation::after {
     color: #fff;
 }
-
-
-
+*[style*="font-family:Helvetica, geneva, sans-serif;color:#575757;"]{
+    letter-spacing: 0px;
+    line-height: 52px;
+    text-transform: none;
+}
+*[href*="http://blockadblock.com"]{
+	display: none;
+	visibility: none;
+	margin-left: 1000px;
+}
 
 /*-- ===================================================== --*
 	13.0 STYLE FOR SMALL DEVICES
