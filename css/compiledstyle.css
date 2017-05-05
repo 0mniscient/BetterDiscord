@@ -15984,7 +15984,14 @@ hr {
 .button-regular.installation::after {
     color: #fff;
 }
-
+.bd-image {
+    height: 120px;
+}
+.bd-install-image {
+    left: 11%;
+    position: absolute;
+    top: 30%;
+}
 
 
 
