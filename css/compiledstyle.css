@@ -15945,6 +15945,46 @@ hr {
 .bd-install {
     height: 170px;
 }
+.left-bd {
+    background-color: #5191e2;
+    width: 50%;
+}
+.left-bd::before {
+	content: "";
+    background-color: rgba(0,0,0,0.53);
+    width: 100%;
+	height: 100%;
+}
+.right-bd {
+    background-color: #6d85d4;
+    width: 50%;
+    float: right;
+    position: relative;
+}
+.right-bd::before {
+	content: "";
+    background-color: rgba(0,0,0,0.53);
+    width: 100%;
+	height: 100%;
+}
+.install-overlay {
+    background: rgba(0, 0, 0, 0.2);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 2;
+}
+.home-section .show-countdown.shorter.installation {
+    margin-left: 30px;
+    box-shadow: 0px 7px 15px -11px #000;
+}
+.white {
+	color: #fff;
+}
+.button-regular.installation::after {
+    color: #fff;
+}
+
 
 
 
@@ -16121,6 +16161,9 @@ nav.top-nav a {
 }
 .release-title-submission.beautifuldiscord {
     font-size: 155% !important;
+}
+.home-section .show-countdown.shorter.installation {
+    margin-left: 0px;
 }
 }
 

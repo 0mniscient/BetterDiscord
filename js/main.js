@@ -318,8 +318,7 @@ TABLE OF CONTENTS
 		//-- 5.7 activate slideshow background
 		if($(".bg-container-slideshow").is(':visible')){
 			$(".bg-container-slideshow").backstretch([
-				"none",
-				"none"
+				"https://i.imgur.com/XEfpJ9K.png",
 			],{
 				duration:6000,
 				fade:'normal'
@@ -336,7 +335,7 @@ TABLE OF CONTENTS
 		//-- 5.9 activate single image + firefly effect
 		if($(".bg-container-firefly").is(':visible')){
 			$(".bg-container-firefly").backstretch([
-				"none"
+				"https://i.imgur.com/XEfpJ9K.png"
 			],{
 				duration:6000,
 				fade:'normal'
@@ -363,8 +362,8 @@ TABLE OF CONTENTS
 			}
 			else{
 				$(".bg-container-youtube").backstretch([
-					"none",
-					"none"
+					"https://i.imgur.com/XEfpJ9K.png",
+					"https://i.imgur.com/XEfpJ9K.png"
 				],{
 					duration:6000,
 					fade:'normal'
@@ -375,7 +374,7 @@ TABLE OF CONTENTS
 		//-- 5.11 set background for star-effect
 		if($(".bg-star-effect").is(':visible')){
 			$(".bg-star-effect").backstretch([
-				"none"
+				"https://i.imgur.com/XEfpJ9K.png"
 			],{
 				duration:6000,
 				fade:'normal',
