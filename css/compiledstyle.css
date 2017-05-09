@@ -15105,14 +15105,8 @@ nav a.to-left:hover .arrow-label, nav a.to-right:hover .arrow-label {
 	-o-transform: rotateX(0deg);
 	transform: rotateX(0deg);
 }
-.hide-countdown.button-regular, .hide-countdown.button-regular::after {
-	padding: 12px 18px 12px 20px;
-	font-weight: 500;
-	font-size: 20px;
-}
 .hide-countdown {
-	display: none;
-	top: 50px;
+	margin-top: 70px;
 }
 .countdown-container {
 	text-align: center;
@@ -16000,7 +15994,29 @@ hr {
 .bd-install-image {
     left: 11%;
     position: absolute;
-    top: 30%;
+    top: 40%;
+	opacity: 0.7;
+	transition: .2s opacity linear;
+}
+.bd-install-image:hover {
+	opacity: 1;
+}
+.beauty-install-text {
+    right: 11%;
+    position: absolute;
+    top: 45%;
+    opacity: 0.7;
+    transition: .2s opacity linear;
+    font-size: 70px;
+    font-weight: 800;
+}
+.beauty-install-text:hover {
+	opacity: 1;
+}
+.beauty-install-text a {
+	color: #6e86d5;
+	text-decoration: none;
+    font-family: 'Josefin Sans', sans-serif;
 }
 .theme-image {
     height: 100%;

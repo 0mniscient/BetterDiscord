@@ -35,10 +35,10 @@ TABLE OF CONTENTS
 	/*-- ================================ --*/
 	function ShowHomeContent(){
 		//-- set visible to show-countdown button (fix bug on firefox)
-		$('.home-section .show-countdown').css('display','inline-block');
+		$('.home-section .show-countdown, .home-section .hide-countdown').css('display','inline-block');
 		
 		$('.home-section .logo img').removeClass('entrance').addClass('fadeInDown');
-		$('.home-section h3.small-title, .home-section .wordrotator-container, .home-section .show-countdown, tab-links').removeClass('entrance').addClass('fadeInDown');
+		$('.home-section h3.small-title, .home-section .wordrotator-container, .home-section .show-countdown, tab-links, .home-section .hide-countdown').removeClass('entrance').addClass('fadeInDown');
 		
 		//-- show guide on large devices
 		if($(window).width() >= 1200){
