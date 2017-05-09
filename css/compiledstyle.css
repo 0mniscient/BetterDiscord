@@ -15252,6 +15252,7 @@ nav a.to-left:hover .arrow-label, nav a.to-right:hover .arrow-label {
 	background-color: #121213;
 	padding-top: 10px;
 	padding-bottom: 10px;
+	z-index: 1;
 }
 .home-section .logo img {
 	display: inline-block;
@@ -16022,6 +16023,28 @@ hr {
     height: 100%;
     width: 100%;
 }
+.bd-blue {
+	color: #5090e1;
+}
+.button-regular.download {
+    margin-top: 15px;
+}
+.button-regular.animated.shorter.fadeInDown {
+    margin-top: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /*-- ===================================================== --*
@@ -16133,6 +16156,7 @@ nav.top-nav a {
 	position: relative;
 	top: 0px;
 	margin-top: 0px;
+	z-index: 1;
 }
 .link-nextpage-top, .link-nextpage-bottom {
 	display: none;
