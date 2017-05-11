@@ -15214,7 +15214,7 @@ nav a.to-left:hover .arrow-label, nav a.to-right:hover .arrow-label {
 	background: #19191b;
 }
 .preloader .ball-scale-ripple {
-	position: absolute;
+	position: sticky;
 	display: block;
 	left: 50%;
 	top: 50%;
