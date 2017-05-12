@@ -15,7 +15,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 audio, canvas, progress, video {
 	display: inline-block;
-	vertical-align: baseline
+	vertical-align: baseline.preloader
 }
 audio:not([controls]) {
 	display: none;
@@ -15205,7 +15205,7 @@ nav a.to-left:hover .arrow-label, nav a.to-right:hover .arrow-label {
 	9.0 PRELOADER
 /*-- ========================================= --*/
 .preloader {
-	position: fixed;
+	position: sticky;
 	left: 0px;
 	top: 0px;
 	width: 100%;
@@ -15214,7 +15214,7 @@ nav a.to-left:hover .arrow-label, nav a.to-right:hover .arrow-label {
 	background: #19191b;
 }
 .preloader .ball-scale-ripple {
-	position: sticky;
+	position: absolute;
 	display: block;
 	left: 50%;
 	top: 50%;
