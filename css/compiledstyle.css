@@ -16276,3 +16276,7 @@ nav a .arrow-label {
 .works-container .work .img-container .text-container {
 	background: rgba(247,0,31,0.8);
 }
+.josefin {
+    font-family: "Josefin Sans", sans-serif;
+	color: #3d81e4 !important;
+}
