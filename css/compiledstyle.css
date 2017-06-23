@@ -14237,7 +14237,7 @@ a {
 .centering-y {
 	position: absolute;
 	display: inline-block;
-	top: 50%;
+	top: 55%;
 	-webkit-transform: translateY(-50%);
 	-moz-transform: translateY(-50%);
 	-ms-transform: translateY(-50%);
@@ -16279,4 +16279,10 @@ nav a .arrow-label {
 .josefin {
     font-family: "Josefin Sans", sans-serif;
 	color: #3d81e4 !important;
+}
+.ad-banner {
+    width: 100%;
+    left: 25%;
+    position: relative;
+    top: 9%;
 }
