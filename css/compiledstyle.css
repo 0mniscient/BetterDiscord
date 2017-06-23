@@ -14237,7 +14237,7 @@ a {
 .centering-y {
 	position: absolute;
 	display: inline-block;
-	top: 55%;
+	top: 50%;
 	-webkit-transform: translateY(-50%);
 	-moz-transform: translateY(-50%);
 	-ms-transform: translateY(-50%);
@@ -15842,7 +15842,7 @@ hr {
 	float: right;
 	position: relative;
 	margin-top: -30px;
-	margin-right: 26%;
+	margin-right: 23%;
 }
 .release-title {
 	color: #5191e2;
