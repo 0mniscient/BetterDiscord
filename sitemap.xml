@@ -13,7 +13,7 @@
   <priority>1.00</priority>
 </url>
 <url>
-  <loc>https://betterdocs.net/classic/</loc>
+  <loc>https://betterdocs.net/documentation/</loc>
   <lastmod>2017-04-28T22:57:05+00:00</lastmod>
   <changefreq>daily</changefreq>
   <priority>0.80</priority>
@@ -31,13 +31,13 @@
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://betterdocs.net/classic/index.html</loc>
+  <loc>https://betterdocs.net/documentation/index.html</loc>
   <lastmod>2017-04-28T22:57:05+00:00</lastmod>
   <changefreq>daily</changefreq>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://betterdocs.net/classic/shop/themes.html</loc>
+  <loc>https://betterdocs.net/documentation/shop/themes.html</loc>
   <lastmod>2017-04-28T22:57:05+00:00</lastmod>
   <changefreq>daily</changefreq>
   <priority>0.64</priority>
@@ -367,7 +367,7 @@
   <priority>0.51</priority>
 </url>
 <url>
-  <loc>https://betterdocs.net/themes/assets/darkdiscord.html?theme=https://betterdocs.net/classic/stylesheets/discordapp10.theme.css</loc>
+  <loc>https://betterdocs.net/themes/assets/darkdiscord.html?theme=https://betterdocs.net/documentation/stylesheets/discordapp10.theme.css</loc>
   <lastmod>2017-04-28T22:57:05+00:00</lastmod>
   <changefreq>daily</changefreq>
   <priority>0.51</priority>
@@ -409,7 +409,7 @@
   <priority>0.51</priority>
 </url>
 <url>
-  <loc>https://betterdocs.net/themes/assets/darkdiscord.html?theme=https://betterdocs.net/classic/stylesheets/shelter.theme.css</loc>
+  <loc>https://betterdocs.net/themes/assets/darkdiscord.html?theme=https://betterdocs.net/documentation/stylesheets/shelter.theme.css</loc>
   <lastmod>2017-04-28T22:57:05+00:00</lastmod>
   <changefreq>daily</changefreq>
   <priority>0.51</priority>

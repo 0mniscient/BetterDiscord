@@ -13,7 +13,7 @@
      <ror:resourceOf>sitemap</ror:resourceOf>
 </item>
 <item>
-     <link>https://betterdocs.net/classic/</link>
+     <link>https://betterdocs.net/documentation/</link>
      <title>BetterDiscord Documentation and Tutorials</title>
      <description>BetterDiscord Documentation and Tutorials</description>
      <ror:updatePeriod>daily</ror:updatePeriod>
@@ -37,7 +37,7 @@
      <ror:resourceOf>sitemap</ror:resourceOf>
 </item>
 <item>
-     <link>https://betterdocs.net/classic/index.html</link>
+     <link>https://betterdocs.net/documentation/index.html</link>
      <title>BetterDiscord Documentation and Tutorials</title>
      <description>BetterDiscord Documentation and Tutorials</description>
      <ror:updatePeriod>daily</ror:updatePeriod>
@@ -45,7 +45,7 @@
      <ror:resourceOf>sitemap</ror:resourceOf>
 </item>
 <item>
-     <link>https://betterdocs.net/classic/shop/themes.html</link>
+     <link>https://betterdocs.net/documentation/shop/themes.html</link>
      <title>Theme Shop | Discord</title>
      <description>Theme Shop | Discord</description>
      <ror:updatePeriod>daily</ror:updatePeriod>
@@ -485,7 +485,7 @@
      <ror:resourceOf>sitemap</ror:resourceOf>
 </item>
 <item>
-     <link>https://betterdocs.net/themes/assets/darkdiscord.html?theme=https://betterdocs.net/classic/stylesheets/discordapp10.theme.css</link>
+     <link>https://betterdocs.net/themes/assets/darkdiscord.html?theme=https://betterdocs.net/documentation/stylesheets/discordapp10.theme.css</link>
      <title>Discord</title>
      <description>Discord</description>
      <ror:updatePeriod>daily</ror:updatePeriod>
@@ -541,7 +541,7 @@
      <ror:resourceOf>sitemap</ror:resourceOf>
 </item>
 <item>
-     <link>https://betterdocs.net/themes/assets/darkdiscord.html?theme=https://betterdocs.net/classic/stylesheets/shelter.theme.css</link>
+     <link>https://betterdocs.net/themes/assets/darkdiscord.html?theme=https://betterdocs.net/documentation/stylesheets/shelter.theme.css</link>
      <title>Discord</title>
      <description>Discord</description>
      <ror:updatePeriod>daily</ror:updatePeriod>
