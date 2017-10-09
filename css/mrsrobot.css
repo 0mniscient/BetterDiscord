@@ -253,7 +253,7 @@ button[onclick="window.open('https://discordapp.com/oauth2/authorize?client_id=3
 .ui.button:not(.icon)>.icon:not(.button):not(.dropdown) {
 	display: none;
 }
-button#upvotebutton {
+#upvotebutton {
 	margin-top: -14px !important;
 	margin-left: -24px;
 }
@@ -488,7 +488,8 @@ hr.purp-line {
 	margin-top: -81px !important;
 	position: absolute;
 	margin-left: 28px;
-	border: 2px solid #8423a5 !important;
+	border: 2px solid #9a58b5!important;
+        background-color: #8423a5 !important;
 	-webkit-animation-name: Floatingx;
 	-webkit-animation-duration: 3s;
 	-webkit-animation-iteration-count: infinite;
