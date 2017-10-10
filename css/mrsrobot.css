@@ -27,7 +27,8 @@
     top: 0px;
     background-color: #121213;
     padding-top: 10px;
-    padding-bottom: 10px;
+    padding-bottom: 0px;
+    border-bottom: 2px solid #9a58b5;
     z-index: 10;
     position: fixed;
 }
@@ -421,7 +422,7 @@ footer {
 #site-header .site-header-toprow .site-logo .logotype {
     width: 44px;
     height: 44px;
-    margin-top: -9px;
+    margin-top: -5px;
     margin-left: -8px;
     background-image: url(https://discordbots.org/images/logotrans.png);
     border: 2px solid #9a58b5;
@@ -499,4 +500,7 @@ hr.purp-line {
 	-moz-animation-duration: 3s;
 	-moz-animation-iteration-count: infinite;
 	-moz-animation-timing-function: ease-in-out;
+}
+#site-header .site-header-toprow {
+    box-shadow: 0 1px transparent;
 }
