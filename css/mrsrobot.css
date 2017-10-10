@@ -258,15 +258,16 @@ button[onclick="window.open('https://discordapp.com/oauth2/authorize?client_id=3
 	margin-left: -24px;
 }
 #upvotecounterprofile {
-	color: #fff;
-	background: #9a58b5;
-	border-radius: 50%;
-	margin-left: 63px !important;
-	position: absolute;
-	height: 24px;
-	width: 24px;
-	font-size: 10px;
-	margin-top: -7px !important;
+    color: #fff;
+    background: #9a58b5;
+    border-radius: 50%;
+    margin-left: 63px!important;
+    position: absolute;
+    height: 25px;
+    width: 27px;
+    font-size: 9px;
+    margin-top: -7px!important;
+    opacity: 1 !important;
 }
 .ui.basic[class*="right pointing"].label:before {
 	display: none !important;
