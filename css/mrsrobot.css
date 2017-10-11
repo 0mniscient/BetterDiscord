@@ -328,15 +328,12 @@ ul {
     background: #121213 !important;
 }
 #footer {
-    padding: 40px 0;
+    padding: 15px 4px 34px 0px;
     color: hsla(0,0%,100%,.6);
     position: relative;
     background: #171f26;
     max-width: 100% !important;
     width: 100%;
-}
-#footer {
-    font-family: Lato,Helvetica Neue,Helvetica,Arial,sans-serif;
 }
 #footer, .intro-feature-icon {
     text-align: center;
