@@ -176,7 +176,9 @@ img {
 	color: var(--main-color);
 }
 .ui.labeled.icon.button:hover>.icon {
-	background: rgba(154, 88, 181, 0.15);
+	background: var(--main-color);
+    border-radius: 0px;
+    opacity: 0.8;
 }
 .ui.google.plus.button {
 	background-color: #DD4B39;
