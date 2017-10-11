@@ -1,3 +1,8 @@
+:root { 
+	--main-color: #9a58b5;
+}
+
+
 .profile {
 	background-color: #121213 !important;
 	margin-top: 0px !important;
@@ -13,7 +18,7 @@
 	border-radius: 50% !important;
 	background-size: cover !important;
 	margin-top: 80px !important;
-        border: 3px solid #9a58b5;
+        border: 3px solid var(--main-color);
         -webkit-animation-name: Floatingx;
         -webkit-animation-duration: 3s;
         -webkit-animation-iteration-count: infinite;
@@ -28,7 +33,7 @@
     background-color: #121213;
     padding-top: 10px;
     padding-bottom: 0px;
-    border-bottom: 2px solid #9a58b5;
+    border-bottom: 2px solid var(--main-color);
     z-index: 10;
     position: fixed;
 }
@@ -100,7 +105,7 @@ img {
     color: #fff;
     font-size: 20px;
     height: 26px;
-    border-bottom: 2px solid #9b59b6;
+    border-bottom: 2px solid var(--main-color);
 }
 .profilebotimage {
     visibility: hidden !important;
@@ -117,7 +122,7 @@ img {
     to {-moz-transform: translate(0, -0px);}    
 }
 #bottprefix {
-    background: #9a58b5;
+    background: var(--main-color);
     width: 9%;
     margin: 0 auto;
     margin-top: 13px;
@@ -130,20 +135,20 @@ img {
 }
 #bottprefix:hover {
 	background: #121213;
-	color: #9a58b5;
-	border: 2px solid #9a58b5 !important;
+	color: var(--main-color);
+	border: 2px solid var(--main-color) !important;
 	cursor: pointer;
 }
 #ownerthing {
-	background: #9a58b5;
+	background: var(--main-color);
 	color: #fff;
 	border: 2px solid transparent !important;
 	transition: .2s all linear;
 }
 #ownerthing:hover {
 	background: #121213;
-	color: #9a58b5;
-	border: 2px solid #9a58b5 !important;
+	color: var(--main-color);
+	border: 2px solid var(--main-color) !important;
 }
 .profile h1 ~ .ui.label {
 	display: none;
@@ -160,15 +165,15 @@ img {
 	background-color: rgba(0, 0, 0, .08);
 }
 .ui.labeled.icon.button {
-	background: #9a58b5;
+	background: var(--main-color);
 	color: #fff;
 	border: 2px solid transparent;
 	transition: .2s all linear;
 }
 .ui.labeled.icon.button:hover {
 	background: #121213;
-	border-color: #9a58b5;
-	color: #9a58b5;
+	border-color: var(--main-color);
+	color: var(--main-color);
 }
 .ui.labeled.icon.button:hover>.icon {
 	background: rgba(154, 88, 181, 0.15);
@@ -214,7 +219,7 @@ img {
 		border-right-color: transparent
 	}
 	50% {
-		border-right-color: #9a58b5
+		border-right-color: var(--main-color)
 	}
 }
 .profile h1 {
@@ -228,7 +233,7 @@ img {
 	background-color: #202020;
 }
 ::-webkit-scrollbar-thumb {
-	background-color: #9a58b5;
+	background-color: var(--main-color);
 	border-radius: 0px !important
 }
 button[onclick="window.open('https://betterdocs.net', '_blank')"] {
@@ -260,7 +265,7 @@ button[onclick="window.open('https://discordapp.com/oauth2/authorize?client_id=3
 }
 #upvotecounterprofile {
     color: #fff;
-    background: #9a58b5;
+    background: var(--main-color);
     border-radius: 50%;
     margin-left: 63px!important;
     position: absolute;
@@ -309,7 +314,7 @@ ul {
     margin-left: -42px;
 }
 .bot-card .content {
-    box-shadow: 4px 4px 0 0 #9a58b5, inset 4px 4px 0 0 rgb(182, 150, 195), inset -4px -4px 0 0 #ae84bf !important;
+    box-shadow: 4px 4px 0 0 var(--main-color), inset 4px 4px 0 0 rgb(182, 150, 195), inset -4px -4px 0 0 #ae84bf !important;
     background: #121213 !important;
 }
 .bot-name {
@@ -322,7 +327,7 @@ ul {
     border-top: 1px solid #1b1b1b !important;
 }
 .bot-description {
-    color: #9a58b5 !important;
+    color: var(--main-color) !important;
 }
 #footer, body {
     background: #121213 !important;
@@ -422,7 +427,7 @@ footer {
     margin-top: -5px;
     margin-left: -8px;
     background-image: url(https://discordbots.org/images/logotrans.png);
-    border: 2px solid #9a58b5;
+    border: 2px solid var(--main-color);
     background-size: 70%;
     background-position: 6px 2px;
     border-radius: 50%;
@@ -440,7 +445,7 @@ footer {
     transition: .2s all linear;
 }
 #site-header #site-nav a:hover {
-    text-shadow: 1px 2px 2px #9a58b5;
+    text-shadow: 1px 2px 2px var(--main-color);
     color: #fff !important;
 }
 .ui.positive.button:hover, .ui.positive.buttons .button:hover {
@@ -460,7 +465,7 @@ footer {
 }
 hr.purp-line {
 	width: 0%;
-	border-color: #9a58b5 !important;
+	border-color: var(--main-color) !important;
 	animation: nothing 1s ease-in;
 	animation-fill-mode: forwards;
 }
@@ -487,7 +492,7 @@ hr.purp-line {
 	margin-top: -81px !important;
 	position: absolute;
 	margin-left: 28px;
-	border: 2px solid #9a58b5!important;
+	border: 2px solid var(--main-color)!important;
         background-color: #8423a5 !important;
 	-webkit-animation-name: Floatingx;
 	-webkit-animation-duration: 3s;
@@ -501,3 +506,56 @@ hr.purp-line {
 #site-header .site-header-toprow {
     box-shadow: 0 1px transparent;
 }
+
+/* Testing */
+
+.bot-card {
+    box-shadow: 2px 1px 0px 6px var(--main-color);
+}
+.bot-card .content {
+    box-shadow: 0px 0px 0px 4px rgba(244,244,244,0.2), 0px -1px 0px 4px rgba(244,244,244,0.2) !important;
+    background: #121213 !important;
+}
+.column {
+    padding: 0px 0px 0px 0px;
+    margin-left: 20px;
+    margin-bottom: 35px;
+}
+.columns.is-tablet {
+    padding: 0px 17px 0px 35px;
+}
+.bot-card::before {
+    content: "";
+    width: 10px;
+    height: 10px;
+    background: #121213;
+    position: absolute;
+    margin-left: 160px;
+    margin-top: -10px;
+    z-index: 1;
+}
+.bot-card::after {
+    content: "";
+    width: 10px;
+    height: 10px;
+    background: #fff;
+    position: absolute;
+    margin-left: 160px;
+    margin-top: -10px;
+    z-index: 1;
+}
+.bot-card::after {
+    content: "";
+    width: 10px;
+    height: 10px;
+    background: #121213;
+    position: absolute;
+    margin-left: -165px;
+    margin-top: 3px;
+    z-index: 1;
+}
+.columns.is-tablet {
+    padding: 0px 18px 0px 35px;
+}
+
+/* End of Testing */
