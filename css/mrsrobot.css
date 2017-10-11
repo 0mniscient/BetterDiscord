@@ -565,6 +565,8 @@ hr.purp-line {
 /* Uncomment when certified 
 .logo-page {
     height: 50px;
+	width: 120px;
+    margin: 0 auto;
 }
 svg:not(:root) {
     overflow: hidden;
