@@ -32,35 +32,35 @@
       <description>A step by step tutorial how to make a theme for BetterDiscord users</description>
     </item>
     <item>
-      <guid>https://betterdocs.net/install_plugin.html</guid>
+      <guid>https://betterdocs.net/documentation/install_plugin.html</guid>
       <title>
       BetterDiscord
     </title>
-      <link>https://betterdocs.net/install_plugin.html</link>
+      <link>https://betterdocs.net/documentation/install_plugin.html</link>
       <description>How to install custom plugins for BetterDiscord to make you Discord experience a whole lot better.</description>
     </item>
     <item>
-      <guid>https://betterdocs.net/theme_troubleshoot.html</guid>
+      <guid>https://betterdocs.net/documentation/theme_troubleshoot.html</guid>
       <title>
       BetterDiscord
     </title>
-      <link>https://betterdocs.net/theme_troubleshoot.html</link>
+      <link>https://betterdocs.net/documentation/theme_troubleshoot.html</link>
       <description>All questions that have to do with Themes are answered here! Time to make your BetterDiscord experience a whole lot better!</description>
     </item>
     <item>
-      <guid>https://betterdocs.net/install_theme.html</guid>
+      <guid>https://betterdocs.net/documentation/install_theme.html</guid>
       <title>
       BetterDiscord
     </title>
-      <link>https://betterdocs.net/install_theme.html</link>
+      <link>https://betterdocs.net/documentation/install_theme.html</link>
       <description>How to install custom themes for BetterDiscord to make you Discord experience a whole lot better.</description>
     </item>
     <item>
-      <guid>https://betterdocs.net/plugin_troubleshoot.html</guid>
+      <guid>https://betterdocs.net/documentation/plugin_troubleshoot.html</guid>
       <title>
       BetterDiscord
     </title>
-      <link>https://betterdocs.net/plugin_troubleshoot.html</link>
+      <link>https://betterdocs.net/documentation/plugin_troubleshoot.html</link>
       <description>All questions that have to do with Plugins are answered here! Time to make your BetterDiscord experience a whole lot better!</description>
     </item>
     <item>
@@ -72,43 +72,43 @@
       <description>Documentation for BetterDiscord, a 3rd party software for Discordapp to optimize Discord with Plugins and Themes and Twitch Emotes with it's built-in JavaScript loader.</description>
     </item>
     <item>
-      <guid>https://betterdocs.net/betterdiscord_troubleshoot.html</guid>
+      <guid>https://betterdocs.net/documentation/betterdiscord_troubleshoot.html</guid>
       <title>
       BetterDiscord
     </title>
-      <link>https://betterdocs.net/betterdiscord_troubleshoot.html</link>
+      <link>https://betterdocs.net/documentation/betterdiscord_troubleshoot.html</link>
       <description>Answers to the questions you have for BetterDiscord and solutions to the problems you have. We will help to make your Discord Better again!</description>
     </item>
     <item>
-      <guid>https://betterdocs.net/emotes.html</guid>
+      <guid>https://betterdocs.net/documentation/emotes.html</guid>
       <title>
       BetterDiscord
     </title>
-      <link>https://betterdocs.net/emotes.html</link>
+      <link>https://betterdocs.net/documentation/emotes.html</link>
       <description>Learn how to use the BetterDiscord emotes and there modifiers! Shake,spin,flip and flap all your emotes, make them come alive! Favorite all your best emotes to have them on the tip of your fingers.</description>
     </item>
     <item>
-      <guid>https://betterdocs.net/install_win.html</guid>
+      <guid>https://betterdocs.net/documentation/install_win.html</guid>
       <title>
       BetterDiscord
     </title>
-      <link>https://betterdocs.net/install_win.html</link>
+      <link>https://betterdocs.net/documentation/install_win.html</link>
       <description>How to install BetterDiscord on Windows to customize the world of Discord users.</description>
     </item>
     <item>
-      <guid>https://betterdocs.net/install_mac.html</guid>
+      <guid>https://betterdocs.net/documentation/install_mac.html</guid>
       <title>
       BetterDiscord
     </title>
-      <link>https://betterdocs.net/install_mac.html</link>
+      <link>https://betterdocs.net/documentation/install_mac.html</link>
       <description>How to install BetterDiscord on Mac to customize the world of Discord users.</description>
     </item>
     <item>
-      <guid>https://betterdocs.net/install_linux.html</guid>
+      <guid>https://betterdocs.net/documentation/install_linux.html</guid>
       <title>
       BetterDiscord
     </title>
-      <link>https://betterdocs.net/install_linux.html</link>
+      <link>https://betterdocs.net/documentation/install_linux.html</link>
       <description>How to install BetterDiscord on Linux to customize the world of Discord users.</description>
     </item>
     <item>
@@ -134,11 +134,11 @@
       <description>The news article for BetterDiscord. Don't ever get stuck on wondering why BetterDiscord suddenly stopped working ever again!</description>
     </item>
     <item>
-      <guid>https://betterdocs.net/plugin_api.html</guid>
+      <guid>https://betterdocs.net/documentation/plugin_api.html</guid>
       <title>
       BetterDiscord
     </title>
-      <link>https://betterdocs.net/plugin_api.html</link>
+      <link>https://betterdocs.net/documentation/plugin_api.html</link>
       <description>How to use BetterDiscords plugin API to make plugin for our community.</description>
     </item>
     <item>
