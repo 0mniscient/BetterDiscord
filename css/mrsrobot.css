@@ -485,25 +485,39 @@ hr.purp-line {
 	}
 }
 
-.ui.label.purple {
-	display: initial !important;
-	border-radius: 50%;
-	font-size: 3px;
-	color: transparent !important;
-	padding-top: 11px;
-	margin-top: -81px !important;
-	position: absolute;
-	margin-left: 28px;
+.ui.label.purple, .ui.label.green, .ui.label.orange, .ui.label.grey {
+    display: initial!important;
+    border-radius: 50%;
+    font-size: 3px;
+    color: transparent!important;
+    padding-top: 11px;
+    margin-top: -81px!important;
+    position: absolute;
+    margin-left: 28px;
+    -webkit-animation-name: Floatingx;
+    -webkit-animation-duration: 3s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: ease-in-out;
+    -moz-animation-name: Floating;
+    -moz-animation-duration: 3s;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: ease-in-out;
 	border: 2px solid var(--main-color)!important;
-        background-color: #8423a5 !important;
-	-webkit-animation-name: Floatingx;
-	-webkit-animation-duration: 3s;
-	-webkit-animation-iteration-count: infinite;
-	-webkit-animation-timing-function: ease-in-out;
-	-moz-animation-name: Floating;
-	-moz-animation-duration: 3s;
-	-moz-animation-iteration-count: infinite;
-	-moz-animation-timing-function: ease-in-out;
+}
+.ui.label.purple {
+    background-color: #8423a5!important;
+}
+.ui.label.green {
+	background-color: #21BA45!important;
+}
+.ui.label.orange {
+	background-color: #F2711C!important;
+}
+.ui.label.red {
+	background-color: #DB2828!important;
+}
+.ui.label.grey {
+	background-color: #767676!important;
 }
 #site-header .site-header-toprow {
     box-shadow: 0 1px transparent;
