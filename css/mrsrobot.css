@@ -582,10 +582,9 @@ hr.purp-line {
 
 /* End of Testing */
 
-/* Uncomment when certified 
 .logo-page {
     height: 50px;
-	width: 120px;
+    width: 120px;
     margin: 0 auto;
 }
 svg:not(:root) {
@@ -596,5 +595,3 @@ svg:not(:root) {
 [style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#9b59b6;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"] {
 	fill: var(--main-color) !important;
 }
-
-*/
