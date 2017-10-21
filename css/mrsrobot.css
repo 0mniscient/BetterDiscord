@@ -111,15 +111,15 @@ img {
     visibility: hidden !important;
 }
 @-webkit-keyframes Floatingx{
-    from {-webkit-transform:translate(0, 0px);}
-    65% {-webkit-transform:translate(0, 15px);}
-    to {-webkit-transform: translate(0, -0px);    }    
+    from {-webkit-transform:translate(0, 8px);}
+    65% {-webkit-transform:translate(0, 18px);}
+    to {-webkit-transform: translate(0, 8px);    }    
 }
     
 @-moz-keyframes Floating{
-    from {-moz-transform:translate(0, 0px);}
-    65% {-moz-transform:translate(0, 15px);}
-    to {-moz-transform: translate(0, -0px);}    
+    from {-moz-transform:translate(0, 8px);}
+    65% {-moz-transform:translate(0, 18px);}
+    to {-moz-transform: translate(0, 8px);}    
 }
 #bottprefix {
     background: var(--main-color);
@@ -603,7 +603,7 @@ svg:not(:root) {
 	transform: rotate(30deg);
 }
 .certified-crown {
-    top: 64px;
+    top: 42px;
     position: absolute;
 	-webkit-animation-name: Floatingx;
 	-webkit-animation-duration: 3s;
