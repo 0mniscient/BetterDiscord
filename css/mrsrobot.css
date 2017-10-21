@@ -625,3 +625,11 @@ svg:not(:root) {
     position: relative;
     left: 4px;
 }
+.bot-card::before {
+    content: "";
+    display: none;
+}
+.bot-card::after {
+    content: "";
+    display: none;
+}
