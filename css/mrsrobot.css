@@ -647,7 +647,7 @@ svg:not(:root) {
     content: "";
     display: none;
 }
-.ui.google.plus.button[onclick*="location.href='/bot/353615282964791297/report'"] {
+.ui.google.plus.button {
     background-color: #DD4B39;
     color: #FFF;
     text-shadow: none;
@@ -666,7 +666,7 @@ svg:not(:root) {
     z-index: 1000;
     box-shadow: 0 6px 10px 0 rgba(0,0,0,0.14), 0 1px 18px 0 rgba(0,0,0,0.12), 0 3px 5px -1px rgba(0,0,0,0.2);
 }
-.ui.google.plus.button[onclick*="location.href='/bot/353615282964791297/report'"]:hover {
+.ui.google.plus.button:hover {
     background-image: url(https://i.imgur.com/fJGuhhP.png) !important;
     border-color: #e26556;
     background-color: #e26556;
