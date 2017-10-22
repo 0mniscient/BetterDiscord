@@ -660,14 +660,15 @@ svg:not(:root) {
     background-repeat: no-repeat;
     background-size: 45%;
     background-position: center;
-	position: fixed;
-	bottom: 40px;
-	right: 40px;
-	z-index: 1000;
-	box-shadow: 0 6px 10px 0 rgba(0,0,0,0.14), 0 1px 18px 0 rgba(0,0,0,0.12), 0 3px 5px -1px rgba(0,0,0,0.2);
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    z-index: 1000;
+    box-shadow: 0 6px 10px 0 rgba(0,0,0,0.14), 0 1px 18px 0 rgba(0,0,0,0.12), 0 3px 5px -1px rgba(0,0,0,0.2);
 }
-.ui.google.plus.button.ui.google.plus.button[onclick*="location.href='/bot/353615282964791297/report'"]:hover {
+.ui.google.plus.button[onclick*="location.href='/bot/353615282964791297/report'"]:hover {
     background: url(https://i.imgur.com/fJGuhhP.png) !important;
-	border-color: #e26556;
-	background-color: #e26556;
+    border-color: #e26556;
+    background-color: #e26556;
+    box-shadow: 0 8px 10px 1px rgba(0,0,0,0.14), 0 3px 14px 2px rgba(0,0,0,0.12), 0 5px 5px -3px rgba(0,0,0,0.2);
 }
