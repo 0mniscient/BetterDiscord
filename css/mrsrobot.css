@@ -1,7 +1,8 @@
 :root { 
-	--main-color: #9a58b5;
+	--main-color: #da511d; /*This color is for halloween*/
 }
 
+/* #9a58b5 <--- This is the default color*/
 
 .profile {
 	background-color: #121213 !important;
