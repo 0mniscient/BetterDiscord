@@ -681,3 +681,7 @@ opacity: 1 !important;
 z-index: -1;
 opacity: 1 !important;
 }
+
+button[disabled]{opacity: 0.8 !important;transition: .2s all linear !important;cursor: not-allowed;}
+
+.ui.labeled.button:not(.icon), #upvotecounterprofile{cursor: not-allowed;}
