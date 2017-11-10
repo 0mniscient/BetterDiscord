@@ -486,7 +486,7 @@ hr.purp-line {
 	}
 }
 
-.ui.label.purple, .ui.label.green, .ui.label.orange, .ui.label.grey {
+.ui.label.purple, .ui.label.green, .ui.label.orange, .ui.label.grey, .ui.label.gray {
     display: initial!important;
     border-radius: 50%;
     font-size: 3px;
@@ -517,7 +517,7 @@ hr.purp-line {
 .ui.label.red {
 	background-color: #DB2828!important;
 }
-.ui.label.grey {
+.ui.label.grey, .ui.label.gray {
 	background-color: #767676!important;
 }
 #site-header .site-header-toprow {
