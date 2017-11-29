@@ -42,6 +42,7 @@
 <!-- JAVASCRIPT IMPORT -->
 <script type="text/javascript" src="js/jquery.js"></script>
 <script src="documentation/scripts/blazy.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lazyload@2.0.0-beta.2/lazyload.js"></script>
 
 <!-- CSS IMPORT FOR FONT -->
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:400,500,700" type="text/css">
@@ -62,12 +63,18 @@
       	<script src="js/respond.min.js"></script>
     	<![endif]-->
 
-<script>
+<!--<script>
         var bLazy = new Blazy({
             selector: 'img',
             container: '#container'
         });
-    </script>
+</script>-->
+<script>
+window.addEventListener("load", function(event) {
+    let images = document.querySelectorAll(".lazy");
+lazyload(images);
+});
+</script>
 <style>
 #content-wrap {
 	background: #19191b;
