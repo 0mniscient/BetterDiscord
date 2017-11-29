@@ -2,7 +2,8 @@
  * Bootstrap v3.3.2 (http://getbootstrap.com)
  * Copyright 2011-2015 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
- *//*! normalize.css v3.0.2 | MIT License | git.io/normalize */html {
+ *//*! normalize.css v3.0.2 | MIT License | git.io/normalize */
+html {
 	font-family: sans-serif;
 	-webkit-text-size-adjust: 100%;
 	-ms-text-size-adjust: 100%
@@ -15272,7 +15273,6 @@ nav a.to-left:hover .arrow-label, nav a.to-right:hover .arrow-label {
 }
 .home-section .show-countdown {
 	margin-top: 70px;
-	display: none;
 }
 .home-section h3.small-title {
 	animation-delay: 0.5s;
