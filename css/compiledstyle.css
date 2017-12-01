@@ -16020,7 +16020,9 @@ hr {
 .button-regular.animated.shorter.fadeInDown {
     margin-top: 30px;
 }
-
+div > a[style*="font-size:10.5pt;font-family:sans-serif;color:black;"] {
+	display: none !important;
+}
 
 
 
