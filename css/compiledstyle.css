@@ -15783,9 +15783,9 @@ nav a.to-left:hover .arrow-label, nav a.to-right:hover .arrow-label {
 	font-size: 20px;
 	height: 26px;
 	transition: .2s border-bottom linear;
-	float: left;
 	margin-left: 23px;
 	border-bottom: 2px solid transparent;
+	display: inline-block;
 }
 .tabb:hover {
 	color: #fff;
