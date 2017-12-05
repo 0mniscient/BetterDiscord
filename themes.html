@@ -140,7 +140,7 @@ lazyload(images);
           <div class="tabb third-tab">Plugins</div>
           </a> </div>
       </div>
-      <a href="/"> <img class="animated entrance logo-page" src="img/betterdocs_white.svg" alt="logo" /> </a>
+      <a href="/"> <img class="animated logo-page fadeInDown" src="img/betterdocs_white.svg" alt="logo" /> </a>
       <div class="tab-links fadeInDown">
         <div class="right-tabs"> <a href="store.html">
           <div class="tabb fourth-tab">Store</div>
@@ -161,7 +161,7 @@ lazyload(images);
             <div class="inner">
               <header id="plugin-list-header">
                 <h1 id="plugin-list-title">Themes</h1>
-                <div id="plugin-list-count" class="total-items">Total Themes: 64</div>
+                <div id="plugin-list-count" class="total-items">Total Themes: <div id="result" class="total-results"></div></div>
                 <input type="search" id="plugin-search-input" placeholder="Search themes...">
               </header>
               <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
@@ -178,7 +178,7 @@ lazyload(images);
                 <h1 id="plugin-list-title" class="bd-header">
                   <div id="betterdiscord"> <span class="bd-title">Better</span>Discord <a class="article-anchor page" href="#betterdiscord" aria-hidden="true"></a></div>
                 </h1>
-                <div id="plugin-list-count">54 Themes</div>
+                <div id="plugin-list-count" class="total-items"><div id="bd-result" class="total-results"></div> Themes</div>
                 <hr>
               </header>
               <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
@@ -191,10 +191,10 @@ lazyload(images);
 <script>
 (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
-              <ul id="plugin-list">
+              <ul id="plugin-list" class="bd-plugin-list">
                 <li class="plugin on">
-                  <div class="plugin-screenshot"> <img src="https://i.imgur.com/25W0otB.gif" data-src="documentation/images/shop-display.png" class="lazy plugin-screenshot-img" width="auto" height="auto"> <a href="https://betterdocs.net/documentation/shop/themes.html" class="plugin-preview-link"><i class="fa fa-shopping-cart"></i></a> </div>
-                  <a href="https://betterdocs.net/documentation/shop/themes.html" class="plugin-name">Shop</a>
+                  <div class="plugin-screenshot"> <img src="https://i.imgur.com/25W0otB.gif" data-src="documentation/images/shop-display.png" class="lazy plugin-screenshot-img" width="auto" height="auto"> <a href="https://betterdocs.net/store.html" class="plugin-preview-link"><i class="fa fa-shopping-cart"></i></a> </div>
+                  <a href="https://betterdocs.net/store.html" class="plugin-name">Shop</a>
                   <p class="plugin-desc">Pay for a custom and beautiful theme now!</p>
                   <div class="plugin-tag-list"> <a href="#Omniscient" class="plugin-tag">Omniscient</a> <a href="#Maple" class="plugin-tag">Maple</a> <a href="#Store" class="plugin-tag tag-invis">Store</a> <a href="#Money" class="plugin-tag tag-invis">Money</a> </div>
                 </li>
@@ -593,7 +593,7 @@ lazyload(images);
                 <h1 id="plugin-list-title" class="bd-header beauty-header">
                   <div id="beautifuldiscord"><span class="beauty-title">Beautiful</span>Discord <a class="article-anchor page" href="#beautifuldiscord" aria-hidden="true"></a></div>
                 </h1>
-                <div id="plugin-list-count">10 Themes</div>
+                <div id="plugin-list-count" class="total-items"><div id="beauty-d-result" class="total-results"></div> Themes</div>
                 <hr>
               </header>
               <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
@@ -607,7 +607,7 @@ lazyload(images);
 (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
               <div id="plugin-list-2">
-                <ul id="plugin-list">
+                <ul id="plugin-list" class="beauty-d-plugin-list">
                   <li class="plugin on">
                     <div class="plugin-screenshot"> <img src="https://i.imgur.com/25W0otB.gif" data-src="https://i.imgur.com/F3iDLTu.png" class="lazy plugin-screenshot-img" width="auto" height="auto"> <a href="themes/discord_theme.html" class="plugin-preview-link"><i class="fa fa-eye"></i> </a></div>
                     <a href="themes/discord_theme.html" class="plugin-name">Discord_Theme</a>
@@ -720,6 +720,18 @@ lazyload(images);
                 });
             });
         });
+	var count = $('ul#plugin-list').children().length;
+
+$('#result').text(count);
+	
+	var count = $('ul.bd-plugin-list').children().length;
+
+$('#bd-result').text(count);
+	
+	var count = $('ul.beauty-d-plugin-list').children().length;
+
+$('#beauty-d-result').text(count);
+	
     </script> 
 <!-- bootstrap --> 
 <script type="text/javascript" src="js/bootstrap.min.js"></script> 
@@ -733,32 +745,6 @@ lazyload(images);
 <script type="text/javascript" src="js/pushy.min.js"></script> 
 <!-- main js --> 
 <script type="text/javascript" src="js/main.js"></script>
-<script>
-$(document).ready(function(){
-  // Add smooth scrolling to all links
-  $("a").on('click', function(event) {
-
-    // Make sure this.hash has a value before overriding default behavior
-    if (this.hash !== "") {
-      // Prevent default anchor click behavior
-      event.preventDefault();
-
-      // Store hash
-      var hash = this.hash;
-
-      // Using jQuery's animate() method to add smooth page scroll
-      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-      $('html, body').animate({
-        scrollTop: $(hash).offset().top
-      }, 800, function(){
-   
-        // Add hash (#) to URL when done scrolling (default click behavior)
-        window.location.hash = hash;
-      });
-    } // End if
-  });
-});
-</script> 
 <script type="text/javascript"  charset="utf-8">
 // 4.2b
 // Place this code snippet near the footer of your page before the close of the /body tag

@@ -15797,6 +15797,11 @@ nav a.to-left:hover .arrow-label, nav a.to-right:hover .arrow-label {
 	float: left;
 	padding-right: 30px;
 	margin-left: 20px;
+	display: inline-block;
+}
+.total-results {
+	display: inline-block;
+	line-height: 0px;
 }
 hr {
 	border-top: 2px solid #2f2f2f;
@@ -16288,6 +16293,7 @@ nav a .arrow-label {
     position: relative;
     top: 9%;
 }
+
 /*
 .min-vh-100 {
     min-height: 100vh;
